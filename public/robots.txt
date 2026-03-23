@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sleepcyclecalc.com/sitemap.xml
+
+# Block dashboard (authenticated content)
+Disallow: /dashboard
+Disallow: /api
+
+# Block auth pages
+Disallow: /login
+Disallow: /signup
+Disallow: /auth
