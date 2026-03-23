@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --yes)",
       "Bash(mv CLAUDE.md /tmp/CLAUDE.md.bak)",
-      "Bash(mv docs:*)"
+      "Bash(mv docs:*)",
+      "Bash(mv /tmp/CLAUDE.md.bak CLAUDE.md)",
+      "Bash(mv /tmp/docs.bak docs)",
+      "Bash(npx shadcn@latest init -d)"
     ]
   }
 }
