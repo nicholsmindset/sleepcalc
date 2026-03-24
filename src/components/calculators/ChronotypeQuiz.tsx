@@ -2,7 +2,6 @@
 
 import { useState, useCallback, useMemo } from 'react';
 import { CHRONOTYPE_QUESTIONS, scoreChronotype, type ChronotypeResult } from '@/utils/chronotype';
-import Link from 'next/link';
 
 const CHRONOTYPE_EMOJIS: Record<string, string> = {
   lion: '\u{1F981}',
@@ -189,25 +188,8 @@ export default function ChronotypeQuiz() {
             {result.sleepWindow.bedtime} &ndash; {result.sleepWindow.wakeTime}
           </p>
           <p className="text-white/60 text-[10px] tracking-wide">
-            sleepcyclecalc.com/calculators/chronotype-quiz
+            sleepstackapp.com/calculators/chronotype-quiz
           </p>
-        </div>
-
-        {/* CTA */}
-        <div className="glass-card rounded-2xl p-6 text-center mb-6">
-          <p className="font-headline font-bold text-on-surface mb-2">
-            Want a more accurate result?
-          </p>
-          <p className="text-sm text-on-surface-variant mb-4 max-w-lg mx-auto">
-            Connect your wearable device for a data-based chronotype analysis.
-            Real sleep stage data is far more accurate than any quiz.
-          </p>
-          <Link
-            href="/signup"
-            className="btn-gradient text-sm px-8 py-2.5 inline-block"
-          >
-            Connect Your Device
-          </Link>
         </div>
 
         {/* Retake */}

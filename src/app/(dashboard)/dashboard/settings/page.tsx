@@ -77,6 +77,7 @@ export default function SettingsPage() {
     try {
       const { createClient } = await import('@/lib/supabase/client');
       const supabase = createClient();
+      if (!supabase) throw new Error('Not configured');
       const { error: updateError } = await supabase
         .from('profiles')
         .update({
@@ -106,6 +107,7 @@ export default function SettingsPage() {
     try {
       const { createClient } = await import('@/lib/supabase/client');
       const supabase = createClient();
+      if (!supabase) return;
       const { data } = await supabase
         .from('sleep_sessions')
         .select('*')

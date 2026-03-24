@@ -6,8 +6,8 @@ import { Header } from '@/components/layout/Header';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s — Drift Sleep Dashboard',
-    default: 'Dashboard — Drift Sleep',
+    template: '%s — Sleep Stack Dashboard',
+    default: 'Dashboard — Sleep Stack',
   },
   robots: { index: false, follow: false },
 };

@@ -27,7 +27,7 @@ export default function BlogPage() {
       <SchemaMarkup
         type="ItemList"
         data={{
-          name: 'Drift Sleep Blog',
+          name: 'Sleep Stack Blog',
           description: 'Evidence-based sleep science articles',
           itemListElement: posts.map((post, i) => ({
             '@type': 'ListItem',

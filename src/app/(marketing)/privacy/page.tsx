@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Drift Sleep",
+  title: "Privacy Policy — Sleep Stack",
   description:
-    "Drift Sleep privacy policy. Learn how we collect, use, and protect your personal information and sleep data.",
+    "Sleep Stack privacy policy. Learn how we collect, use, and protect your personal information and sleep data.",
   alternates: {
     canonical: "/privacy",
   },
   openGraph: {
-    title: "Privacy Policy — Drift Sleep",
-    description: "How Drift Sleep collects, uses, and protects your data.",
+    title: "Privacy Policy — Sleep Stack",
+    description: "How Sleep Stack collects, uses, and protects your data.",
     url: "/privacy",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -129,10 +129,10 @@ export default function PrivacyPage() {
           <p className="text-on-surface-variant leading-relaxed">
             For privacy questions or data requests, email{" "}
             <a
-              href="mailto:privacy@sleepcyclecalc.com"
+              href="mailto:privacy@sleepstackapp.com"
               className="text-primary hover:text-primary-light underline underline-offset-2"
             >
-              privacy@sleepcyclecalc.com
+              privacy@sleepstackapp.com
             </a>
             .
           </p>

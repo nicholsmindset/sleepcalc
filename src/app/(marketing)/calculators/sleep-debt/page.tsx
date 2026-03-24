@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Calculate your accumulated sleep debt and get a personalized recovery plan to pay back your sleep deficit.',
     url: '/calculators/sleep-debt',
-    siteName: 'Drift Sleep',
+    siteName: 'Sleep Stack',
   },
 };
 
@@ -62,7 +62,7 @@ export default function SleepDebtPage() {
       <SchemaMarkup
         type="WebApplication"
         data={{
-          name: 'Drift Sleep Sleep Debt Calculator',
+          name: 'Sleep Stack Sleep Debt Calculator',
           applicationCategory: 'HealthApplication',
           operatingSystem: 'Web',
           description: metadata.description,

@@ -3,18 +3,18 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Medical Disclaimer — Drift Sleep",
+  title: "Medical Disclaimer — Sleep Stack",
   description:
-    "Medical disclaimer for Drift Sleep. Our sleep calculators and AI coaching are for informational purposes only and do not constitute medical advice.",
+    "Medical disclaimer for Sleep Stack. Our sleep calculators and AI coaching are for informational purposes only and do not constitute medical advice.",
   alternates: {
     canonical: "/medical-disclaimer",
   },
   openGraph: {
-    title: "Medical Disclaimer — Drift Sleep",
+    title: "Medical Disclaimer — Sleep Stack",
     description:
-      "Drift Sleep tools are for informational purposes only and do not constitute medical advice.",
+      "Sleep Stack tools are for informational purposes only and do not constitute medical advice.",
     url: "/medical-disclaimer",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -40,7 +40,7 @@ export default function MedicalDisclaimerPage() {
       <div className="space-y-6">
         <div className="glass-card rounded-2xl p-6 border border-[#fdcb6e]/20">
           <p className="text-on-surface leading-relaxed font-medium">
-            Drift Sleep and all tools on sleepcyclecalc.com are for
+            Sleep Stack and all tools on sleepstackapp.com are for
             informational and educational purposes only. Nothing on this website
             constitutes medical advice, diagnosis, or treatment.
           </p>
@@ -119,7 +119,7 @@ export default function MedicalDisclaimerPage() {
             Limitation
           </h2>
           <p className="text-on-surface-variant leading-relaxed">
-            By using Drift Sleep, you acknowledge that the information provided
+            By using Sleep Stack, you acknowledge that the information provided
             is not a substitute for professional medical advice. We assume no
             liability for health decisions made based on information from this
             website.

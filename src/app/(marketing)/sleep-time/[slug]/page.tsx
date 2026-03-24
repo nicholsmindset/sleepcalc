@@ -82,7 +82,7 @@ export async function generateMetadata({
       title: entry.title,
       description: entry.metaDescription,
       url: `/sleep-time/${slug}`,
-      siteName: "Drift Sleep",
+      siteName: "Sleep Stack",
     },
   };
 }
@@ -136,7 +136,7 @@ export default async function SleepTimePage({
     .filter(Boolean) as SleepTimeEntry[];
 
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
 
   return (
     <>

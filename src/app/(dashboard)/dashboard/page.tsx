@@ -3,7 +3,7 @@ import { DashboardClient } from './dashboard-client';
 import type { SleepSession } from '@/lib/supabase/types';
 
 export const metadata = {
-  title: 'Dashboard — Drift Sleep',
+  title: 'Dashboard — Sleep Stack',
   description: 'Your personal sleep dashboard with real device data and AI coaching.',
 };
 

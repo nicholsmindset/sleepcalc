@@ -6,8 +6,8 @@ interface AuthorBoxProps {
 }
 
 export function AuthorBox({
-  name = 'Drift Sleep Team',
-  bio = 'The Drift Sleep editorial team combines sleep science research with real wearable device data to provide evidence-based sleep improvement guidance. Our content is reviewed for accuracy and updated regularly.',
+  name = 'Sleep Stack Team',
+  bio = 'The Sleep Stack editorial team combines sleep science research with real wearable device data to provide evidence-based sleep improvement guidance. Our content is reviewed for accuracy and updated regularly.',
 }: AuthorBoxProps) {
   return (
     <div className="glass-card rounded-2xl p-6 flex items-start gap-4 mt-12">

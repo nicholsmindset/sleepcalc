@@ -2,7 +2,7 @@
  * SEO helper functions for meta tags, canonical URLs, and OG images.
  *
  * Generates consistent metadata across all pages following the project's
- * SEO strategy. Title format is "{Page} | Drift Sleep". Canonical URLs
+ * SEO strategy. Title format is "{Page} | Sleep Stack". Canonical URLs
  * use the NEXT_PUBLIC_SITE_URL environment variable to ensure consistency
  * across environments.
  *
@@ -27,7 +27,7 @@ function getSiteUrl(): string {
 }
 
 /**
- * Generate a page title in the format "{page} | Drift Sleep".
+ * Generate a page title in the format "{page} | Sleep Stack".
  *
  * If the page name is empty or matches the site name, returns just the
  * site name with a tagline for the homepage.
@@ -37,10 +37,10 @@ function getSiteUrl(): string {
  *
  * @example
  * generateTitle("Sleep Calculator")
- * // "Sleep Calculator | Drift Sleep"
+ * // "Sleep Calculator | Sleep Stack"
  *
  * generateTitle("")
- * // "Drift Sleep - Smart Sleep Cycle Calculator"
+ * // "Sleep Stack - Smart Sleep Cycle Calculator"
  */
 export function generateTitle(page: string): string {
   const trimmed = page.trim();
@@ -63,10 +63,10 @@ export function generateTitle(page: string): string {
  *
  * @example
  * generateDescription("Sleep Calculator")
- * // "Calculate your optimal bedtime and wake-up time with Drift Sleep's Sleep Calculator. Science-backed sleep cycles for better rest."
+ * // "Calculate your optimal bedtime and wake-up time with Sleep Stack's Sleep Calculator. Science-backed sleep cycles for better rest."
  *
  * generateDescription("Sleep Calculator", "Based on 90-minute cycles")
- * // "Calculate your optimal bedtime and wake-up time with Drift Sleep's Sleep Calculator. Based on 90-minute cycles."
+ * // "Calculate your optimal bedtime and wake-up time with Sleep Stack's Sleep Calculator. Based on 90-minute cycles."
  */
 export function generateDescription(page: string, context?: string): string {
   const trimmed = page.trim();
@@ -98,10 +98,10 @@ export function generateDescription(page: string, context?: string): string {
  *
  * @example
  * generateCanonical("/calculators/sleep-debt")
- * // "https://sleepcyclecalc.com/calculators/sleep-debt"
+ * // "https://sleepstackapp.com/calculators/sleep-debt"
  *
  * generateCanonical("/")
- * // "https://sleepcyclecalc.com"
+ * // "https://sleepstackapp.com"
  */
 export function generateCanonical(path: string): string {
   const siteUrl = getSiteUrl();
@@ -122,7 +122,7 @@ export function generateCanonical(path: string): string {
  *
  * @example
  * generateOgImageUrl("Sleep Calculator")
- * // "https://sleepcyclecalc.com/api/og?title=Sleep%20Calculator"
+ * // "https://sleepstackapp.com/api/og?title=Sleep%20Calculator"
  */
 export function generateOgImageUrl(title: string): string {
   const siteUrl = getSiteUrl();

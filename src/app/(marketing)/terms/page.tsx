@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Drift Sleep",
+  title: "Terms of Service — Sleep Stack",
   description:
-    "Drift Sleep terms of service. Rules and guidelines for using our sleep calculators, dashboard, and Pro subscription.",
+    "Sleep Stack terms of service. Rules and guidelines for using our sleep calculators, dashboard, and Pro subscription.",
   alternates: {
     canonical: "/terms",
   },
   openGraph: {
-    title: "Terms of Service — Drift Sleep",
-    description: "Terms and conditions for using Drift Sleep services.",
+    title: "Terms of Service — Sleep Stack",
+    description: "Terms and conditions for using Sleep Stack services.",
     url: "/terms",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -39,7 +39,7 @@ export default function TermsPage() {
             1. Acceptance of Terms
           </h2>
           <p className="text-on-surface-variant leading-relaxed">
-            By accessing or using Drift Sleep (sleepcyclecalc.com), you agree to
+            By accessing or using Sleep Stack (sleepstackapp.com), you agree to
             these Terms of Service. If you do not agree, do not use the service.
           </p>
         </section>
@@ -49,7 +49,7 @@ export default function TermsPage() {
             2. Service Description
           </h2>
           <p className="text-on-surface-variant leading-relaxed">
-            Drift Sleep provides free sleep calculators, a personal sleep
+            Sleep Stack provides free sleep calculators, a personal sleep
             dashboard with wearable device integration, AI-powered sleep
             coaching, and blog content. Some features require a free account.
             Premium features are available through a Pro subscription.
@@ -89,7 +89,7 @@ export default function TermsPage() {
             5. Medical Disclaimer
           </h2>
           <p className="text-on-surface-variant leading-relaxed">
-            Drift Sleep is not a medical device and does not provide medical
+            Sleep Stack is not a medical device and does not provide medical
             advice. Our calculators, AI coaching, and content are for
             informational and educational purposes only. Always consult a
             qualified healthcare provider for medical conditions or sleep
@@ -109,7 +109,7 @@ export default function TermsPage() {
             6. Intellectual Property
           </h2>
           <p className="text-on-surface-variant leading-relaxed">
-            All content, design, code, and branding on Drift Sleep is owned by
+            All content, design, code, and branding on Sleep Stack is owned by
             us or our licensors. You may not copy, modify, distribute, or
             reverse-engineer any part of the service without written permission.
           </p>
@@ -120,7 +120,7 @@ export default function TermsPage() {
             7. Limitation of Liability
           </h2>
           <p className="text-on-surface-variant leading-relaxed">
-            Drift Sleep is provided &ldquo;as is&rdquo; without warranties of
+            Sleep Stack is provided &ldquo;as is&rdquo; without warranties of
             any kind. We are not liable for any damages arising from your use of
             the service, including decisions made based on calculator results or
             AI coaching.
@@ -145,10 +145,10 @@ export default function TermsPage() {
           <p className="text-on-surface-variant leading-relaxed">
             Questions about these terms? Email{" "}
             <a
-              href="mailto:hello@sleepcyclecalc.com"
+              href="mailto:hello@sleepstackapp.com"
               className="text-primary hover:text-primary-light underline underline-offset-2"
             >
-              hello@sleepcyclecalc.com
+              hello@sleepstackapp.com
             </a>
             .
           </p>

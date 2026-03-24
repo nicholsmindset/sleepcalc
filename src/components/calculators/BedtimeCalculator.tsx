@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
-import Link from 'next/link';
 import { Moon, Zap } from 'lucide-react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import TimePicker from '@/components/calculators/shared/TimePicker';
@@ -279,16 +278,6 @@ export default function BedtimeCalculator() {
             </div>
           )}
 
-          {/* CTA */}
-          <div className="text-center pt-4">
-            <Link
-              href="/signup"
-              className="text-sm text-on-surface-variant hover:text-ds-secondary transition-colors inline-flex items-center gap-1"
-            >
-              Connect your sleep tracker for personalized times
-              <span aria-hidden="true">&rarr;</span>
-            </Link>
-          </div>
         </div>
       )}
     </div>

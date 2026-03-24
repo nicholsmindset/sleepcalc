@@ -22,17 +22,23 @@ export function useUser(): UseUserReturn {
   useEffect(() => {
     const supabase = createClient();
 
+    // Supabase not configured (env vars missing) — treat as logged out
+    if (!supabase) {
+      setLoading(false);
+      return;
+    }
+
     // Safety timeout — never leave the spinner running forever
     const timeout = setTimeout(() => setLoading(false), 8000);
 
     async function getUser() {
       try {
-        const { data: { user: currentUser }, error: authError } = await supabase.auth.getUser();
+        const { data: { user: currentUser }, error: authError } = await supabase!.auth.getUser();
         if (authError) throw authError;
         setUser(currentUser);
 
         if (currentUser) {
-          const { data } = await supabase
+          const { data } = await supabase!
             .from('profiles')
             .select('*')
             .eq('id', currentUser.id)
@@ -56,7 +62,7 @@ export function useUser(): UseUserReturn {
 
         if (currentUser) {
           try {
-            const { data } = await supabase
+            const { data } = await supabase!
               .from('profiles')
               .select('*')
               .eq('id', currentUser.id)
@@ -81,7 +87,7 @@ export function useUser(): UseUserReturn {
 
   const signOut = useCallback(async () => {
     const supabase = createClient();
-    await supabase.auth.signOut();
+    if (supabase) await supabase.auth.signOut();
     setUser(null);
     setProfile(null);
   }, []);

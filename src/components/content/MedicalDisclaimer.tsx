@@ -10,7 +10,7 @@ export function MedicalDisclaimer() {
             Medical Disclaimer
           </h3>
           <p className="text-xs text-on-surface-variant leading-relaxed">
-            The information provided by Drift Sleep is for educational and
+            The information provided by Sleep Stack is for educational and
             informational purposes only and is not intended as medical advice. It
             is not a substitute for professional medical advice, diagnosis, or
             treatment. Always seek the advice of your physician or other

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Calculate the best sleep schedule for night shifts, rotating shifts, and split sleep strategies.',
     url: '/calculators/shift-worker',
-    siteName: 'Drift Sleep',
+    siteName: 'Sleep Stack',
   },
 };
 

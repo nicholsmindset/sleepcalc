@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Find out exactly when to stop drinking coffee, tea, and energy drinks based on your bedtime.',
     url: '/calculators/caffeine-cutoff',
-    siteName: 'Drift Sleep',
+    siteName: 'Sleep Stack',
   },
 };
 
@@ -329,7 +329,7 @@ export default function CaffeineCutoffPage() {
                   Everyone metabolizes caffeine differently. Pay attention to
                   patterns in your sleep quality relative to your caffeine intake.
                   If you connect a wearable device to{' '}
-                  <strong className="text-[#46eae5]">Drift Sleep Pro</strong>,
+                  <strong className="text-[#46eae5]">Sleep Stack Pro</strong>,
                   you can correlate your actual sleep stages, deep sleep duration,
                   and sleep efficiency with your daily caffeine log for data-driven
                   optimization.

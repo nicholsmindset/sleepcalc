@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server';
 import { CoachClient } from './coach-client';
 
 export const metadata = {
-  title: 'AI Sleep Coach — Drift Sleep',
+  title: 'AI Sleep Coach — Sleep Stack',
   description: 'Get personalized AI-powered sleep coaching based on your real data.',
 };
 

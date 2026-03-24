@@ -23,6 +23,10 @@ export function useSleepData(days: number = 30): UseSleepDataReturn {
 
     try {
       const supabase = createClient();
+      if (!supabase) {
+        setLoading(false);
+        return;
+      }
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
         setLoading(false);

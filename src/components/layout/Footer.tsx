@@ -19,8 +19,6 @@ const resourceLinks = [
 
 const companyLinks = [
   { label: "About", href: "/about" },
-  { label: "Dashboard", href: "/dashboard" },
-  { label: "Pricing", href: "/signup" },
 ];
 
 const legalLinks = [
@@ -36,7 +34,7 @@ export function Footer() {
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
           <div className="text-xl font-bold text-on-surface font-headline mb-4">
-            Drift Sleep
+            Sleep Stack
           </div>
           <p className="text-sm text-on-surface-variant leading-relaxed font-body max-w-xs">
             Built for better sleep. Science-backed tools to help you wake up
@@ -107,7 +105,7 @@ export function Footer() {
 
       <div className="mt-12 pt-8 border-t border-outline-variant/10 text-center max-w-7xl mx-auto">
         <p className="text-sm text-on-surface-variant">
-          &copy; {new Date().getFullYear()} Drift Sleep. Built for better sleep.
+          &copy; {new Date().getFullYear()} Sleep Stack. Built for better sleep.
         </p>
       </div>
     </footer>

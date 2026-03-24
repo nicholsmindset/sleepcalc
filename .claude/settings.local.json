@@ -66,7 +66,15 @@
       "Bash(vercel --version)",
       "Bash(vercel whoami:*)",
       "Bash(vercel --prod)",
-      "Bash(vercel --prod --yes)"
+      "Bash(vercel --prod --yes)",
+      "Bash(ls /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(auth\\\\\\)/)",
+      "mcp__playwright-mcp__browser_navigate",
+      "Bash(curl -sI http://sleepstackapp.com)",
+      "Bash(vercel domains:*)",
+      "Bash(vercel project:*)",
+      "Bash(grep -rn \"signup\\\\|Connect your sleep\\\\|Drift Sleep\" /Users/robertnichols/Desktop/sleepcalc/src --include=*.tsx --include=*.ts --include=*.mdx)",
+      "Bash(find src:*)",
+      "Bash(grep -rn \"Drift Sleep\\\\|sleepcyclecalc\\\\.com\\\\|href.*signup\" src --include=*.tsx --include=*.ts)"
     ],
     "additionalDirectories": [
       "/Users/robertnichols/Desktop/sleepcalc/src/app/(marketing)/sleep-time/[slug]",

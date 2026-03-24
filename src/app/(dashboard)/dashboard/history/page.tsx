@@ -3,7 +3,7 @@ import { HistoryClient } from './history-client';
 import type { SleepSession } from '@/lib/supabase/types';
 
 export const metadata = {
-  title: 'Sleep History — Drift Sleep',
+  title: 'Sleep History — Sleep Stack',
   description: 'Browse your complete sleep history timeline.',
 };
 

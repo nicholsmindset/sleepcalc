@@ -12,7 +12,7 @@ export default function AuthLayout({
         href="/"
         className="text-3xl font-bold tracking-tighter text-on-surface font-headline mb-8"
       >
-        Drift Sleep
+        Sleep Stack
       </Link>
 
       {/* Auth card */}

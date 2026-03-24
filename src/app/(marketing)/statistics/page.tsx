@@ -8,18 +8,18 @@ import { RelatedTools } from "@/components/content/RelatedTools";
 /* ─── Metadata ─── */
 
 export const metadata: Metadata = {
-  title: "100+ Sleep Statistics for 2026 — Drift Sleep",
+  title: "100+ Sleep Statistics for 2026 — Sleep Stack",
   description:
     "Comprehensive collection of 100+ sleep statistics for 2026 backed by research from the CDC, NIH, WHO, and National Sleep Foundation. Sleep deprivation data, disorder prevalence, economic impact, and more.",
   alternates: {
     canonical: "/statistics",
   },
   openGraph: {
-    title: "100+ Sleep Statistics for 2026 — Drift Sleep",
+    title: "100+ Sleep Statistics for 2026 — Sleep Stack",
     description:
       "100+ sleep statistics for 2026 backed by the CDC, NIH, WHO, and National Sleep Foundation. Deprivation data, disorder prevalence, and economic impact.",
     url: "/statistics",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -785,7 +785,7 @@ function StatSection({
 
 export default function StatisticsPage() {
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
 
   /* Calculate running stat index for numbered display */
   let runningIndex = 1;
@@ -807,12 +807,12 @@ export default function StatisticsPage() {
             "Comprehensive collection of 100+ sleep statistics for 2026 backed by research from the CDC, NIH, WHO, and National Sleep Foundation.",
           author: {
             "@type": "Organization",
-            name: "Drift Sleep",
+            name: "Sleep Stack",
             url: siteUrl,
           },
           publisher: {
             "@type": "Organization",
-            name: "Drift Sleep",
+            name: "Sleep Stack",
             logo: {
               "@type": "ImageObject",
               url: `${siteUrl}/icons/logo.png`,

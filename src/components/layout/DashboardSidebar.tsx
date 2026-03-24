@@ -64,7 +64,7 @@ export function DashboardSidebar() {
         {/* Footer */}
         <div className="p-4 border-t border-outline-variant/15">
           <p className="text-xs text-on-surface-variant/50 text-center">
-            Drift Sleep Dashboard
+            Sleep Stack Dashboard
           </p>
         </div>
       </aside>

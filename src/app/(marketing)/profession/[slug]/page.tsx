@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: entry.title,
       description: entry.metaDescription,
       url: `/profession/${slug}`,
-      siteName: "Drift Sleep",
+      siteName: "Sleep Stack",
     },
   };
 }
@@ -129,7 +129,7 @@ export default async function ProfessionPage({ params }: PageProps) {
     .map((s) => entries.find((e) => e.slug === s))
     .filter(Boolean) as ProfessionEntry[];
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
 
   return (
     <article className="mx-auto max-w-4xl px-4 pb-20 pt-8">

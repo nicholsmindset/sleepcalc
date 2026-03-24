@@ -3,7 +3,7 @@ import { TrendsClient } from './trends-client';
 import type { SleepSession } from '@/lib/supabase/types';
 
 export const metadata = {
-  title: 'Sleep Trends — Drift Sleep',
+  title: 'Sleep Trends — Sleep Stack',
   description: 'Analyze your sleep trends over time.',
 };
 

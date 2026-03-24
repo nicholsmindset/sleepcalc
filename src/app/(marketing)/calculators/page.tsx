@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
       "Free, science-backed sleep calculators: bedtime, sleep debt, nap optimizer, caffeine cutoff, shift worker, baby sleep, and chronotype quiz.",
     url: "/calculators",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -86,14 +86,14 @@ export default function CalculatorsPage() {
       <SchemaMarkup
         type="ItemList"
         data={{
-          name: "Drift Sleep Calculators",
+          name: "Sleep Stack Calculators",
           description:
             "Free, science-backed sleep calculators and tools for better sleep.",
           itemListElement: calculators.map((calc, i) => ({
             "@type": "ListItem",
             position: i + 1,
             name: calc.name,
-            url: `https://sleepcyclecalc.com${calc.href}`,
+            url: `https://sleepstackapp.com${calc.href}`,
           })),
         }}
       />

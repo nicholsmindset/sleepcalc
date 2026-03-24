@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Discover your sleep personality with this 10-question chronotype quiz. Find your ideal bedtime and peak productivity hours.",
     url: "/calculators/chronotype-quiz",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -62,7 +62,7 @@ export default function ChronotypeQuizPage() {
       <SchemaMarkup
         type="WebApplication"
         data={{
-          name: "Drift Sleep Chronotype Quiz",
+          name: "Sleep Stack Chronotype Quiz",
           applicationCategory: "HealthApplication",
           operatingSystem: "Web",
           description: metadata.description,

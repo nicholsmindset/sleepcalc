@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       'Calculate the ideal nap duration and timing. Choose between power naps, recovery naps, and full-cycle naps.',
     url: '/calculators/nap-calculator',
-    siteName: 'Drift Sleep',
+    siteName: 'Sleep Stack',
   },
 };
 
@@ -62,7 +62,7 @@ export default function NapCalculatorPage() {
       <SchemaMarkup
         type="WebApplication"
         data={{
-          name: 'Drift Sleep Nap Calculator',
+          name: 'Sleep Stack Nap Calculator',
           applicationCategory: 'HealthApplication',
           operatingSystem: 'Web',
           description: metadata.description,

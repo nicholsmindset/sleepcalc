@@ -156,7 +156,7 @@ function OnboardingCard() {
         </div>
         <div>
           <h2 className="text-lg font-bold text-on-surface font-headline mb-1">
-            Welcome to Drift Sleep
+            Welcome to Sleep Stack
           </h2>
           <p className="text-sm text-on-surface-variant">
             Get started in 3 steps to unlock your personal sleep insights.

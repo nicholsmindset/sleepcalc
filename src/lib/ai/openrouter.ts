@@ -47,8 +47,8 @@ export async function callOpenRouter(
         headers: {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${apiKey}`,
-          'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://sleepcyclecalc.com',
-          'X-Title': 'Drift Sleep AI Coach',
+          'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL || 'https://sleepstackapp.com',
+          'X-Title': 'Sleep Stack AI Coach',
         },
         body: JSON.stringify({
           model,

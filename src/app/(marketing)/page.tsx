@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Calculate the best time to go to sleep and wake up based on sleep cycles. Find your ideal bedtime and wake-up time with our free sleep cycle calculator.",
     url: "/",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
     type: "website",
   },
 };

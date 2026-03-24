@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Age-based sleep recommendations for babies, toddlers, and children. Recommended hours, nap schedules, and wake windows.",
     url: "/calculators/baby-sleep",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
   },
 };
 
@@ -62,7 +62,7 @@ export default function BabySleepPage() {
       <SchemaMarkup
         type="WebApplication"
         data={{
-          name: "Drift Sleep Baby Sleep Calculator",
+          name: "Sleep Stack Baby Sleep Calculator",
           applicationCategory: "HealthApplication",
           operatingSystem: "Web",
           description: metadata.description,

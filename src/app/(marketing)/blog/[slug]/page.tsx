@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!post) return { title: 'Post Not Found' };
 
   return {
-    title: `${post.title} — Drift Sleep Blog`,
+    title: `${post.title} — Sleep Stack Blog`,
     description: post.description,
     openGraph: {
       title: post.title,
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
     },
     alternates: {
-      canonical: `https://sleepcyclecalc.com/blog/${slug}`,
+      canonical: `https://sleepstackapp.com/blog/${slug}`,
     },
   };
 }
@@ -60,8 +60,8 @@ export default async function BlogPostPage({ params }: PageProps) {
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Drift Sleep',
-            url: 'https://sleepcyclecalc.com',
+            name: 'Sleep Stack',
+            url: 'https://sleepstackapp.com',
           },
         }}
       />
