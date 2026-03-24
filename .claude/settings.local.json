@@ -74,7 +74,12 @@
       "Bash(vercel project:*)",
       "Bash(grep -rn \"signup\\\\|Connect your sleep\\\\|Drift Sleep\" /Users/robertnichols/Desktop/sleepcalc/src --include=*.tsx --include=*.ts --include=*.mdx)",
       "Bash(find src:*)",
-      "Bash(grep -rn \"Drift Sleep\\\\|sleepcyclecalc\\\\.com\\\\|href.*signup\" src --include=*.tsx --include=*.ts)"
+      "Bash(grep -rn \"Drift Sleep\\\\|sleepcyclecalc\\\\.com\\\\|href.*signup\" src --include=*.tsx --include=*.ts)",
+      "Bash(vercel deploy:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://sleepcalc-chi.vercel.app/googledeada25508a8dbb9.html)",
+      "Bash(curl -s https://sleepcalc-chi.vercel.app)",
+      "Bash(vercel alias:*)",
+      "Bash(grep -n \"AdSlot\\\\|advertisement\" src/app/\\\\\\(marketing\\\\\\)/page.tsx src/app/\\\\\\(marketing\\\\\\)/sleep-time/[slug]/page.tsx src/components/layout/AdSlot.tsx)"
     ],
     "additionalDirectories": [
       "/Users/robertnichols/Desktop/sleepcalc/src/app/(marketing)/sleep-time/[slug]",

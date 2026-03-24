@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
-import { AdSlot } from '@/components/layout/AdSlot';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -104,11 +103,6 @@ export default function CaffeineCutoffPage() {
 
           {/* Calculator */}
           <CaffeineCalculator />
-
-          {/* Ad slot below results */}
-          <div className="mt-10">
-            <AdSlot slot="caffeine-below-calc" format="leaderboard" />
-          </div>
 
           {/* Educational content */}
           <article className="py-12 max-w-3xl mx-auto">
@@ -347,9 +341,6 @@ export default function CaffeineCutoffPage() {
               </div>
             </section>
           </article>
-
-          {/* Ad slot in content */}
-          <AdSlot slot="caffeine-mid-content" format="rectangle" className="mb-8" />
 
           {/* FAQ */}
           <div className="max-w-3xl mx-auto">

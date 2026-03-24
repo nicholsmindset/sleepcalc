@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
@@ -92,9 +91,6 @@ export default function BabySleepPage() {
 
       {/* Calculator */}
       <BabySleepCalculator />
-
-      {/* Ad slot below calculator */}
-      <AdSlot slot="baby-sleep-below-calc" format="leaderboard" className="my-8" />
 
       {/* Educational Content */}
       <section className="py-12 max-w-none">

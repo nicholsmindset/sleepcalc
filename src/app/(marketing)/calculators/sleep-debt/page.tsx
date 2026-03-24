@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import SleepDebtCalculator from '@/components/calculators/SleepDebtCalculator';
-import { AdSlot } from '@/components/layout/AdSlot';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -92,11 +91,6 @@ export default function SleepDebtPage() {
 
       {/* Calculator */}
       <SleepDebtCalculator />
-
-      {/* Ad placement — below calculator results */}
-      <div className="mt-10">
-        <AdSlot slot="sleep-debt-below-calc" format="leaderboard" />
-      </div>
 
       {/* Educational Content */}
       <section className="py-12 max-w-3xl mx-auto">

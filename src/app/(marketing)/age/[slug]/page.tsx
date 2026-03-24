@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
@@ -245,9 +244,6 @@ export default async function AgePage({ params }: PageProps) {
           />
         </div>
       </div>
-
-      {/* Ad Slot */}
-      <AdSlot slot="age-leaderboard" format="leaderboard" className="mb-10" />
 
       {/* Content Sections */}
       <section className="py-8 max-w-3xl mx-auto">

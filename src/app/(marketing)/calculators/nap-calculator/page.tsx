@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { AdSlot } from '@/components/layout/AdSlot';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -105,9 +104,6 @@ export default function NapCalculatorPage() {
           <section className="mb-12">
             <NapCalculator />
           </section>
-
-          {/* Ad slot */}
-          <AdSlot slot="nap-calc-below" format="leaderboard" className="mb-12" />
 
           {/* Educational content */}
           <section className="py-12 max-w-3xl mx-auto">

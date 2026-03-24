@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
-import { AdSlot } from "@/components/layout/AdSlot";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
@@ -92,9 +91,6 @@ export default function ChronotypeQuizPage() {
 
       {/* Quiz */}
       <ChronotypeQuiz />
-
-      {/* Ad slot below quiz */}
-      <AdSlot slot="chronotype-below-quiz" format="leaderboard" className="my-8" />
 
       {/* Educational Content */}
       <section className="py-12">

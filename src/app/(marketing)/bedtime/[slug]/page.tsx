@@ -7,7 +7,6 @@ import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
-import { AdSlot } from "@/components/layout/AdSlot";
 import BedtimeCalculator from "@/components/calculators/BedtimeCalculator";
 import sleepTimesData from "@/content/data/sleep-times.json";
 
@@ -254,13 +253,6 @@ export default async function BedtimePage({
             <BedtimeCalculator />
           </section>
 
-          {/* Ad slot below calculator */}
-          <AdSlot
-            slot="bedtime-below-calc"
-            format="leaderboard"
-            className="my-8 max-w-3xl mx-auto"
-          />
-
           {/* Content: Why This Time */}
           <section className="py-8 max-w-3xl mx-auto">
             <h2 className="font-headline text-2xl md:text-3xl font-bold mb-6 text-on-surface">
@@ -324,13 +316,6 @@ export default async function BedtimePage({
               </div>
             </section>
           )}
-
-          {/* Ad slot mid-page */}
-          <AdSlot
-            slot="bedtime-mid"
-            format="rectangle"
-            className="my-8 flex justify-center"
-          />
 
           {/* FAQ */}
           {entry.faq.length > 0 && (

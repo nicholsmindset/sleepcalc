@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { AdSlot } from '@/components/layout/AdSlot';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -110,9 +109,6 @@ export default function ShiftWorkerPage() {
 
           {/* Calculator */}
           <ShiftWorkerCalculator />
-
-          {/* Ad slot below calculator */}
-          <AdSlot slot="shift-worker-below-calc" format="leaderboard" className="my-8 max-w-3xl mx-auto" />
 
           {/* Educational content */}
           <div className="max-w-3xl mx-auto">
@@ -425,9 +421,6 @@ export default function ShiftWorkerPage() {
                 </p>
               </div>
             </section>
-
-            {/* Ad slot mid-page */}
-            <AdSlot slot="shift-worker-mid" format="rectangle" className="my-8 flex justify-center" />
 
             {/* FAQ */}
             <FAQ items={faqItems} />

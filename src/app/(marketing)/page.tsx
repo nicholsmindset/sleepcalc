@@ -8,7 +8,6 @@ import {
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { FAQ } from "@/components/content/FAQ";
-import { AdSlot } from "@/components/layout/AdSlot";
 import BedtimeCalculator from "@/components/calculators/BedtimeCalculator";
 
 export const metadata: Metadata = {
@@ -118,9 +117,6 @@ export default function HomePage() {
             <BedtimeCalculator />
           </section>
 
-          {/* Ad slot below calculator */}
-          <AdSlot slot="home-below-calc" format="leaderboard" className="my-8 max-w-3xl mx-auto" />
-
           {/* How Sleep Cycles Work */}
           <section className="py-12 max-w-3xl mx-auto">
             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6 text-on-surface">
@@ -153,9 +149,6 @@ export default function HomePage() {
               </p>
             </div>
           </section>
-
-          {/* Ad slot mid-page */}
-          <AdSlot slot="home-mid" format="rectangle" className="my-8 flex justify-center" />
 
           {/* FAQ */}
           <div className="max-w-3xl mx-auto">
