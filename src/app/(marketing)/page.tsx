@@ -14,14 +14,14 @@ import BedtimeCalculator from "@/components/calculators/BedtimeCalculator";
 export const metadata: Metadata = {
   title: "Sleep Calculator — Find Your Ideal Bedtime & Wake Up Time",
   description:
-    "Calculate the best time to go to sleep and wake up based on sleep cycles. Connect your Oura, Fitbit, or WHOOP for personalized recommendations using your real sleep data.",
+    "Calculate the best time to go to sleep and wake up based on sleep cycles. Find your ideal bedtime and wake-up time with our free sleep cycle calculator.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Sleep Calculator — Find Your Ideal Bedtime & Wake Up Time",
     description:
-      "Calculate the best time to go to sleep and wake up based on sleep cycles. Connect your Oura, Fitbit, or WHOOP for personalized recommendations.",
+      "Calculate the best time to go to sleep and wake up based on sleep cycles. Find your ideal bedtime and wake-up time with our free sleep cycle calculator.",
     url: "/",
     siteName: "Drift Sleep",
     type: "website",
@@ -60,9 +60,9 @@ const faqItems = [
       "Yes. The calculator includes a configurable sleep latency — the time it takes you to actually fall asleep after getting into bed. The default is 15 minutes, but you can adjust it from 5 to 30 minutes using the slider to match your experience.",
   },
   {
-    question: "Can I use this calculator with my sleep tracker?",
+    question: "How accurate is the 90-minute cycle estimate?",
     answer:
-      "Absolutely. With a free account, you can connect one device (Oura, Fitbit, WHOOP, or Apple Health). Drift Sleep Pro uses your real sleep stage data to calculate your personal cycle length — which may differ from the 90-minute average — giving you more accurate bedtime recommendations.",
+      "The 90-minute average is well-supported by sleep research and works well for most people. Individual cycle lengths typically range from 80 to 110 minutes. If you find that the recommended wake times don't feel right for you, try adjusting by 10 to 15 minutes in either direction to find your personal sweet spot.",
   },
   {
     question: "What happens if I wake up in the middle of a sleep cycle?",
@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: "How does the 90-minute sleep cycle work?",
     answer:
-      "The average sleep cycle lasts about 90 minutes and progresses through four stages: light sleep (N1 and N2), deep sleep (N3), and REM sleep. Our calculator uses this 90-minute rhythm to find bedtimes and wake times that align with complete cycles. Some people have cycles as short as 80 minutes or as long as 120 minutes — connecting a wearable device can help calibrate your personal cycle length.",
+      "The average sleep cycle lasts about 90 minutes and progresses through four stages: light sleep (N1 and N2), deep sleep (N3), and REM sleep. Our calculator uses this 90-minute rhythm to find bedtimes and wake times that align with complete cycles. Some people have cycles as short as 80 minutes or as long as 120 minutes — if the standard times don't feel right, try adjusting your wake-up time in small increments.",
   },
   {
     question: "Can I calculate sleep needs by age?",
@@ -106,10 +106,10 @@ export default function HomePage() {
               Wake Refreshed.
             </h1>
             <p className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              Calculate your ideal bedtime using sleep cycle science. Connect
-              your wearable for personalized insights based on{" "}
+              Calculate your ideal bedtime using sleep cycle science. Wake up
+              refreshed by timing your sleep to complete{" "}
               <span className="text-[#46eae5] font-semibold">
-                your actual data
+                full 90-minute cycles
               </span>
               .
             </p>
@@ -120,27 +120,6 @@ export default function HomePage() {
 
           {/* Ad slot below calculator */}
           <AdSlot slot="home-below-calc" format="leaderboard" className="my-8 max-w-3xl mx-auto" />
-
-          {/* Social proof */}
-          <section className="text-center py-16">
-            <p className="text-[10px] uppercase tracking-widest text-on-surface-variant mb-8 font-label">
-              Works with your favorite sleep trackers
-            </p>
-            <div className="flex flex-wrap justify-center gap-12 opacity-40 hover:opacity-100 transition-all duration-500">
-              <div className="font-headline font-bold text-2xl text-on-surface">
-                Oura
-              </div>
-              <div className="font-headline font-bold text-2xl text-on-surface">
-                Fitbit
-              </div>
-              <div className="font-headline font-bold text-2xl text-on-surface">
-                WHOOP
-              </div>
-              <div className="font-headline font-bold text-2xl text-on-surface">
-                Apple Health
-              </div>
-            </div>
-          </section>
 
           {/* How Sleep Cycles Work */}
           <section className="py-12 max-w-3xl mx-auto">
@@ -168,61 +147,10 @@ export default function HomePage() {
               </p>
               <p>
                 The standard 90-minute cycle is an average. Your personal cycle
-                length may be anywhere from 80 to 110 minutes.{" "}
-                <strong className="text-on-surface">
-                  Drift Sleep Pro uses your real wearable data to calculate your
-                  actual cycle length
-                </strong>{" "}
-                &mdash; so your bedtime recommendations are uniquely yours, not
-                a population average.
+                length may be anywhere from 80 to 110 minutes, which is why
+                aligning your wake time to the end of a cycle makes such a
+                noticeable difference in how you feel each morning.
               </p>
-            </div>
-          </section>
-
-          {/* Features */}
-          <section className="py-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-8 text-on-surface text-center">
-              Why Drift Sleep?
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  title: "Real Device Data",
-                  desc: "Connect your Oura, Fitbit, or WHOOP. We use your actual sleep stages, not generic estimates.",
-                  color: "#6c5ce7",
-                },
-                {
-                  title: "AI Sleep Coach",
-                  desc: "Get personalized coaching based on your sleep patterns, trends, and biometric data.",
-                  color: "#46eae5",
-                },
-                {
-                  title: "Personal Cycles",
-                  desc: "Discover your real sleep cycle length. Most people aren't exactly 90 minutes.",
-                  color: "#c6bfff",
-                },
-              ].map((feature) => (
-                <div
-                  key={feature.title}
-                  className="glass-card rounded-2xl p-6"
-                >
-                  <div
-                    className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
-                    style={{ backgroundColor: `${feature.color}20` }}
-                  >
-                    <div
-                      className="w-3 h-3 rounded-full"
-                      style={{ backgroundColor: feature.color }}
-                    />
-                  </div>
-                  <h3 className="font-headline font-bold text-on-surface mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
-                    {feature.desc}
-                  </p>
-                </div>
-              ))}
             </div>
           </section>
 

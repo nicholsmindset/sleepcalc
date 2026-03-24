@@ -5,7 +5,7 @@ import ageRecs from '@/content/data/age-recs.json';
 import professions from '@/content/data/professions.json';
 import babySleepSchedules from '@/content/data/baby-sleep-schedules.json';
 
-const BASE_URL = 'https://sleepcyclecalc.com';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') || 'https://sleepstackapp.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date().toISOString();

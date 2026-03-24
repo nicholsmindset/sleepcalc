@@ -13,15 +13,7 @@ export default async function HistoryPage() {
 
   if (!user) return null;
 
-  // Check subscription for history limit
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('subscription_tier')
-    .eq('id', user.id)
-    .single();
-
-  const isPro = profile?.subscription_tier === 'pro';
-  const daysBack = isPro ? 90 : 7;
+  const daysBack = 90;
 
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - daysBack);
@@ -36,7 +28,6 @@ export default async function HistoryPage() {
   return (
     <HistoryClient
       sessions={(sessions as SleepSession[]) ?? []}
-      isPro={isPro}
     />
   );
 }

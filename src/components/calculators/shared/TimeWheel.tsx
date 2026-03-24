@@ -10,6 +10,15 @@ interface TimeWheelProps {
   className?: string;
 }
 
+/** Deterministic 12-hour time format to avoid SSR/client mismatch. */
+function formatTime12(date: Date): string {
+  let h = date.getHours();
+  const m = date.getMinutes();
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  h = h % 12 || 12;
+  return `${h}:${m.toString().padStart(2, '0')} ${ampm}`;
+}
+
 const SIZE = 200;
 const CENTER = SIZE / 2;
 const OUTER_RADIUS = 88;
@@ -36,8 +45,8 @@ function pointOnCircle(
 ): { x: number; y: number } {
   const rad = degToRad(angleDeg);
   return {
-    x: CENTER + radius * Math.cos(rad),
-    y: CENTER + radius * Math.sin(rad),
+    x: Math.round((CENTER + radius * Math.cos(rad)) * 100) / 100,
+    y: Math.round((CENTER + radius * Math.sin(rad)) * 100) / 100,
   };
 }
 
@@ -118,8 +127,8 @@ export default function TimeWheel({
         className="w-full h-full max-w-[200px] max-h-[200px]"
         role="img"
         aria-label={
-          duration != null
-            ? `Sleep from ${bedtime?.toLocaleTimeString()} to ${wakeTime?.toLocaleTimeString()}, ${formatDuration(duration)}`
+          duration != null && bedtime && wakeTime
+            ? `Sleep from ${formatTime12(bedtime)} to ${formatTime12(wakeTime)}, ${formatDuration(duration)}`
             : 'Sleep time wheel'
         }
       >

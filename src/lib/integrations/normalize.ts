@@ -9,8 +9,6 @@ import type { SleepSession } from '@/lib/supabase/types';
 // Types
 // ---------------------------------------------------------------------------
 
-export type Provider = 'oura' | 'fitbit' | 'whoop' | 'withings' | 'garmin';
-
 export interface HypnogramEntry {
   timestamp: string; // ISO 8601
   stage: 'deep' | 'light' | 'rem' | 'awake';
@@ -18,7 +16,7 @@ export interface HypnogramEntry {
 }
 
 export interface NormalizedSleepSession {
-  source: Provider | 'apple_health' | 'manual';
+  source: 'oura' | 'fitbit' | 'whoop' | 'withings' | 'garmin' | 'apple_health' | 'manual';
   sourceSessionId: string | null;
   bedtimeStart: string; // ISO 8601
   bedtimeEnd: string;
@@ -45,42 +43,6 @@ export interface NormalizedSleepSession {
   hypnogram: HypnogramEntry[] | null;
   rawData: Record<string, unknown> | null;
 }
-
-// ---------------------------------------------------------------------------
-// Provider OAuth configs
-// ---------------------------------------------------------------------------
-
-export interface ProviderOAuthConfig {
-  authUrl: string;
-  tokenUrl: string;
-  scopes: string[];
-  clientIdEnv: string;
-  clientSecretEnv: string;
-}
-
-export const PROVIDER_CONFIGS: Record<'oura' | 'fitbit' | 'whoop', ProviderOAuthConfig> = {
-  oura: {
-    authUrl: 'https://cloud.ouraring.com/oauth/authorize',
-    tokenUrl: 'https://api.ouraring.com/oauth/token',
-    scopes: ['daily', 'sleep', 'personal'],
-    clientIdEnv: 'OURA_CLIENT_ID',
-    clientSecretEnv: 'OURA_CLIENT_SECRET',
-  },
-  fitbit: {
-    authUrl: 'https://www.fitbit.com/oauth2/authorize',
-    tokenUrl: 'https://api.fitbit.com/oauth2/token',
-    scopes: ['sleep', 'profile'],
-    clientIdEnv: 'FITBIT_CLIENT_ID',
-    clientSecretEnv: 'FITBIT_CLIENT_SECRET',
-  },
-  whoop: {
-    authUrl: 'https://api.prod.whoop.com/oauth/oauth2/auth',
-    tokenUrl: 'https://api.prod.whoop.com/oauth/oauth2/token',
-    scopes: ['read:sleep', 'read:recovery', 'read:profile'],
-    clientIdEnv: 'WHOOP_CLIENT_ID',
-    clientSecretEnv: 'WHOOP_CLIENT_SECRET',
-  },
-};
 
 // ---------------------------------------------------------------------------
 // Utility functions

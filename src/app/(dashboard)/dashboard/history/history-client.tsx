@@ -2,17 +2,16 @@
 
 import { useState } from 'react';
 import { format } from 'date-fns';
-import { Clock, Moon, Zap, TrendingUp, Sparkles } from 'lucide-react';
+import { Clock, Moon, Zap, TrendingUp } from 'lucide-react';
 import { SleepScoreRing } from '@/components/dashboard/SleepScoreRing';
 import { Hypnogram } from '@/components/dashboard/Hypnogram';
 import type { SleepSession } from '@/lib/supabase/types';
 
 interface HistoryClientProps {
   sessions: SleepSession[];
-  isPro: boolean;
 }
 
-export function HistoryClient({ sessions, isPro }: HistoryClientProps) {
+export function HistoryClient({ sessions }: HistoryClientProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const nights = sessions.filter((s) => !s.is_nap);
@@ -25,22 +24,9 @@ export function HistoryClient({ sessions, isPro }: HistoryClientProps) {
           <h1 className="text-2xl font-bold text-on-surface font-headline">Sleep History</h1>
         </div>
         <span className="text-sm text-on-surface-variant">
-          {nights.length} nights ({isPro ? '90' : '7'} day window)
+          {nights.length} nights (90 day window)
         </span>
       </div>
-
-      {!isPro && (
-        <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#f9ca24]/10 border border-[#f9ca24]/20">
-          <Sparkles className="w-5 h-5 text-[#f9ca24] shrink-0" />
-          <p className="text-sm text-on-surface-variant">
-            Free accounts see 7 days of history.{' '}
-            <a href="/pricing" className="text-[#f9ca24] font-medium hover:underline">
-              Upgrade to Pro
-            </a>{' '}
-            for 90 days.
-          </p>
-        </div>
-      )}
 
       {nights.length === 0 ? (
         <div className="glass-card rounded-2xl p-12 text-center">

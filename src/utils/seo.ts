@@ -10,10 +10,10 @@
  */
 
 /** Site name used in title tags and schema markup */
-export const SITE_NAME = 'Drift Sleep';
+export const SITE_NAME = 'Sleep Stack';
 
 /** Fallback base URL if the environment variable is not set */
-const DEFAULT_SITE_URL = 'https://sleepcyclecalc.com';
+const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
 
 /**
  * Get the configured site URL from environment or fallback.
@@ -45,7 +45,7 @@ function getSiteUrl(): string {
 export function generateTitle(page: string): string {
   const trimmed = page.trim();
   if (!trimmed || trimmed.toLowerCase() === SITE_NAME.toLowerCase()) {
-    return `${SITE_NAME} - Smart Sleep Cycle Calculator`;
+    return `${SITE_NAME} — Free Sleep Calculators & Tools`;
   }
   return `${trimmed} | ${SITE_NAME}`;
 }
@@ -72,7 +72,7 @@ export function generateDescription(page: string, context?: string): string {
   const trimmed = page.trim();
 
   if (!trimmed) {
-    return `${SITE_NAME} helps you calculate the perfect bedtime and wake-up time based on sleep cycles. Connect your wearable for personalized insights.`;
+    return `${SITE_NAME} offers free sleep calculators to find your ideal bedtime and wake-up time based on sleep cycles. Science-backed tools for better rest.`;
   }
 
   const base = `Calculate your optimal bedtime and wake-up time with ${SITE_NAME}'s ${trimmed}.`;

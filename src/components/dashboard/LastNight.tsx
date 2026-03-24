@@ -55,11 +55,28 @@ export function LastNight({ session }: LastNightProps) {
   if (!session) {
     return (
       <div className="glass-card rounded-2xl p-8 text-center">
-        <Moon className="w-10 h-10 text-on-surface-variant/30 mx-auto mb-3" />
+        <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 text-3xl">
+          🌙
+        </div>
         <h3 className="text-lg font-bold text-on-surface font-headline mb-2">No Sleep Data Yet</h3>
-        <p className="text-sm text-on-surface-variant max-w-sm mx-auto">
-          Connect a wearable device or import Apple Health data to see your sleep analysis here.
+        <p className="text-sm text-on-surface-variant max-w-sm mx-auto mb-5">
+          Connect a wearable device or import Apple Health data to see your nightly sleep breakdown here.
         </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href="/dashboard/devices"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+          >
+            <Moon className="w-4 h-4" />
+            Connect a Device
+          </a>
+          <a
+            href="/dashboard/import"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors"
+          >
+            Import Apple Health
+          </a>
+        </div>
       </div>
     );
   }

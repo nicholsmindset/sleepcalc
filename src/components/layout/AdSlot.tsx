@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useSubscription } from "@/hooks/use-subscription";
 import { cn } from "@/lib/utils";
 
 const AD_DIMENSIONS = {
@@ -19,12 +18,11 @@ interface AdSlotProps {
 }
 
 export function AdSlot({ slot, format, className }: AdSlotProps) {
-  const { isPro } = useSubscription();
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (isPro || !ref.current) return;
+    if (!ref.current) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -38,9 +36,7 @@ export function AdSlot({ slot, format, className }: AdSlotProps) {
 
     observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [isPro]);
-
-  if (isPro) return null;
+  }, []);
 
   const { width, height } = AD_DIMENSIONS[format];
 

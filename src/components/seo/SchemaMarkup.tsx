@@ -31,15 +31,15 @@ export function WebSiteSchema() {
     <SchemaMarkup
       type="WebSite"
       data={{
-        name: "Drift Sleep",
-        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com",
+        name: "Sleep Stack",
+        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
         description:
           "Science-backed sleep calculator with real wearable device integration and AI-powered sleep coaching.",
         potentialAction: {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com"}/blog?q={search_term_string}`,
+            urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"}/blog?q={search_term_string}`,
           },
           "query-input": "required name=search_term_string",
         },
@@ -53,9 +53,9 @@ export function OrganizationSchema() {
     <SchemaMarkup
       type="Organization"
       data={{
-        name: "Drift Sleep",
-        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com",
-        logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com"}/icons/logo.png`,
+        name: "Sleep Stack",
+        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
+        logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"}/icons/logo.png`,
       }}
     />
   );
@@ -66,7 +66,7 @@ export function WebApplicationSchema() {
     <SchemaMarkup
       type="WebApplication"
       data={{
-        name: "Drift Sleep Calculator",
+        name: "Sleep Stack Calculator",
         applicationCategory: "HealthApplication",
         operatingSystem: "Web",
         offers: {

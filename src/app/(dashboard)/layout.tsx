@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { DashboardSidebar } from '@/components/layout/DashboardSidebar';
+import { Header } from '@/components/layout/Header';
 
 export const metadata: Metadata = {
   title: {
@@ -24,11 +25,14 @@ export default async function DashboardLayout({
   }
 
   return (
-    <div className="flex min-h-screen pt-16">
-      <DashboardSidebar />
-      <main className="flex-1 min-w-0 p-4 md:p-6 lg:p-8">
-        {children}
-      </main>
-    </div>
+    <>
+      <Header />
+      <div className="flex min-h-screen pt-16">
+        <DashboardSidebar />
+        <main className="flex-1 min-w-0 p-4 md:p-6 lg:p-8 pb-20 lg:pb-8">
+          {children}
+        </main>
+      </div>
+    </>
   );
 }

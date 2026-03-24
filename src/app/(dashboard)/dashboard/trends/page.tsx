@@ -13,14 +13,7 @@ export default async function TrendsPage() {
 
   if (!user) return null;
 
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('subscription_tier')
-    .eq('id', user.id)
-    .single();
-
-  const isPro = profile?.subscription_tier === 'pro';
-  const daysBack = isPro ? 90 : 30;
+  const daysBack = 90;
 
   const cutoff = new Date();
   cutoff.setDate(cutoff.getDate() - daysBack);

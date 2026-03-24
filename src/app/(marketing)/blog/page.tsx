@@ -6,11 +6,14 @@ import { BookOpen, Calendar, Clock } from 'lucide-react';
 import { BlogListClient } from './blog-list-client';
 
 export const metadata: Metadata = {
-  title: 'Sleep Science Blog — Drift Sleep',
+  title: 'Sleep Science Blog — Sleep Stack',
   description:
-    'Evidence-based articles on sleep science, circadian rhythms, and practical tips to improve your sleep quality. Backed by research and real wearable data.',
+    'Evidence-based articles on sleep science, circadian rhythms, and practical tips to improve your sleep quality. Backed by peer-reviewed research.',
+  alternates: {
+    canonical: '/blog',
+  },
   openGraph: {
-    title: 'Sleep Science Blog — Drift Sleep',
+    title: 'Sleep Science Blog — Sleep Stack',
     description: 'Evidence-based articles on sleep science, circadian rhythms, and practical tips.',
   },
 };
@@ -29,7 +32,7 @@ export default function BlogPage() {
           itemListElement: posts.map((post, i) => ({
             '@type': 'ListItem',
             position: i + 1,
-            url: `https://sleepcyclecalc.com/blog/${post.slug}`,
+            url: `https://sleepstackapp.com/blog/${post.slug}`,
             name: post.title,
           })),
         }}

@@ -3,7 +3,6 @@
 import { useMemo } from 'react';
 import type { SleepSession } from '@/lib/supabase/types';
 import { analyzePersonalCycles } from '@/utils/personal-cycles';
-import { ProGate } from '@/components/marketing/ProGate';
 import { Fingerprint, BarChart3, Target } from 'lucide-react';
 
 interface PersonalCyclesProps {
@@ -52,11 +51,8 @@ function PersonalCyclesContent({ sessions }: PersonalCyclesProps) {
   return (
     <div className="glass-card rounded-2xl p-6 space-y-5">
       <div className="flex items-center gap-2">
-        <Fingerprint className="w-5 h-5 text-[#f9ca24]" />
+        <Fingerprint className="w-5 h-5 text-primary" />
         <h3 className="text-lg font-bold text-on-surface font-headline">Your Sleep Cycles</h3>
-        <span className="text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-gradient-to-r from-[#f9ca24] to-[#f0932b] text-[#0a0a1a]">
-          PRO
-        </span>
       </div>
 
       <div className="text-center py-4">
@@ -130,9 +126,5 @@ function PersonalCyclesContent({ sessions }: PersonalCyclesProps) {
 }
 
 export function PersonalCycles({ sessions }: PersonalCyclesProps) {
-  return (
-    <ProGate feature="Personal Sleep Cycle Analysis">
-      <PersonalCyclesContent sessions={sessions} />
-    </ProGate>
-  );
+  return <PersonalCyclesContent sessions={sessions} />;
 }

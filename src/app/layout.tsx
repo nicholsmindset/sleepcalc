@@ -26,18 +26,19 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Drift Sleep — Sleep Calculator & Tracker",
-    template: "%s | Drift Sleep",
+    default: "Sleep Stack — Free Sleep Calculators & Tools",
+    template: "%s | Sleep Stack",
   },
   description:
-    "Calculate your ideal bedtime and wake-up time based on sleep cycles. Connect your Oura, Fitbit, or WHOOP for personalized sleep insights powered by your real data.",
+    "Free sleep calculators to find your ideal bedtime, wake-up time, and sleep schedule. Science-backed tools including sleep cycle, nap, caffeine, and sleep debt calculators.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"
   ),
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Drift Sleep",
+    siteName: "Sleep Stack",
+    url: "https://sleepstackapp.com",
   },
   twitter: {
     card: "summary_large_image",

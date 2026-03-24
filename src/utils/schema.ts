@@ -11,7 +11,7 @@
 import { SITE_NAME } from './seo';
 
 /** Fallback base URL if the environment variable is not set */
-const DEFAULT_SITE_URL = 'https://sleepcyclecalc.com';
+const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
 
 /** Get the configured site URL */
 function getSiteUrl(): string {
@@ -38,7 +38,7 @@ export function generateWebSiteSchema(): Record<string, unknown> {
     name: SITE_NAME,
     url: siteUrl,
     description:
-      'Smart sleep cycle calculator with wearable device integration and AI-powered sleep coaching.',
+      'Free sleep calculators and science-backed tools to optimize your bedtime, wake-up time, and sleep schedule.',
     potentialAction: {
       '@type': 'SearchAction',
       target: {
@@ -70,12 +70,12 @@ export function generateWebApplicationSchema(): Record<string, unknown> {
     operatingSystem: 'All',
     browserRequirements: 'Requires JavaScript',
     description:
-      'Calculate your optimal bedtime and wake-up time based on sleep cycles. Connect wearable devices for personalized sleep analysis.',
+      'Calculate your optimal bedtime and wake-up time based on sleep cycles. Free science-backed calculators for better rest.',
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
-      description: 'Free sleep calculator with optional Pro tier for advanced features.',
+      description: 'Free sleep calculators — no signup required.',
     },
     featureList: [
       'Sleep cycle calculator',
@@ -85,8 +85,8 @@ export function generateWebApplicationSchema(): Record<string, unknown> {
       'Nap optimizer',
       'Caffeine cutoff calculator',
       'Chronotype quiz',
-      'Wearable device integration',
-      'AI sleep coaching',
+      'Shift worker sleep calculator',
+      'Baby sleep schedule calculator',
     ],
   };
 }
@@ -203,7 +203,7 @@ export function generateOrganizationSchema(): Record<string, unknown> {
     url: siteUrl,
     logo: `${siteUrl}/icons/logo.png`,
     description:
-      'Smart sleep cycle calculator with real wearable device integration and AI-powered sleep coaching.',
+      'Free sleep calculators and tools to optimize your bedtime, wake-up time, and sleep schedule. Science-backed and easy to use.',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
@@ -232,26 +232,13 @@ export function generateSoftwareAppSchema(): Record<string, unknown> {
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Web',
     description:
-      'Calculate your optimal sleep schedule based on real sleep cycles. Connect Oura, Fitbit, WHOOP, and Apple Health for personalized insights. AI-powered sleep coaching included.',
-    offers: [
-      {
-        '@type': 'Offer',
-        name: 'Free',
-        price: '0',
-        priceCurrency: 'USD',
-        description:
-          'All calculators, basic dashboard, 1 device connection, 7-day history, 3 AI coaching sessions per week.',
-      },
-      {
-        '@type': 'Offer',
-        name: 'Pro',
-        price: '5.99',
-        priceCurrency: 'USD',
-        billingIncrement: 'P1M',
-        description:
-          'Unlimited devices, 90-day history, unlimited AI coaching, personal cycle calibration, weekly digest, PDF reports, ad-free dashboard.',
-      },
-    ],
+      'Calculate your optimal sleep schedule based on sleep cycles. Free bedtime calculator, sleep debt tracker, nap optimizer, caffeine cutoff calculator, and more.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: 'All sleep calculators are completely free to use.',
+    },
     screenshot: `${siteUrl}/og/homepage.png`,
   };
 }

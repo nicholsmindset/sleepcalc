@@ -93,3 +93,25 @@ export function getCategories(): string[] {
   const posts = getAllPosts();
   return [...new Set(posts.map((p) => p.category))].sort();
 }
+
+export function getTags(): string[] {
+  const posts = getAllPosts();
+  return [...new Set(posts.flatMap((p) => p.tags))].sort();
+}
+
+export function getPostsByCategory(category: string): BlogPostMeta[] {
+  return getAllPosts().filter(
+    (p) => p.category.toLowerCase() === category.toLowerCase()
+  );
+}
+
+export function getPostsByTag(tag: string): BlogPostMeta[] {
+  return getAllPosts().filter((p) =>
+    p.tags.some((t) => t.toLowerCase() === tag.toLowerCase())
+  );
+}
+
+/** Convert a category or tag string to a URL-safe slug */
+export function toSlug(str: string): string {
+  return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
