@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
@@ -47,6 +48,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "QpylYLOm8El8MURIHk_O_YQb5wdHMmmniPWBXB0zGh0",
+  },
 };
 
 export default function RootLayout({
@@ -60,6 +64,18 @@ export default function RootLayout({
       className={`dark ${plusJakarta.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <body className="min-h-screen">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EGD46MYNEE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EGD46MYNEE');
+          `}
+        </Script>
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
