@@ -63,6 +63,9 @@ export default function RootLayout({
       lang="en"
       className={`dark ${plusJakarta.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
+      <head>
+        <meta name="google-site-verification" content="QpylYLOm8El8MURIHk_O_YQb5wdHMmmniPWBXB0zGh0" />
+      </head>
       <body className="min-h-screen">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EGD46MYNEE"
