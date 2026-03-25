@@ -79,7 +79,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://sleepcalc-chi.vercel.app/googledeada25508a8dbb9.html)",
       "Bash(curl -s https://sleepcalc-chi.vercel.app)",
       "Bash(vercel alias:*)",
-      "Bash(grep -n \"AdSlot\\\\|advertisement\" src/app/\\\\\\(marketing\\\\\\)/page.tsx src/app/\\\\\\(marketing\\\\\\)/sleep-time/[slug]/page.tsx src/components/layout/AdSlot.tsx)"
+      "Bash(grep -n \"AdSlot\\\\|advertisement\" src/app/\\\\\\(marketing\\\\\\)/page.tsx src/app/\\\\\\(marketing\\\\\\)/sleep-time/[slug]/page.tsx src/components/layout/AdSlot.tsx)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Total entries: {len\\(d\\)}''''\\); [print\\(f''''  {e[\"\"type\"\"]}: {e[\"\"slug\"\"]}''''\\) for e in d]\")"
     ],
     "additionalDirectories": [
       "/Users/robertnichols/Desktop/sleepcalc/src/app/(marketing)/sleep-time/[slug]",

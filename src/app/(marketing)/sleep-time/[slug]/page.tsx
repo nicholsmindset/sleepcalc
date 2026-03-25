@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight, ArrowLeft } from "lucide-react";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
@@ -133,6 +133,12 @@ export default async function SleepTimePage({
   const relatedEntries = entry.relatedSlugs
     .map((rs) => entries.find((e) => e.slug === rs))
     .filter(Boolean) as SleepTimeEntry[];
+
+  // Prev / next within wake entries (sorted by time)
+  const wakeEntries = entries.filter((e) => e.type === "wake");
+  const currentIdx = wakeEntries.findIndex((e) => e.slug === slug);
+  const prevEntry = currentIdx > 0 ? wakeEntries[currentIdx - 1] : null;
+  const nextEntry = currentIdx < wakeEntries.length - 1 ? wakeEntries[currentIdx + 1] : null;
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
@@ -322,6 +328,44 @@ export default async function SleepTimePage({
             <div className="max-w-3xl mx-auto">
               <FAQ items={entry.faq} />
             </div>
+          )}
+
+          {/* Prev / Next navigation */}
+          {(prevEntry || nextEntry) && (
+            <nav
+              aria-label="Previous and next wake-up times"
+              className="max-w-3xl mx-auto py-8 flex items-center justify-between gap-4"
+            >
+              {prevEntry ? (
+                <Link
+                  href={`/sleep-time/${prevEntry.slug}`}
+                  className="glass-card rounded-2xl px-5 py-4 flex items-center gap-3 hover:bg-surface-container-high/50 transition-all group flex-1 max-w-[48%]"
+                >
+                  <ArrowLeft className="w-4 h-4 text-[#46eae5] shrink-0 group-hover:-translate-x-0.5 transition-transform" />
+                  <div className="min-w-0">
+                    <p className="text-[10px] uppercase tracking-wider text-on-surface-variant/60 mb-0.5">Previous</p>
+                    <p className="text-sm font-semibold text-on-surface truncate">Wake Up at {prevEntry.time}</p>
+                  </div>
+                </Link>
+              ) : (
+                <div className="flex-1 max-w-[48%]" />
+              )}
+
+              {nextEntry ? (
+                <Link
+                  href={`/sleep-time/${nextEntry.slug}`}
+                  className="glass-card rounded-2xl px-5 py-4 flex items-center gap-3 justify-end hover:bg-surface-container-high/50 transition-all group flex-1 max-w-[48%]"
+                >
+                  <div className="min-w-0 text-right">
+                    <p className="text-[10px] uppercase tracking-wider text-on-surface-variant/60 mb-0.5">Next</p>
+                    <p className="text-sm font-semibold text-on-surface truncate">Wake Up at {nextEntry.time}</p>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-[#46eae5] shrink-0 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+              ) : (
+                <div className="flex-1 max-w-[48%]" />
+              )}
+            </nav>
           )}
 
           {/* Related Tools */}
