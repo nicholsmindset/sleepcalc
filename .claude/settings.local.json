@@ -80,7 +80,13 @@
       "Bash(curl -s https://sleepcalc-chi.vercel.app)",
       "Bash(vercel alias:*)",
       "Bash(grep -n \"AdSlot\\\\|advertisement\" src/app/\\\\\\(marketing\\\\\\)/page.tsx src/app/\\\\\\(marketing\\\\\\)/sleep-time/[slug]/page.tsx src/components/layout/AdSlot.tsx)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Total entries: {len\\(d\\)}''''\\); [print\\(f''''  {e[\"\"type\"\"]}: {e[\"\"slug\"\"]}''''\\) for e in d]\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Total entries: {len\\(d\\)}''''\\); [print\\(f''''  {e[\"\"type\"\"]}: {e[\"\"slug\"\"]}''''\\) for e in d]\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Total: {len\\(d\\)} entries''''\\); [print\\(f''''  {e[\"\"slug\"\"]}''''\\) for e in d]\")",
+      "Bash(python3 -c \":*)",
+      "Bash(node -e \"const d = require\\(''./src/content/data/cities-seo.json''\\); console.log\\(''Cities:'', d.length\\); console.log\\(''First slug:'', d[0].slug\\);\")",
+      "Bash(mkdir -p /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/city/[slug])",
+      "Bash(mkdir -p /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/sleep-with/[slug])",
+      "Bash(ls /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/)"
     ],
     "additionalDirectories": [
       "/Users/robertnichols/Desktop/sleepcalc/src/app/(marketing)/sleep-time/[slug]",

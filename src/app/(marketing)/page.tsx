@@ -9,6 +9,7 @@ import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { FAQ } from "@/components/content/FAQ";
 import BedtimeCalculator from "@/components/calculators/BedtimeCalculator";
+import { SleepChallenge } from "@/components/marketing/SleepChallenge";
 
 export const metadata: Metadata = {
   title: "Sleep Calculator — Find Your Ideal Bedtime & Wake Up Time",
@@ -118,7 +119,7 @@ export default function HomePage() {
           </section>
 
           {/* How Sleep Cycles Work */}
-          <section className="py-12 max-w-3xl mx-auto">
+          <section className="py-12">
             <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6 text-on-surface">
               How Sleep Cycles Work
             </h2>
@@ -151,8 +152,13 @@ export default function HomePage() {
           </section>
 
           {/* FAQ */}
-          <div className="max-w-3xl mx-auto">
+          <div>
             <FAQ items={faqItems} />
+          </div>
+
+          {/* 7-Day Sleep Challenge */}
+          <div className="py-6">
+            <SleepChallenge />
           </div>
 
           {/* Related Tools */}

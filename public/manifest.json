@@ -1,0 +1,62 @@
+{
+  "name": "Sleep Stack",
+  "short_name": "Sleep Stack",
+  "description": "Free sleep calculators and tools. Find your ideal bedtime, track sleep, and wake refreshed.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a1a",
+  "theme_color": "#6c5ce7",
+  "orientation": "portrait-primary",
+  "categories": ["health", "lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og/default.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Sleep Stack homepage with sleep calculator"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Sleep Calculator",
+      "short_name": "Calculator",
+      "description": "Calculate your ideal bedtime",
+      "url": "/",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tonight's Forecast",
+      "short_name": "Tonight",
+      "description": "Check tonight's sleep environment score",
+      "url": "/tonight",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

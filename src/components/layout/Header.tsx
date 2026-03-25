@@ -20,6 +20,17 @@ const calculatorLinks = [
   { label: 'Chronotype Quiz', href: '/calculators/chronotype-quiz' },
 ];
 
+const toolLinks = [
+  { label: "Tonight's Forecast", href: '/tonight' },
+  { label: 'Circadian Light Guide', href: '/tools/circadian-guide' },
+  { label: 'Jet Lag Calculator', href: '/tools/jet-lag-calculator' },
+  { label: 'Sleep Score', href: '/tools/sleep-score' },
+  { label: 'Moon & Sleep', href: '/tools/moon-sleep' },
+  { label: 'DST Calculator', href: '/tools/dst-calculator' },
+  { label: 'Sleep Journal', href: '/tools/sleep-journal' },
+  { label: 'Sleep-Friendly Foods', href: '/tools/sleep-foods' },
+];
+
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Blog', href: '/blog' },
@@ -29,6 +40,7 @@ const navLinks = [
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [calcDropdown, setCalcDropdown] = useState(false);
+  const [toolsDropdown, setToolsDropdown] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#121222]/80 backdrop-blur-xl shadow-ambient">
@@ -80,6 +92,34 @@ export function Header() {
               </div>
             )}
           </div>
+
+          {/* Tools dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setToolsDropdown(true)}
+            onMouseLeave={() => setToolsDropdown(false)}
+          >
+            <button className="font-headline font-medium text-sm tracking-tight text-on-surface/60 hover:text-on-surface transition-colors flex items-center gap-1">
+              Tools
+              <ChevronDown className="w-3.5 h-3.5" />
+            </button>
+
+            {toolsDropdown && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
+                <div className="glass-card rounded-2xl p-3 min-w-[220px] shadow-ambient">
+                  {toolLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block px-4 py-2.5 rounded-xl text-sm text-on-surface/70 hover:text-on-surface hover:bg-surface-container-high/50 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -114,6 +154,20 @@ export function Header() {
                 Calculators
               </div>
               {calculatorLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="px-4 py-2.5 rounded-xl text-sm text-on-surface/60 hover:text-on-surface hover:bg-surface-container-high/50 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              <div className="px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-4">
+                Tools
+              </div>
+              {toolLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}

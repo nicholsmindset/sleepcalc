@@ -1,0 +1,707 @@
+[
+  {
+    "slug": "insomnia",
+    "conditionName": "Insomnia",
+    "title": "Sleep Calculator for Insomnia — How Insomnia Affects Your Sleep",
+    "h1": "Sleep Calculator for Insomnia",
+    "metaDescription": "Insomnia makes falling and staying asleep harder than it should be. Use our sleep calculator to plan your sleep window, plus evidence-based CBT-I tips for better sleep.",
+    "howItAffectsSleep": "Insomnia is characterized by difficulty falling asleep, staying asleep, or waking too early — despite adequate opportunity to sleep. It affects roughly 30% of adults and is the most common sleep disorder. Chronic insomnia (lasting 3+ months, occurring 3+ nights per week) disrupts slow-wave and REM sleep, leaving sufferers exhausted despite hours in bed. The hallmark of insomnia is not just poor sleep but also significant daytime impairment: fatigue, difficulty concentrating, mood disturbance, and reduced performance.",
+    "adjustedSleepRecommendations": "People with insomnia are often advised to slightly restrict their time in bed (sleep restriction therapy) as part of CBT-I — paradoxically sleeping less initially to build stronger sleep pressure and consolidate sleep. A typical starting window is 6.5–7 hours in bed, timed to your anchor wake time.",
+    "sleepHygieneTips": [
+      "Set a fixed wake time 7 days a week — this is the single most effective non-medication intervention for insomnia.",
+      "Avoid lying awake in bed for more than 20 minutes. Get up, do something quiet in dim light, and return only when sleepy.",
+      "Stimulus control: use your bed only for sleep and sex. No phones, laptops, TV, or reading in bed.",
+      "Keep your bedroom cool (16–19°C), dark, and quiet. Even small improvements to the sleep environment compound over weeks.",
+      "Limit caffeine after noon and alcohol entirely — alcohol fragments sleep in the second half of the night even if it helps you fall asleep initially.",
+      "Cognitive behavioral therapy for insomnia (CBT-I) is the gold-standard treatment — more effective than sleep medication and with lasting results. Ask your doctor for a referral."
+    ],
+    "whenToSeeDoctor": "See a doctor if insomnia has persisted for more than 3 months, is causing significant daytime impairment, or is accompanied by symptoms of depression, anxiety, or sleep apnea (snoring, gasping). Also seek help if you are relying on sleep aids more than 3 nights per week.",
+    "content": {
+      "intro": "Insomnia is not just the occasional bad night — it is a chronic condition in which difficulty sleeping causes real, measurable daytime consequences. It affects an estimated 30% of adults at some point and is the most frequently reported sleep complaint worldwide. Yet despite its prevalence, chronic insomnia is treatable without medication in most cases.\n\nThe most important distinction in insomnia is between sleep opportunity and sleep ability. Most people with insomnia spend more than enough time in bed — but their brains have learned to associate the bed with wakefulness and frustration rather than sleep. Cognitive Behavioral Therapy for Insomnia (CBT-I) directly targets this learned association and is considered the first-line treatment by the American Academy of Sleep Medicine.",
+      "howItAffects": "Insomnia disrupts the architecture of sleep in several key ways. The prolonged awakenings and sleep-onset delays fragment the normal cycling between NREM and REM stages. People with chronic insomnia spend less time in the most restorative stages — N3 deep sleep and REM — even on nights when total sleep duration appears adequate on a watch.\n\nThe daytime consequences of chronic insomnia include cognitive impairment, emotional dysregulation, reduced pain tolerance, weakened immune function, and elevated cortisol levels. Long-term chronic insomnia is associated with increased risk of depression, anxiety disorders, cardiovascular disease, and type 2 diabetes. The relationship is bidirectional: these conditions also worsen insomnia, creating feedback loops that require targeted intervention to break.",
+      "tips": "The most evidence-based approach to insomnia management is CBT-I, which combines several techniques: sleep restriction therapy, stimulus control, relaxation training, sleep hygiene education, and cognitive restructuring.\n\nSleep restriction is often the most counterintuitive but most powerful component: you temporarily limit time in bed to your actual sleep duration (e.g., 6.5 hours), building strong homeostatic sleep pressure that makes falling and staying asleep much easier. Over 4–6 weeks, you gradually extend the window as your efficiency improves.\n\nStimulus control retrains your brain to associate the bed with sleep rather than wakefulness: get out of bed if you cannot sleep within 20 minutes, keep the bed exclusively for sleep and sex, and maintain a fixed wake time regardless of how the night went.\n\nRelaxation techniques — progressive muscle relaxation, box breathing, and body-scan meditation — reduce the physiological hyperarousal that perpetuates insomnia. These are skills that improve with practice over 2–4 weeks.",
+      "warning": "Insomnia is sometimes a symptom of an underlying condition — depression, anxiety disorder, sleep apnea, restless leg syndrome, or medication side effects. Treating the insomnia without addressing the root cause produces only partial improvement. If your insomnia began around a life event, medication change, or new symptom, discuss this timeline with your doctor."
+    },
+    "faq": [
+      {
+        "question": "What is the difference between insomnia and just being a bad sleeper?",
+        "answer": "Clinical insomnia requires both sleep difficulty (falling asleep, staying asleep, or early waking) AND significant daytime impairment occurring at least 3 nights per week for at least 3 months. Occasional poor sleep without daytime consequences is not insomnia — it is normal variation in sleep quality that most adults experience."
+      },
+      {
+        "question": "Does CBT-I actually work for insomnia?",
+        "answer": "Yes — CBT-I has the strongest evidence base of any insomnia treatment, including medication. Multiple meta-analyses show 70–80% of patients achieve clinically significant improvement, and gains are maintained long-term (unlike sleeping pills). The American Academy of Sleep Medicine, American College of Physicians, and UK's NICE all recommend CBT-I as the first-line treatment."
+      },
+      {
+        "question": "Is it safe to use sleep medication for insomnia?",
+        "answer": "Short-term use of sleep medication (1–4 weeks) may be appropriate for acute insomnia in some situations. However, most sleep medications lose efficacy over time, carry dependence risk, and do not produce natural sleep architecture. They are generally not recommended for chronic insomnia without concurrent CBT-I. Always consult your prescribing physician before starting or stopping any sleep medication."
+      },
+      {
+        "question": "Why can't I sleep even when I'm exhausted?",
+        "answer": "This paradox — being exhausted but unable to sleep — is the hallmark of hyperarousal-driven insomnia. Your nervous system is stuck in a state of high alert (elevated cortisol, heightened cognitive activity) that overrides the sleep drive. This is a learned physiological state, not a permanent condition. CBT-I's sleep restriction and stimulus control techniques directly reduce this hyperarousal over 4–6 weeks."
+      },
+      {
+        "question": "How long does it take to cure insomnia?",
+        "answer": "CBT-I typically produces noticeable improvement within 2–4 weeks and full benefit by 6–8 weeks. Sleep restriction initially feels harder before it gets better — which is expected and part of the process. Most people who complete a full CBT-I course maintain improvements at 1-year follow-up without ongoing treatment."
+      }
+    ],
+    "relatedSlugs": ["anxiety", "depression", "shift-work-disorder"]
+  },
+  {
+    "slug": "sleep-apnea",
+    "conditionName": "Sleep Apnea",
+    "title": "Sleep Calculator for Sleep Apnea — How Sleep Apnea Affects Your Rest",
+    "h1": "Sleep Calculator for Sleep Apnea",
+    "metaDescription": "Sleep apnea causes repeated breathing interruptions that fragment sleep and reduce oxygen levels. Learn how it affects sleep quality and what the treatment options are.",
+    "howItAffectsSleep": "Obstructive sleep apnea (OSA) is characterized by repeated episodes where the upper airway collapses during sleep, causing breathing to stop for 10 seconds to over a minute before the brain rouses the sleeper just enough to reopen the airway. These micro-arousals can occur dozens to hundreds of times per night, severely fragmenting sleep architecture and causing oxygen desaturation. Despite often sleeping 7–8 hours, people with untreated sleep apnea feel profoundly unrefreshed and excessively sleepy during the day.",
+    "adjustedSleepRecommendations": "People with sleep apnea often need more time in bed than average to achieve the same restorative benefit, because their effective sleep time is reduced by apnea events. Once treated with CPAP, most patients find their sleep need normalizes and daytime function dramatically improves within 1–2 weeks. Aim for 7–9 hours of scheduled sleep time with treatment.",
+    "sleepHygieneTips": [
+      "Sleep apnea requires medical diagnosis and treatment — a home sleep test or in-lab polysomnography is needed. Self-diagnosis is not possible.",
+      "CPAP (continuous positive airway pressure) is the gold-standard treatment and eliminates most apnea events when used correctly.",
+      "Sleep position matters: sleeping on your side (rather than your back) reduces apnea severity in most people with positional OSA.",
+      "Weight loss of even 10% body weight significantly reduces apnea severity in overweight patients.",
+      "Avoid alcohol before bed — it relaxes airway muscles and worsens apnea events significantly.",
+      "If you cannot tolerate CPAP, ask about alternatives: dental appliances, positional therapy, or newer surgical options."
+    ],
+    "whenToSeeDoctor": "See a doctor urgently if you or a bed partner notice gasping, choking, or breathing pauses during sleep. Also seek evaluation if you experience excessive daytime sleepiness despite 7+ hours in bed, unexplained morning headaches, or are at high risk (overweight, large neck circumference, male, over 40). Untreated sleep apnea significantly increases risk of hypertension, heart attack, stroke, and type 2 diabetes.",
+    "content": {
+      "intro": "Sleep apnea is one of the most underdiagnosed medical conditions in the world — estimated to affect 1 billion people globally, with roughly 80% of moderate-to-severe cases undiagnosed. It is not simply loud snoring: it is a serious medical condition in which the airway repeatedly collapses during sleep, depriving the brain and body of oxygen dozens to hundreds of times per night.\n\nThe most common type, obstructive sleep apnea (OSA), occurs when the muscles supporting the throat relax too much during sleep, causing the airway to narrow or close. Central sleep apnea (CSA), less common, occurs when the brain fails to send the correct signals to the muscles that control breathing. Both types produce fragmented, unrestorative sleep.",
+      "howItAffects": "Each apnea event triggers a micro-arousal — the brain briefly wakes itself to restore breathing. The sleeper rarely remembers these arousals, but they prevent the brain from spending enough time in the deep, restorative stages of sleep (N3 and REM). The result is profound, inexplicable daytime fatigue — people with severe untreated OSA often fall asleep at work, while driving, or mid-conversation.\n\nBeyond fatigue, untreated sleep apnea has serious cardiovascular consequences. The repeated oxygen desaturation events stress the heart and blood vessels. Studies show untreated moderate-to-severe OSA raises the risk of hypertension by 2–3×, heart attack and stroke by up to 4×, and type 2 diabetes by 2.3×. It is also strongly associated with cognitive decline, depression, and significantly elevated risk of motor vehicle accidents.",
+      "tips": "CPAP therapy is the most effective treatment for moderate-to-severe sleep apnea and, when used consistently (4+ hours per night), eliminates virtually all apnea events in most patients. The first weeks of CPAP use are often the hardest — the mask takes adjustment. Comfort improvements (nasal pillows, heated humidification, auto-titrating CPAP) dramatically improve adherence.\n\nFor mild to moderate OSA, mandibular advancement devices (dental appliances) are an effective alternative that many patients tolerate better than CPAP. They work by repositioning the lower jaw forward to keep the airway open.\n\nLifestyle interventions are powerful adjuncts: losing 10% of body weight reduces the AHI (apnea-hypopnea index) by roughly 30% in overweight patients. Eliminating alcohol, avoiding sedating medications, and sleeping on your side rather than your back can reduce events significantly as well.",
+      "warning": "Sleep apnea is a serious medical condition that requires diagnosis and treatment by a qualified healthcare provider. Do not attempt to self-diagnose or self-treat. If you suspect sleep apnea, ask your doctor for a referral for a sleep study. Driving while excessively sleepy from untreated sleep apnea is both dangerous and in many jurisdictions a legal liability."
+    },
+    "faq": [
+      {
+        "question": "Can I have sleep apnea if I don't snore?",
+        "answer": "Yes. While snoring is the most recognized symptom of OSA, approximately 20% of people with sleep apnea do not snore loudly — particularly women, who often present with less classic symptoms like insomnia, fatigue, and morning headaches. Non-snoring sleep apnea is frequently missed."
+      },
+      {
+        "question": "How is sleep apnea diagnosed?",
+        "answer": "Sleep apnea is diagnosed with a sleep study — either a home sleep apnea test (HSAT) or an in-lab polysomnography. The study measures breathing pauses, oxygen levels, heart rate, and sleep stages. Severity is classified by the Apnea-Hypopnea Index (AHI): mild (5–14 events/hour), moderate (15–29), or severe (30+)."
+      },
+      {
+        "question": "Will CPAP cure my sleep apnea?",
+        "answer": "CPAP treats sleep apnea very effectively when used, but it does not cure the underlying cause. If you stop using CPAP, apnea events return. Weight loss, positional therapy, or surgery may reduce or eliminate apnea in some patients, allowing CPAP to be discontinued with medical supervision."
+      },
+      {
+        "question": "Is sleep apnea hereditary?",
+        "answer": "There is a significant genetic component to sleep apnea risk — having a first-degree relative with OSA increases your risk by 2–4×. Inherited traits like facial structure, upper airway anatomy, and body fat distribution all contribute. However, lifestyle factors (weight, alcohol use, smoking) are the most modifiable risk factors."
+      },
+      {
+        "question": "How quickly does CPAP improve sleep quality?",
+        "answer": "Most patients notice improved sleep quality within 1–2 weeks of consistent CPAP use. Daytime sleepiness often improves within the first week. Full cognitive and cardiovascular benefits accumulate over months of consistent use. Patients who use CPAP 7 nights per week show significantly better outcomes than those who use it intermittently."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "chronic-pain", "acid-reflux-gerd"]
+  },
+  {
+    "slug": "pregnancy",
+    "conditionName": "Pregnancy",
+    "title": "Sleep Calculator During Pregnancy — How Pregnancy Affects Your Sleep",
+    "h1": "Sleep Calculator for Pregnancy",
+    "metaDescription": "Pregnancy changes your sleep needs and patterns significantly. Learn the best sleep positions, tips for each trimester, and how to manage pregnancy-related sleep disruptions.",
+    "howItAffectsSleep": "Pregnancy affects sleep across all three trimesters in distinct ways. The first trimester brings extreme fatigue due to surging progesterone levels, but also frequent urination and nausea that interrupt sleep. The second trimester often brings temporary improvement. By the third trimester, physical discomfort, fetal movement, heartburn, leg cramps, restless legs, and increasing urinary frequency cause significant sleep fragmentation. Up to 78% of pregnant women report sleep disturbances, particularly in the third trimester.",
+    "adjustedSleepRecommendations": "Pregnant women typically need 8–10 hours of sleep per night, compared to the 7–9 hours for non-pregnant adults, due to the high metabolic demands of fetal development. Brief daytime naps (20–30 minutes) are highly beneficial, especially in the first and third trimesters. Total sleep time (including naps) should approach 9 hours daily.",
+    "sleepHygieneTips": [
+      "Sleep on your left side (SOS — sleep on side) from the second trimester onward. This position optimizes blood flow to the placenta and reduces pressure on the inferior vena cava.",
+      "Use a full-length pregnancy pillow (between knees, under belly, behind back) to maintain side-sleeping comfort through the night.",
+      "Elevate the head of your bed or use a wedge pillow to reduce acid reflux, which worsens dramatically in the third trimester.",
+      "Avoid large meals within 3 hours of bedtime to minimize heartburn.",
+      "Iron-deficiency anemia in pregnancy can trigger or worsen restless legs syndrome — discuss iron levels with your OB if you experience uncomfortable leg sensations at night.",
+      "Brief naps of 20–30 minutes are beneficial during pregnancy. Longer naps may worsen nighttime sleep difficulty."
+    ],
+    "whenToSeeDoctor": "Consult your OB or midwife if you experience shortness of breath, severe snoring, or witnessed breathing pauses during sleep — pregnancy increases sleep apnea risk significantly, especially with weight gain. Also seek attention for severe insomnia, symptoms of prenatal depression, restless leg syndrome that significantly disrupts sleep, or swelling and headaches that may indicate preeclampsia.",
+    "content": {
+      "intro": "Sleep during pregnancy is rarely restful — and for good reason. Your body is undergoing profound hormonal, cardiovascular, and structural changes that affect every aspect of sleep. The good news: understanding how each trimester affects sleep allows you to make targeted adjustments that significantly improve rest quality, which matters enormously for both maternal and fetal health.\n\nThe American College of Obstetricians and Gynecologists recognizes sleep quality as a key component of prenatal health. Poor sleep during pregnancy is associated with longer labor, higher rates of cesarean section, gestational diabetes risk, and postpartum depression. Prioritizing sleep is not indulgent — it is medically important.",
+      "howItAffects": "In the first trimester, surging progesterone dramatically increases total sleep time and daytime drowsiness — many women sleep 10–12 hours and still feel exhausted. However, frequent nighttime urination (the kidneys process 50% more blood volume), nausea, breast tenderness, and anxiety about the pregnancy all fragment sleep.\n\nThe second trimester often brings a honeymoon period of better sleep as nausea subsides and energy returns. However, vivid pregnancy dreams (from elevated progesterone affecting REM sleep), leg cramps, and the beginning of positional discomfort start to emerge.\n\nThe third trimester is when sleep disruption peaks. The growing belly makes comfortable positioning difficult, fetal movement often intensifies at night (babies are most active in the evening when maternal activity slows), heartburn and reflux worsen significantly, and urinary frequency returns with the bladder under increasing pressure from the uterus. Restless legs syndrome affects up to 26% of pregnant women. Sleep fragmentation in late pregnancy is nearly universal.",
+      "tips": "Side sleeping — particularly on the left side — is the strongly recommended position from the second trimester onward. The left side position optimizes circulation by keeping the uterus off the inferior vena cava (the large vein returning blood to the heart from the lower body). Right-side sleeping is also fine; the position to actively avoid is flat on your back for extended periods in late pregnancy.\n\nA pregnancy pillow is one of the most effective sleep investments available. Full-length C-shaped or U-shaped pillows support the belly, reduce hip strain, prevent rolling onto your back, and dramatically improve side-sleeping comfort. The Snoogle and similar contoured pillows are popular for good reason.\n\nFor heartburn: eat your last meal at least 3 hours before bed, sleep with your head elevated 6–8 inches (a wedge pillow under the mattress, not just extra pillows), and discuss safe antacid options with your OB. Heartburn-driven sleep disruption is one of the most addressable issues in the third trimester.",
+      "warning": "Certain sleep symptoms during pregnancy warrant prompt medical attention: snoring that begins or worsens significantly in pregnancy may indicate gestational sleep apnea, which is associated with hypertension and poor fetal outcomes. Severe restless legs unresponsive to iron and magnesium supplementation may need prescription treatment. Never take over-the-counter sleep aids, herbal supplements, or prescription sleep medications during pregnancy without explicit approval from your OB or midwife."
+    },
+    "faq": [
+      {
+        "question": "Is it safe to sleep on my back during pregnancy?",
+        "answer": "From about 20 weeks onward, sleeping flat on your back for extended periods compresses the inferior vena cava and can reduce blood flow to the uterus. Occasional back sleeping (rolling over during the night) is not dangerous, but deliberately sleeping on your back long-term in late pregnancy is not recommended. If you wake up on your back, simply roll to your side."
+      },
+      {
+        "question": "Why am I so tired in the first trimester?",
+        "answer": "First-trimester fatigue is primarily driven by rising progesterone levels (which have a sedative effect), the massive metabolic investment of early fetal development, and increased blood production. Your body is building a placenta, doubling blood volume, and reorganizing nearly every organ system — the energy requirement is enormous."
+      },
+      {
+        "question": "Is restless legs syndrome common in pregnancy?",
+        "answer": "Yes — RLS affects approximately 10–26% of pregnant women, compared to 5–15% of the general population. Pregnancy-related RLS is strongly associated with iron deficiency and folate deficiency. Supplementing iron (if bloodwork confirms deficiency) and folate, along with magnesium, often significantly reduces symptoms. Symptoms typically resolve after delivery."
+      },
+      {
+        "question": "Can poor sleep during pregnancy harm my baby?",
+        "answer": "Research suggests that severe, chronic sleep deprivation during pregnancy is associated with adverse outcomes including gestational diabetes, preeclampsia, preterm birth risk, and longer labor. However, typical pregnancy sleep fragmentation — while miserable — is not shown to directly harm fetal development in most cases. Discuss significant sleep concerns with your healthcare provider."
+      },
+      {
+        "question": "Are naps safe during pregnancy?",
+        "answer": "Naps are not only safe during pregnancy but actively beneficial. A 20–30 minute nap in the early afternoon helps address the sleep debt accumulated from nighttime disruptions without significantly impacting nighttime sleep. Longer naps (60–90 minutes) may be needed in the first trimester when fatigue is most severe."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "restless-leg-syndrome", "acid-reflux-gerd"]
+  },
+  {
+    "slug": "adhd",
+    "conditionName": "ADHD",
+    "title": "Sleep Calculator for ADHD — How ADHD Affects Your Sleep",
+    "h1": "Sleep Calculator for ADHD",
+    "metaDescription": "ADHD and sleep problems are deeply linked. Delayed sleep phase, racing thoughts, and medication timing all affect sleep quality. Learn evidence-based strategies to sleep better with ADHD.",
+    "howItAffectsSleep": "ADHD and sleep disorders co-occur at very high rates — up to 73% of adults with ADHD report clinically significant sleep problems. The most common pattern is delayed sleep phase: the circadian clock runs 1.5–2 hours later than average, making it genuinely difficult to fall asleep before midnight or 1 AM regardless of what time the person goes to bed. Racing, hyperfocused thoughts at bedtime, high sensory sensitivity, and difficulty transitioning from stimulating activities to sleep all compound the problem. ADHD stimulant medications also significantly affect sleep timing and quality.",
+    "adjustedSleepRecommendations": "People with ADHD often perform best with 8–9 hours of sleep (sometimes more in children) due to the high cognitive burden of managing ADHD symptoms all day. The key is aligning the sleep window with the actual biological clock — even if that means a later schedule (midnight to 8 AM) rather than forcing an early bedtime that results in hours of frustrated wakefulness.",
+    "sleepHygieneTips": [
+      "Anchor your schedule with a fixed wake time — this is more achievable than fixing bedtime and gradually shifts the circadian phase earlier over weeks.",
+      "Bright light therapy for 20–30 minutes immediately upon waking helps advance a delayed circadian phase. This is particularly effective in winter when natural morning light is insufficient.",
+      "Discuss medication timing with your prescribing doctor — taking stimulants too late in the day is a common cause of sleep-onset delay in ADHD.",
+      "Create a detailed, consistent pre-sleep routine (same sequence of steps every night) — routines reduce the transition difficulty that ADHD creates around bedtime.",
+      "Use 'body doubling' or auditory background (binaural beats, brown noise) to settle racing thoughts at bedtime.",
+      "Avoid screens and hyperstimulating content in the 60–90 minutes before bed. Blue light plus exciting content is a particularly potent sleep disruptor for ADHD brains."
+    ],
+    "whenToSeeDoctor": "Consult a sleep specialist or psychiatrist if sleep problems are significantly impairing daily function despite behavioral strategies. Evaluate for comorbid conditions common in ADHD: delayed sleep phase disorder (treatable with timed melatonin and light therapy), restless legs syndrome (very common in ADHD), and sleep apnea. Discuss whether medication timing adjustments might improve sleep.",
+    "content": {
+      "intro": "The relationship between ADHD and sleep is bidirectional and deeply entangled. Sleep deprivation mimics ADHD symptoms (distractibility, impulsivity, emotional dysregulation), and ADHD itself creates multiple mechanisms that disrupt sleep. Many adults with ADHD have spent years believing they are simply 'night owls' or 'bad sleepers' — without realizing they have a biologically driven sleep disorder on top of their ADHD.\n\nUnderstanding the specific mechanisms by which ADHD disrupts sleep is the first step to addressing them effectively. Most ADHD-related sleep problems are highly responsive to targeted interventions when the right strategies are applied.",
+      "howItAffects": "Delayed sleep phase is the most well-documented sleep disruption in ADHD. Research using melatonin onset measurements shows the circadian clock in ADHD runs approximately 1.5 hours later than neurotypical controls. This is biological, not behavioral — the person with ADHD is not staying up by choice, but because their brain genuinely does not feel sleepy at socially conventional bedtimes.\n\nADHD also increases arousal at bedtime: the hyperactive mind generates a high volume of thoughts, creative ideas, and worries precisely when lying in the dark with no distractions. Dopamine dysregulation in ADHD means the 'boredom threshold' is extremely low — the brain actively seeks stimulation, making the transition to sleep feel aversive.\n\nStimulant medications (Adderall, Ritalin, Vyvanse) have a duration of action that frequently extends into the evening, particularly with extended-release formulations or late dosing. This can push sleep onset 1–3 hours later and reduce total sleep time significantly.",
+      "tips": "The most evidence-based approach for ADHD-related delayed sleep phase combines low-dose melatonin (0.5–1 mg taken 5–6 hours before desired bedtime, not immediately before bed) with morning bright light therapy. This combination gradually advances the biological clock and is effective within 1–3 weeks in most patients.\n\nBehavioral strategies that work well for ADHD include: detailed visual routines displayed in the bedroom, audiobooks or podcasts as 'brain anchors' during the sleep transition (gives the mind something to follow without requiring active participation), and body doubling with a sleep partner or sleep accountability app.\n\nMedication timing is critical and underappreciated. Extended-release stimulants taken after noon frequently impair sleep onset. Discuss a medication review with your prescribing physician — switching to shorter-acting formulations, adjusting dosing time, or trying non-stimulant medications may dramatically improve sleep.",
+      "warning": "Melatonin supplements should be discussed with a prescribing physician before use, particularly in children and adolescents with ADHD, as dosing and timing significantly affect efficacy. The common practice of taking 5–10 mg of melatonin immediately before bed is typically far too high a dose and produces opposite effects — correct dosing for circadian phase-shifting is 0.3–1 mg taken 5–6 hours before the desired sleep time."
+    },
+    "faq": [
+      {
+        "question": "Why do people with ADHD struggle to fall asleep?",
+        "answer": "ADHD contributes to sleep-onset difficulty through multiple mechanisms: a biologically delayed circadian phase (making 'normal' bedtimes feel artificially early), high cognitive arousal at bedtime (racing thoughts, hyperfocus), dopamine dysregulation that makes the transition to an undemanding state feel aversive, and frequent stimulant medication effects that extend alertness into the evening."
+      },
+      {
+        "question": "Is it normal to need 9–10 hours of sleep with ADHD?",
+        "answer": "Many people with ADHD report needing more sleep than average — not because of a physiological need for more sleep, but because sleep quality is often poor (more fragmented, less deep sleep), and the cognitive load of managing ADHD all day creates higher fatigue. Addressing sleep quality (not just quantity) often allows people with ADHD to feel rested on 7.5–8 hours."
+      },
+      {
+        "question": "Does melatonin work for ADHD sleep problems?",
+        "answer": "Low-dose melatonin (0.3–1 mg) taken 5–6 hours before desired bedtime is one of the most effective interventions for ADHD-related delayed sleep phase. Multiple randomized controlled trials in children and adults with ADHD show it advances sleep onset by 30–60 minutes within 1–2 weeks. Higher doses taken at bedtime are less effective and can cause grogginess."
+      },
+      {
+        "question": "Can treating ADHD improve sleep?",
+        "answer": "Yes and no. Treating ADHD with appropriate medication often reduces anxiety-driven rumination and improves daytime function, which indirectly improves sleep. However, stimulant medications themselves frequently worsen sleep latency if not carefully timed. Non-stimulant options like atomoxetine or guanfacine tend to be more sleep-neutral and are worth discussing with your prescriber if stimulants are disrupting sleep significantly."
+      },
+      {
+        "question": "What is delayed sleep phase disorder and is it the same as ADHD sleep problems?",
+        "answer": "Delayed sleep phase disorder (DSPD) is a circadian rhythm disorder in which the sleep-wake cycle is shifted significantly later than conventional timing. ADHD frequently co-occurs with DSPD, and the two share mechanisms. However, DSPD can exist without ADHD and requires its own assessment and treatment. A sleep specialist can distinguish the two and recommend targeted interventions."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "anxiety", "shift-work-disorder"]
+  },
+  {
+    "slug": "anxiety",
+    "conditionName": "Anxiety",
+    "title": "Sleep Calculator for Anxiety — How Anxiety Disrupts Sleep",
+    "h1": "Sleep Calculator for Anxiety",
+    "metaDescription": "Anxiety and sleep problems reinforce each other in a vicious cycle. Learn science-backed strategies to break the anxiety-insomnia loop and get the sleep your body needs.",
+    "howItAffectsSleep": "Anxiety activates the sympathetic nervous system — the fight-or-flight response — which is fundamentally incompatible with sleep. Elevated cortisol, adrenaline, and norepinephrine at night keep the brain in a hypervigilant state: heart racing, mind scanning for threats, body physically tense. This produces sleep-onset insomnia (difficulty falling asleep due to rumination and worry) and sleep-maintenance insomnia (waking at 2–4 AM with an activated mind). Anxiety disorders also increase light sleep and reduce restorative slow-wave sleep.",
+    "adjustedSleepRecommendations": "People with anxiety often need to extend their wind-down period significantly — 60–90 minutes of intentional relaxation before bed, rather than the standard 30-minute recommendation. The sleep window itself should be normal (7–9 hours) but strategically timed to align with when the anxious brain is most likely to allow sleep.",
+    "sleepHygieneTips": [
+      "Schedule a 20-minute 'worry time' earlier in the evening (e.g., 6–7 PM) to write down worries and planned responses — this 'offloads' active problem-solving so the brain doesn't need to do it at 11 PM.",
+      "Practice progressive muscle relaxation (PMR) or 4-7-8 breathing as part of your pre-sleep routine. These directly activate the parasympathetic nervous system.",
+      "Remove clocks from the bedroom — clock-watching is one of the most counterproductive anxiety behaviors during sleep difficulty.",
+      "Keep a notepad by the bed for intrusive thoughts — write it down and tell yourself 'I'll deal with this tomorrow.' Externalizing the thought reduces its hold.",
+      "CBT for insomnia (CBT-I) combined with CBT for anxiety produces better outcomes than treating either condition alone.",
+      "Reduce caffeine consumption entirely — anxiety significantly amplifies caffeine sensitivity. Even morning coffee can elevate evening cortisol in sensitive individuals."
+    ],
+    "whenToSeeDoctor": "Seek evaluation if anxiety is significantly impairing sleep on most nights, if you are experiencing panic attacks at night, if daytime anxiety symptoms are impairing work or relationships, or if you are using alcohol to manage anxiety or sleep. Both anxiety disorders and anxiety-driven insomnia respond well to treatment — the key is getting the right diagnosis and not assuming you have to live with either.",
+    "content": {
+      "intro": "Anxiety and sleep exist in one of the most vicious feedback loops in mental health: anxiety disrupts sleep, and sleep deprivation worsens anxiety. Losing one night of sleep increases next-day anxiety by up to 30% (per research from UC Berkeley's Center for Human Sleep Science). This creates a self-reinforcing cycle that can be extremely difficult to break without deliberate intervention targeting both sides simultaneously.\n\nAnxiety-driven insomnia is the most common form of insomnia seen in clinical practice, and it responds well to both Cognitive Behavioral Therapy for Insomnia (CBT-I) and anxiety-specific interventions.",
+      "howItAffects": "Anxiety activates the hypothalamic-pituitary-adrenal (HPA) axis, triggering cortisol and catecholamine release. This physiological stress response — evolved for dealing with immediate physical threats — is incompatible with sleep. The brain in an anxious state is actively scanning the environment for danger, suppressing the parasympathetic 'rest and digest' state that sleep requires.\n\nThe characteristic sleep pattern of anxiety disorders shows prolonged sleep latency (lying awake for 30–60+ minutes ruminating), frequent awakenings in the second half of the night (when cortisol naturally rises), and early morning awakening with an inability to return to sleep. REM sleep is also disrupted — anxiety increases REM density and emotionally negative dream content, reducing the emotional-processing benefit that healthy REM sleep provides.",
+      "tips": "The most evidence-based approach for anxiety-driven insomnia is combined CBT-I and Cognitive Behavioral Therapy for Anxiety (CBT-A). CBT-I addresses the learned sleep-wake behaviors that perpetuate insomnia, while CBT-A targets the underlying worry and catastrophic thinking patterns.\n\nScheduled worry time is surprisingly effective: designating 20–30 minutes in the early evening (not close to bed) to actively engage with worries, write them down, and develop action plans. This prevents the brain from feeling the need to 'process' worries at bedtime when there are no distractions.\n\nThe evening wind-down protocol for anxiety needs to be more deliberate and extended than standard sleep hygiene. A 90-minute wind-down starting at 8:30 PM (for a 10 PM target sleep time) might include: finishing work at 8:30 PM, light stretching or yoga, a warm shower, journaling, and 20 minutes of progressive muscle relaxation in bed.",
+      "warning": "Anxiety disorders and comorbid insomnia are serious medical conditions. While the lifestyle strategies described here are evidence-based, significant anxiety should be evaluated by a qualified mental health professional. Benzodiazepines and other sedative medications prescribed for anxiety may help short-term but worsen sleep architecture long-term and carry significant dependence risk. Discuss the risks and benefits with your prescriber."
+    },
+    "faq": [
+      {
+        "question": "Why does anxiety always seem worse at night?",
+        "answer": "Nighttime anxiety worsens for several reasons: there are fewer distractions, so the mind turns inward; the natural circadian rise in cortisol in the early morning hours (2–4 AM) coincides with light sleep stages, making it easy for anxiety to fully wake you; and the darkness and stillness create a sensory void that the anxious brain fills with worry."
+      },
+      {
+        "question": "Can anxiety cause physical symptoms at night that wake me up?",
+        "answer": "Yes — anxiety activates the sympathetic nervous system, causing increased heart rate, racing pulse, chest tightness, shortness of breath, sweating, and GI discomfort. These physical sensations can wake you from sleep and trigger further anxiety in a feedback loop. Nocturnal panic attacks are a specific presentation of anxiety disorder that causes sudden awakenings with intense physical symptoms."
+      },
+      {
+        "question": "Does exercise help anxiety and sleep?",
+        "answer": "Moderate aerobic exercise is one of the most effective non-pharmacological treatments for both anxiety and insomnia. A meta-analysis of 49 studies found exercise reduces anxiety symptoms comparably to medication in mild-moderate cases. The timing matters: exercise earlier in the day (morning or early afternoon) improves both anxiety and sleep; vigorous exercise within 2 hours of bed may temporarily elevate cortisol and delay sleep."
+      },
+      {
+        "question": "Is melatonin helpful for anxiety-driven insomnia?",
+        "answer": "Melatonin is a sleep-onset signal, not a sedative — it tells the brain 'it's time for sleep' but does not reduce anxiety arousal directly. For anxiety-driven insomnia, melatonin may help if the primary problem is sleep-timing disruption, but it does not address the hyperarousal that prevents sleep. Addressing anxiety directly (via CBT, breathing techniques, or appropriate medication) is more effective."
+      },
+      {
+        "question": "What breathing techniques help anxiety at bedtime?",
+        "answer": "Box breathing (4 counts in, hold 4, out 4, hold 4) and 4-7-8 breathing (inhale 4, hold 7, exhale 8) are both clinically validated for activating the parasympathetic nervous system. The long exhale is the key mechanism — it directly slows the heart rate via the vagus nerve. Practice 4–6 rounds as part of your pre-sleep routine. The effect builds with regular practice over days to weeks."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "depression", "ptsd"]
+  },
+  {
+    "slug": "depression",
+    "conditionName": "Depression",
+    "title": "Sleep Calculator for Depression — How Depression Affects Sleep",
+    "h1": "Sleep Calculator for Depression",
+    "metaDescription": "Depression dramatically changes sleep patterns — causing both insomnia and hypersomnia. Learn how depression affects sleep architecture and what evidence-based strategies help.",
+    "howItAffectsSleep": "Depression profoundly disrupts sleep architecture in ways distinct from ordinary poor sleep. The most characteristic finding is dramatically shortened REM latency — people with depression enter REM sleep much faster and earlier in the night than normal, shifting the normal architecture of deep slow-wave sleep in the first half to REM-dominated sleep. This produces a characteristic pattern: falling asleep relatively easily, then waking at 3–4 AM with an inability to return to sleep, followed by a dreaded early morning awakening. Insomnia affects 65–90% of people with major depression; hypersomnia (sleeping too much) affects 15–40%, particularly in bipolar depression.",
+    "adjustedSleepRecommendations": "For depression-related insomnia, maintaining a fixed, slightly earlier wake time (even if it means less total sleep initially) can be paradoxically beneficial — sleep restriction reduces the time spent in early-morning unrestorative sleep and is a component of some depression treatments. For hypersomnia, establishing a hard upper limit on time in bed (no more than 9–9.5 hours) prevents the 'social withdrawal' pattern of excessive sleep that worsens depression.",
+    "sleepHygieneTips": [
+      "Morning bright light exposure is both a circadian anchor and a clinically proven antidepressant — 30 minutes at 10,000 lux within 30 minutes of waking produces antidepressant effects comparable to medication in seasonal depression.",
+      "Maintain a consistent, slightly challenging wake time even on bad days — depressive inertia makes this feel impossible, but it is the most important behavioral anchor.",
+      "Physical activity — even a 20-minute walk — significantly reduces depression and improves sleep quality in the same day.",
+      "Avoid long daytime naps — they can provide temporary relief but worsen nighttime sleep difficulty and reinforce depressive withdrawal.",
+      "Social connection, even brief, before bed (a phone call, a text exchange) activates the social brain areas that counteract depressive isolation.",
+      "Track sleep patterns: recording bedtime, wake time, and next-day mood helps identify patterns and motivates adherence to helpful behaviors."
+    ],
+    "whenToSeeDoctor": "Seek immediate help if you are experiencing thoughts of self-harm or suicide. See a doctor promptly for any persistent depressive episode — depression is a medical condition that responds well to treatment. Sleep problems that precede or accompany depressive episodes should be addressed as part of comprehensive depression treatment, not as a separate afterthought.",
+    "content": {
+      "intro": "The relationship between depression and sleep is among the most well-established in psychiatry — and it runs in both directions. Insomnia is both a symptom and a risk factor for depression: people with chronic insomnia are 3× more likely to develop major depression than good sleepers, and treating insomnia often produces measurable reductions in depression severity.\n\nUnderstanding the specific ways depression alters sleep architecture helps explain why simply spending more time in bed rarely helps and why targeted interventions — particularly morning light therapy and behavioral activation — can produce improvements in both depression and sleep simultaneously.",
+      "howItAffects": "The most consistent neurobiological finding in major depression is altered REM sleep: shortened REM latency (the time to first REM period, which normally takes 90 minutes, may be compressed to 20–30 minutes in depression), increased REM density, and loss of the slow-wave sleep that dominates healthy early-night sleep. This produces a characteristic sleep pattern where the first few hours of sleep are relatively light, REM-heavy, and emotionally charged — and the deep, physically restorative sleep that normally occurs early in the night is crowded out.\n\nThe early morning awakening pattern of depression reflects this architecture: by 3–4 AM, most of the REM sleep has already occurred and the sleep drive is partially exhausted, but the depression-disrupted homeostatic system cannot sustain further sleep. The result is lying awake in the early morning hours — the period when depressive rumination and hopelessness often feel most intense.",
+      "tips": "Morning bright light therapy is one of the most evidence-based and underutilized treatments for depression, particularly seasonal depression. Thirty minutes of 10,000-lux light within 30 minutes of waking produces antidepressant effects equivalent to fluoxetine (Prozac) in randomized controlled trials for seasonal affective disorder, and meaningful benefit in non-seasonal depression as well.\n\nBehavioral activation — scheduling pleasurable or meaningful activities in the morning hours — simultaneously treats depression and sleep by anchoring a consistent wake time and replacing passive bed-lying with stimulating (even if low-energy) engagement with life.\n\nFor hypersomnia, establishing a 'maximum time in bed' rule (e.g., no more than 9 hours) prevents the depressive withdrawal pattern of excessive sleep, which while temporarily comforting ultimately worsens mood, deepens circadian disruption, and reinforces social isolation.",
+      "warning": "Depression is a serious medical condition requiring professional treatment. The behavioral and sleep strategies described here are evidence-based adjuncts to, not replacements for, professional mental health care. If you are experiencing thoughts of self-harm, hopelessness, or suicidal ideation, please seek emergency help immediately. In the US, call or text 988 to reach the Suicide and Crisis Lifeline."
+    },
+    "faq": [
+      {
+        "question": "Does depression cause insomnia or does insomnia cause depression?",
+        "answer": "Both. The relationship is bidirectional. Chronic insomnia triples the risk of developing depression in people who have never been depressed. Conversely, depression causes characteristic insomnia (particularly early morning awakening). Treating insomnia reduces depression severity in people with both conditions, and treating depression improves sleep in most patients. The two should be addressed simultaneously."
+      },
+      {
+        "question": "Why do I sleep 12 hours and still feel exhausted with depression?",
+        "answer": "Depression-related hypersomnia produces excessive time in bed without producing restorative sleep. Depression disrupts sleep architecture — particularly slow-wave (deep) sleep — so that even 12 hours of sleep leaves you feeling unrefreshed. Additionally, the depression itself causes fatigue independent of sleep. Counterintuitively, sleeping less (limiting to 8–9 hours) while treating the depression directly often produces more restorative sleep."
+      },
+      {
+        "question": "Can treating insomnia improve depression?",
+        "answer": "Yes — multiple randomized controlled trials show that successfully treating insomnia with CBT-I produces clinically significant reductions in depression severity in people with comorbid insomnia and depression. In some studies, CBT-I produced depression remission rates of 60% — comparable to antidepressant medication. The combination of CBT-I and antidepressant treatment produces the best outcomes."
+      },
+      {
+        "question": "Is morning light therapy effective for depression?",
+        "answer": "Morning light therapy (10,000 lux for 20–30 minutes within 30 minutes of waking) is FDA-recognized for seasonal affective disorder and has strong evidence for non-seasonal depression. A landmark 2016 JAMA study found light therapy equivalent to fluoxetine for seasonal depression, and superior to either alone when combined. It works by advancing the circadian phase and increasing serotonin production."
+      },
+      {
+        "question": "Why is 3–4 AM the worst time of night with depression?",
+        "answer": "The early morning hours represent the nadir of the sleep cycle for people with depression: cortisol begins its natural pre-wake rise, depleted serotonin levels are at their lowest point, and the depressive thought patterns that are naturally suppressed during the day have no competing stimulation. This is also when the shortened REM cycle in depression drives unusually intense dream content and emotional processing. The good news: morning is when the clock can most be reset with light exposure and activity."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "anxiety", "ptsd"]
+  },
+  {
+    "slug": "menopause",
+    "conditionName": "Menopause",
+    "title": "Sleep Calculator for Menopause — How Menopause Affects Sleep",
+    "h1": "Sleep Calculator for Menopause",
+    "metaDescription": "Menopause causes hot flashes, night sweats, and sleep disruption that affect up to 85% of women. Learn evidence-based strategies to manage menopause sleep problems.",
+    "howItAffectsSleep": "Menopause — defined as 12 months after the final menstrual period — and the perimenopause transition leading to it, are among the most significant causes of sleep disruption in midlife women. Up to 85% of menopausal women experience hot flashes and night sweats, which cause repeated overnight awakenings. The hormonal changes of menopause (declining estrogen and progesterone) also directly alter sleep architecture: less deep sleep, more fragmented sleep, and increased likelihood of sleep apnea (which triples in incidence post-menopause). Mood changes and anxiety common in perimenopause independently worsen sleep.",
+    "adjustedSleepRecommendations": "No special adjustment to total sleep need — 7–9 hours remains the target. However, achieving this often requires more time in bed (8–9.5 hours) due to night sweat-driven awakenings. Strategic temperature management of the sleep environment is typically more impactful than any behavioral sleep strategy alone.",
+    "sleepHygieneTips": [
+      "Keep the bedroom at 16–18°C — cooler than the general recommendation to create a wider buffer against hot flash temperature spikes.",
+      "Use moisture-wicking sheets and sleepwear (bamboo or technical fabrics, not cotton). A cooling mattress pad or water-cooled mattress topper can be transformative for night sweats.",
+      "Keep a small fan pointed toward the bed — the moving air dramatically reduces perceived temperature during hot flashes.",
+      "Avoid hot flash triggers in the hours before bed: alcohol, spicy food, hot beverages, and high-stress activities all increase hot flash frequency.",
+      "Hormone replacement therapy (HRT) is the most effective treatment for menopausal symptoms including sleep disruption — discuss the benefits and risks with your gynecologist.",
+      "Cognitive behavioral therapy for insomnia (CBT-I) adapted for menopause significantly improves sleep even without hormonal treatment."
+    ],
+    "whenToSeeDoctor": "Consult your gynecologist or a menopause specialist if hot flashes are significantly disrupting sleep more than 3 nights per week, if you are experiencing mood symptoms, or if you are interested in discussing hormone replacement therapy. Also evaluate for new-onset sleep apnea — post-menopausal women have sleep apnea rates approaching those of men, which is frequently missed because symptoms present differently.",
+    "content": {
+      "intro": "Sleep disruption during the menopause transition is one of the most universal yet underaddressed health issues in midlife women. Most women entering perimenopause have no idea that their suddenly fragmented sleep is a hormonal phenomenon — they blame stress, aging, or 'just being a bad sleeper.' Understanding that menopause-related sleep disruption has specific, treatable mechanisms transforms the approach from resignation to targeted intervention.\n\nThe North American Menopause Society estimates that 61% of perimenopausal and postmenopausal women experience insomnia symptoms, with 40–60% experiencing significant sleep disruption from vasomotor symptoms (hot flashes and night sweats) alone.",
+      "howItAffects": "The primary driver of menopause sleep disruption is vasomotor symptoms — the hot flashes and night sweats that occur when declining estrogen destabilizes the hypothalamic thermostat. During a hot flash, core body temperature rises 1–4°C within minutes, triggering heat dissipation responses (sweating, flushing, rapid heartbeat). When this occurs during sleep, it produces immediate arousal. Hot flashes at night are typically more intense than daytime hot flashes and occur most frequently in the first few hours of sleep when estrogen influence on temperature regulation is weakest.\n\nBeyond hot flashes, declining estrogen and progesterone directly alter sleep architecture: progesterone has natural sedative properties (binding to GABA receptors), so its decline reduces natural sleep consolidation. Sleep apnea risk increases dramatically after menopause, driven by redistribution of body fat and loss of the upper airway-protective effects of estrogen. Mood instability during perimenopause — including depression and anxiety — independently disrupts sleep through the mechanisms described for those conditions.",
+      "tips": "Temperature management of the sleep environment is the highest-impact intervention for night-sweat-driven sleep disruption. This includes: a bedroom temperature of 16–18°C, a high-quality cooling mattress pad or topper (dual-zone systems allow couples to maintain different temperatures), moisture-wicking sheets (bamboo and technical polyester blends outperform cotton in sweat management), lightweight layering rather than heavy blankets, and a bedside fan for immediate relief.\n\nDietary modifications that reduce hot flash frequency include: limiting or eliminating alcohol (particularly red wine and spirits), avoiding spicy foods in the evening, reducing caffeine, and limiting hot beverages before bed. The Women's Health Initiative found that mindfulness-based stress reduction significantly reduced perceived hot flash intensity and improved sleep quality.\n\nHormone replacement therapy remains the most effective treatment for vasomotor symptoms and their sleep consequences — reducing hot flash frequency by 75–85% in most patients. The risk-benefit profile of HRT has been substantially revised since the early 2000s: for women under 60 or within 10 years of menopause without specific contraindications, current evidence generally supports its use for significant symptom burden.",
+      "warning": "Hormone replacement therapy is a medical decision requiring individual assessment by a qualified healthcare provider. Do not begin, stop, or modify HRT without medical guidance. Post-menopausal women experiencing new symptoms of sleep-disordered breathing (snoring, gasping, unrefreshing sleep) should be evaluated for sleep apnea — this condition is significantly underdiagnosed in women because symptoms are often attributed to menopause."
+    },
+    "faq": [
+      {
+        "question": "How long does menopause sleep disruption last?",
+        "answer": "Vasomotor symptoms (hot flashes and night sweats) typically peak in the 2 years around the final menstrual period and gradually diminish over 4–7 years in most women, though 10–15% of women experience symptoms for more than 10 years. The sleep disruption tends to track with vasomotor symptom severity. Treatment significantly shortens the period of disruption."
+      },
+      {
+        "question": "Does HRT improve sleep during menopause?",
+        "answer": "Yes — hormone replacement therapy (estrogen alone or combined estrogen-progesterone) is the most effective treatment for menopause-related sleep disruption. It reduces hot flash frequency by 75–85%, improves sleep continuity, increases slow-wave sleep, and reduces objective sleep-disordered breathing in most postmenopausal women. The decision to use HRT should be made with your healthcare provider based on individual health history."
+      },
+      {
+        "question": "Why do hot flashes wake me up at night?",
+        "answer": "Hot flashes occur when the hypothalamus — the brain's thermostat — experiences instability due to declining estrogen. A surge of body heat triggers an immediate heat-dissipation response (sweating, heart rate increase, blood vessel dilation). This physiological response is incompatible with sleep and produces full arousal, typically followed by chills as the heat dissipates. The whole episode usually lasts 3–5 minutes but the post-arousal cooling response can make returning to sleep difficult."
+      },
+      {
+        "question": "Can non-hormonal medications help with menopause sleep problems?",
+        "answer": "Yes. For women who cannot or choose not to use HRT, evidence-based non-hormonal options include: low-dose paroxetine (FDA-approved for vasomotor symptoms), gabapentin, clonidine, and oxybutynin. CBT-I adapted for menopause significantly improves sleep even without hormonal treatment. Discuss these options with your gynecologist or menopause specialist."
+      },
+      {
+        "question": "Is perimenopause sleep disruption different from menopause sleep disruption?",
+        "answer": "Yes. Perimenopause (the transition period, often 4–10 years before the final period) is characterized by hormonal fluctuation rather than consistent decline — estrogen levels swing dramatically from day to day, which can be more disruptive than the stable low levels of postmenopause. Sleep disruption in perimenopause often precedes visible hot flashes and may initially be mistaken for stress-related insomnia."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "anxiety", "depression"]
+  },
+  {
+    "slug": "restless-leg-syndrome",
+    "conditionName": "Restless Leg Syndrome",
+    "title": "Sleep Calculator for Restless Leg Syndrome — RLS and Sleep",
+    "h1": "Sleep Calculator for Restless Leg Syndrome (RLS)",
+    "metaDescription": "Restless leg syndrome causes uncomfortable leg sensations at night that make sleep nearly impossible. Learn what causes RLS and evidence-based treatments that actually help.",
+    "howItAffectsSleep": "Restless leg syndrome (RLS) — now formally called Willis-Ekbom disease — is a neurological disorder characterized by an irresistible urge to move the legs, accompanied by uncomfortable sensations (described as crawling, creeping, pulling, throbbing, or itching) that occur primarily at night when lying down. The sensations are partially relieved by movement, which means attempting sleep triggers the symptoms most intensely. RLS produces significant sleep-onset insomnia and frequently co-occurs with periodic limb movements of sleep (PLMS), which cause repeated leg jerks during sleep even after initial sleep onset.",
+    "adjustedSleepRecommendations": "RLS typically worsens as the night progresses, so many sufferers find relief by sleeping slightly later (midnight or later) when dopamine activity is relatively higher. A later-shifted sleep schedule may reduce the hours spent trying to fall asleep against the worst symptom window. Total sleep need remains 7–9 hours — the challenge is finding a window where symptoms are manageable.",
+    "sleepHygieneTips": [
+      "Iron deficiency is the most common and treatable cause of RLS — have your ferritin level tested. A ferritin below 75 µg/L is associated with RLS; supplementing iron to above 100 µg/L reduces symptoms in most iron-deficient patients.",
+      "Magnesium deficiency contributes to RLS in some patients. A magnesium glycinate supplement taken at bedtime is low-risk and often helpful.",
+      "Moderate aerobic exercise earlier in the day reduces RLS symptom severity. Avoid intense exercise within 3 hours of bed — it may temporarily worsen symptoms.",
+      "Avoid RLS triggers: alcohol, caffeine, antihistamines (Benadryl), many antidepressants (SSRIs and tricyclics), and antipsychotics all worsen RLS significantly.",
+      "Warm baths, leg massage, stretching, or a heating pad applied to the legs 30–60 minutes before bed can reduce symptom onset.",
+      "Pneumatic compression devices are FDA-approved for RLS and provide relief through counter-stimulation of leg nerves."
+    ],
+    "whenToSeeDoctor": "See a doctor if RLS is occurring 3+ nights per week and disrupting sleep. Request an iron panel including ferritin specifically — standard iron tests often miss RLS-relevant deficiency. A sleep specialist or neurologist can assess whether medication treatment (dopamine agonists, alpha-2-delta ligands) is appropriate for more severe cases.",
+    "content": {
+      "intro": "Restless leg syndrome affects 7–10% of the population and is one of the most frequently misdiagnosed and undertreated sleep disorders. Many sufferers spend years not realizing they have a recognized neurological condition with specific, effective treatments — instead concluding they simply cannot sleep or that their leg discomfort is just 'how they are.'\n\nThe impact on sleep is severe: RLS-related sleep disruption averages 1–3 hours of lost sleep per night in moderate-to-severe cases, and the resulting sleep deprivation compounds over months and years into significant cognitive and physical health consequences.",
+      "howItAffects": "RLS symptoms follow a classic circadian pattern: they are minimal or absent in the morning and afternoon, begin in the early evening (often around 6–8 PM), and reach their worst intensity in the late evening and night. This timing directly coincides with bedtime, creating a situation where the act of lying down and attempting to sleep immediately intensifies the symptoms.\n\nThe neurological mechanism of RLS involves dopamine dysregulation in the basal ganglia, which is why dopamine-active medications are effective treatments. Iron is a required co-factor for dopamine synthesis, which is why iron deficiency is the most common and most directly treatable cause of RLS. Interestingly, RLS shares neurological pathways with ADHD (also associated with dopamine dysregulation), which is why the two conditions frequently co-occur.",
+      "tips": "Iron optimization is the first-line intervention for any RLS sufferer with ferritin below 100 µg/L. Standard iron supplementation (ferrous sulfate 325 mg with vitamin C for absorption) typically takes 3–4 months to meaningfully raise ferritin. Intravenous iron infusion provides faster results and is increasingly used for severe cases.\n\nFor behavioral management, the counterintuitive strategy of shifting the sleep window later (to midnight or 1 AM) reduces the hours spent awake against peak symptom intensity. Combined with a strict later wake time, this creates a compressed sleep schedule that maximizes sleep efficiency even with some early-evening symptom burden.\n\nLeg stimulation before bed — warm baths, foam rolling, stretching, cold showers, massage — activates competing sensory signals in the legs that partially suppress the RLS sensation. These interventions last 30–90 minutes, enough to bridge the critical sleep-onset window.",
+      "warning": "Several commonly used medications dramatically worsen RLS: antihistamines (especially diphenhydramine — found in Benadryl and most OTC sleep aids), SSRIs and tricyclic antidepressants, antipsychotics, and anti-nausea medications. If you have RLS, avoid OTC sleep aids containing diphenhydramine entirely. Inform any prescribing physician about your RLS before starting new medications."
+    },
+    "faq": [
+      {
+        "question": "What does restless leg syndrome actually feel like?",
+        "answer": "RLS is described as an uncomfortable but not quite painful sensation deep in the legs — most often the calves, thighs, or feet. Common descriptions include: crawling, creeping, itching, tingling, burning, pulling, or an indescribable need to move. The key feature is that movement temporarily relieves the sensation, which is why sufferers pace, kick, or continuously shift position. The sensation returns when movement stops."
+      },
+      {
+        "question": "Can iron deficiency cause restless leg syndrome?",
+        "answer": "Yes — iron deficiency is the most well-established and most directly treatable cause of RLS. Iron is required for the synthesis of dopamine, the neurotransmitter whose dysregulation drives RLS. Studies show that correcting iron deficiency (targeting ferritin above 100 µg/L) significantly reduces RLS symptoms in iron-deficient patients. This is why an iron panel including ferritin is the first test to order for new-onset RLS."
+      },
+      {
+        "question": "Are there medications for restless leg syndrome?",
+        "answer": "Yes. For moderate-to-severe RLS that does not respond to iron optimization and lifestyle management, effective prescription options include: dopamine agonists (pramipexole, ropinirole, rotigotine patch) — effective but carry a risk of 'augmentation' (symptom worsening over time); alpha-2-delta ligands (gabapentin, pregabalin) — often preferred for long-term use; and low-dose opioids for refractory cases. A sleep neurologist can guide medication selection."
+      },
+      {
+        "question": "Does restless leg syndrome get worse over time?",
+        "answer": "In many patients, RLS is progressive — symptoms gradually worsen over years without treatment. Iron supplementation, lifestyle optimization, and when necessary medication can significantly slow or reverse this progression. Augmentation — worsening of symptoms after long-term dopamine agonist use — is a specific phenomenon that affects 40–80% of patients on these medications after several years and requires careful medication management."
+      },
+      {
+        "question": "Is RLS hereditary?",
+        "answer": "RLS has a significant genetic component — approximately 60% of cases have a family history of the condition. Several genetic variants have been identified that increase susceptibility. However, having the genetic risk does not guarantee developing RLS, and environmental factors (iron deficiency, pregnancy, kidney disease, medication use) are often the proximal triggers."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "pregnancy", "chronic-pain"]
+  },
+  {
+    "slug": "chronic-pain",
+    "conditionName": "Chronic Pain",
+    "title": "Sleep Calculator for Chronic Pain — How Pain Disrupts Sleep",
+    "h1": "Sleep Calculator for Chronic Pain",
+    "metaDescription": "Chronic pain and sleep deprivation reinforce each other — poor sleep lowers pain tolerance, and pain prevents restful sleep. Learn strategies to break this cycle.",
+    "howItAffectsSleep": "Chronic pain and sleep disruption are locked in a bidirectional relationship that worsens both conditions over time. Pain increases arousal, interrupts sleep continuity, and reduces time in deep slow-wave sleep — the stage most critical for physical recovery. Meanwhile, sleep deprivation dramatically lowers pain thresholds: even one night of sleep restriction raises experimental pain sensitivity by 20–30%. People with chronic pain conditions average 30–40% less slow-wave sleep than pain-free controls, creating a physical recovery deficit that maintains the pain cycle.",
+    "adjustedSleepRecommendations": "Aim for 8–9 hours of sleep opportunity to allow for the pain-related fragmentation and still accumulate adequate restorative sleep. Consistent timing matters more than duration — the slow-wave sleep that pain most depletes occurs primarily in the first two sleep cycles, so falling asleep at a consistent time maximizes its presence.",
+    "sleepHygieneTips": [
+      "Time pain medications, if prescribed, with your sleep schedule — ask your doctor about optimal dosing timing to maintain coverage through the night.",
+      "Invest in sleep surface optimization: a supportive mattress for your pain condition (typically medium-firm for back pain, pressure-relieving foam for neuropathic pain), body pillows, and positioning wedges.",
+      "Heat therapy (heating pad, electric blanket) applied to pain sites before sleep reduces pain and muscle tension for 2–3 hours.",
+      "Cognitive behavioral therapy for chronic pain (CBT-P) and CBT for insomnia (CBT-I) both improve sleep in chronic pain — combined CBT addressing both simultaneously is available and effective.",
+      "Mindfulness-based stress reduction (MBSR) reduces the emotional amplification of pain signals and has robust evidence for improving sleep in chronic pain conditions.",
+      "Avoid sleeping in pain-avoidant positions that strain other muscle groups — work with a physical therapist to identify pain-neutral positions."
+    ],
+    "whenToSeeDoctor": "Discuss sleep with your pain management team — they may adjust your medication regimen, timing, or type to better support overnight coverage. A pain psychologist or behavioral sleep medicine specialist can provide combined CBT for pain and insomnia. Also evaluate for comorbid sleep disorders (sleep apnea is very common in chronic pain populations, particularly with opioid use).",
+    "content": {
+      "intro": "The relationship between chronic pain and sleep is one of the most clinically important and most often overlooked in pain management. Surveys consistently find that 50–80% of people with chronic pain conditions report clinically significant sleep disturbance — yet pain and sleep are typically treated as separate problems by different specialists, missing the powerful bidirectional relationship between them.\n\nBreaking the pain-sleep cycle is not only possible — it is one of the highest-leverage interventions in chronic pain management, because improving sleep directly reduces next-day pain intensity and increases pain tolerance.",
+      "howItAffects": "The neurobiological link between sleep and pain runs through multiple systems. The descending pain modulation system — the brain's natural pain suppression network — is highly sleep-dependent. Sleep deprivation reduces the activity of this system, dramatically lowering pain thresholds and making existing pain feel more intense. Even modest sleep restriction (6 hours for 5 consecutive nights) produces measurable increases in pain sensitivity in healthy volunteers.\n\nSlow-wave sleep is the most critical restorative stage for physical recovery: it is when growth hormone is released (driving tissue repair), inflammation markers decrease, and the immune system consolidates its overnight work. Chronic pain conditions disrupt slow-wave sleep preferentially — recordings from chronic pain patients show 'alpha intrusions' into delta sleep, the electrical signature of arousal invading deep sleep. The result is physically unrestorative sleep that fails to support the tissue repair the body needs.",
+      "tips": "Sleep surface optimization is often the highest-impact and most immediate intervention for chronic pain sleep disruption. Research supports medium-firm mattresses for most back pain conditions; memory foam or latex for joint pain and fibromyalgia; and a mattress topper adjustment as a lower-cost alternative to full replacement. Positioning wedges and body pillows to offload specific pain sites are often transformative.\n\nCBT-I adapted for chronic pain addresses both the pain catastrophizing that amplifies nighttime pain perception and the learned sleep avoidance behaviors that develop around pain. Studies show it produces comparable sleep improvements to CBT-I in non-pain populations.\n\nMindfulness-based approaches (MBSR, mindfulness-based cognitive therapy) work differently from cognitive approaches — they do not try to eliminate pain but change the relationship to it, reducing the suffering component and the hyperarousal that pain generates around sleep. Eight-week MBSR programs have demonstrated 30–40% reductions in sleep disturbance scores in chronic pain populations.",
+      "warning": "Opioid medications — while sometimes necessary for severe chronic pain — significantly alter sleep architecture, reducing REM and slow-wave sleep and causing sleep-disordered breathing that worsens daytime pain and fatigue. If you take opioid pain medication, discuss sleep quality with your prescriber. Opioid-induced central sleep apnea is common and requires monitoring. Never adjust or discontinue pain medications without your prescriber's guidance."
+    },
+    "faq": [
+      {
+        "question": "Does poor sleep make chronic pain worse?",
+        "answer": "Yes — this is one of the most well-established relationships in pain research. Sleep deprivation reduces activity in the descending pain modulation system (the brain's natural pain suppressors) and increases central sensitization (pain signal amplification). Studies consistently show that improving sleep quality in chronic pain patients reduces next-day pain ratings, often more dramatically than analgesic medication alone."
+      },
+      {
+        "question": "What sleeping positions are best for back pain?",
+        "answer": "For most lower back pain: side sleeping with a pillow between the knees maintains spinal alignment and reduces hip and lumbar strain. Avoid sleeping on your stomach — it places the lumbar spine in hyperextension. Back sleeping with a pillow under the knees can offload the lower back effectively. A medium-firm mattress is supported by most current research for non-specific back pain."
+      },
+      {
+        "question": "Should I take pain medication before bed?",
+        "answer": "Discuss timing with your prescribing physician. For sleep-specific optimization, the goal is maintaining adequate pain coverage through the night — which may mean a longer-acting formulation, a second smaller dose at bedtime, or a different delivery form. Opioid-naive patients should be cautious about increasing doses at bedtime without medical guidance due to respiratory depression risk during sleep."
+      },
+      {
+        "question": "Can exercise help chronic pain sleep problems?",
+        "answer": "Yes — moderate aerobic exercise is one of the most evidence-based interventions for both chronic pain and sleep. Exercise reduces inflammatory cytokines, increases endorphins, improves mood, and directly improves slow-wave sleep. The key is pacing: exercise intensity appropriate for your pain condition, at least 4–6 hours before bed (vigorous exercise close to bed may temporarily increase pain and delay sleep onset)."
+      },
+      {
+        "question": "Is CBT effective for chronic pain insomnia?",
+        "answer": "Yes. Multiple RCTs show that CBT-I adapted for chronic pain improves sleep onset, sleep continuity, and sleep quality in chronic pain populations with effect sizes comparable to CBT-I in non-pain insomnia. The pain-adapted version includes pain-specific content: addressing pain catastrophizing, sleep-interfering pain behaviors, and beliefs about the pain-sleep relationship."
+      }
+    ],
+    "relatedSlugs": ["fibromyalgia", "insomnia", "sleep-apnea"]
+  },
+  {
+    "slug": "fibromyalgia",
+    "conditionName": "Fibromyalgia",
+    "title": "Sleep Calculator for Fibromyalgia — How Fibromyalgia Affects Sleep",
+    "h1": "Sleep Calculator for Fibromyalgia",
+    "metaDescription": "Fibromyalgia and sleep disruption are deeply connected — non-restorative sleep may even be a cause of the condition. Learn evidence-based sleep strategies for fibromyalgia.",
+    "howItAffectsSleep": "Fibromyalgia is characterized by widespread musculoskeletal pain, fatigue, and cognitive difficulties ('fibro fog') — and sleep disruption is both a central symptom and potentially a causal mechanism. Polysomnography in fibromyalgia consistently shows alpha-delta sleep anomaly: alpha waves (associated with relaxed wakefulness) intrude into the delta slow-wave sleep stages, producing physiologically unrestorative sleep even when the person spends 8–9 hours in bed. This is thought to be a key mechanism by which fibromyalgia generates the profound fatigue and increased pain sensitivity that characterize the condition.",
+    "adjustedSleepRecommendations": "Longer sleep opportunity (8–9.5 hours) is often needed because fibromyalgia sleep is less efficient and restorative than normal sleep. Consistency of sleep timing is particularly important — irregular sleep schedules amplify the alpha-delta anomaly and worsen fibromyalgia symptom burden dramatically.",
+    "sleepHygieneTips": [
+      "Sleep hygiene consistency is more critical in fibromyalgia than almost any other sleep-disrupting condition — the same schedule every day, including weekends.",
+      "Low-dose tricyclic antidepressants (amitriptyline, cyclobenzaprine) prescribed for fibromyalgia also improve sleep architecture and are often taken at bedtime — discuss timing with your rheumatologist.",
+      "Aquatic exercise or gentle yoga during the day has strong evidence for improving both pain and sleep quality in fibromyalgia.",
+      "Temperature regulation: fibromyalgia increases thermoregulatory sensitivity — keep the bedroom consistently cool (16–18°C) and avoid temperature fluctuations overnight.",
+      "Mindfulness-based stress reduction (MBSR) has robust evidence for improving both pain and sleep quality specifically in fibromyalgia.",
+      "Avoid overexertion on 'good days' — the boom-bust cycle that many fibromyalgia sufferers fall into worsens sleep on subsequent nights."
+    ],
+    "whenToSeeDoctor": "Work closely with a rheumatologist for fibromyalgia management. Discuss sleep quality explicitly at every appointment — it is a key outcome measure and directly influences pain and fatigue burden. Also evaluate for comorbid sleep apnea (common in fibromyalgia), restless legs syndrome, and depression, which frequently co-occur and each require specific treatment.",
+    "content": {
+      "intro": "Fibromyalgia is a condition in which the central nervous system becomes sensitized to pain signals — ordinary touch becomes painful, ordinary fatigue becomes exhaustion, ordinary stress becomes crisis. At the center of this sensitization is sleep: researchers believe that non-restorative sleep is not just a symptom of fibromyalgia but may be a contributing cause, maintaining and amplifying the central sensitization that defines the condition.\n\nThis means that sleep treatment is not peripheral to fibromyalgia management — it is central. Improving sleep quality in fibromyalgia patients consistently produces improvements in pain, fatigue, cognitive function, and quality of life that are difficult to achieve through other interventions alone.",
+      "howItAffects": "The alpha-delta sleep anomaly — alpha-frequency EEG intrusions into delta (slow-wave) sleep — is one of the most consistent polysomnographic findings in fibromyalgia. Slow-wave sleep is the physically restorative stage: growth hormone is released, tissue inflammation decreases, and cellular repair processes peak. When alpha activity intrudes into this stage, it partially awakens the brain, preventing the full depth of slow-wave sleep and interrupting these repair processes.\n\nThe consequences are measurable: fibromyalgia patients have 50–70% less deep sleep than healthy controls, even when lying in bed for 8–9 hours. This creates a physical recovery deficit that maintains inflammatory markers at elevated levels and keeps pain sensitivity high — regardless of how much total sleep time is achieved. This is why fibromyalgia sufferers wake unrefreshed even after apparently adequate sleep and why the fatigue is qualitatively different from ordinary tiredness.",
+      "tips": "Low-dose amitriptyline (5–25 mg at bedtime) is one of the most evidence-based pharmacological interventions for fibromyalgia sleep specifically. Unlike standard antidepressant doses, the very low doses used for fibromyalgia work primarily by suppressing the alpha intrusion into slow-wave sleep and increasing time in deep sleep. It is typically well-tolerated at these doses. Discuss with your rheumatologist.\n\nGraded aerobic exercise is the intervention with the strongest overall evidence base in fibromyalgia — improving pain, fatigue, cognitive function, and sleep simultaneously. The key word is graded: starting very gradually (even 5-minute walks) and increasing slowly to avoid post-exertional flares. Swimming and water aerobics are particularly well-tolerated because the water's resistance builds cardiovascular fitness with minimal joint stress.\n\nMindfulness-based stress reduction (MBSR) has been specifically studied in fibromyalgia and consistently shows improvements in sleep quality, pain catastrophizing, and pain severity. An 8-week program produced improvements maintained at 3-year follow-up in one landmark study.",
+      "warning": "Fibromyalgia requires diagnosis and management by a qualified physician — typically a rheumatologist. Symptoms overlap with many other conditions (lupus, thyroid disease, multiple sclerosis, inflammatory arthritis) that require very different treatments. Do not self-diagnose or self-treat. The sleep strategies described here are adjunctive to medical management, not replacements for it."
+    },
+    "faq": [
+      {
+        "question": "Why do I wake up exhausted with fibromyalgia even after 9 hours of sleep?",
+        "answer": "The alpha-delta sleep anomaly that characterizes fibromyalgia means your slow-wave (deep) sleep is constantly being disrupted by brain activity that partially prevents you from fully entering restorative stages. You are spending 9 hours in bed but getting far fewer hours of genuinely restorative sleep. Treatments that specifically increase slow-wave sleep quality (low-dose tricyclics, sodium oxybate in refractory cases) address this directly."
+      },
+      {
+        "question": "Is fibromyalgia caused by poor sleep?",
+        "answer": "The relationship is complex. Research shows sleep deprivation can induce fibromyalgia-like widespread pain and hyperalgesia in healthy volunteers within days. Restoring sleep reduces these symptoms. This suggests non-restorative sleep may be a causal mechanism that maintains fibromyalgia's central sensitization. However, fibromyalgia likely develops from an interaction of genetic vulnerability, physical or psychological trauma, and sustained sleep disruption — not from sleep deprivation alone."
+      },
+      {
+        "question": "What medications help fibromyalgia sleep specifically?",
+        "answer": "Low-dose amitriptyline (5–25 mg) and cyclobenzaprine (5–10 mg) both improve sleep architecture in fibromyalgia by reducing the alpha-delta anomaly. Duloxetine and milnacipran (SNRIs FDA-approved for fibromyalgia) improve overall symptom burden including sleep. Sodium oxybate significantly improves slow-wave sleep and pain in fibromyalgia but has limited availability due to its controlled substance status. Discuss all options with your rheumatologist."
+      },
+      {
+        "question": "Does exercise make fibromyalgia sleep worse?",
+        "answer": "Vigorous or excessive exercise absolutely can worsen fibromyalgia symptoms including sleep (post-exertional malaise). However, appropriately graded aerobic exercise — starting very gently and building slowly over weeks to months — is the intervention with the strongest evidence for improving fibromyalgia outcomes. The key is pacing: the same total activity spread over more days is better tolerated than concentrated exercise sessions."
+      },
+      {
+        "question": "Is fibromyalgia the same as chronic fatigue syndrome?",
+        "answer": "They are distinct diagnoses with significant overlap. Fibromyalgia is defined primarily by widespread pain and tenderness; chronic fatigue syndrome (ME/CFS) is defined primarily by post-exertional malaise (symptom worsening after minimal exertion) and cognitive impairment. Both feature non-restorative sleep as a core symptom. Approximately 20–70% of patients with one diagnosis also meet criteria for the other. The treatments, however, differ — particularly regarding exercise, which helps fibromyalgia but can worsen ME/CFS."
+      }
+    ],
+    "relatedSlugs": ["chronic-pain", "insomnia", "restless-leg-syndrome"]
+  },
+  {
+    "slug": "shift-work-disorder",
+    "conditionName": "Shift Work Sleep Disorder",
+    "title": "Sleep Calculator for Shift Work Sleep Disorder",
+    "h1": "Sleep Calculator for Shift Work Sleep Disorder",
+    "metaDescription": "Shift work sleep disorder affects millions of night and rotating shift workers. Learn how to align your sleep schedule with your work hours and minimize the health risks.",
+    "howItAffectsSleep": "Shift work sleep disorder (SWSD) occurs when work schedule demands are chronically misaligned with the body's circadian clock. Night shift workers must sleep during the day when the circadian system is actively promoting wakefulness, and work at night when it is driving sleep. The result: day sleep is typically 1–3 hours shorter and significantly less restorative than night sleep, accumulated sleep debt is chronic, melatonin cannot be produced normally (light during wake hours suppresses it), and cognitive performance is markedly impaired — particularly on the morning of the return from night shifts.",
+    "adjustedSleepRecommendations": "Night shift workers should target 7–9 hours immediately after their shift ends (not after commuting, running errands, etc.). For rotating shift workers, maintaining a stable sleep anchor across shift types helps minimize circadian disruption. Use the shift worker calculator on this site for specific schedule optimization.",
+    "sleepHygieneTips": [
+      "Sleep immediately after your night shift ends — every hour of delay reduces total daytime sleep by the same amount, as social morning activity increases.",
+      "Make your sleep environment completely light-proof: professional blackout curtains, sleep mask, and if necessary, tape over LED indicators. Daytime darkness is non-negotiable for quality day sleep.",
+      "Wear dark, blue-light blocking glasses during your commute home after a night shift — morning light during the commute is a powerful circadian disruptor that prevents quality day sleep.",
+      "Strategic napping: a 20-minute nap before your night shift begins (evening nap) reduces fatigue during the shift. An additional 20-minute nap during a break keeps performance steady.",
+      "Low-dose melatonin (0.5–1 mg) taken 30 minutes before your target daytime sleep time helps overcome the circadian wake-promotion signal.",
+      "Maintain a strict no-disturbance policy during your sleep hours — use a door sign, communicate with household members, and silence all devices."
+    ],
+    "whenToSeeDoctor": "See a doctor if shift work has produced persistent insomnia, excessive sleepiness during shifts that impairs safety, mood or cognitive problems, or significant metabolic changes (weight gain, blood sugar changes). A sleep specialist can prescribe wake-promoting medications (modafinil, armodafinil) for shift work sleepiness and provide a formal SWSD diagnosis that may support workplace accommodation requests.",
+    "content": {
+      "intro": "Approximately 15–20% of the working population in industrialized countries works night or rotating shifts — and a substantial proportion of these workers develop shift work sleep disorder, defined as insomnia or excessive sleepiness directly attributable to their work schedule. SWSD is not simply 'bad sleep' from a tough job; it is a recognized sleep disorder caused by systematic misalignment between work demands and biological timing.\n\nThe health consequences of long-term shift work are significant: increased risk of cardiovascular disease, metabolic syndrome, type 2 diabetes, breast cancer, and depression, all mediated largely through chronic sleep disruption and circadian misalignment. Minimizing this impact requires specific, evidence-based strategies.",
+      "howItAffects": "The human circadian clock evolved over millions of years to align wakefulness with daylight and sleep with darkness. This system is not passive — it actively promotes wakefulness during the day through a coordinated cascade of hormones, neurotransmitters, and neural activity that directly opposes sleep, and promotes sleep onset through melatonin and reduced core body temperature in the evening.\n\nNight shift workers fight this system continuously: their night shifts coincide with maximum circadian sleep pressure, and their required daytime sleep coincides with maximum circadian wake promotion. The resulting daytime sleep is shorter (1–2 hours less on average), lighter (less slow-wave sleep), and more easily interrupted than the nighttime sleep they are missing. After months or years, the cumulative sleep debt is enormous — equivalent to losing months of restorative sleep.",
+      "tips": "The two most effective strategies for improving day sleep quality in night shift workers are environmental darkness and melatonin timing. Achieving complete darkness during day sleep requires more than curtains — most standard bedroom curtains allow enough light to significantly suppress daytime melatonin. Blackout curtains rated to 99%+ light blockage, combined with a high-quality sleep mask, create the darkness equivalent of 2 AM in the middle of the afternoon.\n\nBlue-light blocking glasses worn during the morning commute home are a counterintuitive but highly effective strategy: morning light exposure during the commute resets the circadian clock toward a daytime schedule just when you need to sleep during the day. Dark glasses that block blue and green light wavelengths prevent this reset and allow quality day sleep 30–60 minutes sooner.\n\nStrategic napping is the most underutilized tool in shift work management. A 20-minute nap in the early evening before a night shift (the 'prophylactic nap') reduces subjective sleepiness during the shift by 30–40% and improves cognitive performance, particularly in the early morning hours when alertness is lowest. An additional 20-minute nap during a shift break maintains performance.",
+      "warning": "Driving after a night shift is among the highest-risk scenarios for drowsy driving. Cognitive impairment after a full night shift in terms of reaction time and decision making is equivalent to a blood alcohol level of 0.05–0.08%. If possible, use public transport or ride-sharing after night shifts. If you must drive, a 15–20 minute nap before leaving work significantly reduces this risk."
+    },
+    "faq": [
+      {
+        "question": "How much sleep do night shift workers actually get?",
+        "answer": "Research consistently shows night shift workers average 1–2 hours less sleep per day than day workers, accumulating a weekly sleep debt of 7–14 hours. This is largely because social and environmental factors (noise, light, family obligations, the circadian clock's wake-promoting drive during daylight) interrupt day sleep. Strategic environmental and behavioral optimization can recover 30–60 minutes of this deficit."
+      },
+      {
+        "question": "Is it healthy to work night shifts long-term?",
+        "answer": "Long-term night shift work is associated with increased risk of cardiovascular disease (20–40% higher risk), type 2 diabetes (2× risk), breast cancer (30% higher risk in female night workers per WHO assessment), and depression. These risks are mediated primarily by chronic circadian misalignment and sleep deprivation. Minimizing these risks requires maximizing sleep quality and periodically taking extended breaks from night work when possible."
+      },
+      {
+        "question": "How do I sleep when it's noisy and light outside?",
+        "answer": "Environmental control is the central challenge of day sleeping. Priority investments: 99%+ blackout curtains (not regular blackout curtains — test with a flashlight), a white noise machine or earplugs rated for noise isolation, sleep mask as backup, air conditioning or fan for temperature and noise, and a 'Do Not Disturb' door sign. Earplugs rated at NRR 33 reduce noise exposure by up to 33 decibels, the difference between a conversation and a whisper."
+      },
+      {
+        "question": "Can I get my body fully adapted to night shift work?",
+        "answer": "Most people never fully adapt to night shift work because the social and light environment conspires to reset the circadian clock toward a day schedule on days off. Workers who maintain a consistent night schedule 7 days a week (including weekends) achieve the best adaptation, but this requires significant lifestyle sacrifice. Rotating shift workers, who change shift timing frequently, almost never fully adapt and experience the highest health burden."
+      },
+      {
+        "question": "What is the best shift rotation pattern for health?",
+        "answer": "Research supports a slowly rotating clockwise pattern (day → evening → night) over counterclockwise rotation, as the circadian clock naturally adapts more easily to later timing. Slow rotations (changing shift type every 2–3 weeks) are far better than weekly rotations, which provide insufficient time for adaptation before the schedule changes again. Fixed shift schedules, even fixed nights, are better than rotating schedules for long-term health."
+      }
+    ],
+    "relatedSlugs": ["insomnia", "adhd", "anxiety"]
+  },
+  {
+    "slug": "narcolepsy",
+    "conditionName": "Narcolepsy",
+    "title": "Sleep Calculator for Narcolepsy — Living with Narcolepsy and Sleep",
+    "h1": "Sleep Calculator for Narcolepsy",
+    "metaDescription": "Narcolepsy causes excessive daytime sleepiness and uncontrollable sleep attacks. Learn how narcolepsy affects sleep architecture and what management strategies help.",
+    "howItAffectsSleep": "Narcolepsy is a chronic neurological disorder caused by loss of hypocretin (orexin) neurons in the hypothalamus — the neurons responsible for maintaining wakefulness and regulating the boundary between sleep and wakefulness. Type 1 narcolepsy features cataplexy (sudden muscle weakness triggered by strong emotion), sleep paralysis, hypnagogic hallucinations, and disrupted nighttime sleep. Type 2 narcolepsy shares the excessive daytime sleepiness without cataplexy. Both types produce fragmented nighttime sleep with abnormal REM intrusion — REM sleep begins within minutes of sleep onset (SOREMP), compared to the normal 90-minute delay.",
+    "adjustedSleepRecommendations": "Structured napping is a core management strategy for narcolepsy — two scheduled 15–20 minute naps at fixed times (typically mid-morning and mid-afternoon) dramatically reduce the severity and frequency of uncontrolled sleep attacks. Night sleep should be protected and optimized even though it will still be fragmented — 7.5–9 hours provides the best coverage.",
+    "sleepHygieneTips": [
+      "Schedule 2 strategic naps per day at consistent times — this is not optional rest but a legitimate therapeutic strategy that significantly reduces sleep attacks.",
+      "Maintain strict sleep hygiene for nighttime sleep: consistent timing, optimal environment, and adherence to a pre-sleep wind-down routine.",
+      "Avoid alcohol and sedating medications that worsen fragmentation of already disrupted nighttime sleep.",
+      "Notify your employer and educational institution about your diagnosis — legal accommodations (rest breaks, schedule flexibility) may be available and are often essential for functioning.",
+      "Narcolepsy requires medical management — work closely with your sleep specialist to optimize medication timing around your daily schedule.",
+      "Be extremely cautious about driving and operating machinery — uncontrolled sleep attacks create significant safety risks."
+    ],
+    "whenToSeeDoctor": "Narcolepsy requires diagnosis by a sleep specialist using polysomnography followed by a Multiple Sleep Latency Test (MSLT). If you experience excessive, irresistible daytime sleepiness, sudden muscle weakness triggered by laughter or strong emotions, sleep paralysis, or vivid hallucinations at sleep onset or waking, seek evaluation. Narcolepsy is frequently misdiagnosed for 8–10 years on average — be persistent in seeking diagnosis.",
+    "content": {
+      "intro": "Narcolepsy is one of the most misunderstood sleep disorders — commonly dismissed as laziness or weakness rather than recognized as the serious neurological condition it is. The average delay between symptom onset and diagnosis is 8–10 years, during which time patients navigate school, work, and relationships with a condition that makes staying awake as effortful as it would be for a healthy person to stay awake for 40+ hours without sleep.\n\nThe core problem in narcolepsy type 1 is autoimmune destruction of the 70,000–100,000 hypocretin (orexin) neurons in the hypothalamus — neurons that function as the brain's wakefulness 'on switch.' Without them, the boundary between sleep and wakefulness becomes unstable and permeable, producing the defining symptoms of the condition.",
+      "howItAffects": "In narcolepsy, REM sleep intrudes into wakefulness — producing hypnagogic hallucinations (vivid dream-like experiences at sleep onset), sleep paralysis (the REM muscle atonia extending into waking), and cataplexy (sudden loss of muscle tone during strong emotions — the brain's wake-sleep transition triggered by emotional arousal). These are all consequences of an unstable sleep-wake boundary.\n\nNighttime sleep in narcolepsy is severely disrupted despite the strong sleepiness: fragmented, light, and filled with abnormal REM at sleep onset (SOREMPs). Patients often describe sleeping 10 hours and waking exhausted, taking multiple unintended naps, and still struggling through the day. The quantitative EEG finding of mean sleep latency under 8 minutes on the MSLT, combined with 2+ SOREMPs, is diagnostic.",
+      "tips": "Scheduled strategic napping is the behavioral cornerstone of narcolepsy management. Two 15–20 minute naps per day at consistent times (the exact times should be chosen based on when sleepiness peaks in the individual) reduce the frequency and severity of sleep attacks significantly — multiple controlled studies show 2 scheduled naps per day reduces unintended sleep attacks by 50–80%.\n\nMedication management is essential for most people with narcolepsy: wake-promoting agents (modafinil, armodafinil, or the newer solriamfetol and pitolisant) are the first-line pharmacological treatment. For cataplexy, sodium oxybate (GHB) taken in two doses during the night consolidates and improves nighttime sleep while also reducing daytime sleepiness and eliminating cataplexy in 60–80% of patients. Stimulants (methylphenidate, amphetamines) are also used.\n\nLifestyle adaptations are essential: workplace accommodations (scheduled rest breaks, flexible start times, work-from-home arrangements), driving restrictions (many narcolepsy patients should not drive without adequate medication coverage and scheduled naps), and transparent communication with employers and family about the nature of the condition.",
+      "warning": "Narcolepsy is a lifelong condition requiring ongoing medical management. Never stop or adjust narcolepsy medications without guidance from your sleep specialist — abrupt changes can dramatically destabilize symptom control. Narcolepsy significantly impairs driving safety: multiple studies show uncontrolled narcolepsy produces accident rates comparable to drunk driving. Do not drive until your condition is adequately controlled with treatment."
+    },
+    "faq": [
+      {
+        "question": "What does a narcolepsy sleep attack feel like?",
+        "answer": "A narcolepsy sleep attack is an overwhelming, irresistible urge to sleep that comes on suddenly — often triggered by monotonous activity, relaxation, or emotional states. Unlike normal drowsiness that builds gradually, narcolepsy sleep attacks can be abrupt and brief (5–15 minutes), after which the person often wakes feeling refreshed temporarily, only for sleepiness to return within 1–2 hours. The person has little or no control over these episodes."
+      },
+      {
+        "question": "Can narcolepsy develop later in life?",
+        "answer": "Yes, though narcolepsy most commonly develops in adolescence (ages 10–20) or early adulthood. It can develop at any age, and cases triggered by streptococcal infections, flu, or significant immune events have been documented at later ages. Late-onset narcolepsy (after 40) is less common but real, and may be triggered by brain injury, hypothalamic tumors, or immune events."
+      },
+      {
+        "question": "Is cataplexy dangerous?",
+        "answer": "Cataplexy — the sudden muscle weakness triggered by strong emotions — ranges from mild (slight head drop, jaw sagging, knee buckling) to severe (full body collapse). It is not dangerous to the brain (people remain conscious throughout), but the sudden loss of muscle control creates physical injury risk from falls. Avoiding triggers and appropriate medication (sodium oxybate eliminates cataplexy in most patients) are the management approaches."
+      },
+      {
+        "question": "Does narcolepsy get worse over time?",
+        "answer": "The underlying hypocretin neuron loss in narcolepsy type 1 is typically complete within 1–3 years of onset and does not continue to progress significantly after that. However, the functional impact of the condition — particularly with poor management — can worsen as sleep debt accumulates. Well-managed narcolepsy (optimal medication, scheduled napping, sleep hygiene) maintains relatively stable function for decades."
+      },
+      {
+        "question": "Can I drive with narcolepsy?",
+        "answer": "Driving safety with narcolepsy requires careful evaluation and management. Uncontrolled narcolepsy is disqualifying for commercial driving licenses in most countries. For personal driving, most sleep medicine guidelines support driving after adequate control of symptoms is established through medication and scheduled napping — typically 2–3 hours free of sleepiness as a minimum standard. Discuss driving specifically with your sleep specialist."
+      }
+    ],
+    "relatedSlugs": ["shift-work-disorder", "insomnia", "sleep-apnea"]
+  },
+  {
+    "slug": "ptsd",
+    "conditionName": "PTSD",
+    "title": "Sleep Calculator for PTSD — How Trauma Affects Sleep",
+    "h1": "Sleep Calculator for PTSD",
+    "metaDescription": "PTSD causes nightmares, hypervigilance, and sleep avoidance that severely disrupt rest. Learn trauma-informed sleep strategies and the evidence-based treatments that help.",
+    "howItAffectsSleep": "Post-traumatic stress disorder is associated with some of the most severe sleep disruption of any psychiatric condition. Trauma nightmares — which replay or symbolically represent traumatic events — are among the most distressing and disabling symptoms of PTSD. Beyond nightmares, PTSD-related hyperarousal keeps the nervous system in a threat-detection state at night, preventing the relaxation that sleep requires. Sleep avoidance (staying up to prevent nightmares) creates secondary insomnia. Sleep paralysis is more common in PTSD. The result: people with PTSD average 1.5–2 hours less sleep per night than trauma-exposed individuals without PTSD.",
+    "adjustedSleepRecommendations": "PTSD sleep treatment requires a trauma-informed approach that acknowledges why standard sleep hygiene recommendations may feel unsafe or counterproductive. Addressing the nightmares directly (with Image Rehearsal Therapy or Prazosin) is often more effective than standard CBT-I in PTSD, though combined approaches produce the best outcomes.",
+    "sleepHygieneTips": [
+      "Create a specific safety plan for the bedroom — items or arrangements that increase your sense of physical security (lighting, door positioning, room arrangement) are legitimate and important.",
+      "Image Rehearsal Therapy (IRT): write down a recurring nightmare, then rewrite it with a different (non-traumatic) ending, and rehearse the new version mentally for 5–10 minutes each day. RCTs show 50–70% reduction in nightmare frequency.",
+      "Prazosin — a blood pressure medication — is the most evidence-based pharmacological treatment for PTSD nightmares. Discuss with your PTSD treatment provider.",
+      "Establish a wind-down routine that signals safety, not danger — activities that reliably produce a sense of calm and security.",
+      "For hypervigilance: white noise or low-volume music can reduce the salience of environmental sounds that trigger threat-detection during sleep.",
+      "Do not force relaxation techniques that feel threatening — grounding techniques (5-4-3-2-1 sensory anchoring) are often better tolerated than closed-eye visualizations for PTSD."
+    ],
+    "whenToSeeDoctor": "PTSD requires treatment by a trauma-specialized mental health provider. Effective treatments exist: Cognitive Processing Therapy (CPT) and Prolonged Exposure (PE) therapy both significantly reduce PTSD symptom severity including sleep problems. Eye Movement Desensitization and Reprocessing (EMDR) also has strong evidence. Do not attempt to manage PTSD sleep disturbance in isolation from trauma treatment — they are interconnected.",
+    "content": {
+      "intro": "Sleep disturbance is not a side effect of PTSD — it is among its most central and disabling symptoms. In the DSM-5, sleep disturbance is listed explicitly in two separate PTSD symptom clusters: nightmares (trauma-specific) and hyperarousal (trauma-related hypervigilance). This dual representation reflects how profoundly and specifically trauma affects sleep.\n\nFor many PTSD survivors, sleep is not rest but continued trauma — a time when the traumatic memory replays in vivid nightmare content without the protective buffer of waking consciousness. Addressing sleep in PTSD requires trauma-informed approaches that acknowledge why nighttime can feel uniquely threatening.",
+      "howItAffects": "PTSD dysregulates the fear circuit — the amygdala, hippocampus, and prefrontal cortex network that manages threat detection and threat extinction. In PTSD, this circuit fails to extinguish the traumatic memory's emotional charge during waking processing, and the nighttime memory consolidation that occurs during sleep — particularly during REM — re-activates rather than resolves the trauma memory.\n\nNighttime hyperarousal in PTSD is physiologically distinct from ordinary anxiety at bedtime: it involves elevated startle response, continuous low-level threat monitoring, and autonomic nervous system activation that prevents the parasympathetic state required for sleep onset. The bedroom itself can become associated with danger (through repeated nightmare episodes), triggering conditioned fear responses that make falling asleep a clinical challenge separate from the nightmares themselves.",
+      "tips": "Image Rehearsal Therapy (IRT) is the most evidence-based behavioral intervention for PTSD nightmares, with RCTs showing 50–70% reduction in nightmare frequency within 3–6 weeks. The process: write the nightmare in brief detail, modify the ending to anything different (not necessarily positive — just different), and rehearse the new version mentally for 10 minutes each morning for 3 weeks. IRT appears to work by creating a competing script for the nightmare memory.\n\nCBT-I adapted for PTSD addresses the secondary insomnia that develops around trauma nightmares, sleep avoidance behaviors, and hyperarousal. The PTSD-adapted version modifies standard CBT-I to avoid triggering trauma content and to address safety concerns around the bedroom environment.\n\nPrazosin, an alpha-1 adrenergic blocker, has the strongest evidence of any medication for PTSD nightmares — multiple VA studies showed 60–80% nightmare reduction. It works by reducing the norepinephrine surge that activates REM sleep content in PTSD. Discuss with your prescribing provider.",
+      "warning": "PTSD is a serious condition requiring specialized trauma-focused treatment. Do not attempt to address PTSD symptoms, including sleep problems, without professional support from a trauma-trained clinician. Some standard relaxation techniques (progressive muscle relaxation with eyes closed, guided imagery) can inadvertently activate trauma memory in PTSD — work with a trauma-informed provider to identify safe techniques. If you are experiencing significant PTSD symptoms, please seek qualified mental health support."
+    },
+    "faq": [
+      {
+        "question": "Are PTSD nightmares different from regular bad dreams?",
+        "answer": "Yes. PTSD nightmares have distinct characteristics: they replicate or symbolically represent the actual traumatic event, are experienced with full physiological activation (elevated heart rate, sweating, respiration), occur predominantly in REM sleep but can also appear in NREM (unlike most dreams), and produce full awakening with distress, not simply unpleasant dream recall. They tend to be repetitive, replaying the same or very similar content, which does not occur with ordinary bad dreams."
+      },
+      {
+        "question": "Why is sleep avoidance common in PTSD?",
+        "answer": "Sleep avoidance — deliberately delaying bedtime to postpone sleep — is a rational but ultimately harmful coping mechanism for PTSD nightmares. Sufferers are essentially choosing sleep deprivation as a lesser harm than nightly nightmare re-exposure. The problem is that sleep deprivation worsens PTSD symptom severity, increases emotional reactivity, reduces the effectiveness of therapy, and eventually makes nightmares worse when sleep finally does occur. Addressing the nightmares directly (with IRT or medication) removes the need for avoidance."
+      },
+      {
+        "question": "Can treating PTSD improve sleep?",
+        "answer": "Effective PTSD trauma treatments — CPT, Prolonged Exposure, EMDR — produce significant improvements in sleep along with PTSD symptom reduction. However, sleep improvements with these therapies, while meaningful, are often incomplete — leaving residual sleep disturbance that may benefit from additional targeted sleep treatment. Combined PTSD treatment plus sleep-specific intervention (CBT-I, IRT, Prazosin) produces better sleep outcomes than either alone."
+      },
+      {
+        "question": "Is it safe to do sleep restriction (CBT-I) with PTSD?",
+        "answer": "Sleep restriction therapy — the cornerstone of standard CBT-I — can worsen hyperarousal and nightmare intensity in PTSD if applied without modification. PTSD-adapted CBT-I uses less aggressive sleep restriction, spends more time on safety and grounding before beginning restriction, and combines IRT for nightmares. Seek a therapist with specific expertise in PTSD and sleep — standard CBT-I protocols are not always directly appropriate."
+      },
+      {
+        "question": "Does cannabis help PTSD sleep problems?",
+        "answer": "Cannabis is widely self-reported by PTSD sufferers to reduce nightmares and improve sleep onset. Some research suggests THC may temporarily suppress REM sleep, which could reduce nightmare frequency. However, regular use is associated with tolerance, withdrawal insomnia, and worsened REM rebound on cessation. The evidence base for cannabis in PTSD is currently insufficient to recommend over established treatments. Discuss with your treating clinician before using cannabis for PTSD symptoms."
+      }
+    ],
+    "relatedSlugs": ["anxiety", "depression", "insomnia"]
+  },
+  {
+    "slug": "acid-reflux-gerd",
+    "conditionName": "Acid Reflux (GERD)",
+    "title": "Sleep Calculator for Acid Reflux and GERD — Sleep Better with Reflux",
+    "h1": "Sleep Calculator for Acid Reflux (GERD)",
+    "metaDescription": "Acid reflux and GERD cause nighttime heartburn that wakes you up and damages your sleep quality. Learn the best sleeping positions, eating habits, and strategies to reduce reflux at night.",
+    "howItAffectsSleep": "Gastroesophageal reflux disease (GERD) is a significant cause of sleep disruption affecting an estimated 20% of adults. Nighttime reflux occurs when stomach acid flows back up the esophagus during sleep, causing heartburn, chest pain, coughing, or a sour taste that wakes the sleeper. The horizontal position during sleep allows gravity-neutral acid migration, and the reduced swallowing and saliva production during sleep reduces the normal acid-clearing mechanism. Lying down also delays gastric emptying. Up to 75% of people with GERD experience nighttime symptoms, and sleep disruption in turn worsens acid sensitivity through increased pain perception.",
+    "adjustedSleepRecommendations": "No change in total sleep need, but sleeping position and sleep timing are critical. The final meal should be at least 3 hours before target bedtime. Side sleeping (left side preferred) and head elevation are among the most effective non-pharmacological interventions for nighttime reflux.",
+    "sleepHygieneTips": [
+      "Sleep on your left side — this keeps the stomach's natural angle below the esophagus due to the stomach's position on the left side of the body, reducing reflux episodes by up to 75% compared to right-side or back sleeping.",
+      "Elevate the head of your bed 6–8 inches using bed risers or a wedge under the mattress (not just extra pillows — these flex and may worsen reflux by bending the abdomen).",
+      "Eat your last meal at least 3 hours before bedtime. Larger meals, high-fat meals, and fried foods delay gastric emptying significantly.",
+      "Identify and avoid personal reflux triggers in the evening: common ones include tomato products, chocolate, mint, citrus, carbonated drinks, alcohol, and caffeine.",
+      "Maintain a healthy weight — abdominal obesity increases intra-abdominal pressure and is one of the strongest risk factors for GERD severity.",
+      "Wear loose-fitting clothing to bed — waistbands and tight garments that compress the abdomen increase reflux risk."
+    ],
+    "whenToSeeDoctor": "See a doctor if nighttime reflux is occurring more than twice per week, if symptoms include difficulty swallowing, unexplained weight loss, persistent cough, hoarseness, or if OTC antacids are needed frequently. Untreated severe GERD can lead to esophageal erosion, Barrett's esophagus, and in rare cases esophageal cancer. Nocturnal GERD is also associated with sleep apnea, which should be evaluated separately.",
+    "content": {
+      "intro": "Acid reflux at night is among the most disruptive and underappreciated causes of sleep fragmentation in adults. Many people with nighttime GERD attribute their poor sleep to stress, insomnia, or simply 'being a light sleeper' — without recognizing that acid burning their esophagus at 2 AM is the primary cause. The good news: nighttime reflux is highly responsive to targeted positional and dietary modifications, often without medication.",
+      "howItAffects": "During sleep, several physiological changes conspire to worsen reflux. Swallowing frequency drops from the waking rate of roughly once per minute to approximately once every 5 minutes — dramatically reducing esophageal acid clearance. Salivary flow, which contains bicarbonate that neutralizes acid, nearly stops during sleep. The horizontal position eliminates gravity's role in keeping stomach contents below the esophageal junction. And the lower esophageal sphincter — the valve between the esophagus and stomach — naturally relaxes more during deep sleep.\n\nThe acid exposure during a nighttime reflux episode lasts significantly longer than during waking episodes (the average esophageal acid exposure in nighttime GERD is 3–5× longer than daytime episodes), causing more esophageal mucosal damage and more complete arousal from sleep.",
+      "tips": "Left-side sleeping is the most evidence-based positional intervention for nighttime GERD. The stomach sits on the left side of the body, and left-side sleeping keeps its opening (the gastroesophageal junction) naturally higher than the stomach's fundus, reducing gravity-mediated reflux. Studies show left-side sleeping reduces acid exposure time by up to 75% compared to right-side sleeping.\n\nHead elevation using a proper bed wedge (a foam wedge under the mattress, not extra pillows) maintains the esophagus above the stomach's level throughout the night. Research shows 6–8 inches of elevation (not the commonly recommended 2–4 inches) is needed for meaningful nighttime reflux reduction.\n\nDietary modifications for nighttime reflux focus on both what is eaten and when. Beyond the 3-hour pre-bed fasting window, common individual triggers include: alcohol (relaxes the lower esophageal sphincter), fatty and fried foods (delay gastric emptying for hours), chocolate and mint (both relax the LES), tomato products (high acid), carbonated beverages (increase gastric pressure), and caffeine. Keeping a brief food diary for 2 weeks identifies individual patterns far more accurately than generic trigger lists.",
+      "warning": "Severe, untreated GERD can cause progressive esophageal damage, Barrett's esophagus (a pre-malignant change), and in rare cases esophageal adenocarcinoma. If you are experiencing symptoms of severe GERD — especially difficulty swallowing, unexplained weight loss, chest pain that resembles cardiac symptoms, or symptoms that do not respond to lifestyle changes and OTC medication — seek prompt medical evaluation. Do not rely solely on OTC antacids for severe or frequent GERD."
+    },
+    "faq": [
+      {
+        "question": "Why is acid reflux worse at night?",
+        "answer": "Nighttime reflux is worse due to a combination of factors: the horizontal position removes gravity's protective role, swallowing frequency drops 5-fold reducing acid clearance, salivary neutralization nearly stops, the lower esophageal sphincter relaxes more during sleep, and gastric emptying slows. These changes mean a nighttime reflux episode causes far more acid exposure than the same episode would during waking hours."
+      },
+      {
+        "question": "What is the best sleeping position for acid reflux?",
+        "answer": "Left-side sleeping is the most evidence-based recommendation for nighttime GERD. Studies using 24-hour pH monitoring show left-side sleeping reduces esophageal acid exposure by up to 75% compared to right-side or back sleeping. Head elevation (6–8 inches, using a wedge under the mattress) adds additional benefit. Right-side sleeping is the worst position for reflux, increasing acid exposure significantly."
+      },
+      {
+        "question": "How long before bed should I stop eating to prevent reflux?",
+        "answer": "A minimum of 3 hours between your last meal and bedtime is the standard recommendation, based on gastric emptying time for average meals. High-fat meals may require 4+ hours. If you eat dinner late, avoiding large meals (keep it under 400 calories) and choosing low-fat, easily digestible foods significantly reduces the reflux risk from a shorter pre-bed fasting period."
+      },
+      {
+        "question": "Does losing weight help with acid reflux at night?",
+        "answer": "Significantly. Abdominal obesity directly increases intra-abdominal pressure, which forces stomach contents upward against the lower esophageal sphincter. Studies show weight loss of even 10–15 pounds produces meaningful reductions in reflux frequency. For overweight patients, weight management is one of the most effective long-term interventions for GERD, often reducing the need for medication."
+      },
+      {
+        "question": "Are sleeping pills safe if I have GERD?",
+        "answer": "Some sedating medications worsen GERD: benzodiazepines relax the lower esophageal sphincter; antihistamines (used in many OTC sleep aids) can reduce saliva production, worsening acid clearance. If you have GERD and require sleep support, discuss options with your doctor. Melatonin has some evidence for actually reducing GERD symptoms (it may tighten the LES) and is generally safe in standard doses."
+      }
+    ],
+    "relatedSlugs": ["sleep-apnea", "pregnancy", "chronic-pain"]
+  },
+  {
+    "slug": "allergies-and-sleep",
+    "conditionName": "Allergies",
+    "title": "Sleep Calculator for Allergies — How Allergies Disrupt Sleep",
+    "h1": "Sleep Calculator for Allergies and Nasal Congestion",
+    "metaDescription": "Allergic rhinitis and nasal congestion are among the most common causes of disrupted sleep. Learn how to reduce nighttime allergy symptoms and sleep better.",
+    "howItAffectsSleep": "Allergic rhinitis (hay fever) affects 20–30% of adults and is one of the most prevalent yet overlooked causes of sleep disruption. Nasal congestion from allergies impairs nasal breathing during sleep, increasing airway resistance, promoting mouth breathing, and in some cases triggering or worsening obstructive sleep apnea. The inflammatory cytokines released during an allergic response (particularly interleukin-1β and tumor necrosis factor-α) also have direct sleep-disrupting effects — causing increased NREM sleep fragmentation and reduced slow-wave sleep independent of the physical congestion. Nasal itching and sneezing can directly awaken sleepers, and antihistamines taken for relief often cause daytime sedation that disrupts the next night's sleep.",
+    "adjustedSleepRecommendations": "No change in the 7–9 hour recommendation, but sleep timing and allergen control require attention. The evening hours (when pollen settles indoors) and early morning hours (when outdoor pollen counts are highest) are peak allergen exposure windows that can be strategically managed.",
+    "sleepHygieneTips": [
+      "Shower and change clothes before bed during high pollen season — this removes pollen from hair and skin that would otherwise transfer to bedding.",
+      "Use a high-quality HEPA air purifier in the bedroom — it significantly reduces indoor allergen load (dust mites, mold spores, pet dander, pollen) during sleep hours.",
+      "Wash bedding in hot water (60°C) weekly during peak allergy season to kill dust mites. Use dust-mite-proof mattress and pillow encasements.",
+      "Keep bedroom windows closed during high-pollen hours (typically 5–10 AM and on windy days). Run AC instead, as it filters incoming air.",
+      "Nasal saline rinse (Neti pot or saline spray) before bed clears allergens and inflammatory mediators from the nasal passages, reducing overnight congestion.",
+      "Intranasal corticosteroids (Flonase, Nasacort) are the most effective medication for nighttime allergic rhinitis — they work best when used consistently, not just on symptomatic days."
+    ],
+    "whenToSeeDoctor": "See an allergist if seasonal allergy symptoms are consistently disrupting sleep, if OTC antihistamines are insufficient, or if you snore significantly — allergy-related nasal obstruction is a significant risk factor for sleep apnea. Also consider allergy immunotherapy (shots or sublingual drops) for long-term desensitization if you have severe perennial allergies.",
+    "content": {
+      "intro": "Allergic rhinitis is the world's most common immune condition and one of the most impactful yet invisible causes of sleep disruption. Millions of people accept their congested, mouth-breathing, interrupted sleep as normal — attributing it to 'just my sinuses' without realizing they are experiencing a medically significant condition with effective treatments.\n\nThe National Sleep Foundation estimates that people with allergic rhinitis are twice as likely to have significant sleep problems as those without allergies, and studies show allergy-related sleep disruption reduces next-day cognitive performance comparable to a short night of sleep in people without allergies.",
+      "howItAffects": "Nasal obstruction from allergic inflammation is particularly problematic during sleep because: (1) nasal resistance naturally increases when lying down due to mucosal blood pooling, so any additional allergic swelling pushes the nasal airway into significant obstruction; (2) nasal breathing is preferred over mouth breathing for filtering air and maintaining upper airway tone — mouth breathing increases airway turbulence and vibration, the mechanism behind snoring; and (3) habitual mouth breathing during sleep disrupts the balance of gases in the airway, reducing blood oxygenation and sleep quality.\n\nBeyond the mechanical effects, allergic inflammation releases cytokines that directly impair sleep architecture. Experimental models show that systemic inflammatory cytokine administration — at levels comparable to moderate allergic rhinitis — produces significant reduction in slow-wave sleep and increased NREM fragmentation within hours. This is why people with allergies often feel unwell and fatigued even on days when nasal congestion is not the primary complaint.",
+      "tips": "The most impactful intervention for allergy-related sleep disruption is allergen reduction in the sleep environment. For perennial allergies (year-round, driven primarily by dust mites, mold, and pet dander), a HEPA air purifier running continuously in the bedroom provides meaningful allergen reduction within hours. Dust-mite-proof encasements on mattresses and pillows (which harbor the largest dust mite populations) and hot-water weekly washing of bedding eliminates 95%+ of the primary perennial allergen load.\n\nFor pharmacological management, intranasal corticosteroids (Flonase, Nasacort, Rhinocort — all OTC in the US) are the most evidence-based treatment for nighttime allergic rhinitis. Unlike antihistamines, they address the underlying inflammatory mechanism rather than just blocking histamine release. They take 1–2 weeks of consistent use to reach full efficacy and must be used daily rather than symptom-driven.\n\nNasal saline irrigation (Neti pot or squeeze bottle with saline solution) before bed clears both allergens and inflammatory mediators from the nasal passages. Multiple RCTs show significant improvement in nasal symptoms and sleep quality from pre-bed saline irrigation during pollen season. It is simple, cheap, and has no side effects.",
+      "warning": "Allergy medications can themselves disrupt sleep: first-generation antihistamines (Benadryl, chlorpheniramine) cause significant daytime sedation and impair cognitive performance the day after use — essentially causing a medication hangover. Second-generation antihistamines (Claritin, Zyrtec, Allegra) have significantly less sedation but still vary between individuals. The activating antihistamine cetirizine (Zyrtec) can cause insomnia in some people and is best taken in the morning rather than at night. Discuss optimal timing with your pharmacist or doctor."
+    },
+    "faq": [
+      {
+        "question": "Do allergies affect sleep quality even when congestion seems mild?",
+        "answer": "Yes. Research shows that even subclinical allergic inflammation produces measurable sleep disruption through inflammatory cytokine release — independent of the nasal congestion itself. People with perennial allergic rhinitis show significantly more NREM sleep fragmentation, less slow-wave sleep, and worse next-day cognitive performance than non-allergic controls, even when they don't report significant nasal symptoms."
+      },
+      {
+        "question": "Can allergies cause sleep apnea?",
+        "answer": "Allergic rhinitis is an established risk factor for obstructive sleep apnea, primarily by increasing nasal airway resistance and promoting mouth breathing. Nasal obstruction from allergies forces the mouth open during sleep, which relaxes the tongue and pharyngeal muscles in ways that make airway collapse more likely. Treatment of allergic rhinitis (particularly with intranasal steroids) reduces sleep apnea severity in patients where nasal obstruction is a significant contributor."
+      },
+      {
+        "question": "What is the best antihistamine for nighttime allergies without sedation?",
+        "answer": "Among the second-generation antihistamines, fexofenadine (Allegra) is consistently rated as the least sedating, with virtually no CNS effects. Loratadine (Claritin) is also low-sedation. Cetirizine (Zyrtec) is more sedating than the others and is better taken in the morning. For nighttime congestion specifically, intranasal corticosteroids (Flonase, Nasacort) are more effective than any antihistamine and avoid the sedation issue entirely."
+      },
+      {
+        "question": "Does allergy immunotherapy improve sleep?",
+        "answer": "Yes — multiple studies show that allergen immunotherapy (allergy shots or sublingual drops), which desensitizes the immune system to specific allergens over 3–5 years, significantly improves both daytime and nighttime allergy symptoms including sleep quality. Immunotherapy is the only treatment that modifies the underlying allergic response rather than simply suppressing it, and effects persist for years after treatment completion."
+      },
+      {
+        "question": "Are air purifiers worth buying for allergy sleep problems?",
+        "answer": "A bedroom HEPA air purifier is one of the most cost-effective investments for perennial allergy-related sleep disruption. Studies show HEPA filtration in the bedroom reduces dust mite allergen levels by 50–90%, mold spores by 90%+, and pollen by 95% — providing 6–8 hours of allergen-reduced breathing during the most critical sleep period. Choose a purifier sized correctly for your room volume (CADR rating should be at least 2/3 of room square footage)."
+      }
+    ],
+    "relatedSlugs": ["sleep-apnea", "insomnia", "chronic-pain"]
+  }
+]

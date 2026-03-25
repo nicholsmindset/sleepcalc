@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calculator, Moon, Coffee, Clock, Baby, Brain } from "lucide-react";
+import { Calculator, Moon, Coffee, Clock, Baby, Brain, CloudSun, Plane, Star, Sun, BookOpen, Zap } from "lucide-react";
 
 const tools = [
   {
@@ -37,6 +37,42 @@ const tools = [
     href: "/calculators/chronotype-quiz",
     icon: Brain,
     description: "Discover your sleep type",
+  },
+  {
+    label: "Tonight's Forecast",
+    href: "/tonight",
+    icon: CloudSun,
+    description: "Live sleep environment score",
+  },
+  {
+    label: "Circadian Light Guide",
+    href: "/tools/circadian-guide",
+    icon: Sun,
+    description: "Personalised light schedule",
+  },
+  {
+    label: "Jet Lag Calculator",
+    href: "/tools/jet-lag-calculator",
+    icon: Plane,
+    description: "Day-by-day recovery plan",
+  },
+  {
+    label: "Sleep Score",
+    href: "/tools/sleep-score",
+    icon: Zap,
+    description: "Rate last night's sleep",
+  },
+  {
+    label: "Moon & Sleep",
+    href: "/tools/moon-sleep",
+    icon: Star,
+    description: "Lunar phase sleep tracker",
+  },
+  {
+    label: "Sleep Journal",
+    href: "/tools/sleep-journal",
+    icon: BookOpen,
+    description: "Track your sleep over time",
   },
 ];
 
