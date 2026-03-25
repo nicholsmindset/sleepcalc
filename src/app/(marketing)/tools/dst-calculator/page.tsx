@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Sun, Moon, ArrowRight } from 'lucide-react';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
 
 /* -------------------------------------------------------------------------- */
@@ -426,6 +427,7 @@ export default function DSTCalculatorPage() {
         <RelatedTools exclude="/tools/dst-calculator" />
       </div>
 
+      <AffiliateCard context="general" />
       <MedicalDisclaimer />
     </main>
   );

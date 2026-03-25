@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { SleepForecast } from '@/components/forecast/SleepForecast';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { generateOgImageUrl } from '@/utils/seo';
 import { WebApplicationSchema } from '@/components/seo/SchemaMarkup';
@@ -172,6 +173,7 @@ export default function TonightPage() {
         <RelatedTools exclude="/tonight" />
       </div>
 
+      <AffiliateCard context="environment" />
       <MedicalDisclaimer />
     </article>
     </>

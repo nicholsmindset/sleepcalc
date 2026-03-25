@@ -4,6 +4,7 @@ import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import AffiliateCard from "@/components/content/AffiliateCard";
 import BabySleepCalculator from "@/components/calculators/BabySleepCalculator";
 
 export const metadata: Metadata = {
@@ -253,6 +254,8 @@ export default function BabySleepPage() {
 
       {/* Related Tools */}
       <RelatedTools exclude="/calculators/baby-sleep" />
+
+      <AffiliateCard context="environment" />
 
       {/* Medical Disclaimer */}
       <MedicalDisclaimer />

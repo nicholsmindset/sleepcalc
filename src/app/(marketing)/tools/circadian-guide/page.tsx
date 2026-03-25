@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Sun, Sunset, Moon, Zap, Coffee, EyeOff, Bed } from 'lucide-react';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
 
 /* -------------------------------------------------------------------------- */
@@ -423,6 +424,7 @@ export default function CircadianGuidePage() {
         <RelatedTools exclude="/tools/circadian-guide" />
       </div>
 
+      <AffiliateCard context="supplement" />
       <MedicalDisclaimer />
     </main>
   );

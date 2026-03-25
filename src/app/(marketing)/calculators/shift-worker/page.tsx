@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import ShiftWorkerCalculator from '@/components/calculators/ShiftWorkerCalculator';
 
 export const metadata: Metadata = {
@@ -429,6 +430,8 @@ export default function ShiftWorkerPage() {
             <RelatedTools exclude="/calculators/shift-worker" />
 
             {/* Medical Disclaimer */}
+            <AffiliateCard context="supplement" />
+
             <MedicalDisclaimer />
 
             {/* Bottom spacer */}

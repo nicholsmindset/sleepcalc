@@ -3,6 +3,7 @@
 import { useState, useMemo, useRef, useEffect } from 'react';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { Plane, Clock, Sun, Moon, ChevronDown, X } from 'lucide-react';
 import citiesData from '@/content/data/cities.json';
@@ -529,6 +530,7 @@ export default function JetLagCalculatorPage() {
         <RelatedTools exclude="/tools/jet-lag-calculator" />
       </div>
 
+      <AffiliateCard context="supplement" />
       <MedicalDisclaimer />
     </article>
   );

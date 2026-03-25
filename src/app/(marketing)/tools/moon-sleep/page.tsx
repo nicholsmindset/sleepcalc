@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import {
   getMoonPhase,
@@ -362,6 +363,7 @@ export default function MoonSleepPage() {
         <RelatedTools exclude="/tools/moon-sleep" />
       </div>
 
+      <AffiliateCard context="environment" />
       <MedicalDisclaimer />
     </main>
   );

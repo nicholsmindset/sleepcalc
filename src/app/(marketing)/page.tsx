@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  Moon,
+  Sun,
+  Brain,
+  Coffee,
+  Baby,
+  Clock,
+  Plane,
+  Calendar,
+  BookOpen,
+  Zap,
+  Star,
+  CloudSun,
+  Target,
+  TrendingUp,
+} from "lucide-react";
+import {
   WebSiteSchema,
   WebApplicationSchema,
   OrganizationSchema,
@@ -93,84 +109,284 @@ export default function HomePage() {
       <WebApplicationSchema />
       <OrganizationSchema />
 
-      <div className="relative">
-        {/* Star field background */}
-        <div className="star-field fixed inset-0 pointer-events-none" />
+      {/* Star field */}
+      <div className="star-field fixed inset-0 pointer-events-none" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
-          {/* Hero Section */}
-          <section className="pt-16 md:pt-24 pb-12 text-center">
-            <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-on-surface to-on-surface-variant">
-              Sleep Smarter.
-              <br />
-              Wake Refreshed.
-            </h1>
-            <p className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              Calculate your ideal bedtime using sleep cycle science. Wake up
-              refreshed by timing your sleep to complete{" "}
-              <span className="text-[#46eae5] font-semibold">
-                full 90-minute cycles
-              </span>
-              .
-            </p>
-
-            {/* Calculator */}
-            <BedtimeCalculator />
-          </section>
-
-          {/* How Sleep Cycles Work */}
-          <section className="py-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6 text-on-surface">
-              How Sleep Cycles Work
-            </h2>
-            <div className="prose prose-invert max-w-none text-on-surface-variant text-sm leading-relaxed space-y-4">
-              <p>
-                Every night, your body cycles through distinct stages of sleep
-                in roughly 90-minute intervals. A complete cycle moves from
-                light sleep (N1, N2) into deep sleep (N3) and then into REM
-                (rapid eye movement) sleep, where most dreaming occurs.
-              </p>
-              <p>
-                Waking up at the end of a complete cycle &mdash; rather than in
-                the middle of deep sleep &mdash; is the key to feeling alert and
-                refreshed. Our calculator times your bedtime so you complete
-                full cycles before your alarm goes off.
-              </p>
-              <p>
-                Most adults complete 4 to 6 sleep cycles per night. The early
-                cycles are rich in deep sleep (critical for physical recovery),
-                while later cycles contain more REM sleep (essential for memory
-                consolidation and emotional regulation).
-              </p>
-              <p>
-                The standard 90-minute cycle is an average. Your personal cycle
-                length may be anywhere from 80 to 110 minutes, which is why
-                aligning your wake time to the end of a cycle makes such a
-                noticeable difference in how you feel each morning.
-              </p>
-            </div>
-          </section>
-
-          {/* FAQ */}
-          <div>
-            <FAQ items={faqItems} />
+      {/* ── HERO ── full-bleed, text centered */}
+      <section className="relative z-10 px-6 md:px-8 pt-16 md:pt-24 pb-16 text-center">
+        <div className="max-w-7xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium mb-6">
+            <Zap className="w-3 h-3" />
+            Free · No signup required · Science-backed
           </div>
+          <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-on-surface to-on-surface-variant">
+            Sleep Smarter.<br />Wake Refreshed.
+          </h1>
+          <p className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            Calculate your ideal bedtime using sleep cycle science. Wake up
+            refreshed by timing your sleep to complete{" "}
+            <span className="text-[#46eae5] font-semibold">
+              full 90-minute cycles
+            </span>
+            .
+          </p>
+          <BedtimeCalculator />
+        </div>
+      </section>
 
-          {/* 7-Day Sleep Challenge */}
-          <div className="py-6">
-            <SleepChallenge />
+      {/* ── STATS BAR ── full-bleed stripe */}
+      <div className="relative z-10 border-y border-border bg-card/50 backdrop-blur-sm py-4">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            {[
+              { value: "278+", label: "Sleep Pages" },
+              { value: "8", label: "Free Tools" },
+              { value: "6", label: "Calculators" },
+              { value: "11", label: "Sleep Guides" },
+            ].map(({ value, label }) => (
+              <div key={label}>
+                <div className="text-2xl font-bold font-headline text-primary">
+                  {value}
+                </div>
+                <div className="text-xs text-on-surface-variant">{label}</div>
+              </div>
+            ))}
           </div>
-
-          {/* Related Tools */}
-          <RelatedTools exclude="/" />
-
-          {/* Medical Disclaimer */}
-          <MedicalDisclaimer />
-
-          {/* Bottom spacer */}
-          <div className="h-12" />
         </div>
       </div>
+
+      {/* ── TOOLS GRID ── */}
+      <section className="relative z-10 px-6 md:px-8 py-16">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-2">
+            Every Sleep Tool You Need
+          </h2>
+          <p className="text-on-surface-variant mb-8">
+            Free, science-backed tools to optimise every aspect of your sleep.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              {
+                href: "/tonight",
+                icon: CloudSun,
+                name: "Tonight's Forecast",
+                desc: "Live sleep environment score",
+              },
+              {
+                href: "/tools/circadian-guide",
+                icon: Sun,
+                name: "Circadian Guide",
+                desc: "Your personalised light schedule",
+              },
+              {
+                href: "/tools/jet-lag-calculator",
+                icon: Plane,
+                name: "Jet Lag Calculator",
+                desc: "Day-by-day recovery plan",
+              },
+              {
+                href: "/tools/sleep-score",
+                icon: Target,
+                name: "Sleep Score",
+                desc: "Rate and track sleep quality",
+              },
+              {
+                href: "/tools/moon-sleep",
+                icon: Moon,
+                name: "Moon & Sleep",
+                desc: "Lunar phase sleep insights",
+              },
+              {
+                href: "/tools/dst-calculator",
+                icon: Calendar,
+                name: "DST Calculator",
+                desc: "Daylight saving adjustment plan",
+              },
+              {
+                href: "/tools/sleep-journal",
+                icon: BookOpen,
+                name: "Sleep Journal",
+                desc: "Log and track sleep history",
+              },
+              {
+                href: "/sleep-coach",
+                icon: Brain,
+                name: "AI Sleep Coach",
+                desc: "Personalised AI sleep tips",
+              },
+            ].map(({ href, icon: Icon, name, desc }) => (
+              <Link
+                key={href}
+                href={href}
+                className="glass-card rounded-2xl p-4 flex flex-col gap-2 hover:border-primary/40 transition-colors group"
+              >
+                <Icon className="w-6 h-6 text-primary" />
+                <div className="font-semibold text-on-surface text-sm group-hover:text-primary transition-colors">
+                  {name}
+                </div>
+                <div className="text-xs text-on-surface-variant">{desc}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CALCULATORS GRID ── */}
+      <section className="relative z-10 px-6 md:px-8 py-12 bg-card/30">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-2">
+            Precision Sleep Calculators
+          </h2>
+          <p className="text-on-surface-variant mb-8">
+            Built on sleep science — tell us your schedule, we tell you your
+            ideal sleep times.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              {
+                href: "/calculators/sleep-debt",
+                icon: TrendingUp,
+                name: "Sleep Debt",
+                desc: "Calculate your sleep deficit",
+              },
+              {
+                href: "/calculators/nap-calculator",
+                icon: Moon,
+                name: "Nap Calculator",
+                desc: "Perfect nap timing and duration",
+              },
+              {
+                href: "/calculators/caffeine-cutoff",
+                icon: Coffee,
+                name: "Caffeine Cutoff",
+                desc: "Last safe coffee time",
+              },
+              {
+                href: "/calculators/shift-worker",
+                icon: Clock,
+                name: "Shift Worker",
+                desc: "Sleep for rotating schedules",
+              },
+              {
+                href: "/calculators/baby-sleep",
+                icon: Baby,
+                name: "Baby Sleep",
+                desc: "Schedules by age and stage",
+              },
+              {
+                href: "/calculators/chronotype-quiz",
+                icon: Star,
+                name: "Chronotype Quiz",
+                desc: "Are you a lion, bear, or wolf?",
+              },
+            ].map(({ href, icon: Icon, name, desc }) => (
+              <Link
+                key={href}
+                href={href}
+                className="glass-card rounded-2xl p-4 flex items-start gap-3 hover:border-primary/40 transition-colors group"
+              >
+                <Icon className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <div>
+                  <div className="font-semibold text-on-surface text-sm group-hover:text-primary transition-colors">
+                    {name}
+                  </div>
+                  <div className="text-xs text-on-surface-variant mt-0.5">
+                    {desc}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── AI COACH TEASER ── full-bleed gradient */}
+      <section className="relative z-10 px-6 md:px-8 py-16 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10 border-y border-border">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/20 mb-4">
+            <Brain className="w-6 h-6 text-primary" />
+          </div>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-3">
+            Meet Your AI Sleep Coach
+          </h2>
+          <p className="text-on-surface-variant mb-6 text-lg">
+            Answer 3 quick questions and get personalised, science-backed sleep
+            recommendations. Free — no account needed.
+          </p>
+          <Link
+            href="/sleep-coach"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-light transition-colors"
+          >
+            <Brain className="w-4 h-4" />
+            Get My Free Sleep Tips
+          </Link>
+        </div>
+      </section>
+
+      {/* ── HOW SLEEP CYCLES WORK ── */}
+      <section className="relative z-10 px-6 md:px-8 py-12">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6 text-on-surface">
+            How Sleep Cycles Work
+          </h2>
+          <div className="prose prose-invert max-w-none text-on-surface-variant text-sm leading-relaxed space-y-4">
+            <p>
+              Every night, your body cycles through distinct stages of sleep in
+              roughly 90-minute intervals. A complete cycle moves from light
+              sleep (N1, N2) into deep sleep (N3) and then into REM (rapid eye
+              movement) sleep, where most dreaming occurs.
+            </p>
+            <p>
+              Waking up at the end of a complete cycle — rather than in the
+              middle of deep sleep — is the key to feeling alert and refreshed.
+              Our calculator times your bedtime so you complete full cycles
+              before your alarm goes off.
+            </p>
+            <p>
+              Most adults complete 4 to 6 sleep cycles per night. The early
+              cycles are rich in deep sleep (critical for physical recovery),
+              while later cycles contain more REM sleep (essential for memory
+              consolidation and emotional regulation).
+            </p>
+            <p>
+              The standard 90-minute cycle is an average. Your personal cycle
+              length may be anywhere from 80 to 110 minutes, which is why
+              aligning your wake time to the end of a cycle makes such a
+              noticeable difference in how you feel each morning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="relative z-10 px-6 md:px-8 py-6">
+        <div className="max-w-7xl mx-auto">
+          <FAQ items={faqItems} />
+        </div>
+      </section>
+
+      {/* ── 7-Day Sleep Challenge ── */}
+      <div className="relative z-10 px-6 md:px-8 py-6">
+        <div className="max-w-7xl mx-auto">
+          <SleepChallenge />
+        </div>
+      </div>
+
+      {/* ── Related Tools ── */}
+      <div className="relative z-10 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <RelatedTools exclude="/" />
+        </div>
+      </div>
+
+      {/* ── Medical Disclaimer ── */}
+      <div className="relative z-10 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <MedicalDisclaimer />
+        </div>
+      </div>
+
+      <div className="h-12" />
     </>
   );
 }

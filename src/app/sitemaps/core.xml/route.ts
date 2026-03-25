@@ -17,6 +17,8 @@ export function GET() {
     { loc: `${BASE_URL}/calculators/baby-sleep`,              lastmod: now, changefreq: 'monthly', priority: 0.8 },
     { loc: `${BASE_URL}/calculators/chronotype-quiz`,         lastmod: now, changefreq: 'monthly', priority: 0.8 },
     { loc: `${BASE_URL}/tonight`,                             lastmod: now, changefreq: 'daily',   priority: 0.8 },
+    { loc: `${BASE_URL}/sleep-coach`,                         lastmod: now, changefreq: 'monthly', priority: 0.8 },
+    { loc: `${BASE_URL}/best-mattress`,                       lastmod: now, changefreq: 'monthly', priority: 0.8 },
     { loc: `${BASE_URL}/blog`,                                lastmod: now, changefreq: 'weekly',  priority: 0.8 },
     { loc: `${BASE_URL}/about`,                               lastmod: now, changefreq: 'monthly', priority: 0.4 },
     { loc: `${BASE_URL}/privacy`,                             lastmod: now, changefreq: 'yearly',  priority: 0.2 },

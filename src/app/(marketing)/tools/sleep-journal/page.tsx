@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { Plus, Download, Trash2, Star, ChevronDown, ChevronUp, BarChart2 } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { calculateSleepScore } from '@/utils/sleep-score';
 
@@ -537,6 +538,7 @@ export default function SleepJournalPage() {
         <RelatedTools exclude="/tools/sleep-journal" />
       </div>
 
+      <AffiliateCard context="tracker" />
       <MedicalDisclaimer />
     </main>
   );

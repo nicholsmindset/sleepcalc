@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import NapCalculator from '@/components/calculators/NapCalculator';
 
 export const metadata: Metadata = {
@@ -300,6 +301,8 @@ export default function NapCalculatorPage() {
 
           {/* Related tools */}
           <RelatedTools exclude="/calculators/nap-calculator" />
+
+          <AffiliateCard context="environment" />
 
           {/* Medical disclaimer */}
           <MedicalDisclaimer />

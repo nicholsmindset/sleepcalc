@@ -29,6 +29,8 @@ const toolLinks = [
   { label: 'DST Calculator', href: '/tools/dst-calculator' },
   { label: 'Sleep Journal', href: '/tools/sleep-journal' },
   { label: 'Sleep-Friendly Foods', href: '/tools/sleep-foods' },
+  { label: 'AI Sleep Coach', href: '/sleep-coach' },
+  { label: 'Best Mattress Guide', href: '/best-mattress' },
 ];
 
 const navLinks = [

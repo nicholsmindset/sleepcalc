@@ -86,7 +86,15 @@
       "Bash(node -e \"const d = require\\(''./src/content/data/cities-seo.json''\\); console.log\\(''Cities:'', d.length\\); console.log\\(''First slug:'', d[0].slug\\);\")",
       "Bash(mkdir -p /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/city/[slug])",
       "Bash(mkdir -p /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/sleep-with/[slug])",
-      "Bash(ls /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/)"
+      "Bash(ls /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/)",
+      "Bash(find /Users/robertnichols/Desktop/sleepcalc/src/app -name sitemap* -o -name sitemap.ts)",
+      "Bash(head -5 /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/sleep-score/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/dst-calculator/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/sleep-journal/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/circadian-guide/page.tsx)",
+      "Bash(ls /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/moon-sleep/ /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/sleep-score/ /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tools/dst-calculator/)",
+      "Bash(ls /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/tonight/)",
+      "mcp__mcp-server-gsc__list_sites",
+      "Bash(head -5 /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/calculators/nap-calculator/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/calculators/caffeine-cutoff/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/calculators/shift-worker/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/calculators/baby-sleep/page.tsx /Users/robertnichols/Desktop/sleepcalc/src/app/\\\\\\(marketing\\\\\\)/calculators/chronotype-quiz/page.tsx)",
+      "Bash(sed -i '' \"s/{ label: ''Best Mattress'' }/{ label: ''Best Mattress'', href: ''\\\\/best-mattress'' }/\" src/app/\\\\\\(marketing\\\\\\)/best-mattress/page.tsx)",
+      "Bash(sed -i '' \"s/{ label: ''AI Sleep Coach'' }/{ label: ''AI Sleep Coach'', href: ''\\\\/sleep-coach'' }/\" src/app/\\\\\\(marketing\\\\\\)/sleep-coach/page.tsx)"
     ],
     "additionalDirectories": [
       "/Users/robertnichols/Desktop/sleepcalc/src/app/(marketing)/sleep-time/[slug]",

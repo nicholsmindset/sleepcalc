@@ -4,6 +4,7 @@ import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import CaffeineCalculator from '@/components/calculators/CaffeineCalculator';
 
 export const metadata: Metadata = {
@@ -354,6 +355,8 @@ export default function CaffeineCutoffPage() {
 
           {/* Medical Disclaimer */}
           <div className="max-w-3xl mx-auto">
+            <AffiliateCard context="supplement" />
+
             <MedicalDisclaimer />
           </div>
 

@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { ArrowLeft, ArrowRight, RotateCcw, Share2, CheckCircle, Moon, Zap, Shield, Clock } from 'lucide-react';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import {
   calculateSleepScore,
@@ -442,6 +443,7 @@ export default function SleepScorePage() {
         <RelatedTools exclude="/tools/sleep-score" />
       </div>
 
+      <AffiliateCard context="tracker" />
       <MedicalDisclaimer />
     </main>
   );
