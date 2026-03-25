@@ -205,5 +205,506 @@
       { "question": "Can poor sleep cause dementia?", "answer": "Research suggests a bidirectional relationship — poor sleep increases the risk of cognitive decline, and early dementia can disrupt sleep. During deep sleep, the brain clears beta-amyloid plaques associated with Alzheimer's disease, making quality sleep a potentially protective factor." }
     ],
     "relatedSlugs": ["adult-26-64-years", "young-adult-18-25-years"]
+  },
+  {
+    "slug": "age-6-years",
+    "ageGroup": "6 Year Old",
+    "ageRange": "Age 6",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 6 Year Old Need?",
+    "h1": "How Much Sleep Does a 6 Year Old Need?",
+    "metaDescription": "6 year olds need 9-11 hours of sleep per night. Discover the ideal bedtime for first graders, sample daily schedules, and tips for smooth school-night routines.",
+    "recommendedHours": { "min": 9, "max": 11, "ideal": 10.5 },
+    "napInfo": "Most 6 year olds have dropped their daytime nap. If your child falls asleep easily in the afternoon, it may signal insufficient nighttime sleep rather than a true nap need.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "7:30–8:00 PM",
+      "totalSleep": "10.5–11 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine: breakfast, get dressed, brush teeth" },
+        { "time": "7:30 AM", "activity": "Leave for school" },
+        { "time": "3:00–3:30 PM", "activity": "Home from school — snack and free play" },
+        { "time": "5:00–6:00 PM", "activity": "Homework or reading (15–20 min)" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "6:30–7:00 PM", "activity": "Outdoor or active play" },
+        { "time": "7:00–7:30 PM", "activity": "Wind-down: bath, pajamas, brush teeth" },
+        { "time": "7:15–7:30 PM", "activity": "Bedtime story (2 books)" },
+        { "time": "7:30–8:00 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "At age 6, most children are starting or settling into first grade — a significant leap in academic and social demands that makes quality sleep more important than ever. The National Sleep Foundation recommends 9–11 hours of sleep per night for 6 year olds, with 10–10.5 hours being the sweet spot for most children this age. Six year olds are typically full of energy during the day, but that energy burns out quickly, and overtiredness can look like hyperactivity rather than tiredness. A consistent bedtime between 7:30 and 8:00 PM gives most children the sleep window they need to wake refreshed for a 6:30–7:00 AM school morning. This age is also a critical window for establishing sleep habits that will serve your child for years to come.",
+      "sleepNeeds": "A 6 year old's brain is in the midst of a dramatic reading acquisition phase, and sleep plays a direct role in the consolidation of language skills, phonics knowledge, and working memory. Studies from the Journal of Child Psychology and Psychiatry show that sleep directly after learning a new task leads to significantly better retention the following day. Deep slow-wave sleep is at its peak during childhood — children this age spend proportionally more time in restorative deep sleep than adults, which supports the rapid physical growth common in early elementary years. REM sleep supports emotional processing and social development, helping children navigate the more complex peer relationships they encounter in school settings. Even short-changing sleep by 30–45 minutes per night creates measurable deficits in attention, impulse control, and academic performance over time.",
+      "tips": "Protect the bedtime window fiercely. A 7:30–8:00 PM bedtime for a child who wakes at 6:30 AM provides a solid 10–10.5 hour sleep opportunity. Keep the routine consistent: aim for the same sequence every night, including bath or wash-up, pajamas, teeth brushing, and one or two books. Read-aloud at bedtime is both a sleep cue and a powerful literacy booster. Screens should be off at least 60 minutes before lights-out. If your child has difficulty settling, check that the room is dark enough — 6 year olds who were previously fine with dim light sometimes become more sensitive to any ambient light as they become more aware of their environment. Physical activity during the day is your best ally for sleep at night.",
+      "signs": "A 6 year old who isn't sleeping enough often shows morning grumpiness and resistance to getting up, difficulty concentrating during school activities, emotional volatility over small triggers, and behavioral regression at home. Teachers may notice shortened attention spans, impulsivity, or difficulty following multi-step instructions. Falling asleep in the car during short trips or crashing immediately after school are common signs of accumulated sleep debt. If your child snores consistently, breathes through their mouth during sleep, or seems to struggle with breathing at night, discuss it with your pediatrician as adenoid or tonsil issues are common at this age."
+    },
+    "faq": [
+      { "question": "What time should a 6 year old go to bed?", "answer": "Most 6 year olds need to be asleep between 7:30 and 8:00 PM. Work backward from your child's required wake time and ensure they have a 10–10.5 hour window for sleep. Include 15–20 minutes for the bedtime routine before lights-out." },
+      { "question": "My 6 year old won't stay in bed. What should I do?", "answer": "Ensure the bedtime is age-appropriate and not too late — an overtired child often has more difficulty settling. Establish a predictable routine with a firm ending. Use a visual cue like a toddler clock that stays red until morning, and respond calmly but consistently to out-of-bed requests." },
+      { "question": "Does my 6 year old still need a nap?", "answer": "Most 6 year olds no longer need a scheduled nap. If your child regularly falls asleep in the afternoon despite an appropriate nighttime bedtime, consult your pediatrician. More likely, it signals the nighttime bedtime is too late or too inconsistent." },
+      { "question": "How does sleep affect reading development in 6 year olds?", "answer": "Sleep is critical for reading acquisition at this age. The brain consolidates new phonics patterns and vocabulary during sleep cycles. Studies show children who sleep the recommended amount perform significantly better on reading assessments than their sleep-deprived peers." }
+    ],
+    "relatedSlugs": ["age-7-years", "preschool-3-5-years", "school-age-6-13-years"]
+  },
+  {
+    "slug": "age-7-years",
+    "ageGroup": "7 Year Old",
+    "ageRange": "Age 7",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 7 Year Old Need?",
+    "h1": "How Much Sleep Does a 7 Year Old Need?",
+    "metaDescription": "7 year olds need 9-11 hours of sleep nightly. Learn the best bedtime for second graders, sample schedules, and how sleep supports learning and behavior.",
+    "recommendedHours": { "min": 9, "max": 11, "ideal": 10.5 },
+    "napInfo": "Seven year olds do not need daytime naps under normal circumstances. Daytime sleepiness in a 7 year old is a signal to evaluate nighttime sleep duration and quality rather than add a nap.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "8:00 PM",
+      "totalSleep": "10–10.5 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine: breakfast, dressed, pack bag" },
+        { "time": "7:30 AM", "activity": "Leave for school" },
+        { "time": "3:00–3:30 PM", "activity": "After school snack and 30 min free play" },
+        { "time": "4:00–5:00 PM", "activity": "Homework or reading (20–30 min)" },
+        { "time": "5:00–6:00 PM", "activity": "Extracurricular activity or outdoor play" },
+        { "time": "6:00 PM", "activity": "Dinner with family" },
+        { "time": "7:00–7:30 PM", "activity": "Wind-down: bath, pajamas, teeth" },
+        { "time": "7:30–8:00 PM", "activity": "Bedtime reading (1–2 books)" },
+        { "time": "8:00 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Second grade brings more complex reading, math concepts, and social dynamics — all developments that rest squarely on a foundation of quality sleep. At age 7, children still need 9–11 hours of sleep per night, with most thriving on 10–10.5 hours. An 8:00 PM bedtime works well for children who wake at 6:30–7:00 AM for school. At this age, children are more verbal about not wanting to go to bed and may attempt increasingly sophisticated negotiations, but consistency remains the key. This is also the age when extracurricular activities begin to ramp up — sports practices, music lessons, and playdates can push bedtimes later if parents aren't intentional. Protecting the sleep window is one of the highest-leverage parenting decisions you can make for a 7 year old's development.",
+      "sleepNeeds": "At age 7, deep sleep is still abundant and highly restorative. Growth hormone continues to be released in large pulses during slow-wave sleep, supporting the physical development happening throughout childhood. Academically, this age marks the transition from learning to read to reading to learn — a cognitive shift that places new demands on working memory, attention, and information processing, all of which are directly impaired by sleep deprivation. Research from the University of Massachusetts found that a 60–90 minute nap improved memory consolidation in school-age children, suggesting even brief additional sleep has compounding benefits. REM sleep during this period supports the development of theory of mind — the ability to understand that others have different thoughts and feelings — a cornerstone of social intelligence.",
+      "tips": "Maintain a bedtime routine of 20–30 minutes, starting the wind-down no later than 7:30 PM. Keep weekends no more than 30–45 minutes later than weekdays. At age 7, children can begin to take more ownership of their bedtime routine with gentle guidance — toothbrushing, selecting tomorrow's clothes, and choosing a book provide a sense of autonomy within structure. Limit after-school screen time to 30–60 minutes and enforce a complete screen blackout 60 minutes before bed. If your child participates in evening activities, watch for signs of overtiredness when they return home — a warm bath can help transition from activation to wind-down mode.",
+      "signs": "Sleep deprivation in 7 year olds often looks like difficulty waking up, persistent low-grade moodiness throughout the day, difficulty completing homework that should be within their ability level, and frequent afternoon meltdowns. Hyperactive or silly behavior that intensifies toward bedtime frequently signals overtiredness. Recurring stomachaches in the morning, particularly on school days, can sometimes be linked to poor sleep affecting stress regulation. A child who falls asleep easily during quiet car rides or movie time during the day is likely accumulating a sleep debt."
+    },
+    "faq": [
+      { "question": "What is the right bedtime for a 7 year old?", "answer": "Most 7 year olds should be asleep by 8:00 PM if they need to wake by 6:30–7:00 AM. This provides the 10–10.5 hours most children this age need. Adjust based on your child's natural wake time and observable tiredness cues." },
+      { "question": "My 7 year old keeps asking for water, another story, or one more hug at bedtime. How do I handle stalling?", "answer": "Anticipate these needs in the routine itself — one glass of water, two books, one hug. Once the routine ends, respond calmly but briefly to requests. Engaging in prolonged negotiations reinforces the behavior. A visual schedule posted in the room helps children know exactly what comes next and when the routine ends." },
+      { "question": "How much physical activity does a 7 year old need to sleep well?", "answer": "At least 60 minutes of moderate-to-vigorous physical activity per day supports both daytime learning and nighttime sleep. Active outdoor play, sports, and unstructured movement all count. Avoid intense activity within 2 hours of bedtime." },
+      { "question": "Is 9 hours enough sleep for a 7 year old?", "answer": "Nine hours is within the recommended range (9–11 hours), but most 7 year olds function best toward the higher end of that range — 10–10.5 hours. If your child consistently gets 9 hours and shows no signs of sleep deprivation, it may be sufficient for them individually." }
+    ],
+    "relatedSlugs": ["age-6-years", "age-8-years", "school-age-6-13-years"]
+  },
+  {
+    "slug": "age-8-years",
+    "ageGroup": "8 Year Old",
+    "ageRange": "Age 8",
+    "type": "individual-year",
+    "title": "How Much Sleep Does an 8 Year Old Need?",
+    "h1": "How Much Sleep Does an 8 Year Old Need?",
+    "metaDescription": "8 year olds need 9-11 hours of sleep each night. Find the ideal bedtime, a sample third-grade sleep schedule, and expert tips for healthy sleep habits.",
+    "recommendedHours": { "min": 9, "max": 11, "ideal": 10 },
+    "napInfo": "Eight year olds do not need daytime naps. If your child naps regularly, it typically indicates insufficient nighttime sleep. Prioritize consolidating sleep into a longer nighttime block.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "8:00–8:30 PM",
+      "totalSleep": "10–10.5 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine: breakfast, dressed, pack bag" },
+        { "time": "7:30 AM", "activity": "School" },
+        { "time": "3:30 PM", "activity": "After school snack and decompression time" },
+        { "time": "4:00–5:00 PM", "activity": "Homework (30–40 min) or extracurricular" },
+        { "time": "5:30–6:00 PM", "activity": "Active outdoor play" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "7:00–7:30 PM", "activity": "Screen time (limited) or quiet activity" },
+        { "time": "7:30–8:00 PM", "activity": "Wind-down: bath, brush teeth, pajamas" },
+        { "time": "8:00–8:30 PM", "activity": "Reading in bed, then lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Third grade marks a meaningful shift in academic challenge — reading fluency, multiplication, and sustained attention tasks all increase in complexity. Eight year olds still require 9–11 hours of sleep per night, with the ideal target around 10 hours for most children. An 8:00–8:30 PM bedtime supports a 6:30–7:00 AM wake time with adequate rest. At this age, children are developing a stronger sense of fairness and comparison — they may push back on bedtimes by arguing that a sibling or friend stays up later. Maintaining age-appropriate expectations with clear reasoning helps. This is also the age when sleep quality starts to matter as much as quantity, as some 8 year olds begin spending more time in lighter sleep stages than they did at younger ages.",
+      "sleepNeeds": "The third-grade brain is building the cognitive foundations for abstract reasoning, which emerges more fully around ages 8–11. Sleep supports the consolidation of complex concepts — when a child learns long division or a new reading strategy, the brain rehearses and cements those patterns during nighttime sleep cycles. Deep sleep continues to drive growth hormone release, and many children experience a noticeable growth spurt around age 8. Emotional regulation also deepens during this period — children become more capable of perspective-taking and managing frustration, but only when adequately rested. Sleep-deprived 8 year olds frequently display emotional dysregulation that can be mistaken for attention or behavioral disorders. The American Academy of Pediatrics has noted that inadequate sleep is one of the most common and under-recognized contributors to behavioral challenges in school-age children.",
+      "tips": "Shift the focus from sleep enforcement to sleep education at this age. Explaining to an 8 year old that their brain literally grows smarter during sleep can be surprisingly motivating. Use a consistent 20–25 minute wind-down routine beginning around 7:30–8:00 PM. Independent reading in bed is excellent — it supports literacy and creates a natural transition to sleep. Set a hard device cutoff at 7:30 PM and use this as a non-negotiable household rule rather than a nightly negotiation. On weekend nights, allow up to 30 minutes' extension in bedtime, but keep wake times within 30–45 minutes of the school-day time to avoid circadian disruption.",
+      "signs": "An 8 year old who isn't getting enough sleep may show declining handwriting or organizational skills at school, increased sensitivity to criticism, difficulty managing transitions between activities, and what parents often describe as 'acting younger' than their age. Bedwetting that returns after a long dry period, frequent night waking, and persistent nightmares can all be associated with fragmented or insufficient sleep. If homework battles consistently intensify each evening, assess whether overtiredness — rather than defiance — is driving the conflict."
+    },
+    "faq": [
+      { "question": "What bedtime is best for an 8 year old?", "answer": "An 8:00–8:30 PM bedtime works well for most 8 year olds who wake between 6:30 and 7:00 AM for school. This provides the 10 hours of sleep most children this age need for optimal cognitive and physical development." },
+      { "question": "How much homework time should an 8 year old have before bed?", "answer": "Third-grade homework typically takes 30–45 minutes. Finish homework at least 2 hours before bedtime to allow for decompression, dinner, and the wind-down routine. Rushed homework immediately before bed increases arousal and delays sleep onset." },
+      { "question": "My 8 year old says they can't sleep. Is this insomnia?", "answer": "Difficulty falling asleep in an 8 year old is usually behavioral rather than clinical insomnia. Common causes include too much screen time before bed, an overly stimulating evening routine, insufficient daytime physical activity, or a bedtime that is actually too early before their natural sleep pressure builds sufficiently." },
+      { "question": "Does my 8 year old need 10 or 11 hours of sleep?", "answer": "Individual needs vary. Most 8 year olds thrive on 10–10.5 hours. If your child consistently wakes naturally after 10 hours looking rested and alert, that is their natural need. If they need to be woken and show morning grogginess, they likely need more." }
+    ],
+    "relatedSlugs": ["age-7-years", "age-9-years", "school-age-6-13-years"]
+  },
+  {
+    "slug": "age-9-years",
+    "ageGroup": "9 Year Old",
+    "ageRange": "Age 9",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 9 Year Old Need?",
+    "h1": "How Much Sleep Does a 9 Year Old Need?",
+    "metaDescription": "9 year olds need 9-11 hours of sleep per night. Get the ideal bedtime for 4th graders, a sample daily schedule, and strategies for managing sleep and activities.",
+    "recommendedHours": { "min": 9, "max": 11, "ideal": 10 },
+    "napInfo": "Nine year olds typically do not need naps. Afternoon fatigue in a 9 year old usually points to insufficient nighttime sleep or early circadian rhythm shifts beginning in some pre-pubescent children.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "8:30 PM",
+      "totalSleep": "10 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine: breakfast, dressed, pack bag" },
+        { "time": "7:30 AM", "activity": "School" },
+        { "time": "3:30 PM", "activity": "After school snack, 15 min downtime" },
+        { "time": "4:00–5:00 PM", "activity": "Homework (30–45 min) or sport/activity" },
+        { "time": "5:30 PM", "activity": "Free play or family time" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "7:00–7:30 PM", "activity": "Independent reading or low-key activity" },
+        { "time": "7:30–8:00 PM", "activity": "Wind-down: shower, brush teeth, pajamas" },
+        { "time": "8:00–8:30 PM", "activity": "Reading in bed" },
+        { "time": "8:30 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Fourth grade brings increased academic expectations — multi-paragraph writing, fractions, and science projects all require higher-order thinking that depends on a well-rested brain. Nine year olds need 9–11 hours of sleep per night, with 10 hours being the optimal target for most. A 8:30 PM bedtime supports a 6:30–7:00 AM rise time with a healthy sleep margin. At this age, pre-pubescent changes may begin in some children, and these early hormonal shifts can slightly alter sleep patterns — some 9 year olds start to show the early stages of the later sleep phase preference that becomes more pronounced during adolescence. Staying alert to your child's emerging sleep cues and adjusting the schedule slightly later if needed is appropriate, while still protecting a minimum of 9.5–10 hours.",
+      "sleepNeeds": "Nine year olds are entering what developmental psychologists call middle childhood — a period of consolidating skills across reading, math, and social reasoning. Sleep's role in this phase is less about dramatic neural reorganization and more about the steady accumulation of knowledge and competency. Memory consolidation during sleep becomes increasingly important as the volume of school content grows. Research shows that children who get adequate sleep demonstrate better problem-solving strategies and stronger working memory — both critical for the multi-step tasks that characterize fourth-grade work. Growth hormone peaks during deep sleep and continues to support physical development. Emotional regulation is increasingly internalized at this age, but remains dependent on adequate sleep — overtired 9 year olds often revert to more reactive emotional patterns typical of younger children.",
+      "tips": "Create clear household rules around screens and sleep that your 9 year old can understand and participate in setting. Children who help establish family sleep rules show greater buy-in than those who have rules imposed without input. Keep a consistent wind-down starting at 7:30–8:00 PM. Independent reading is ideal at this age — many 9 year olds can read chapter books independently, making bedtime reading both pleasurable and effective as a sleep cue. If your child has significant extracurricular commitments, audit the schedule to ensure at least one weekday evening is calm. An overscheduled child who consistently returns home after 7 PM will struggle to wind down adequately for an 8:30 PM bedtime.",
+      "signs": "A sleep-deprived 9 year old may show declining grades in subjects previously mastered, social withdrawal or increased sensitivity to peer dynamics, difficulty completing homework independently, and persistent morning resistance. Physical complaints like headaches and stomachaches in the morning are common in chronically tired children. Some 9 year olds begin to show early signs of anxiety, and sleep deprivation significantly amplifies anxiety symptoms. If your child seems to have sufficient energy for preferred activities but struggles with school-related tasks, sleep deprivation may be narrowing their cognitive bandwidth rather than reducing overall energy."
+    },
+    "faq": [
+      { "question": "What is the ideal bedtime for a 9 year old?", "answer": "Most 9 year olds should be asleep by 8:30 PM when waking at 6:30–7:00 AM for school. This provides the 10 hours of sleep optimal for cognitive development and physical growth at this age." },
+      { "question": "My 9 year old is starting puberty. Should their bedtime change?", "answer": "Early puberty (which can begin as young as age 8–9, particularly in girls) can shift the circadian clock slightly later. If your child has difficulty falling asleep at the usual time but shows no other issues, experiment with a 15–30 minute later bedtime while monitoring total sleep duration." },
+      { "question": "How do I balance sports and activities with bedtime?", "answer": "Set a non-negotiable bedtime and work backward when scheduling activities. Evening games or practices that run past 7:30–8:00 PM make an 8:30 PM bedtime nearly impossible. Limit late-evening commitments to one or two nights per week at most." },
+      { "question": "Should my 9 year old have a phone or tablet in their room at night?", "answer": "No. Research consistently shows that electronic devices in the bedroom delay sleep onset, reduce total sleep time, and impair sleep quality in children and adolescents. Charging devices outside the bedroom is the most effective single intervention for improving children's sleep." }
+    ],
+    "relatedSlugs": ["age-8-years", "age-10-years", "school-age-6-13-years"]
+  },
+  {
+    "slug": "age-10-years",
+    "ageGroup": "10 Year Old",
+    "ageRange": "Age 10",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 10 Year Old Need?",
+    "h1": "How Much Sleep Does a 10 Year Old Need?",
+    "metaDescription": "10 year olds need 9-11 hours of sleep per night. Discover the best bedtime for 5th graders, sample schedules, and how puberty begins affecting sleep at this age.",
+    "recommendedHours": { "min": 9, "max": 11, "ideal": 9.5 },
+    "napInfo": "Naps are not typically needed at age 10. Some children beginning early puberty may experience increased afternoon fatigue as hormonal changes shift their circadian preference later.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "8:30–9:00 PM",
+      "totalSleep": "9.5–10 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine" },
+        { "time": "7:30 AM", "activity": "School" },
+        { "time": "3:30 PM", "activity": "After school snack and downtime" },
+        { "time": "4:00–5:30 PM", "activity": "Homework (45–60 min) or extracurricular" },
+        { "time": "5:30–6:00 PM", "activity": "Free time or outdoor activity" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "7:00–7:30 PM", "activity": "Relaxed screen time or reading" },
+        { "time": "7:45–8:15 PM", "activity": "Wind-down: shower, brush teeth" },
+        { "time": "8:15–8:30 PM", "activity": "Reading in bed" },
+        { "time": "8:30–9:00 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Fifth grade is the final year of elementary school for most children, and it comes with increased homework, social complexity, and often the beginning of puberty. Ten year olds need 9–11 hours of sleep per night, with the optimal amount beginning to shift toward 9.5 hours as some children enter early adolescent biology. For children whose puberty has begun, the circadian clock may start shifting later, making it genuinely harder to fall asleep at 8:30 PM even with a good routine. For children who haven't yet entered puberty, the same 8:30–9:00 PM bedtime that worked at age 8–9 continues to be appropriate. This age requires careful calibration — you want to maintain adequate total sleep while not fighting against your child's emerging biology.",
+      "sleepNeeds": "At age 10, the brain is preparing for the significant cognitive expansion of the middle school years. Abstract reasoning, metacognition (thinking about thinking), and complex social processing are all developing rapidly. Sleep at this stage supports the neural infrastructure being built for these higher-order functions. Research shows that 10 year olds who consistently sleep 9.5+ hours outperform sleep-deprived peers on standardized measures of attention, processing speed, and memory. For children who have begun puberty, growth hormone surges during deep sleep are particularly important for the physical development underway. Emotional resilience — the ability to recover from setbacks and disappointments — is closely tied to sleep quality at this age, as the emotional brain is increasingly active and requires REM sleep to process the more complex social experiences of upper elementary school.",
+      "tips": "Gradually shift bedtime in response to your child's genuine sleep cues rather than an arbitrary schedule change. If your 10 year old consistently cannot fall asleep before 9:30 PM despite a good routine, a 9:00 PM official lights-out with reading in bed until they're ready may be more effective than forcing sleep at 8:30. Anchor the morning wake time consistently rather than the bedtime — this is the more powerful circadian anchor. Increase independence in the sleep routine at this age; many 10 year olds can manage their own wind-down if clear expectations are set. Limit caffeine entirely — chocolate, soda, and tea all count. Regular aerobic exercise of 60 minutes daily remains the single best behavioral support for healthy sleep.",
+      "signs": "Sleep-deprived 10 year olds frequently show academic decline that appears suddenly and is attributed to attitude or effort when sleep is the actual culprit. Social difficulties, increased sensitivity to peer judgment, and disproportionate reactions to minor setbacks are common. Physical signs include dark circles, pallor, and sluggish mornings. Some children this age begin to use social media or messaging apps late at night — check in periodically about whether devices are being used after lights-out, as this is the age when unauthorized device use during the night often begins."
+    },
+    "faq": [
+      { "question": "What time should a 10 year old go to bed?", "answer": "Most 10 year olds should aim for lights out between 8:30 and 9:00 PM when waking at 6:30–7:00 AM. Children who have begun puberty may find it difficult to fall asleep before 9:00–9:30 PM due to a natural circadian shift." },
+      { "question": "My 10 year old can't fall asleep until 10 PM. What's happening?", "answer": "If puberty has begun, this is often a genuine biological shift rather than a behavioral issue. Ensure there are no screens after 8 PM, that the room is dark and cool, and that the morning wake time is consistent. If the problem persists, consult your pediatrician about delayed sleep phase syndrome." },
+      { "question": "Should a 10 year old have a set wake time on weekends?", "answer": "Ideally, yes. Try to keep weekend wake times within 30–45 minutes of the school schedule. Sleeping in more than an hour creates social jet lag that accumulates over time and makes Monday mornings progressively harder." },
+      { "question": "How does sleep affect social development in 10 year olds?", "answer": "Sleep is crucial for emotional processing and social cognition. Sleep-deprived 10 year olds show impaired ability to read social cues, more reactive emotional responses to peer interactions, and reduced empathy. Adequate sleep directly supports the increasingly complex social navigation of upper elementary school." }
+    ],
+    "relatedSlugs": ["age-9-years", "age-11-years", "school-age-6-13-years"]
+  },
+  {
+    "slug": "age-11-years",
+    "ageGroup": "11 Year Old",
+    "ageRange": "Age 11",
+    "type": "individual-year",
+    "title": "How Much Sleep Does an 11 Year Old Need?",
+    "h1": "How Much Sleep Does an 11 Year Old Need?",
+    "metaDescription": "11 year olds need 9-11 hours of sleep. Learn the best bedtime for middle school transition, how puberty changes sleep needs, and strategies for maintaining healthy habits.",
+    "recommendedHours": { "min": 9, "max": 11, "ideal": 9.5 },
+    "napInfo": "Naps are generally not necessary at age 11 unless your child is significantly sleep-deprived. A 20-minute early afternoon nap can help on particularly short nights, but should not replace fixing the underlying nighttime schedule.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "9:00 PM",
+      "totalSleep": "9.5 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine" },
+        { "time": "7:30 AM", "activity": "School" },
+        { "time": "3:30 PM", "activity": "After school snack, free time" },
+        { "time": "4:00–5:30 PM", "activity": "Homework (45–60 min) or activity" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "6:30–7:30 PM", "activity": "Free time or screen time (limited)" },
+        { "time": "7:30–8:00 PM", "activity": "Wind-down begins: no screens after 8 PM" },
+        { "time": "8:15–8:45 PM", "activity": "Shower, brush teeth, pajamas" },
+        { "time": "8:45–9:00 PM", "activity": "Reading in bed" },
+        { "time": "9:00 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Age 11 is a pivotal transition year — many children are entering middle school, navigating more complex social dynamics, and experiencing the early-to-middle stages of puberty. Sleep needs remain high at 9–11 hours per night, but the circadian clock has typically shifted noticeably later compared to age 6–8. Most 11 year olds do best with a 9:00–9:30 PM bedtime, which feels later to parents of younger children but aligns with the genuine biological shift that puberty initiates. The challenge at this age is that social media access, peer communication, and homework volume all expand while the parental oversight that enforced earlier bedtimes naturally begins to relax. Eleven year olds need clear expectations and the internal motivation to prioritize sleep — building this awareness is a worthwhile investment.",
+      "sleepNeeds": "The middle school brain is in the midst of a second major period of synaptic pruning — eliminating less-used neural connections and strengthening heavily used ones. This process is sleep-dependent, occurring primarily during deep slow-wave sleep. At the same time, puberty drives increased production of sex hormones that peak during sleep, meaning inadequate sleep directly interferes with healthy hormonal development. Emotional processing becomes more intense at this age as the amygdala (the brain's emotional alarm system) becomes more reactive while the prefrontal cortex (the reasoning center) is still years away from full maturity. REM sleep is the primary regulator of emotional intensity, making it critical for navigating the heightened emotional landscape of early adolescence. Children who consistently get 9+ hours show measurably better emotional regulation, stronger academic performance, and more positive peer relationships than their sleep-deprived peers.",
+      "tips": "Negotiate a consistent lights-out time with your 11 year old — framing it as a biological need rather than a punishment creates more cooperation. Explain the science of puberty and sleep in age-appropriate terms. Institute a household charging station outside bedrooms where all phones dock at a set time each night — this removes the temptation and responsibility from the child. If your child has a phone, check in regularly about whether they are using it after lights-out. Encourage consistent physical activity of 60 minutes daily. Support the bedtime wind-down by keeping the household generally calmer in the 60 minutes before lights-out — this is harder in busy families but meaningfully improves sleep onset.",
+      "signs": "Sleep deprivation in 11 year olds often emerges as academic regression, increased conflict at home, heightened peer sensitivity, and persistent morning resistance. Many parents mistakenly attribute these patterns to puberty alone, when inadequate sleep is significantly amplifying the emotional volatility. Falling asleep in the first class of the school day, needing multiple alarms, and using weekends to sleep until 10 or 11 AM all signal significant weekday sleep debt. Emerging anxiety symptoms in 11 year olds are strongly correlated with sleep deprivation — address both simultaneously rather than treating them as separate issues."
+    },
+    "faq": [
+      { "question": "What is a good bedtime for an 11 year old?", "answer": "Most 11 year olds should be asleep by 9:00–9:30 PM. Puberty naturally shifts the sleep phase later, so fighting to maintain an 8:00 PM bedtime from younger years may be counterproductive. Focus on ensuring 9–9.5 hours of total sleep rather than a specific early bedtime." },
+      { "question": "Should my 11 year old have a phone in their room at night?", "answer": "No. Research is unambiguous that phones in the bedroom significantly reduce sleep quality and quantity in pre-teens and teens. Even when the phone is face-down or silenced, its presence is associated with more nighttime waking. A charging station outside the bedroom is the most evidence-based recommendation." },
+      { "question": "My 11 year old says they aren't tired at 9 PM. Is this normal?", "answer": "Yes. Puberty shifts the circadian rhythm later, and many 11 year olds genuinely do not feel sleepy until 9:30–10 PM. However, a consistent sleep schedule, screen blackout after 8 PM, and a dark cool bedroom can help the body's melatonin production align more closely with the desired bedtime." },
+      { "question": "How much sleep do 6th graders need?", "answer": "Most 6th graders (typically age 11–12) need 9–9.5 hours of sleep per night. Earlier school start times in middle school frequently create a mismatch with adolescent biology, making intentional bedtime planning essential at this transition." }
+    ],
+    "relatedSlugs": ["age-10-years", "age-12-years", "school-age-6-13-years"]
+  },
+  {
+    "slug": "age-12-years",
+    "ageGroup": "12 Year Old",
+    "ageRange": "Age 12",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 12 Year Old Need?",
+    "h1": "How Much Sleep Does a 12 Year Old Need?",
+    "metaDescription": "12 year olds need 8-10 hours of sleep per night. Learn the best bedtime for 7th graders, how the teen sleep shift impacts this age, and how to fight sleep deprivation.",
+    "recommendedHours": { "min": 8, "max": 10, "ideal": 9 },
+    "napInfo": "A short 20-minute nap on days following poor sleep can help 12 year olds function better, but regular napping usually signals inadequate nighttime sleep. Address the root cause rather than relying on naps.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "9:00–9:30 PM",
+      "totalSleep": "9–9.5 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine" },
+        { "time": "7:30 AM", "activity": "School" },
+        { "time": "3:30–4:00 PM", "activity": "After school snack, decompression" },
+        { "time": "4:00–5:30 PM", "activity": "Homework or sport/activity" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "6:30–7:30 PM", "activity": "Free time or social media (time-limited)" },
+        { "time": "7:30 PM", "activity": "Devices off / wind-down begins" },
+        { "time": "8:00–8:30 PM", "activity": "Shower, prepare for tomorrow" },
+        { "time": "8:30–9:00 PM", "activity": "Reading or journaling" },
+        { "time": "9:00–9:30 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "By age 12, most children have entered adolescence, and the biology of teen sleep is fully underway. The circadian clock has shifted forward by 1–2 hours compared to childhood, meaning a 12 year old genuinely cannot fall asleep at 8:00 PM the way a 7 year old might. The National Sleep Foundation recommends 8–10 hours for this age group, with 9 hours being the practical target for most 12 year olds balancing school schedules with their natural sleep timing. The challenge is significant: if a 12 year old's body clock makes them fall asleep at 10:00 PM and school starts at 7:30 AM, they are getting just 8.5 hours — at the low end of the range — even with perfect sleep hygiene. Parents and children working together to protect that window is essential.",
+      "sleepNeeds": "The 12-year-old brain is engaged in intense emotional development — the limbic system is more reactive than at any other point in life, while the prefrontal cortex is still years from maturity. This neurological reality makes sleep deprivation particularly dangerous at this age: an under-rested 12 year old has an overactive emotional brain and an under-resourced reasoning brain, creating the conditions for poor decisions, conflict, and mood instability. Research from Harvard Medical School shows that sleep deprivation in early adolescents increases cortisol reactivity, which in turn drives greater risk-taking behavior and impaired social judgment. Deep sleep remains important for physical development and immune function, while REM sleep is the primary mechanism for emotional processing and social learning. An emotionally turbulent 7th or 8th grader who gets consistent 9-hour sleep nights is dramatically better regulated than one running on 7 hours.",
+      "tips": "Establish a firm device curfew at 8:00–8:30 PM for 12 year olds — this is non-negotiable regardless of pushback. The melatonin suppression effect of blue light is most pronounced in adolescents, making evening screen exposure particularly harmful for this age group. Use screen management tools if needed rather than relying on willpower or trust. Create a 30–45 minute wind-down routine that the 12 year old owns: shower, prepare for the next day, some reading or journaling. Keeping a consistent wake time on weekends — within 45–60 minutes of the school schedule — prevents the circadian drift that makes Monday mornings progressively worse throughout the school year.",
+      "signs": "A sleep-deprived 12 year old may present with dramatic mood swings, persistent conflict at home, declining academic performance, increasing reliance on caffeine (often disguised in sports drinks or iced coffee), and significant weekend oversleeping. Social changes — withdrawal from family, excessive reliance on peer validation — that appear abruptly often have a sleep component. Emerging signs of anxiety or depression in 12 year olds should always include a sleep assessment, as the two are strongly bidirectionally linked. A 12 year old who cannot wake without repeated alarms and is functionally impaired until mid-morning is not a normal teenager — they are sleep-deprived."
+    },
+    "faq": [
+      { "question": "What time should a 12 year old go to bed on school nights?", "answer": "Most 12 year olds should be lights-out by 9:00–9:30 PM on school nights. This provides approximately 9 hours before a 6:30–7:00 AM wake time. Puberty makes earlier bedtimes biologically difficult, so the focus should be on maximizing sleep within the realistic window." },
+      { "question": "Is it normal for my 12 year old to stay up until midnight?", "answer": "While a 12 year old's circadian clock has shifted later, midnight is still too late for adequate school-night sleep. This is often driven by device use rather than biology. A midnight bedtime with a 6:30 AM wake time leaves only 6.5 hours — well below the 9 hours needed." },
+      { "question": "My 12 year old sleeps 10 hours on weekends. Is that healthy?", "answer": "Sleeping 10 hours on weekends typically indicates significant weekday sleep debt. While the body naturally tries to recover, weekend catch-up sleep does not fully reverse weekday deprivation. The goal should be getting closer to 9 hours every night, not just on weekends." },
+      { "question": "How do sports and after-school activities affect a 12 year old's sleep?", "answer": "Evening practices that end at 7:00 or 8:00 PM make the 9:00–9:30 PM bedtime challenging. Children who have active evening schedules need even stricter device cutoffs and a streamlined wind-down to fall asleep on time. Evaluate whether the activity schedule is sustainable long-term given sleep needs." }
+    ],
+    "relatedSlugs": ["age-11-years", "age-13-years", "teenager-14-17-years"]
+  },
+  {
+    "slug": "age-13-years",
+    "ageGroup": "13 Year Old",
+    "ageRange": "Age 13",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 13 Year Old Need?",
+    "h1": "How Much Sleep Does a 13 Year Old Need?",
+    "metaDescription": "13 year olds need 8-10 hours of sleep nightly. Discover why most 8th graders are chronically sleep-deprived, the ideal bedtime, and how parents can help teens sleep better.",
+    "recommendedHours": { "min": 8, "max": 10, "ideal": 9 },
+    "napInfo": "A brief 20-minute nap after school can help a sleep-deprived 13 year old function in the evening, but should be taken before 4 PM to avoid interfering with nighttime sleep. Regular napping is a signal to fix the underlying schedule.",
+    "sampleSchedule": {
+      "wakeTime": "6:30–7:00 AM",
+      "bedtime": "9:30 PM",
+      "totalSleep": "9 hours",
+      "events": [
+        { "time": "6:30 AM", "activity": "Wake up" },
+        { "time": "6:30–7:30 AM", "activity": "Morning routine" },
+        { "time": "7:30 AM", "activity": "School" },
+        { "time": "3:30–4:00 PM", "activity": "After school snack, free time" },
+        { "time": "4:00–6:00 PM", "activity": "Homework (60–75 min) or extracurricular" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "6:30–7:30 PM", "activity": "Relaxation or low-key social time" },
+        { "time": "7:30–8:00 PM", "activity": "Device wind-down (limit, no social media after 8:30)" },
+        { "time": "8:30–9:00 PM", "activity": "Shower, prepare for tomorrow" },
+        { "time": "9:00–9:30 PM", "activity": "Reading" },
+        { "time": "9:30 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Eighth grade is a year of intensifying academic pressure, shifting social hierarchies, and deep hormonal changes — and nearly all 13 year olds face these challenges chronically sleep-deprived. The CDC reports that over 70% of high school students sleep less than the recommended 8–10 hours, and patterns of sleep deprivation typically take root during middle school. The American Academy of Pediatrics recommends 8–10 hours for 13 year olds, with 9 hours being the target most achievable within real-world school schedules. The central challenge is biological: puberty has shifted the circadian clock forward by 1–2 hours, making a 9:30 PM bedtime a genuine achievement rather than an easy default. Parents and teens working collaboratively on sleep routines, with clear device policies and consistent wake times, achieve the best outcomes.",
+      "sleepNeeds": "At 13, the brain's emotional processing systems are at peak reactivity while executive function remains in development — a gap that adequate sleep partially bridges. Research from the National Sleep Foundation shows that teenagers who consistently sleep 9 hours score significantly higher on measures of decision-making, impulse control, and emotional regulation compared to those sleeping 6–7 hours. Deep sleep during early adolescence supports the physical demands of puberty: hormone production, muscle and bone development, and immune regulation. REM sleep — which increases in proportion during adolescent sleep — serves as an emotional thermostat, processing the social experiences, conflicts, and anxieties that characterize the 13-year-old social world. A single night of poor sleep measurably impairs a teenager's ability to read others' emotional expressions, making peer navigation significantly harder.",
+      "tips": "At 13, teens benefit from understanding the biology behind their sleep shift rather than simply being told when to go to bed. Share the science: puberty makes it harder to feel sleepy early, and this is a known biological phenomenon, not a personal failing. The goal is not to fight the shift but to protect the sleep window within it. A 9:30 PM bedtime and 6:30 AM wake time provides 9 hours and requires intentional management of the evening. Institute a charging station outside the bedroom and make it a household rule, not an individual punishment. If your 13 year old has significant homework loads, work backward from the 9:30 PM bedtime to ensure homework time is protected without encroaching on wind-down time.",
+      "signs": "A sleep-deprived 13 year old may show irritability, emotional reactivity, declining school performance, increased social media use as a coping mechanism, and physical complaints like frequent headaches and stomachaches. Falling asleep within minutes of sitting still — during car rides, while watching TV, or during study halls — indicates significant accumulated sleep debt. Increasing reliance on caffeine (iced coffee, energy drinks) to function through the day is a red flag. The link between sleep deprivation and mental health in this age group is well-established: 13 year olds who consistently sleep less than 7.5 hours show significantly higher rates of depression, anxiety, and suicidal ideation. Sleep should always be assessed as part of any mental health evaluation for teenagers."
+    },
+    "faq": [
+      { "question": "What is the best bedtime for a 13 year old?", "answer": "Lights-out at 9:30 PM works well for most 13 year olds who wake at 6:30–7:00 AM, providing approximately 9 hours of sleep opportunity. Puberty makes earlier bedtimes genuinely difficult to achieve, so 9:30 PM represents a practical target that balances biology with sleep needs." },
+      { "question": "Should I take my 13 year old's phone at bedtime?", "answer": "Yes. Establishing a family charging station outside bedrooms at a consistent time is one of the most effective interventions for improving teen sleep. Research shows that even passive phone presence in the bedroom — face-down, silenced — increases nighttime waking. Framing this as a family rule rather than a punishment for one child reduces conflict." },
+      { "question": "My 13 year old sleeps 6 hours on school nights and 11 hours on weekends. Is this okay?", "answer": "No. This pattern — chronic weekday deprivation with weekend catch-up — is common in teenagers but significantly harmful. Cognitive deficits, mood instability, and metabolic effects accumulate during the week and are only partially recovered on weekends. The goal should be getting closer to 9 hours on school nights." },
+      { "question": "Can sleep deprivation cause depression in a 13 year old?", "answer": "The relationship between sleep and depression in adolescents is bidirectional — depression disrupts sleep, and sleep deprivation increases depression risk. Studies show that 13–14 year olds who sleep fewer than 8 hours per night have significantly higher depression scores. Addressing sleep should be a first-line component of any mental health support for teens." }
+    ],
+    "relatedSlugs": ["age-12-years", "age-14-years", "teenager-14-17-years"]
+  },
+  {
+    "slug": "age-14-years",
+    "ageGroup": "14 Year Old",
+    "ageRange": "Age 14",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 14 Year Old Need?",
+    "h1": "How Much Sleep Does a 14 Year Old Need?",
+    "metaDescription": "14 year olds need 8-10 hours of sleep. Understand the teen sleep phase delay, ideal bedtimes for 9th graders, and how to help your teenager actually get enough sleep.",
+    "recommendedHours": { "min": 8, "max": 10, "ideal": 9 },
+    "napInfo": "A brief 20-minute nap after school is acceptable for a sleep-deprived 14 year old and can improve afternoon alertness without disrupting nighttime sleep if taken before 4 PM.",
+    "sampleSchedule": {
+      "wakeTime": "7:00 AM",
+      "bedtime": "10:00 PM",
+      "totalSleep": "9 hours",
+      "events": [
+        { "time": "7:00 AM", "activity": "Wake up" },
+        { "time": "7:00–8:00 AM", "activity": "Morning routine" },
+        { "time": "8:00–8:30 AM", "activity": "School commute / arrive" },
+        { "time": "3:30–4:00 PM", "activity": "After school snack and decompression" },
+        { "time": "4:00–6:00 PM", "activity": "Homework or extracurricular" },
+        { "time": "6:00 PM", "activity": "Dinner" },
+        { "time": "6:30–8:00 PM", "activity": "Free time, social connection, or hobbies" },
+        { "time": "8:00–8:30 PM", "activity": "Begin winding down: no social media after 9 PM" },
+        { "time": "9:00–9:30 PM", "activity": "Shower, prepare for tomorrow" },
+        { "time": "9:30–10:00 PM", "activity": "Reading or quiet time" },
+        { "time": "10:00 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "High school begins for most 14 year olds — a transition that brings earlier school start times, more homework, and increased social and extracurricular demands, all stacked against a biology that now strongly prefers later sleep. The National Sleep Foundation recommends 8–10 hours for 14–17 year olds, with 9 hours being the target. Yet the average American high school student gets just 6.5–7 hours on school nights, creating a chronic sleep debt that accumulates across the school year. The mismatch between teenage biology and school schedules is not a personal failing — it is a systemic problem. The American Academy of Pediatrics has explicitly stated that middle and high schools should not start before 8:30 AM. Until that changes, parents and teens working together to protect the sleep window are fighting an uphill battle that is nonetheless worth fighting.",
+      "sleepNeeds": "At 14, the prefrontal cortex is still years away from full maturity while emotional reactivity remains high. Sleep — specifically REM sleep — is the critical buffer between stimulating experience and emotional balance. Research from UC Berkeley showed that sleep-deprived teenagers are up to 60% more emotionally reactive than well-rested peers. This has direct implications for peer conflicts, family dynamics, and risk-taking behavior. Deep sleep continues to support the physical development of puberty, including skeletal growth, hormonal regulation, and immune function. Athletic performance is directly tied to sleep at this age — studies of high school athletes show that sleeping 9+ hours reduces injury rates by 60% compared to those sleeping 6 hours or less. For 14 year olds in competitive sports, sleep is as important a performance variable as training.",
+      "tips": "Focus on what can be controlled rather than fighting biology. Create a device charging station outside the bedroom. Set a consistent morning alarm and keep it consistent on weekends — the morning anchor is more powerful than the bedtime for maintaining circadian alignment. Help your 14 year old understand that the weekend sleep-in creates a social jet lag that makes Monday mornings functionally equivalent to flying across time zones. If homework regularly extends past 9:30 PM, work with your child and school to find strategies — this is not sustainable for long-term sleep health. Encourage bright light exposure in the morning to help advance the circadian clock naturally.",
+      "signs": "Sleep-deprived 14 year olds often look like unmotivated, emotionally volatile, or cognitively impaired teenagers when they are actually simply exhausted. Declining grades despite high effort, increased reliance on caffeine, persistent emotional conflicts with family and peers, and weekend oversleeping of 3+ hours beyond the school schedule all signal inadequate sleep. Emerging mental health symptoms — anxiety, depression, mood instability — in 14 year olds have a strong and established link to sleep deprivation. Evaluate and address sleep as a first priority alongside any mental health concern."
+    },
+    "faq": [
+      { "question": "What is the ideal bedtime for a 14 year old?", "answer": "Most 14 year olds should aim for lights-out at 10:00 PM when waking at 7:00 AM, providing 9 hours of sleep opportunity. The natural circadian shift of puberty makes earlier bedtimes genuinely difficult — a 10:00 PM target is realistic and biologically aligned." },
+      { "question": "Is 7 hours of sleep enough for a 14 year old?", "answer": "No. Seven hours is below the minimum recommendation of 8–10 hours for this age group. Research shows that teenagers who consistently get 7 hours or fewer have significantly impaired cognition, emotional regulation, and physical health compared to those sleeping 9 hours." },
+      { "question": "How do I get my 14 year old to go to bed earlier?", "answer": "Focus on the environment rather than willpower: charge devices outside the bedroom, keep the household calmer after 9 PM, and use bright light in the morning rather than fighting the bedtime. Explaining the science of sleep phase delay to your 14 year old often creates more cooperation than rules-based approaches." },
+      { "question": "Does sleep affect athletic performance in 14 year olds?", "answer": "Dramatically. Studies show that sleeping 9+ hours reduces injury rates by up to 60% in adolescent athletes and improves reaction time, accuracy, and sprint speed. Sleep is the most powerful performance-enhancing tool available to teen athletes." }
+    ],
+    "relatedSlugs": ["age-13-years", "age-15-years", "teenager-14-17-years"]
+  },
+  {
+    "slug": "age-15-years",
+    "ageGroup": "15 Year Old",
+    "ageRange": "Age 15",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 15 Year Old Need?",
+    "h1": "How Much Sleep Does a 15 Year Old Need?",
+    "metaDescription": "15 year olds need 8-10 hours of sleep per night. Discover the real bedtime that fits teen biology, how to balance sophomore-year pressures with sleep health.",
+    "recommendedHours": { "min": 8, "max": 10, "ideal": 9 },
+    "napInfo": "A 20-minute nap before 4 PM can help a sleep-deprived 15 year old manage afternoon hours, but should not become a regular substitute for adequate nighttime sleep.",
+    "sampleSchedule": {
+      "wakeTime": "7:00 AM",
+      "bedtime": "10:00–10:30 PM",
+      "totalSleep": "8.5–9 hours",
+      "events": [
+        { "time": "7:00 AM", "activity": "Wake up" },
+        { "time": "7:00–8:00 AM", "activity": "Morning routine" },
+        { "time": "8:30 AM", "activity": "School" },
+        { "time": "3:30–4:00 PM", "activity": "After school — snack, decompress" },
+        { "time": "4:00–6:30 PM", "activity": "Homework (60–90 min) or practice/activity" },
+        { "time": "6:30 PM", "activity": "Dinner" },
+        { "time": "7:00–8:30 PM", "activity": "Free time, social connection, hobbies" },
+        { "time": "8:30–9:00 PM", "activity": "Begin winding down — devices down by 9:30 PM" },
+        { "time": "9:30–10:00 PM", "activity": "Shower, prepare for tomorrow" },
+        { "time": "10:00–10:30 PM", "activity": "Reading or journaling" },
+        { "time": "10:30 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Sophomore year for most 15 year olds brings increased academic rigor, early standardized test preparation, and a fuller extracurricular schedule. It also brings the deepest point of the adolescent sleep phase delay — most 15 year olds genuinely cannot fall asleep before 10:30–11:00 PM even with excellent sleep hygiene. The recommended 8–10 hours remains unchanged, but achieving it within the constraints of typical school start times requires deliberate effort. Many 15 year olds are running a school-night sleep deficit of 1.5–2 hours that they partially recover on weekends, creating a cyclical pattern of deprivation and recovery that degrades academic performance, mental health, and physical development over the school year.",
+      "sleepNeeds": "At 15, sleep serves critical functions across physical, emotional, and cognitive domains. Growth hormone continues to be released during deep sleep, supporting muscle development and skeletal maturation in adolescents who are still growing. The immune system is profoundly affected by sleep: teenagers who sleep fewer than 7 hours are three times more likely to develop a cold when exposed to a virus compared to those sleeping 9 hours. Athletic and physical performance — important for many 15 year olds in sports — shows dramatic sensitivity to sleep. A single night of shortened sleep reduces sprint speed, accuracy, and reaction time. Emotionally, REM sleep is the primary processor of the social experiences, rejections, and conflicts that loom large in the sophomore social world. Teens who consistently cut into REM sleep by having a late bedtime or early wake time show elevated anxiety and impaired social cognition.",
+      "tips": "At 15, parents are transitioning from enforcing sleep to coaching around sleep. The most effective approach combines clear household structure (device charging station outside the bedroom) with genuine education about sleep science. Most 15 year olds respond well to data about athletic performance and cognitive function — these are motivating frames. Help your teenager see the weekend sleep-in for what it is: a symptom of insufficient weekday sleep, not a solution. A 30-minute earlier weeknight bedtime each semester is a more sustainable improvement than attempting a dramatic shift. Connect sleep to goals that matter to your teenager: GPA, athletic performance, social confidence, and physical health are all directly affected.",
+      "signs": "A sleep-deprived 15 year old may show declining SAT or test prep scores despite study efforts, increased social anxiety or imposter syndrome in competitive academic environments, reduced athletic performance, frequent illness, and persistent low-grade irritability. Excessive caffeine consumption — multiple coffees or energy drinks daily — is a red flag. Social withdrawal from previously enjoyed activities, or conversely, excessive social media scrolling late at night as a form of stimulation-seeking, are common presentations of sleep-deprived teenagers at this age. The link between inadequate sleep and risk behaviors (substance use, reckless driving) strengthens as teenagers gain more independence."
+    },
+    "faq": [
+      { "question": "What time should a 15 year old go to bed?", "answer": "Given the biological sleep phase delay of adolescence, most 15 year olds fall asleep naturally around 10:30–11:00 PM. Lights-out at 10:00–10:30 PM is a realistic target that provides 8.5–9 hours before a 7:00 AM school wake time. Trying to enforce earlier bedtimes against this biology often leads to conflict without improving actual sleep." },
+      { "question": "My 15 year old gets 6 hours on school nights. How harmful is this?", "answer": "Significantly harmful. Six hours is 2–3 hours below the recommended minimum. Research shows cognitive deficits equivalent to 1.5 days of total sleep deprivation accumulate within a week of 6-hour nights. Academic performance, mental health, immune function, and physical development are all measurably impaired." },
+      { "question": "Is it okay for my 15 year old to sleep until noon on weekends?", "answer": "Sleeping until noon on weekends usually means waking 5 hours later than the school schedule — creating extreme social jet lag. It indicates severe weekday deprivation rather than healthy recovery. The goal should be closing the gap to 1–2 hours of weekend extension at most." },
+      { "question": "How does sleep affect a 15 year old's mental health?", "answer": "The relationship is strong and bidirectional. Sleep deprivation in 15 year olds increases cortisol, impairs emotional regulation, amplifies anxiety, and raises depression risk. Conversely, improving sleep is one of the most effective interventions for adolescent mental health. Always assess sleep as part of any mental health support." }
+    ],
+    "relatedSlugs": ["age-14-years", "age-16-years", "teenager-14-17-years"]
+  },
+  {
+    "slug": "age-16-years",
+    "ageGroup": "16 Year Old",
+    "ageRange": "Age 16",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 16 Year Old Need?",
+    "h1": "How Much Sleep Does a 16 Year Old Need?",
+    "metaDescription": "16 year olds need 8-10 hours of sleep per night. Learn how to balance driving, jobs, and academics with the sleep needs of a junior-year teen.",
+    "recommendedHours": { "min": 8, "max": 10, "ideal": 8.5 },
+    "napInfo": "A 20-minute nap before 4 PM can provide a meaningful alertness boost for a sleep-deprived 16 year old, particularly before driving. Drowsy driving is a serious risk at this age — napping is safer than pushing through fatigue behind the wheel.",
+    "sampleSchedule": {
+      "wakeTime": "7:00 AM",
+      "bedtime": "10:30 PM",
+      "totalSleep": "8.5 hours",
+      "events": [
+        { "time": "7:00 AM", "activity": "Wake up" },
+        { "time": "7:00–8:00 AM", "activity": "Morning routine" },
+        { "time": "8:30 AM", "activity": "School" },
+        { "time": "3:30–4:00 PM", "activity": "After school or work shift begins" },
+        { "time": "5:00–7:00 PM", "activity": "Homework (60–90 min) or part-time job" },
+        { "time": "7:00 PM", "activity": "Dinner" },
+        { "time": "7:30–9:00 PM", "activity": "Free time, social connection" },
+        { "time": "9:00–9:30 PM", "activity": "Devices down, wind-down begins" },
+        { "time": "9:30–10:00 PM", "activity": "Shower, prepare for tomorrow" },
+        { "time": "10:00–10:30 PM", "activity": "Reading or quiet time" },
+        { "time": "10:30 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Junior year brings college preparation pressure, AP courses, SAT/ACT tests, and for many 16 year olds, a driver's license and first job. Each of these adds to a schedule that is already straining sleep. The National Sleep Foundation recommends 8–10 hours for 16 year olds, but fewer than 15% of American teenagers this age regularly meet that target. A 10:30 PM bedtime with a 7:00 AM wake time provides 8.5 hours — achievable with discipline and the right environment. The stakes of sleep deprivation at this age are concrete: drowsy driving is one of the leading causes of fatal crashes in 16–19 year olds. AAA research found that missing 1–2 hours of sleep doubles crash risk. Sleep is literally a matter of life and death for newly licensed drivers.",
+      "sleepNeeds": "The adolescent brain continues to develop well into the mid-20s, but 16 is a critical year for prefrontal cortex maturation — the region responsible for judgment, planning, and impulse control. Sleep deprivation directly impairs prefrontal function, increasing risk-taking behavior, reducing goal-directed thinking, and impairing the decision-making that 16 year olds need for both daily choices and longer-term planning. College preparation requires sustained attention, creative problem-solving, and the ability to learn and retain new information — all functions significantly degraded by insufficient sleep. Athletic performance and physical fitness goals that many 16 year olds maintain require adequate sleep for muscle recovery, injury prevention, and reaction time. The social and emotional development of late adolescence — identity formation, romantic relationships, and values clarification — also depends on the emotional processing that REM sleep provides.",
+      "tips": "If your 16 year old has a job, protect sleep by limiting work to weekends or no more than 15 hours per week. Work shifts that end late on school nights are a primary driver of teen sleep deprivation. For driving safety: establish a family rule that drowsy driving is unacceptable and a call home for a ride is always an option. Use the SAT/ACT data point — sleep the week before testing dramatically improves scores more than last-minute cramming. Blue light blocking strategies become increasingly important at this age: blue light glasses, device night modes, and a device-free bedroom are all effective. Help your 16 year old identify their most productive homework window (often late afternoon) and front-load homework rather than delaying until midnight.",
+      "signs": "Sleep-deprived 16 year olds may show increased emotional volatility in romantic relationships, declining GPA despite increased study time, elevated anxiety about the future, and greater susceptibility to peer pressure and risk-taking behavior. Caffeine consumption escalating beyond one or two cups daily signals a compensatory pattern. Social media use past midnight — common at this age — creates a nighttime stimulation loop that is difficult to break without structural intervention. Near-misses or actual incidents while driving, or drowsiness while driving, must be taken seriously as an emergency sleep intervention trigger."
+    },
+    "faq": [
+      { "question": "What time should a 16 year old go to bed?", "answer": "Lights-out at 10:30 PM is a reasonable target for most 16 year olds waking at 7:00 AM, providing 8.5 hours of sleep opportunity. The natural sleep phase delay makes earlier bedtimes difficult — focus on protecting this window rather than fighting the biology." },
+      { "question": "Is it safe for my sleep-deprived 16 year old to drive?", "answer": "No. Drowsy driving is as dangerous as drunk driving according to AAA and the NTSB. Missing just 1–2 hours of sleep doubles crash risk. Establish a family rule: if your teen is tired, they call home for a ride. No exceptions." },
+      { "question": "My 16 year old works part-time. How late is too late for a school night shift?", "answer": "School night shifts ending after 9:00 PM make an adequate bedtime nearly impossible when accounting for a 30-minute commute and wind-down routine. Shifts ending by 8:00 PM at the latest are more compatible with school-night sleep needs. Weekend shifts are preferable." },
+      { "question": "Does less sleep before the SAT affect scores?", "answer": "Yes, significantly. Research consistently shows that students who sleep 8–9 hours the night before standardized testing score higher than those who stayed up cramming. Sleep consolidates the material already learned; all-nighters before tests are counterproductive." }
+    ],
+    "relatedSlugs": ["age-15-years", "age-17-years", "teenager-14-17-years"]
+  },
+  {
+    "slug": "age-17-years",
+    "ageGroup": "17 Year Old",
+    "ageRange": "Age 17",
+    "type": "individual-year",
+    "title": "How Much Sleep Does a 17 Year Old Need?",
+    "h1": "How Much Sleep Does a 17 Year Old Need?",
+    "metaDescription": "17 year olds need 8-10 hours of sleep per night. Understand how to balance senior year, college prep, and sleep — and why sleep matters more than ever at this age.",
+    "recommendedHours": { "min": 8, "max": 10, "ideal": 8.5 },
+    "napInfo": "A strategic 20-minute nap before 4 PM can help a sleep-deprived 17 year old without disrupting nighttime sleep. With college applications and senior year demands, careful nap timing can be a useful tool alongside — not instead of — adequate nighttime sleep.",
+    "sampleSchedule": {
+      "wakeTime": "7:00 AM",
+      "bedtime": "10:30–11:00 PM",
+      "totalSleep": "8–8.5 hours",
+      "events": [
+        { "time": "7:00 AM", "activity": "Wake up" },
+        { "time": "7:00–8:00 AM", "activity": "Morning routine" },
+        { "time": "8:30 AM", "activity": "School" },
+        { "time": "3:30–4:00 PM", "activity": "After school activities or work" },
+        { "time": "5:00–7:00 PM", "activity": "Homework, college app work, or job" },
+        { "time": "7:00–7:30 PM", "activity": "Dinner" },
+        { "time": "7:30–9:00 PM", "activity": "Free time, social connection" },
+        { "time": "9:00 PM", "activity": "Begin winding down — devices off by 10 PM" },
+        { "time": "9:30–10:00 PM", "activity": "Shower, prep for tomorrow" },
+        { "time": "10:00–10:30 PM", "activity": "Quiet reading or journaling" },
+        { "time": "10:30–11:00 PM", "activity": "Lights out" }
+      ]
+    },
+    "content": {
+      "intro": "Senior year is widely recognized as one of the most stressful periods of adolescence — college applications, AP exams, final sports seasons, and the social complexity of endings and transitions all converge simultaneously. Seventeen year olds still need 8–10 hours of sleep per night, yet the average American senior gets fewer than 7 hours on school nights. This is a critical mismatch with real consequences: research consistently shows that sleep deprivation impairs exactly the cognitive functions most needed for college preparation — working memory, sustained attention, creative problem-solving, and emotional regulation. Senior year is not the time to sacrifice sleep for productivity; in fact, adequate sleep is what makes productivity possible. College admissions officers and coaches will never know that a student wrote their essays or prepared for an interview exhausted, but the brain processing that determines the quality of those performances is acutely sensitive to sleep.",
+      "sleepNeeds": "At 17, the brain is in the final intensive phase of adolescent development. The prefrontal cortex — executive function, judgment, planning — is approaching, but has not yet reached, its mature form. Sleep quality at this age literally shapes the final wiring of the adult brain. REM sleep, which is disproportionately lost when teenagers cut sleep short in the early morning hours (the most REM-rich time of the sleep cycle), is critical for integrating emotional experiences, developing identity, and consolidating the complex learning of senior year. Physical health becomes increasingly relevant as 17 year olds approach adulthood: sleep deprivation is linked to insulin resistance, inflammatory markers, and immune suppression — establishing poor sleep habits now creates health trajectories that persist into the adult years. Athletes preparing for college recruitment need to understand that sleep is the most powerful legal performance enhancer available to them.",
+      "tips": "As 17 year olds approach adulthood, the most effective sleep intervention is helping them internalize the value of sleep as a personal priority rather than a parent-imposed rule. Share compelling data relevant to their goals — athletic performance, SAT scores, mood, immune health. Help them audit their schedule ruthlessly to protect sleep: not every club, job, or activity is worth a chronic 2-hour nightly sleep deficit. Establish a consistent morning wake time and hold it on weekends within 45 minutes of the school schedule. For college applications: write essays and brainstorm in the afternoon when cognitively fresh, not late at night when tired and producing lower-quality work. Devices off by 10 PM is the single most impactful sleep hygiene change most 17 year olds can make.",
+      "signs": "A sleep-deprived 17 year old may show cognitive slowing in complex tasks like essay writing and math, persistent low-grade anxiety about the future that exceeds normal senior year stress, emotional volatility in close relationships, and growing reliance on caffeine. Physical symptoms including frequent colds, acne flares, and weight changes can all be linked to sleep deprivation's hormonal effects. Decision fatigue — struggling with even small choices — is common in chronically tired teens. The overlap between clinical depression and sleep deprivation is significant at this age: if a 17 year old shows persistent low mood, assess sleep thoroughly before assuming a purely psychological cause."
+    },
+    "faq": [
+      { "question": "What time should a 17 year old go to sleep?", "answer": "Lights-out between 10:30 and 11:00 PM is realistic for most 17 year olds given the biological sleep phase delay. Waking at 7:00 AM provides 8–8.5 hours — below the ideal but within the acceptable range. The goal is protecting this window consistently rather than staying up until 1–2 AM and sleeping in on weekends." },
+      { "question": "Should I sleep more during college application season?", "answer": "Yes. Sleep is not the enemy of college application productivity — it is the prerequisite for it. Well-rested brains write better essays, retain more study material, and perform better in interviews. Protecting 8–9 hours during high-stakes preparation is a competitive advantage, not a luxury." },
+      { "question": "I'm 17 and can't fall asleep before midnight no matter what I try. Is something wrong?", "answer": "Difficulty falling asleep before midnight in 17 year olds is usually a combination of genuine circadian delay and behavioral factors (screen use, irregular schedule, too much light at night). If the problem is severe and persistent despite strong sleep hygiene, consult a sleep specialist about delayed sleep phase disorder, which is treatable." },
+      { "question": "Does sleep affect college admissions test performance?", "answer": "Yes. Students who sleep 8–9 hours the night before the SAT, ACT, or AP exams consistently score higher than those who stay up cramming. Sleep consolidates the information already learned. One night of good sleep before a test is worth more than 2 hours of late-night review." }
+    ],
+    "relatedSlugs": ["age-16-years", "teenager-14-17-years", "young-adult-18-25-years"]
   }
 ]

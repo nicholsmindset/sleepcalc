@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
@@ -30,15 +31,29 @@ interface AgeFAQItem {
   answer: string;
 }
 
+interface ScheduleEvent {
+  time: string;
+  activity: string;
+}
+
+interface SampleSchedule {
+  wakeTime: string;
+  bedtime: string;
+  totalSleep: string;
+  events: ScheduleEvent[];
+}
+
 interface AgeEntry {
   slug: string;
   ageGroup: string;
   ageRange: string;
+  type?: string;
   title: string;
   h1: string;
   metaDescription: string;
   recommendedHours: AgeRecommendedHours;
   napInfo: string;
+  sampleSchedule?: SampleSchedule;
   content: AgeContent;
   faq: AgeFAQItem[];
   relatedSlugs: string[];
@@ -148,6 +163,62 @@ function ContentParagraphs({ text }: { text: string }) {
 }
 
 /* -------------------------------------------------------------------------- */
+/*  Sample Schedule Component                                                 */
+/* -------------------------------------------------------------------------- */
+
+function SampleScheduleCard({ schedule, ageGroup }: { schedule: SampleSchedule; ageGroup: string }) {
+  return (
+    <section className="py-8 max-w-3xl mx-auto">
+      <h2 className="font-headline text-2xl md:text-3xl font-bold mb-6 text-on-surface">
+        Sample Daily Schedule for a {ageGroup}
+      </h2>
+      <div className="glass-card rounded-2xl p-6 md:p-8">
+        {/* Summary row */}
+        <div className="flex flex-wrap gap-6 mb-6 pb-6 border-b border-outline-variant/20">
+          <div>
+            <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-1">Wake Time</p>
+            <p className="font-mono font-semibold text-[#46eae5]">{schedule.wakeTime}</p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-1">Bedtime</p>
+            <p className="font-mono font-semibold text-[#c6bfff]">{schedule.bedtime}</p>
+          </div>
+          <div>
+            <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-1">Total Sleep</p>
+            <p className="font-mono font-semibold text-on-surface">{schedule.totalSleep}</p>
+          </div>
+        </div>
+
+        {/* Timeline */}
+        <div className="space-y-0">
+          {schedule.events.map((event, i) => (
+            <div key={i} className="flex gap-4 group">
+              {/* Time column */}
+              <div className="w-28 shrink-0 pt-3">
+                <p className="font-mono text-xs text-on-surface-variant group-first:text-[#46eae5] group-last:text-[#c6bfff]">
+                  {event.time}
+                </p>
+              </div>
+              {/* Connector */}
+              <div className="flex flex-col items-center">
+                <div className={`w-2 h-2 rounded-full mt-3.5 shrink-0 ${i === 0 ? "bg-[#46eae5]" : i === schedule.events.length - 1 ? "bg-[#c6bfff]" : "bg-outline-variant"}`} />
+                {i < schedule.events.length - 1 && (
+                  <div className="w-px flex-1 bg-outline-variant/30 mt-1" />
+                )}
+              </div>
+              {/* Activity */}
+              <div className="pb-3 pt-2 min-w-0">
+                <p className="text-sm text-on-surface-variant leading-snug">{event.activity}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
 /*  Page                                                                      */
 /* -------------------------------------------------------------------------- */
 
@@ -156,7 +227,7 @@ export default async function AgePage({ params }: PageProps) {
   const entry = entries.find((e) => e.slug === slug);
   if (!entry) notFound();
 
-  const { recommendedHours, content, faq, relatedSlugs, ageGroup, ageRange, napInfo } = entry;
+  const { recommendedHours, content, faq, relatedSlugs, ageGroup, ageRange, napInfo, sampleSchedule } = entry;
 
   // Use a wider scale for children/teens (0-20h), narrower for adults (0-12h)
   const scaleMax = recommendedHours.max > 12 ? 20 : 12;
@@ -164,6 +235,16 @@ export default async function AgePage({ params }: PageProps) {
   const relatedEntries = relatedSlugs
     .map((s) => entries.find((e) => e.slug === s))
     .filter(Boolean) as AgeEntry[];
+
+  // Prev/next: for individual-year entries, navigate within that group only
+  const isIndividualYear = entry.type === "individual-year";
+  const navPool = isIndividualYear
+    ? entries.filter((e) => e.type === "individual-year")
+    : entries.filter((e) => e.type !== "individual-year");
+
+  const currentIdx = navPool.findIndex((e) => e.slug === slug);
+  const prevEntry = currentIdx > 0 ? navPool[currentIdx - 1] : null;
+  const nextEntry = currentIdx < navPool.length - 1 ? navPool[currentIdx + 1] : null;
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
 
@@ -245,6 +326,11 @@ export default async function AgePage({ params }: PageProps) {
         </div>
       </div>
 
+      {/* Sample Schedule (individual-year pages only) */}
+      {sampleSchedule && (
+        <SampleScheduleCard schedule={sampleSchedule} ageGroup={ageGroup} />
+      )}
+
       {/* Content Sections */}
       <section className="py-8 max-w-3xl mx-auto">
         <h2 className="font-headline text-2xl md:text-3xl font-bold mb-6 text-on-surface">
@@ -298,6 +384,46 @@ export default async function AgePage({ params }: PageProps) {
 
       {/* FAQ */}
       {faq.length > 0 && <FAQ items={faq} />}
+
+      {/* Prev / Next navigation */}
+      {(prevEntry || nextEntry) && (
+        <nav
+          aria-label={isIndividualYear ? "Previous and next age years" : "Previous and next age groups"}
+          className="max-w-3xl mx-auto py-8 flex items-center justify-between gap-4"
+        >
+          {prevEntry ? (
+            <Link
+              href={`/age/${prevEntry.slug}`}
+              className="glass-card rounded-2xl px-5 py-4 flex items-center gap-3 hover:bg-surface-container-high/50 transition-all group flex-1 max-w-[48%]"
+            >
+              <ArrowLeft className="w-4 h-4 text-[#46eae5] shrink-0 group-hover:-translate-x-0.5 transition-transform" />
+              <div className="min-w-0">
+                <p className="text-[10px] uppercase tracking-wider text-on-surface-variant/60 mb-0.5">Previous</p>
+                <p className="text-sm font-semibold text-on-surface truncate">{prevEntry.ageGroup}</p>
+                <p className="text-xs text-on-surface-variant truncate">{prevEntry.ageRange}</p>
+              </div>
+            </Link>
+          ) : (
+            <div className="flex-1 max-w-[48%]" />
+          )}
+
+          {nextEntry ? (
+            <Link
+              href={`/age/${nextEntry.slug}`}
+              className="glass-card rounded-2xl px-5 py-4 flex items-center gap-3 justify-end hover:bg-surface-container-high/50 transition-all group flex-1 max-w-[48%]"
+            >
+              <div className="min-w-0 text-right">
+                <p className="text-[10px] uppercase tracking-wider text-on-surface-variant/60 mb-0.5">Next</p>
+                <p className="text-sm font-semibold text-on-surface truncate">{nextEntry.ageGroup}</p>
+                <p className="text-xs text-on-surface-variant truncate">{nextEntry.ageRange}</p>
+              </div>
+              <ArrowRight className="w-4 h-4 text-[#46eae5] shrink-0 group-hover:translate-x-0.5 transition-transform" />
+            </Link>
+          ) : (
+            <div className="flex-1 max-w-[48%]" />
+          )}
+        </nav>
+      )}
 
       {/* Related Tools */}
       <RelatedTools exclude={`/age/${slug}`} />
