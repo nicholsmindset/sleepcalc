@@ -5,11 +5,14 @@ export const revalidate = 86400; // 24 hours
 
 const SEGMENTS = [
   { name: 'core',            label: 'Core pages & calculators' },
+  { name: 'tools',           label: 'Tool pages' },
   { name: 'sleep-time',      label: 'Sleep-time / wake-up pages' },
   { name: 'bedtime',         label: 'Bedtime pages' },
   { name: 'age',             label: 'Age-based sleep pages' },
   { name: 'profession',      label: 'Profession sleep pages' },
   { name: 'baby-sleep',      label: 'Baby sleep schedule pages' },
+  { name: 'cities',          label: 'City sleep schedule pages' },
+  { name: 'conditions',      label: 'Sleep condition pages' },
   { name: 'blog',            label: 'Blog posts' },
 ];
 

@@ -3,6 +3,8 @@ import { SleepForecast } from '@/components/forecast/SleepForecast';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
+import { generateOgImageUrl } from '@/utils/seo';
+import { WebApplicationSchema } from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
   title: "Tonight's Sleep Forecast — Sleep Environment Score",
@@ -10,17 +12,21 @@ export const metadata: Metadata = {
     "Get a real-time sleep environment score based on your local temperature, humidity, wind speed, and moon phase. Free tool, no sign-up required.",
   alternates: { canonical: '/tonight' },
   openGraph: {
-    title: "Tonight's Sleep Forecast — Sleep Stack",
+    title: "Tonight's Sleep Forecast — Sleep Environment Score",
     description:
       "Check tonight's sleep environment score based on local weather and moon phase conditions.",
     url: '/tonight',
     siteName: 'Sleep Stack',
+    images: [{ url: generateOgImageUrl("Tonight's Sleep Forecast"), width: 1200, height: 630 }],
   },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function TonightPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 pb-20 pt-8">
+    <>
+      <WebApplicationSchema />
+      <article className="mx-auto max-w-3xl px-4 pb-20 pt-8">
       <Breadcrumbs
         items={[
           { label: 'Home', href: '/' },
@@ -168,5 +174,6 @@ export default function TonightPage() {
 
       <MedicalDisclaimer />
     </article>
+    </>
   );
 }
