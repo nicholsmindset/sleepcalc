@@ -66,19 +66,18 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="QpylYLOm8El8MURIHk_O_YQb5wdHMmmniPWBXB0zGh0" />
         <meta name="google-adsense-account" content="ca-pub-5441531660664467" />
+        {/* Plain script tag — Next.js Script adds data-nscript which AdSense rejects */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5441531660664467" crossOrigin="anonymous" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#6c5ce7" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Sleep Stack" />
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
       </head>
       <body className="min-h-screen">
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5441531660664467"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EGD46MYNEE"
           strategy="afterInteractive"
