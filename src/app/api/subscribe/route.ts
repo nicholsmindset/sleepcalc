@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { resend } from '@/lib/email/resend';
+import { getResend } from '@/lib/email/resend';
 
 const FROM = process.env.RESEND_FROM_EMAIL ?? 'Sleep Stack <hello@sleepstackapp.com>';
 const AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID ?? '';
@@ -12,6 +12,8 @@ export async function POST(req: NextRequest) {
     if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json({ error: 'Invalid email' }, { status: 400 });
     }
+
+    const resend = getResend();
 
     // Add to Resend audience if configured
     if (AUDIENCE_ID) {
