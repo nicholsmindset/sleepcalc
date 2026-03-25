@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import AffiliateCard from "@/components/content/AffiliateCard";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import conditionData from "@/content/data/conditions.json";
 
@@ -270,6 +271,9 @@ export default async function SleepWithPage({ params }: PageProps) {
 
       {/* FAQ */}
       {faq.length > 0 && <FAQ items={faq} />}
+
+      {/* Affiliate */}
+      <AffiliateCard context="supplement" />
 
       {/* Related Tools */}
       <RelatedTools exclude={`/sleep-with/${slug}`} />

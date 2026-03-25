@@ -5,6 +5,7 @@ import SleepDebtCalculator from '@/components/calculators/SleepDebtCalculator';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
+import AffiliateCard from '@/components/content/AffiliateCard';
 
 export const metadata: Metadata = {
   title: 'Sleep Debt Calculator — How Much Sleep Do You Owe?',
@@ -301,6 +302,11 @@ export default function SleepDebtPage() {
       {/* FAQ */}
       <div className="max-w-3xl mx-auto">
         <FAQ items={faqItems} />
+      </div>
+
+      {/* Affiliate */}
+      <div className="max-w-3xl mx-auto">
+        <AffiliateCard context="supplement" />
       </div>
 
       {/* Related Tools */}
