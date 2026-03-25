@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Zap, Battery, Moon, AlertTriangle, Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import TimePicker from '@/components/calculators/shared/TimePicker';
@@ -62,6 +62,58 @@ function hourToPercent(hour: number): number {
   const TIMELINE_START = 6;
   const TIMELINE_HOURS = 18;
   return Math.max(0, Math.min(100, ((hour - TIMELINE_START) / TIMELINE_HOURS) * 100));
+}
+
+// Sleep stage breakdown per nap type
+// Each segment: [stage label, relative width %, color, opacity]
+const NAP_STAGES: Record<NapType, Array<[string, number, string]>> = {
+  power:      [['Light N1', 30, '#a29bfe'], ['Light N2', 70, '#6c5ce7']],
+  recovery:   [['Light N1', 12, '#a29bfe'], ['Light N2', 38, '#6c5ce7'], ['Deep N3', 50, '#46eae5']],
+  full_cycle: [['Light N1', 7, '#a29bfe'], ['Light N2', 23, '#6c5ce7'], ['Deep N3', 30, '#46eae5'], ['REM', 30, '#c6bfff'], ['Light N2', 10, '#6c5ce7']],
+};
+
+const NAP_STAGE_NOTES: Record<NapType, string> = {
+  power:      'Stays in light sleep — wake up alert, no grogginess.',
+  recovery:   'Hits some deep sleep — best for physical recovery, may feel groggy on wake.',
+  full_cycle: 'Full light → deep → REM cycle — maximum restoration, wake at natural transition.',
+};
+
+function NapStagesDiagram({ napType }: { napType: NapType }) {
+  const [show, setShow] = useState(false);
+  const stages = NAP_STAGES[napType];
+  useEffect(() => { setShow(false); const t = setTimeout(() => setShow(true), 80); return () => clearTimeout(t); }, [napType]);
+
+  return (
+    <div className="glass-card rounded-2xl p-5 mt-6">
+      <p className="text-[10px] uppercase tracking-widest text-on-surface-variant font-label mb-3">
+        Sleep stages during this nap
+      </p>
+      <div className="flex h-7 rounded-lg overflow-hidden gap-0.5">
+        {stages.map(([label, width, color], i) => (
+          <div
+            key={i}
+            className="flex items-center justify-center text-[10px] font-semibold text-white/80 rounded-sm transition-all duration-700 overflow-hidden"
+            style={{
+              width: show ? `${width}%` : '0%',
+              background: color,
+              transitionDelay: `${i * 80}ms`,
+            }}
+          >
+            {width >= 20 ? label : ''}
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">
+        {stages.map(([label, , color], i) => (
+          <div key={i} className="flex items-center gap-1.5">
+            <div className="w-2.5 h-2.5 rounded-sm" style={{ background: color }} />
+            <span className="text-[11px] text-on-surface-variant">{label}</span>
+          </div>
+        ))}
+      </div>
+      <p className="text-[11px] text-on-surface-variant/60 mt-2">{NAP_STAGE_NOTES[napType]}</p>
+    </div>
+  );
 }
 
 export default function NapCalculator() {
@@ -204,6 +256,9 @@ export default function NapCalculator() {
           </div>
         )}
       </div>
+
+      {/* Sleep stage diagram */}
+      <NapStagesDiagram napType={selectedType} />
 
       {/* Day timeline */}
       <div className="mt-8">

@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
-import { ArrowLeft, ArrowRight, RotateCcw, Share2, CheckCircle, Moon, Zap, Shield, Clock } from 'lucide-react';
+import { useState, useCallback, useEffect, useRef } from 'react';
+import { ArrowLeft, RotateCcw, Share2, CheckCircle, Moon, Zap, Shield, Clock, TrendingUp, Flame } from 'lucide-react';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
 import AffiliateCard from '@/components/content/AffiliateCard';
 import { RelatedTools } from '@/components/content/RelatedTools';
@@ -17,9 +17,34 @@ import {
 /* -------------------------------------------------------------------------- */
 
 function ScoreRing({ score, grade }: { score: number; grade: string }) {
+  const [animatedScore, setAnimatedScore] = useState(0);
+  const [displayNum, setDisplayNum] = useState(0);
+  const rafRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    // Delay slightly so CSS transition fires on mount
+    const t = setTimeout(() => setAnimatedScore(score), 60);
+    // Animate the number counter
+    const start = performance.now();
+    const duration = 1200;
+    const step = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease-out-back
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setDisplayNum(Math.round(eased * score));
+      if (progress < 1) rafRef.current = requestAnimationFrame(step);
+    };
+    rafRef.current = requestAnimationFrame(step);
+    return () => {
+      clearTimeout(t);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, [score]);
+
   const radius = 70;
   const circumference = 2 * Math.PI * radius;
-  const progress = (score / 100) * circumference;
+  const progress = (animatedScore / 100) * circumference;
   const gradeColors: Record<string, string> = {
     A: '#46eae5',
     B: '#55efc4',
@@ -49,7 +74,7 @@ function ScoreRing({ score, grade }: { score: number; grade: string }) {
         />
       </svg>
       <div className="absolute flex flex-col items-center">
-        <span className="font-headline text-4xl font-extrabold text-on-surface">{score}</span>
+        <span className="font-headline text-4xl font-extrabold text-on-surface">{displayNum}</span>
         <span className="text-xs text-on-surface-variant uppercase tracking-widest">/100</span>
       </div>
     </div>
@@ -66,14 +91,21 @@ function SubScoreBar({
   max,
   icon: Icon,
   color,
+  delay = 0,
 }: {
   label: string;
   score: number;
   max: number;
   icon: React.ElementType;
   color: string;
+  delay?: number;
 }) {
-  const pct = (score / max) * 100;
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    const t = setTimeout(() => setWidth((score / max) * 100), delay);
+    return () => clearTimeout(t);
+  }, [score, max, delay]);
+
   return (
     <div>
       <div className="flex justify-between items-center mb-1">
@@ -88,7 +120,7 @@ function SubScoreBar({
       <div className="h-2 rounded-full bg-surface-container-high overflow-hidden">
         <div
           className="h-full rounded-full transition-all duration-700"
-          style={{ width: `${pct}%`, background: color }}
+          style={{ width: `${width}%`, background: color }}
         />
       </div>
     </div>
@@ -96,10 +128,52 @@ function SubScoreBar({
 }
 
 /* -------------------------------------------------------------------------- */
+/*  History helpers                                                           */
+/* -------------------------------------------------------------------------- */
+
+const HISTORY_KEY = 'sleep_score_history';
+
+interface ScoreEntry {
+  score: number;
+  grade: string;
+  date: string; // ISO
+}
+
+function loadHistory(): ScoreEntry[] {
+  try {
+    return JSON.parse(localStorage.getItem(HISTORY_KEY) ?? '[]');
+  } catch {
+    return [];
+  }
+}
+
+function saveHistory(entry: ScoreEntry) {
+  const existing = loadHistory();
+  const updated = [entry, ...existing].slice(0, 10);
+  try {
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(updated));
+  } catch {}
+}
+
+function calcStreak(history: ScoreEntry[]): number {
+  if (history.length === 0) return 0;
+  // Count consecutive weeks (7-day windows from newest entry backward)
+  let streak = 1;
+  for (let i = 1; i < history.length; i++) {
+    const prev = new Date(history[i - 1].date).getTime();
+    const curr = new Date(history[i].date).getTime();
+    const daysDiff = (prev - curr) / (1000 * 60 * 60 * 24);
+    if (daysDiff <= 14) streak++; // allow up to 2 weeks between entries
+    else break;
+  }
+  return streak;
+}
+
+/* -------------------------------------------------------------------------- */
 /*  Results Screen                                                            */
 /* -------------------------------------------------------------------------- */
 
-function ResultsScreen({ result, onRetake }: { result: SleepScoreResult; onRetake: () => void }) {
+function ResultsScreen({ result, history, onRetake }: { result: SleepScoreResult; history: ScoreEntry[]; onRetake: () => void }) {
   const gradeColors: Record<string, string> = {
     A: '#46eae5',
     B: '#55efc4',
@@ -108,13 +182,18 @@ function ResultsScreen({ result, onRetake }: { result: SleepScoreResult; onRetak
     F: '#ff6b6b',
   };
   const color = gradeColors[result.grade] ?? '#6c5ce7';
+  const streak = calcStreak(history);
+  const [copied, setCopied] = useState(false);
 
   function handleShare() {
-    const text = `My Sleep Score: ${result.total}/100 (${result.label}) — Test yours at sleepstackapp.com/tools/sleep-score`;
+    const text = `My Sleep Score: ${result.total}/100 (${result.label}) 🌙 — Test yours at sleepstackapp.com/tools/sleep-score`;
     if (navigator.share) {
       navigator.share({ text }).catch(() => {});
     } else {
-      navigator.clipboard.writeText(text).catch(() => {});
+      navigator.clipboard.writeText(text).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      }).catch(() => {});
     }
   }
 
@@ -139,10 +218,10 @@ function ResultsScreen({ result, onRetake }: { result: SleepScoreResult; onRetak
       {/* Sub-scores */}
       <div className="glass-card rounded-3xl p-6 space-y-4">
         <h2 className="font-headline text-lg font-bold text-on-surface mb-2">Score Breakdown</h2>
-        <SubScoreBar label="Duration" score={result.duration} max={30} icon={Clock} color="#c6bfff" />
-        <SubScoreBar label="Efficiency" score={result.efficiency} max={25} icon={Zap} color="#46eae5" />
-        <SubScoreBar label="Quality" score={result.quality} max={25} icon={Moon} color="#a29bfe" />
-        <SubScoreBar label="Hygiene" score={result.hygiene} max={20} icon={Shield} color="#55efc4" />
+        <SubScoreBar label="Duration" score={result.duration} max={30} icon={Clock} color="#c6bfff" delay={200} />
+        <SubScoreBar label="Efficiency" score={result.efficiency} max={25} icon={Zap} color="#46eae5" delay={350} />
+        <SubScoreBar label="Quality" score={result.quality} max={25} icon={Moon} color="#a29bfe" delay={500} />
+        <SubScoreBar label="Hygiene" score={result.hygiene} max={20} icon={Shield} color="#55efc4" delay={650} />
       </div>
 
       {/* Sleep stage estimates */}
@@ -183,6 +262,55 @@ function ResultsScreen({ result, onRetake }: { result: SleepScoreResult; onRetak
         </div>
       </div>
 
+      {/* History + Streak */}
+      {history.length > 1 && (
+        <div className="glass-card rounded-3xl p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-headline text-lg font-bold text-on-surface flex items-center gap-2">
+              <TrendingUp className="w-4 h-4 text-[#46eae5]" />
+              Your Progress
+            </h2>
+            {streak >= 2 && (
+              <div className="flex items-center gap-1.5 bg-[#f9ca24]/10 border border-[#f9ca24]/30 rounded-full px-3 py-1">
+                <Flame className="w-3.5 h-3.5 text-[#f9ca24]" />
+                <span className="text-xs font-bold text-[#f9ca24]">{streak} week streak</span>
+              </div>
+            )}
+          </div>
+          <div className="flex items-end gap-2">
+            {history.slice(0, 6).reverse().map((entry, i) => {
+              const isLatest = i === history.slice(0, 6).length - 1;
+              const dotColor = entry.score >= 85 ? '#46eae5' : entry.score >= 70 ? '#55efc4' : entry.score >= 55 ? '#f9ca24' : entry.score >= 40 ? '#fdcb6e' : '#ff6b6b';
+              const heightPct = Math.max(20, entry.score);
+              return (
+                <div key={i} className="flex-1 flex flex-col items-center gap-1">
+                  <div
+                    className="w-full rounded-t-lg transition-all duration-700"
+                    style={{ height: `${heightPct * 0.6}px`, background: isLatest ? dotColor : `${dotColor}55`, minHeight: '12px' }}
+                  />
+                  <span className="text-[10px] font-mono text-on-surface-variant">{entry.score}</span>
+                  <span className="text-[9px] text-on-surface-variant/50">
+                    {new Date(entry.date).toLocaleDateString('en', { month: 'short', day: 'numeric' })}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-[11px] text-on-surface-variant/50 mt-3">
+            💡 Retake every Monday to track your weekly sleep trend
+          </p>
+        </div>
+      )}
+
+      {history.length === 1 && (
+        <div className="glass-card rounded-3xl p-4 flex items-center gap-3">
+          <TrendingUp className="w-5 h-5 text-[#46eae5] shrink-0" />
+          <p className="text-sm text-on-surface-variant">
+            <strong className="text-on-surface">Retake every Monday</strong> to build your sleep trend chart and track your streak.
+          </p>
+        </div>
+      )}
+
       {/* Actions */}
       <div className="flex gap-3">
         <button
@@ -198,7 +326,7 @@ function ResultsScreen({ result, onRetake }: { result: SleepScoreResult; onRetak
           style={{ background: 'linear-gradient(135deg, #6c5ce7, #00cec9)', color: '#fff' }}
         >
           <Share2 className="w-4 h-4" />
-          Share Score
+          {copied ? 'Copied!' : 'Share Score'}
         </button>
       </div>
     </div>
@@ -213,10 +341,15 @@ function SleepScoreQuiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<Partial<SleepScoreInputs>>({});
   const [result, setResult] = useState<SleepScoreResult | null>(null);
+  const [history, setHistory] = useState<ScoreEntry[]>([]);
+
+  // Load history on mount
+  useEffect(() => {
+    setHistory(loadHistory());
+  }, []);
 
   const totalQuestions = SLEEP_SCORE_QUESTIONS.length;
   const q = SLEEP_SCORE_QUESTIONS[currentQuestion];
-  const progress = ((currentQuestion) / totalQuestions) * 100;
 
   const handleAnswer = useCallback(
     (value: number | boolean) => {
@@ -226,9 +359,14 @@ function SleepScoreQuiz() {
       if (currentQuestion < totalQuestions - 1) {
         setCurrentQuestion((prev) => prev + 1);
       } else {
-        // All done — calculate
+        // All done — calculate and save
         const inputs = newAnswers as SleepScoreInputs;
-        setResult(calculateSleepScore(inputs));
+        const scored = calculateSleepScore(inputs);
+        const entry: ScoreEntry = { score: scored.total, grade: scored.grade, date: new Date().toISOString() };
+        saveHistory(entry);
+        const updated = loadHistory();
+        setHistory(updated);
+        setResult(scored);
       }
     },
     [answers, currentQuestion, q.id, totalQuestions],
@@ -245,7 +383,7 @@ function SleepScoreQuiz() {
   }, []);
 
   if (result) {
-    return <ResultsScreen result={result} onRetake={handleRetake} />;
+    return <ResultsScreen result={result} history={history} onRetake={handleRetake} />;
   }
 
   const currentAnswer = answers[q.id as keyof SleepScoreInputs];

@@ -11,6 +11,7 @@ const TOOL_PATHS = [
   '/tools/dst-calculator',
   '/tools/sleep-journal',
   '/tools/sleep-foods',
+  '/tools/white-noise',
 ];
 
 export function GET() {

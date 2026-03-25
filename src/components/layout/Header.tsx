@@ -31,6 +31,7 @@ const toolLinks = [
   { label: 'Sleep-Friendly Foods', href: '/tools/sleep-foods' },
   { label: 'AI Sleep Coach', href: '/sleep-coach' },
   { label: 'Best Mattress Guide', href: '/best-mattress' },
+  { label: 'White Noise', href: '/tools/white-noise' },
 ];
 
 const navLinks = [

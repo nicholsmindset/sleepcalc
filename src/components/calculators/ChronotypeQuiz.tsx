@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import { CHRONOTYPE_QUESTIONS, scoreChronotype, type ChronotypeResult } from '@/utils/chronotype';
 
 const CHRONOTYPE_EMOJIS: Record<string, string> = {
@@ -30,6 +30,59 @@ const SHARE_GRADIENTS: Record<string, string> = {
   wolf: 'linear-gradient(135deg, #6c5ce7, #c6bfff)',
   dolphin: 'linear-gradient(135deg, #00cec9, #46eae5)',
 };
+
+// Energy level (0-3) for each 2-hour block starting at midnight
+// Blocks: 0-2, 2-4, 4-6, 6-8, 8-10, 10-12, 12-14, 14-16, 16-18, 18-20, 20-22, 22-24
+const ENERGY_PROFILES: Record<string, number[]> = {
+  lion:    [0, 0, 1, 3, 3, 3, 2, 1, 2, 1, 0, 0], // peaks 6-12
+  bear:    [0, 0, 0, 1, 2, 3, 3, 1, 2, 2, 1, 0], // peaks 10-14
+  wolf:    [0, 0, 0, 0, 1, 1, 2, 1, 2, 3, 3, 1], // peaks 18-22
+  dolphin: [0, 1, 1, 2, 1, 2, 1, 2, 1, 2, 1, 0], // scattered/irregular
+};
+
+const HOUR_LABELS = ['12a', '2a', '4a', '6a', '8a', '10a', '12p', '2p', '4p', '6p', '8p', '10p'];
+
+function ChronotypeTimeline({ type, accentColor }: { type: string; accentColor: string }) {
+  const [show, setShow] = useState(false);
+  const energyData = ENERGY_PROFILES[type] ?? ENERGY_PROFILES.bear;
+  const energyColors = ['rgba(255,255,255,0.04)', 'rgba(255,255,255,0.12)', `${accentColor}55`, accentColor];
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { const t = setTimeout(() => setShow(true), 100); return () => clearTimeout(t); }, []);
+
+  return (
+    <div className="glass-card rounded-2xl p-5 mb-8">
+      <p className="text-label-sm font-label tracking-[0.05em] uppercase text-on-surface-variant mb-4">
+        Your Day in Energy
+      </p>
+      <div className="flex gap-0.5 h-12 items-end rounded-lg overflow-hidden">
+        {energyData.map((level, i) => (
+          <div
+            key={i}
+            className="flex-1 rounded-sm transition-all duration-700"
+            style={{
+              background: energyColors[level],
+              height: show ? `${25 + level * 25}%` : '0%',
+              transitionDelay: `${i * 40}ms`,
+              minHeight: '4px',
+            }}
+          />
+        ))}
+      </div>
+      <div className="flex mt-1">
+        {HOUR_LABELS.map((label, i) => (
+          <div key={i} className="flex-1 text-center text-[9px] text-on-surface-variant/40">
+            {i % 2 === 0 ? label : ''}
+          </div>
+        ))}
+      </div>
+      <div className="flex items-center gap-3 mt-3 text-[11px] text-on-surface-variant/60">
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-sm inline-block" style={{ background: accentColor }} /> Peak energy</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-sm inline-block bg-white/10" /> Low / sleep</span>
+      </div>
+    </div>
+  );
+}
 
 export default function ChronotypeQuiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -127,6 +180,9 @@ export default function ChronotypeQuiz() {
             </p>
           </div>
         </div>
+
+        {/* Energy Timeline */}
+        <ChronotypeTimeline type={result.type} accentColor={accentColor} />
 
         {/* Traits */}
         <div className="mb-8">

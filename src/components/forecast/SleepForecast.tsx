@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
-import { Thermometer, Droplets, Wind, Moon } from 'lucide-react';
+import { useState, useEffect, useCallback, useRef } from 'react';
+import { Thermometer, Droplets, Wind, Moon, Search } from 'lucide-react';
 import { getMoonPhase } from '@/utils/moon';
+import CITIES from '@/content/data/cities.json';
 
 /* -------------------------------------------------------------------------- */
 /*  Types                                                                     */
@@ -236,34 +237,47 @@ function writeCache(lat: number, lon: number, data: ForecastData): void {
 const RATING_COLORS = { good: '#46eae5', ok: '#f9ca24', poor: '#ff6b6b' };
 const RATING_LABELS = { good: 'Good', ok: 'Fair', poor: 'Poor' };
 
+interface City { name: string; country: string; lat: number; lng: number; }
+
 export function SleepForecast() {
   const [state, setState] = useState<'idle' | 'loading' | 'done' | 'denied' | 'error'>('idle');
   const [forecast, setForecast] = useState<ForecastData | null>(null);
+  const [cityQuery, setCityQuery] = useState('');
+  const [showDropdown, setShowDropdown] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const filteredCities: City[] = cityQuery.length >= 2
+    ? (CITIES as City[]).filter((c) =>
+        c.name.toLowerCase().startsWith(cityQuery.toLowerCase()) ||
+        c.name.toLowerCase().includes(cityQuery.toLowerCase())
+      ).slice(0, 8)
+    : [];
+
+  const loadCoords = useCallback(async (lat: number, lon: number, cityName?: string) => {
+    setState('loading');
+    if (cityName) setCityQuery(cityName);
+    const cached = readCache(lat, lon);
+    if (cached) { setForecast(cached); setState('done'); return; }
+    try {
+      const data = await fetchForecast(lat, lon);
+      writeCache(lat, lon, data);
+      setForecast(data);
+      setState('done');
+    } catch {
+      setState('error');
+    }
+  }, []);
 
   const load = useCallback(() => {
     setState('loading');
     navigator.geolocation.getCurrentPosition(
-      async ({ coords }) => {
-        const { latitude: lat, longitude: lon } = coords;
-        const cached = readCache(lat, lon);
-        if (cached) {
-          setForecast(cached);
-          setState('done');
-          return;
-        }
-        try {
-          const data = await fetchForecast(lat, lon);
-          writeCache(lat, lon, data);
-          setForecast(data);
-          setState('done');
-        } catch {
-          setState('error');
-        }
+      ({ coords }) => {
+        loadCoords(coords.latitude, coords.longitude);
       },
       () => setState('denied'),
       { timeout: 8000 },
     );
-  }, []);
+  }, [loadCoords]);
 
   // Auto-trigger on mount if permission already granted
   useEffect(() => {
@@ -282,30 +296,66 @@ export function SleepForecast() {
 
   if (state === 'idle' || state === 'denied' || state === 'error') {
     return (
-      <div className="glass-card rounded-3xl p-8 text-center">
-        <p className="text-2xl mb-3">🌙</p>
-        <p className="font-headline text-lg font-bold text-on-surface mb-2">Tonight&apos;s Sleep Forecast</p>
-        {state === 'denied' && (
-          <p className="text-sm text-on-surface-variant mb-4">
-            Location access was denied. Enable it in your browser settings to get your local forecast.
+      <div className="glass-card rounded-3xl p-8">
+        <div className="text-center mb-6">
+          <p className="text-2xl mb-3">🌙</p>
+          <p className="font-headline text-lg font-bold text-on-surface mb-2">Tonight&apos;s Sleep Forecast</p>
+          <p className="text-sm text-on-surface-variant">
+            {state === 'denied'
+              ? 'Location access denied — search for your city below.'
+              : state === 'error'
+              ? 'Couldn\'t load weather data. Try a city search instead.'
+              : 'Check tonight\'s sleep environment score based on your local conditions.'}
           </p>
-        )}
-        {state === 'error' && (
-          <p className="text-sm text-on-surface-variant mb-4">
-            Couldn&apos;t load weather data. Check your connection and try again.
-          </p>
-        )}
-        {state === 'idle' && (
-          <p className="text-sm text-on-surface-variant mb-4">
-            Check tonight&apos;s sleep environment score based on your local temperature, humidity, wind, and moon phase.
-          </p>
-        )}
+        </div>
+
+        {/* City search */}
+        <div className="relative mb-4">
+          <div className="flex items-center gap-2 bg-surface-container/60 border border-outline-variant/30 rounded-2xl px-4 py-3 focus-within:border-primary/50 transition-colors">
+            <Search className="w-4 h-4 text-on-surface-variant shrink-0" />
+            <input
+              ref={inputRef}
+              type="text"
+              placeholder="Search city (e.g. London, Tokyo…)"
+              value={cityQuery}
+              onChange={(e) => { setCityQuery(e.target.value); setShowDropdown(true); }}
+              onFocus={() => setShowDropdown(true)}
+              className="flex-1 bg-transparent text-sm text-on-surface placeholder:text-on-surface-variant/50 outline-none"
+            />
+          </div>
+          {showDropdown && filteredCities.length > 0 && (
+            <div className="absolute top-full left-0 right-0 mt-1 glass-card rounded-2xl overflow-hidden shadow-ambient z-10">
+              {filteredCities.map((city) => (
+                <button
+                  key={`${city.name}-${city.country}`}
+                  className="w-full text-left px-4 py-3 text-sm text-on-surface hover:bg-surface-container-high/50 transition-colors flex justify-between items-center"
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    setShowDropdown(false);
+                    loadCoords(city.lat, city.lng, `${city.name}, ${city.country}`);
+                  }}
+                >
+                  <span>{city.name}</span>
+                  <span className="text-xs text-on-surface-variant">{city.country}</span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Divider */}
+        <div className="flex items-center gap-3 mb-4">
+          <div className="flex-1 h-px bg-outline-variant/20" />
+          <span className="text-xs text-on-surface-variant/50">or</span>
+          <div className="flex-1 h-px bg-outline-variant/20" />
+        </div>
+
         <button
           onClick={load}
-          className="rounded-2xl px-6 py-3 text-sm font-semibold transition-all"
+          className="w-full rounded-2xl px-6 py-3 text-sm font-semibold transition-all"
           style={{ background: 'linear-gradient(135deg, #6c5ce7, #00cec9)', color: '#fff' }}
         >
-          {state === 'error' || state === 'denied' ? 'Try Again' : 'Get My Sleep Forecast'}
+          Use My Location
         </button>
       </div>
     );

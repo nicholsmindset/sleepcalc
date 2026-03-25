@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import {
   BarChart,
   Bar,
@@ -100,6 +100,105 @@ function CustomTooltip({
       <p style={{ color: isDeficit ? '#ff6b6b' : '#46eae5' }}>
         {isDeficit ? `${value.toFixed(1)}h deficit` : `${Math.abs(value).toFixed(1)}h surplus`}
       </p>
+    </div>
+  );
+}
+
+/** Animated semicircle speedometer gauge for sleep debt */
+function DebtGauge({ debtHours, severity }: { debtHours: number; severity: SleepDebtResult['severity'] }) {
+  const [animated, setAnimated] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setAnimated(true), 80);
+    return () => clearTimeout(t);
+  }, [debtHours]);
+
+  const maxDebt = 14;
+  const clampedDebt = Math.min(debtHours, maxDebt);
+  const pct = animated ? clampedDebt / maxDebt : 0;
+
+  // Semicircle arc — from 180° to 0° (left to right)
+  const cx = 110, cy = 100, r = 80;
+  const startAngle = Math.PI; // 180°
+  const endAngle = 0;         // 0°
+  const angle = startAngle + pct * (endAngle - startAngle);
+  // arc endpoints
+  const arcStart = { x: cx + r * Math.cos(startAngle), y: cy + r * Math.sin(startAngle) };
+  const arcEnd   = { x: cx + r * Math.cos(angle),      y: cy + r * Math.sin(angle) };
+  const largeArc = pct > 0.5 ? 1 : 0;
+  const arcPath  = `M ${arcStart.x} ${arcStart.y} A ${r} ${r} 0 ${largeArc} 1 ${arcEnd.x} ${arcEnd.y}`;
+
+  // needle tip
+  const needleAngle = startAngle + pct * (endAngle - startAngle);
+  const nx = cx + (r - 8) * Math.cos(needleAngle);
+  const ny = cy + (r - 8) * Math.sin(needleAngle);
+
+  const color = getSeverityColor(severity);
+
+  // zone colors on track (0=none, 1=mild, 2=moderate, 3=severe — at 0%, 30%, 60%, 85% of arc)
+  const zoneColors = ['#46eae5', '#fdcb6e', '#f0932b', '#ff6b6b'];
+
+  return (
+    <div className="flex flex-col items-center">
+      <svg viewBox="0 0 220 120" className="w-56 overflow-visible">
+        {/* Track zones */}
+        {[0, 1, 2, 3].map((zone) => {
+          const zStart = zone * 0.25;
+          const zEnd = zStart + 0.25;
+          const a1 = startAngle + zStart * (endAngle - startAngle);
+          const a2 = startAngle + zEnd   * (endAngle - startAngle);
+          const p1 = { x: cx + r * Math.cos(a1), y: cy + r * Math.sin(a1) };
+          const p2 = { x: cx + r * Math.cos(a2), y: cy + r * Math.sin(a2) };
+          return (
+            <path
+              key={zone}
+              d={`M ${p1.x} ${p1.y} A ${r} ${r} 0 0 1 ${p2.x} ${p2.y}`}
+              fill="none"
+              stroke={zoneColors[zone]}
+              strokeOpacity="0.2"
+              strokeWidth="10"
+              strokeLinecap="butt"
+            />
+          );
+        })}
+
+        {/* Progress arc */}
+        {pct > 0.01 && (
+          <path
+            d={arcPath}
+            fill="none"
+            stroke={color}
+            strokeWidth="10"
+            strokeLinecap="round"
+            style={{ transition: 'all 1.4s cubic-bezier(0.34,1.56,0.64,1)' }}
+          />
+        )}
+
+        {/* Needle */}
+        <line
+          x1={cx}
+          y1={cy}
+          x2={animated ? nx : cx + r * Math.cos(startAngle)}
+          y2={animated ? ny : cy + r * Math.sin(startAngle)}
+          stroke={color}
+          strokeWidth="3"
+          strokeLinecap="round"
+          style={{ transition: 'all 1.4s cubic-bezier(0.34,1.56,0.64,1)', transformOrigin: `${cx}px ${cy}px` }}
+        />
+        <circle cx={cx} cy={cy} r="5" fill={color} />
+
+        {/* Labels */}
+        <text x="28" y="112" fill="rgba(200,196,215,0.5)" fontSize="9" textAnchor="middle">0h</text>
+        <text x="192" y="112" fill="rgba(200,196,215,0.5)" fontSize="9" textAnchor="middle">{maxDebt}h</text>
+      </svg>
+
+      <div className="text-center -mt-2">
+        <p className="font-mono text-4xl font-extrabold" style={{ color }}>
+          {debtHours.toFixed(1)}h
+        </p>
+        <p className="text-xs uppercase tracking-widest font-semibold mt-1" style={{ color }}>
+          {severity === 'none' ? 'No Debt' : `${severity} deficit`}
+        </p>
+      </div>
     </div>
   );
 }
@@ -245,25 +344,14 @@ export default function SleepDebtCalculator() {
       {/* Results Section */}
       {hasCalculated && result && (
         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-          {/* Total Sleep Debt */}
+          {/* Total Sleep Debt Gauge */}
           <div className="glass-card rounded-2xl p-6 text-center">
-            <p className="text-label-sm font-label tracking-[0.05em] uppercase text-on-surface-variant mb-3">
+            <p className="text-label-sm font-label tracking-[0.05em] uppercase text-on-surface-variant mb-4">
               Total Sleep Debt This Week
             </p>
-            <p
-              className="font-mono text-5xl md:text-6xl font-extrabold mb-2"
-              style={{ color: getSeverityColor(result.severity) }}
-            >
-              {result.totalDebtHours.toFixed(1)}h
-            </p>
-            <p
-              className="text-sm font-semibold uppercase tracking-wide"
-              style={{ color: getSeverityColor(result.severity) }}
-            >
-              {result.severity === 'none' ? 'No Debt' : `${result.severity} deficit`}
-            </p>
+            <DebtGauge debtHours={result.totalDebtHours} severity={result.severity} />
             {result.recoveryDays > 0 && (
-              <p className="text-xs text-on-surface-variant mt-2">
+              <p className="text-xs text-on-surface-variant mt-3">
                 Estimated recovery: ~{result.recoveryDays} day{result.recoveryDays !== 1 ? 's' : ''}
               </p>
             )}
