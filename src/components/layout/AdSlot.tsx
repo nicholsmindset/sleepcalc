@@ -17,6 +17,8 @@ interface AdSlotProps {
   className?: string;
 }
 
+type AdsbyGoogleWindow = Window & { adsbygoogle?: unknown[] };
+
 export function AdSlot({ slot, format, className }: AdSlotProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -38,6 +40,15 @@ export function AdSlot({ slot, format, className }: AdSlotProps) {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (!isVisible) return;
+    try {
+      const w = window as AdsbyGoogleWindow;
+      w.adsbygoogle = w.adsbygoogle || [];
+      w.adsbygoogle.push({});
+    } catch (_) {}
+  }, [isVisible]);
+
   const { width, height } = AD_DIMENSIONS[format];
 
   return (
@@ -55,9 +66,13 @@ export function AdSlot({ slot, format, className }: AdSlotProps) {
         Advertisement
       </p>
       {isVisible && (
-        <div
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block", width, height }}
+          data-ad-client="ca-pub-5441531660664467"
           data-ad-slot={slot}
-          style={{ minHeight: height, minWidth: width }}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
         />
       )}
     </div>
