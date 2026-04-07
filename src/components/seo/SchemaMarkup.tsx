@@ -7,7 +7,8 @@ interface SchemaMarkupProps {
     | "BreadcrumbList"
     | "Organization"
     | "SoftwareApplication"
-    | "ItemList";
+    | "ItemList"
+    | "MedicalWebPage";
   data: Record<string, unknown>;
 }
 
@@ -56,6 +57,7 @@ export function OrganizationSchema() {
         name: "Sleep Stack",
         url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
         logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"}/icons/logo.png`,
+        sameAs: [],
       }}
     />
   );

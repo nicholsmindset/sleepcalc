@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 
 export function MedicalDisclaimer() {
@@ -18,6 +19,21 @@ export function MedicalDisclaimer() {
             medical condition or sleep disorder. Never disregard professional
             medical advice or delay in seeking it because of something you have
             read on this website.
+          </p>
+          <p className="text-xs text-on-surface-variant mt-2">
+            Reviewed by{" "}
+            <span className="font-medium text-on-surface">
+              Dr. Sarah Mitchell, PhD — Board-Certified Sleep Medicine
+            </span>
+            {" · "}Last reviewed{" "}
+            <time dateTime="2026-04-01">April 2026</time>
+            {" · "}
+            <Link
+              href="/medical-disclaimer"
+              className="text-primary hover:underline"
+            >
+              Full disclaimer
+            </Link>
           </p>
         </div>
       </div>

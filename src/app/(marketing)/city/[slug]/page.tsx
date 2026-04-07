@@ -198,7 +198,7 @@ export default async function CityPage({ params }: PageProps) {
     )
     .slice(0, 6);
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
 
   return (
     <article className="mx-auto max-w-4xl px-4 pb-20 pt-8">
