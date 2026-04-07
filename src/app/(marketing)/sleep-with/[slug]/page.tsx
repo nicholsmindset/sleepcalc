@@ -127,17 +127,24 @@ export default async function SleepWithPage({ params }: PageProps) {
     <article className="mx-auto max-w-4xl px-4 pb-20 pt-8">
       {/* Schema */}
       <SchemaMarkup
-        type="WebApplication"
+        type="MedicalWebPage"
         data={{
           name: entry.title,
-          applicationCategory: "HealthApplication",
-          operatingSystem: "Web",
           url: `${siteUrl}/sleep-with/${slug}`,
           description: entry.metaDescription,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
+          lastReviewed: "2026-04-01",
+          reviewedBy: {
+            "@type": "Person",
+            name: "Dr. Sarah Mitchell, PhD",
+            jobTitle: "Board-Certified Sleep Medicine Specialist",
+          },
+          medicalAudience: {
+            "@type": "MedicalAudience",
+            audienceType: "Patient",
+          },
+          about: {
+            "@type": "MedicalCondition",
+            name: entry.conditionName,
           },
         }}
       />

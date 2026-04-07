@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getAllPosts, getPostBySlug } from '@/lib/blog';
+import { generateCanonical, generateOgImageUrl } from '@/utils/seo';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { AuthorBox } from '@/components/content/AuthorBox';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -33,9 +34,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
       authors: [post.author],
+      images: [{ url: generateOgImageUrl(post.title), width: 1200, height: 630 }],
     },
     alternates: {
-      canonical: `https://sleepstackapp.com/blog/${slug}`,
+      canonical: generateCanonical(`/blog/${slug}`),
     },
   };
 }
