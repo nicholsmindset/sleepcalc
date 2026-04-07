@@ -23,7 +23,7 @@ export default function BlogPage() {
   const categories = getCategories();
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-16">
+    <div className="max-w-5xl mx-auto px-4 pt-4 pb-16">
       <SchemaMarkup
         type="ItemList"
         data={{

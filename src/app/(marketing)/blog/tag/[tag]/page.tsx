@@ -45,7 +45,7 @@ export default async function TagPage({ params }: Props) {
   const posts = getPostsByTag(tag);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-16">
+    <div className="max-w-5xl mx-auto px-4 pt-4 pb-16">
       <SchemaMarkup
         type="ItemList"
         data={{

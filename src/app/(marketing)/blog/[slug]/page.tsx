@@ -48,7 +48,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) notFound();
 
   return (
-    <article className="max-w-3xl mx-auto px-4 py-16">
+    <article className="max-w-3xl mx-auto px-4 pt-4 pb-16">
       <SchemaMarkup
         type="Article"
         data={{

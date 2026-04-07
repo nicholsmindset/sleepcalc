@@ -62,7 +62,7 @@ export default function BestMattressPage() {
   return (
     <>
       <SchemaMarkup type="FAQPage" data={faqSchema} />
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 pt-4 pb-12">
         <Breadcrumbs
           items={[
             { label: 'Home', href: '/' },

@@ -99,7 +99,7 @@ export default function CalculatorsPage() {
       />
 
       {/* Hero */}
-      <section className="pt-16 md:pt-24 pb-12">
+      <section className="pt-4 pb-12">
         <h1 className="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-on-surface">
           Sleep Calculators
         </h1>

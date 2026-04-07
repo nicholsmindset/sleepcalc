@@ -69,7 +69,7 @@ export default function SleepDebtPage() {
           offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
         }}
       />
-    <div className="max-w-4xl mx-auto px-6 md:px-8 py-10 md:py-16">
+    <div className="max-w-4xl mx-auto px-6 md:px-8 pt-4 pb-10 md:pb-16">
       <Breadcrumbs
         items={[
           { label: 'Home', href: '/' },

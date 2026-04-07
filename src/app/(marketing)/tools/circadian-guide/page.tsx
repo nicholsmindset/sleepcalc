@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function CircadianGuidePage() {
   return (
-    <main className="mx-auto max-w-2xl px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-2xl px-4 pb-20 pt-4">
       <div className="mb-8">
         <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-3">Free Tool</p>
         <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 bg-gradient-to-r from-[#f9ca24] to-[#c6bfff] bg-clip-text text-transparent">
