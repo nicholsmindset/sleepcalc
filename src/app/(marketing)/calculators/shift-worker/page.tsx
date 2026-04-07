@@ -92,7 +92,7 @@ export default function ShiftWorkerPage() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
-        <div className="pt-8 md:pt-12">
+        <div className="pt-4">
           <Breadcrumbs items={breadcrumbs} />
 
           {/* Hero */}

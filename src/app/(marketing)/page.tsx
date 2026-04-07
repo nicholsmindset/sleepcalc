@@ -113,7 +113,7 @@ export default function HomePage() {
       <div className="star-field fixed inset-0 pointer-events-none" />
 
       {/* ── HERO ── full-bleed, text centered */}
-      <section className="relative z-10 px-6 md:px-8 pt-6 md:pt-10 pb-16 text-center">
+      <section className="relative z-10 px-6 md:px-8 pt-4 pb-16 text-center">
         <div className="max-w-7xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-medium mb-6">
             <Zap className="w-3 h-3" />

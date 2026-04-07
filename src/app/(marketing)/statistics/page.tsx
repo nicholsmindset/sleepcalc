@@ -828,7 +828,7 @@ export default function StatisticsPage() {
         }}
       />
 
-      <div className="max-w-4xl mx-auto px-6 md:px-8 py-12 md:py-20">
+      <div className="max-w-4xl mx-auto px-6 md:px-8 pt-4 pb-12 md:pb-20">
         <Breadcrumbs
           items={[
             { label: "Home", href: "/" },

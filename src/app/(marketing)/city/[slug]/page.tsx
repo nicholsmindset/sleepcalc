@@ -201,7 +201,7 @@ export default async function CityPage({ params }: PageProps) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepcyclecalc.com";
 
   return (
-    <article className="mx-auto max-w-4xl px-4 pb-20 pt-8">
+    <article className="mx-auto max-w-4xl px-4 pb-20 pt-4">
       {/* Schema */}
       <SchemaMarkup
         type="WebApplication"

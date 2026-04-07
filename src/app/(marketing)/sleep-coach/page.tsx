@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function SleepCoachPage() {
   return (
-    <div className="max-w-2xl mx-auto px-4 py-12">
+    <div className="max-w-2xl mx-auto px-4 pt-4 pb-12">
       <Breadcrumbs
         items={[{ label: 'Home', href: '/' }, { label: 'AI Sleep Coach', href: '/sleep-coach' }]}
       />

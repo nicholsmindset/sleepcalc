@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function SleepFoodsPage() {
   return (
-    <article className="mx-auto max-w-3xl px-4 pb-20 pt-8">
+    <article className="mx-auto max-w-3xl px-4 pb-20 pt-4">
       <Breadcrumbs
         items={[
           { label: 'Home', href: '/' },

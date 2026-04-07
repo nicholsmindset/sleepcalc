@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function DSTCalculatorPage() {
   return (
-    <main className="mx-auto max-w-2xl px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-2xl px-4 pb-20 pt-4">
       {/* Header */}
       <div className="mb-8">
         <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-3">Free Tool</p>

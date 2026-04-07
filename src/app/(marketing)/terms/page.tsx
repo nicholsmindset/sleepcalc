@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 md:px-8 py-10 md:py-16">
+    <div className="max-w-3xl mx-auto px-6 md:px-8 pt-4 pb-10 md:pb-16">
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
