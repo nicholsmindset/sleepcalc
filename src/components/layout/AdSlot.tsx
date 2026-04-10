@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { useUser } from "@/hooks/use-user";
 
 const AD_DIMENSIONS = {
   leaderboard: { width: 728, height: 90 },
@@ -20,8 +21,12 @@ interface AdSlotProps {
 type AdsbyGoogleWindow = Window & { adsbygoogle?: unknown[] };
 
 export function AdSlot({ slot, format, className }: AdSlotProps) {
+  const { profile } = useUser();
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  // Pro users never see ads
+  if (profile?.subscription_tier === "pro") return null;
 
   useEffect(() => {
     if (!ref.current) return;
