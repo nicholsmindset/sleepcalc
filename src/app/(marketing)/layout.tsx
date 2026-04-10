@@ -10,11 +10,7 @@ export default function MarketingLayout({
   return (
     <>
       <Header />
-      <div className="flex justify-center px-4 pt-16">
-        {/* TODO: replace with your AdSense leaderboard slot ID from adsense.google.com → Ads → Ad units */}
-        <AdSlot slot="LEADERBOARD_SLOT_ID" format="leaderboard" />
-      </div>
-      <main className="min-h-screen">{children}</main>
+      <main className="pt-16 min-h-screen">{children}</main>
       <div className="flex justify-center px-4 py-4">
         {/* TODO: replace with your AdSense rectangle slot ID from adsense.google.com → Ads → Ad units */}
         <AdSlot slot="RECTANGLE_SLOT_ID" format="rectangle" />
