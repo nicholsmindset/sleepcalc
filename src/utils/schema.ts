@@ -102,10 +102,17 @@ export function generateArticleSchema(article: {
   description: string;
   datePublished: string;
   dateModified: string;
-  author: string;
+  /**
+   * Author name. Set to 'Sleep Stack Editorial Team' (or omit) to attribute
+   * to the Organization persona; any other string is attributed to a Person.
+   */
+  author?: string;
+  url?: string;
   image?: string;
 }): Record<string, unknown> {
   const siteUrl = getSiteUrl();
+  const authorName = article.author ?? 'Sleep Stack Editorial Team';
+  const isEditorialTeam = authorName === 'Sleep Stack Editorial Team';
 
   return {
     '@context': 'https://schema.org',
@@ -114,10 +121,9 @@ export function generateArticleSchema(article: {
     description: article.description,
     datePublished: article.datePublished,
     dateModified: article.dateModified,
-    author: {
-      '@type': 'Person',
-      name: article.author,
-    },
+    author: isEditorialTeam
+      ? EDITORIAL_AUTHOR
+      : { '@type': 'Person', name: authorName },
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
@@ -129,8 +135,9 @@ export function generateArticleSchema(article: {
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': siteUrl,
+      '@id': article.url ?? siteUrl,
     },
+    ...(article.url ? { url: article.url } : {}),
     ...(article.image ? { image: article.image } : {}),
   };
 }
@@ -209,7 +216,110 @@ export function generateOrganizationSchema(): Record<string, unknown> {
       contactType: 'customer support',
       url: `${siteUrl}/about`,
     },
-    sameAs: [],
+    sameAs: [`${siteUrl}/about`],
+  };
+}
+
+/**
+ * Default editorial attribution for programmatic pages.
+ *
+ * Branded persona pending assignment of a named credentialed reviewer.
+ */
+export const EDITORIAL_AUTHOR = {
+  '@type': 'Organization',
+  name: 'Sleep Stack Editorial Team',
+  url: 'https://sleepstackapp.com/about',
+} as const;
+
+/**
+ * Default review attribution — same entity for Tier 1 rollout.
+ */
+export const EDITORIAL_REVIEWER = EDITORIAL_AUTHOR;
+
+/**
+ * Site-wide fallback for datePublished when a JSON entry omits the field.
+ *
+ * Matches the sitemap lastmod baseline so Google observes a consistent
+ * publish/review timeline across programmatic pages.
+ */
+export const DEFAULT_PUBLISHED_DATE = '2026-03-25';
+
+/**
+ * Site-wide fallback for dateModified when a JSON entry omits the field.
+ */
+export const DEFAULT_MODIFIED_DATE = '2026-04-22';
+
+/**
+ * Generate a MedicalWebPage schema for YMYL health-topic pages (baby sleep, age-based sleep).
+ *
+ * Unlike generic Article schema, MedicalWebPage signals to Google that the
+ * content is health-related and expects a reviewer attestation. This helps
+ * E-E-A-T scoring on pages Google classifies as "Your Money or Your Life."
+ */
+export function generateMedicalWebPageSchema(opts: {
+  title: string;
+  description: string;
+  url: string;
+  datePublished: string;
+  dateModified: string;
+  image?: string;
+}): Record<string, unknown> {
+  const siteUrl = getSiteUrl();
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalWebPage',
+    headline: opts.title,
+    name: opts.title,
+    description: opts.description,
+    url: opts.url,
+    datePublished: opts.datePublished,
+    dateModified: opts.dateModified,
+    inLanguage: 'en-US',
+    isFamilyFriendly: true,
+    medicalAudience: [
+      { '@type': 'MedicalAudience', audienceType: 'Patient' },
+      { '@type': 'MedicalAudience', audienceType: 'Caregiver' },
+    ],
+    author: EDITORIAL_AUTHOR,
+    reviewedBy: EDITORIAL_REVIEWER,
+    lastReviewed: opts.dateModified,
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: siteUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}/icons/logo.png`,
+      },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': opts.url },
+    ...(opts.image ? { image: opts.image } : {}),
+  };
+}
+
+/**
+ * Generate an ItemList schema for hub / cluster landing pages.
+ *
+ * Google uses ItemList for carousel rich results on category-style pages.
+ *
+ * @param items - Ordered items, each with a URL and display name
+ */
+export function generateItemListSchema(
+  items: { name: string; url: string }[],
+  listName?: string
+): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    ...(listName ? { name: listName } : {}),
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+    })),
   };
 }
 

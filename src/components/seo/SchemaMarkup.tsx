@@ -50,14 +50,22 @@ export function WebSiteSchema() {
 }
 
 export function OrganizationSchema() {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
   return (
     <SchemaMarkup
       type="Organization"
       data={{
         name: "Sleep Stack",
-        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
-        logo: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"}/icons/logo.png`,
-        sameAs: [],
+        url: siteUrl,
+        logo: `${siteUrl}/icons/logo.png`,
+        description:
+          "Free sleep calculators and tools to optimize your bedtime, wake-up time, and sleep schedule.",
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "customer support",
+          url: `${siteUrl}/about`,
+        },
+        sameAs: [`${siteUrl}/about`],
       }}
     />
   );
