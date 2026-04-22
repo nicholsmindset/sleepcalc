@@ -6,7 +6,14 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import {
+  generateArticleSchema,
+  DEFAULT_PUBLISHED_DATE,
+  DEFAULT_MODIFIED_DATE,
+} from "@/utils/schema";
+import { generateOgImageUrl } from "@/utils/seo";
 import BedtimeCalculator from "@/components/calculators/BedtimeCalculator";
 import sleepTimesData from "@/content/data/sleep-times.json";
 
@@ -45,6 +52,8 @@ interface SleepTimeEntry {
   content: SleepTimeContent;
   faq: FAQItem[];
   relatedSlugs: string[];
+  datePublished?: string;
+  dateModified?: string;
 }
 
 const entries = sleepTimesData as SleepTimeEntry[];
@@ -71,6 +80,8 @@ export async function generateMetadata({
     return { title: "Page Not Found" };
   }
 
+  const ogImage = generateOgImageUrl(entry.h1 ?? entry.title);
+
   return {
     title: entry.title,
     description: entry.metaDescription,
@@ -82,6 +93,16 @@ export async function generateMetadata({
       description: entry.metaDescription,
       url: `/bedtime/${slug}`,
       siteName: "Sleep Stack",
+      type: "article",
+      publishedTime: entry.datePublished ?? DEFAULT_PUBLISHED_DATE,
+      modifiedTime: entry.dateModified ?? DEFAULT_MODIFIED_DATE,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: entry.title,
+      description: entry.metaDescription,
+      images: [ogImage],
     },
   };
 }
@@ -142,24 +163,21 @@ export default async function BedtimePage({
 
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const pageUrl = `${siteUrl}/bedtime/${slug}`;
+  const datePublished = entry.datePublished ?? DEFAULT_PUBLISHED_DATE;
+  const dateModified = entry.dateModified ?? DEFAULT_MODIFIED_DATE;
+
+  const articleSchema = generateArticleSchema({
+    title: entry.title,
+    description: entry.metaDescription,
+    datePublished,
+    dateModified,
+    url: pageUrl,
+  });
 
   return (
     <>
-      <SchemaMarkup
-        type="WebApplication"
-        data={{
-          name: `Sleep Calculator - ${entry.time}`,
-          applicationCategory: "HealthApplication",
-          operatingSystem: "Web",
-          url: `${siteUrl}/bedtime/${slug}`,
-          description: entry.metaDescription,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-        }}
-      />
+      <SchemaMarkup type="Article" data={articleSchema} />
 
       <div className="relative">
         <div className="star-field fixed inset-0 pointer-events-none" />
@@ -180,10 +198,16 @@ export default async function BedtimePage({
           </div>
 
           {/* Hero */}
-          <section className="pb-10 text-center max-w-3xl mx-auto">
+          <section className="pb-6 text-center max-w-3xl mx-auto">
             <h1 className="font-headline text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-on-surface to-on-surface-variant">
               {entry.h1}
             </h1>
+            <div className="flex justify-center">
+              <EditorialByline
+                datePublished={datePublished}
+                dateModified={dateModified}
+              />
+            </div>
             <p className="text-on-surface-variant text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
               {introSentences}
             </p>

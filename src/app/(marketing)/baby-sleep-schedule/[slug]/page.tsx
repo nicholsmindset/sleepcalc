@@ -5,7 +5,14 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import {
+  generateMedicalWebPageSchema,
+  DEFAULT_PUBLISHED_DATE,
+  DEFAULT_MODIFIED_DATE,
+} from "@/utils/schema";
+import { generateOgImageUrl } from "@/utils/seo";
 import scheduleData from "@/content/data/baby-sleep-schedules.json";
 
 /* -------------------------------------------------------------------------- */
@@ -50,6 +57,8 @@ interface BabyScheduleEntry {
   content: BabyContent;
   faq: FAQItem[];
   relatedSlugs: string[];
+  datePublished?: string;
+  dateModified?: string;
 }
 
 const entries = scheduleData as BabyScheduleEntry[];
@@ -75,6 +84,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const entry = entries.find((e) => e.slug === slug);
   if (!entry) return {};
 
+  const ogImage = generateOgImageUrl(entry.h1 ?? entry.title);
+
   return {
     title: entry.title,
     description: entry.metaDescription,
@@ -84,6 +95,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: entry.metaDescription,
       url: `/baby-sleep-schedule/${slug}`,
       siteName: "Sleep Stack",
+      type: "article",
+      publishedTime: entry.datePublished ?? DEFAULT_PUBLISHED_DATE,
+      modifiedTime: entry.dateModified ?? DEFAULT_MODIFIED_DATE,
+      images: [{ url: ogImage, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: entry.title,
+      description: entry.metaDescription,
+      images: [ogImage],
     },
   };
 }
@@ -190,25 +211,22 @@ export default async function BabySleepSchedulePage({ params }: PageProps) {
     .filter(Boolean) as BabyScheduleEntry[];
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const pageUrl = `${siteUrl}/baby-sleep-schedule/${slug}`;
+  const datePublished = entry.datePublished ?? DEFAULT_PUBLISHED_DATE;
+  const dateModified = entry.dateModified ?? DEFAULT_MODIFIED_DATE;
+
+  const medicalWebPageSchema = generateMedicalWebPageSchema({
+    title: entry.title,
+    description: entry.metaDescription,
+    url: pageUrl,
+    datePublished,
+    dateModified,
+  });
 
   return (
     <article className="mx-auto max-w-4xl px-4 pb-20 pt-4">
       {/* Schema */}
-      <SchemaMarkup
-        type="WebApplication"
-        data={{
-          name: entry.title,
-          applicationCategory: "HealthApplication",
-          operatingSystem: "Web",
-          url: `${siteUrl}/baby-sleep-schedule/${slug}`,
-          description: entry.metaDescription,
-          offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "USD",
-          },
-        }}
-      />
+      <SchemaMarkup type="MedicalWebPage" data={medicalWebPageSchema} />
 
       {/* Breadcrumbs */}
       <Breadcrumbs
@@ -223,6 +241,11 @@ export default async function BabySleepSchedulePage({ params }: PageProps) {
       <h1 className="font-headline text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 bg-gradient-to-r from-[#c6bfff] to-[#46eae5] bg-clip-text text-transparent">
         {entry.h1}
       </h1>
+
+      <EditorialByline
+        datePublished={datePublished}
+        dateModified={dateModified}
+      />
 
       {/* Intro */}
       <div className="text-on-surface-variant text-sm leading-relaxed mb-10 max-w-3xl">
