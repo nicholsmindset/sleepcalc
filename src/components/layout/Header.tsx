@@ -34,6 +34,16 @@ const toolLinks = [
   { label: 'White Noise', href: '/tools/white-noise' },
 ];
 
+const guideLinks = [
+  { label: 'Sleep by Age', href: '/age' },
+  { label: 'Sleep by City', href: '/city' },
+  { label: 'Sleep by Profession', href: '/profession' },
+  { label: 'Baby Sleep Schedules', href: '/baby-sleep-schedule' },
+  { label: 'Sleep & Health Conditions', href: '/sleep-with' },
+  { label: 'Wake-up Times', href: '/sleep-time' },
+  { label: 'Bedtimes', href: '/bedtime' },
+];
+
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Blog', href: '/blog' },
@@ -44,6 +54,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [calcDropdown, setCalcDropdown] = useState(false);
   const [toolsDropdown, setToolsDropdown] = useState(false);
+  const [guidesDropdown, setGuidesDropdown] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-[#121222]/80 backdrop-blur-xl shadow-ambient">
@@ -123,6 +134,34 @@ export function Header() {
               </div>
             )}
           </div>
+
+          {/* Guides dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setGuidesDropdown(true)}
+            onMouseLeave={() => setGuidesDropdown(false)}
+          >
+            <button className="font-headline font-medium text-sm tracking-tight text-on-surface/60 hover:text-on-surface transition-colors flex items-center gap-1">
+              Guides
+              <ChevronDown className="w-3.5 h-3.5" />
+            </button>
+
+            {guidesDropdown && (
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
+                <div className="glass-card rounded-2xl p-3 min-w-[240px] shadow-ambient">
+                  {guideLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      className="block px-4 py-2.5 rounded-xl text-sm text-on-surface/70 hover:text-on-surface hover:bg-surface-container-high/50 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -171,6 +210,20 @@ export function Header() {
                 Tools
               </div>
               {toolLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="px-4 py-2.5 rounded-xl text-sm text-on-surface/60 hover:text-on-surface hover:bg-surface-container-high/50 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              <div className="px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-4">
+                Guides
+              </div>
+              {guideLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}

@@ -66,6 +66,8 @@ const BADGE_COLORS = [
 /*  Static Generation                                                         */
 /* -------------------------------------------------------------------------- */
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return entries.map((entry) => ({ slug: entry.slug }));
 }
