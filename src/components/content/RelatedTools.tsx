@@ -1,5 +1,22 @@
 import Link from "next/link";
-import { Calculator, Moon, Coffee, Clock, Baby, Brain, CloudSun, Plane, Star, Sun, BookOpen, Zap } from "lucide-react";
+import {
+  Calculator,
+  Moon,
+  Coffee,
+  Clock,
+  Baby,
+  Brain,
+  CloudSun,
+  Plane,
+  Star,
+  Sun,
+  BookOpen,
+  Zap,
+  Globe,
+  Users,
+  Heart,
+  Briefcase,
+} from "lucide-react";
 
 const tools = [
   {
@@ -73,6 +90,36 @@ const tools = [
     href: "/tools/sleep-journal",
     icon: BookOpen,
     description: "Track your sleep over time",
+  },
+  {
+    label: "Sleep by Age",
+    href: "/age",
+    icon: Users,
+    description: "Hours of sleep by life stage",
+  },
+  {
+    label: "Sleep by City",
+    href: "/city",
+    icon: Globe,
+    description: "Schedules for 50+ cities",
+  },
+  {
+    label: "Sleep by Profession",
+    href: "/profession",
+    icon: Briefcase,
+    description: "Schedules for shift workers & more",
+  },
+  {
+    label: "Baby Sleep Schedules",
+    href: "/baby-sleep-schedule",
+    icon: Baby,
+    description: "Age-by-age routines",
+  },
+  {
+    label: "Sleep Conditions",
+    href: "/sleep-with",
+    icon: Heart,
+    description: "Insomnia, apnea, anxiety & more",
   },
 ];
 

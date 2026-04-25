@@ -3,6 +3,16 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://sleepstackapp.com/sitemap.xml
+Sitemap: https://sleepstackapp.com/sitemaps/core.xml
+Sitemap: https://sleepstackapp.com/sitemaps/tools.xml
+Sitemap: https://sleepstackapp.com/sitemaps/sleep-time.xml
+Sitemap: https://sleepstackapp.com/sitemaps/bedtime.xml
+Sitemap: https://sleepstackapp.com/sitemaps/age.xml
+Sitemap: https://sleepstackapp.com/sitemaps/profession.xml
+Sitemap: https://sleepstackapp.com/sitemaps/baby-sleep.xml
+Sitemap: https://sleepstackapp.com/sitemaps/cities.xml
+Sitemap: https://sleepstackapp.com/sitemaps/conditions.xml
+Sitemap: https://sleepstackapp.com/sitemaps/blog.xml
 
 # Block dashboard (authenticated content)
 Disallow: /dashboard

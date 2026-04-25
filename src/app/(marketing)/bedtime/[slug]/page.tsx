@@ -60,6 +60,8 @@ const entries = sleepTimesData as SleepTimeEntry[];
 
 /* ─── Static Generation ─── */
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return entries
     .filter((e) => e.type === "bedtime")

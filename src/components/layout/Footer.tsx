@@ -24,11 +24,20 @@ const toolLinks = [
   { label: "White Noise", href: "/tools/white-noise" },
 ];
 
+const guideLinks = [
+  { label: "Sleep by Age", href: "/age" },
+  { label: "Sleep by City", href: "/city" },
+  { label: "Sleep by Profession", href: "/profession" },
+  { label: "Baby Sleep Schedules", href: "/baby-sleep-schedule" },
+  { label: "Sleep & Health Conditions", href: "/sleep-with" },
+  { label: "Wake-up Times", href: "/sleep-time" },
+  { label: "Bedtimes", href: "/bedtime" },
+];
+
 const resourceLinks = [
   { label: "Blog", href: "/blog" },
   { label: "Sleep Statistics 2026", href: "/statistics" },
   { label: "All Calculators", href: "/calculators" },
-  { label: "Baby Sleep Schedules", href: "/baby-sleep-schedule/newborn-sleep-schedule" },
 ];
 
 const companyLinks = [
@@ -44,7 +53,7 @@ const legalLinks = [
 export function Footer() {
   return (
     <footer className="w-full py-12 px-6 md:px-8 border-t border-outline-variant/15 bg-[#121222]">
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-8 max-w-7xl mx-auto">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
           <div className="text-xl font-bold text-on-surface font-headline mb-4">
@@ -78,6 +87,22 @@ export function Footer() {
             Tools
           </h4>
           {toolLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block text-sm text-on-surface-variant hover:text-on-surface transition-colors mb-2"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Guides */}
+        <div>
+          <h4 className="text-xs font-bold uppercase tracking-widest mb-4 text-[#46eae5]">
+            Guides
+          </h4>
+          {guideLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
