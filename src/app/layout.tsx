@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
@@ -65,10 +66,14 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="QpylYLOm8El8MURIHk_O_YQb5wdHMmmniPWBXB0zGh0" />
-        <meta name="google-adsense-account" content="ca-pub-5441531660664467" />
-        {/* Plain script tag — Next.js Script adds data-nscript which AdSense rejects */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5441531660664467" crossOrigin="anonymous" />
+        {process.env.NEXT_PUBLIC_ENABLE_ADS === "true" && (
+          <>
+            <meta name="google-adsense-account" content="ca-pub-5441531660664467" />
+            {/* Plain script tag — Next.js Script adds data-nscript which AdSense rejects */}
+            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5441531660664467" crossOrigin="anonymous" />
+          </>
+        )}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#6c5ce7" />
         <meta name="mobile-web-app-capable" content="yes" />
@@ -98,6 +103,7 @@ export default function RootLayout({
           `}
         </Script>
         <TooltipProvider>{children}</TooltipProvider>
+        <Analytics />
       </body>
     </html>
   );

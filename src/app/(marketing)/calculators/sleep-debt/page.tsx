@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
+import { generateHowToSchema } from '@/utils/schema';
 import SleepDebtCalculator from '@/components/calculators/SleepDebtCalculator';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
@@ -68,6 +69,33 @@ export default function SleepDebtPage() {
           description: metadata.description,
           offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
         }}
+      />
+      <SchemaMarkup
+        type="HowTo"
+        data={generateHowToSchema({
+          name: 'How to calculate your sleep debt',
+          description:
+            'Estimate your accumulated sleep debt over the past week and build a recovery plan in under a minute.',
+          totalTime: 'PT1M',
+          steps: [
+            {
+              name: 'Enter your age',
+              text: 'Choose your age group so we can pick the right sleep target from National Sleep Foundation guidelines.',
+            },
+            {
+              name: 'Log the past 7 nights',
+              text: 'Enter how many hours you actually slept on each of the last seven nights.',
+            },
+            {
+              name: 'Review your sleep debt',
+              text: 'See your total accumulated deficit in hours alongside the recommended target for your age.',
+            },
+            {
+              name: 'Follow the recovery plan',
+              text: 'Use the suggested wind-down and weekend strategy to gradually pay back your sleep debt.',
+            },
+          ],
+        })}
       />
     <div className="max-w-4xl mx-auto px-6 md:px-8 pt-4 pb-10 md:pb-16">
       <Breadcrumbs

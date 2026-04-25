@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
+import { generateHowToSchema } from '@/utils/schema';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
@@ -72,6 +73,33 @@ export default function NapCalculatorPage() {
             priceCurrency: 'USD',
           },
         }}
+      />
+      <SchemaMarkup
+        type="HowTo"
+        data={generateHowToSchema({
+          name: 'How to plan the perfect nap',
+          description:
+            'Pick the right nap length and start time to wake up refreshed instead of groggy.',
+          totalTime: 'PT1M',
+          steps: [
+            {
+              name: 'Choose your nap goal',
+              text: 'Decide whether you need a quick alertness boost (power nap) or full recovery (cycle nap).',
+            },
+            {
+              name: 'Set the current time',
+              text: 'Enter the time you plan to lie down so we can check it falls inside the optimal nap window.',
+            },
+            {
+              name: 'Pick a duration',
+              text: 'Select 20, 60, or 90 minutes — each option targets a specific sleep stage and benefit.',
+            },
+            {
+              name: 'Set the alarm we recommend',
+              text: 'Use the suggested wake-up time so you exit before deep sleep and avoid sleep inertia.',
+            },
+          ],
+        })}
       />
 
       <div className="relative">

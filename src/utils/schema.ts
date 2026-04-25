@@ -324,6 +324,33 @@ export function generateItemListSchema(
 }
 
 /**
+ * Generate a HowTo schema for tool/calculator pages.
+ *
+ * Returns the inner schema body (no @context/@type) so it can be passed to
+ * the SchemaMarkup component, which wraps with type="HowTo".
+ */
+export function generateHowToSchema(opts: {
+  name: string;
+  description: string;
+  steps: { name: string; text: string }[];
+  totalTime?: string;
+  image?: string;
+}): Record<string, unknown> {
+  return {
+    name: opts.name,
+    description: opts.description,
+    ...(opts.totalTime ? { totalTime: opts.totalTime } : {}),
+    ...(opts.image ? { image: opts.image } : {}),
+    step: opts.steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  };
+}
+
+/**
  * Generate a SoftwareApplication schema for app store and rich result eligibility.
  *
  * Describes the web application with pricing tiers, ratings placeholders,

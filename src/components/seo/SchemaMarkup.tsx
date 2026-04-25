@@ -8,7 +8,8 @@ interface SchemaMarkupProps {
     | "Organization"
     | "SoftwareApplication"
     | "ItemList"
-    | "MedicalWebPage";
+    | "MedicalWebPage"
+    | "HowTo";
   data: Record<string, unknown>;
 }
 

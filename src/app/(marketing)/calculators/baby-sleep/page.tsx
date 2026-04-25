@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { generateHowToSchema } from "@/utils/schema";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
@@ -68,6 +69,33 @@ export default function BabySleepPage() {
           description: metadata.description,
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         }}
+      />
+      <SchemaMarkup
+        type="HowTo"
+        data={generateHowToSchema({
+          name: "How to find your child's recommended sleep schedule",
+          description:
+            "Use age-based National Sleep Foundation guidelines to set the right total sleep, naps, and wake windows for your child.",
+          totalTime: "PT1M",
+          steps: [
+            {
+              name: "Select your child's age",
+              text: "Pick the closest age band — newborn, infant, toddler, preschool, or school age.",
+            },
+            {
+              name: "Review the recommended hours",
+              text: "See the recommended total sleep, number of naps, and typical wake windows for that age.",
+            },
+            {
+              name: "Build the daily schedule",
+              text: "Use the suggested nap timing and bedtime to draft a routine your child can follow consistently.",
+            },
+            {
+              name: "Adjust for individual needs",
+              text: "Tune total hours up or down within the healthy range based on your child's mood and growth.",
+            },
+          ],
+        })}
       />
     <div className="max-w-3xl mx-auto px-6 md:px-8">
       <Breadcrumbs

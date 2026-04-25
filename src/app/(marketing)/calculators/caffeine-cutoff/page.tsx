@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
+import { generateHowToSchema } from '@/utils/schema';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -73,6 +74,33 @@ export default function CaffeineCutoffPage() {
             priceCurrency: 'USD',
           },
         }}
+      />
+      <SchemaMarkup
+        type="HowTo"
+        data={generateHowToSchema({
+          name: 'How to find your caffeine cutoff time',
+          description:
+            'Work out the latest you can have coffee, tea, or an energy drink without sabotaging tonight\'s sleep.',
+          totalTime: 'PT1M',
+          steps: [
+            {
+              name: 'Enter your bedtime',
+              text: 'Choose the time you plan to fall asleep so we can work backward through caffeine\'s half-life.',
+            },
+            {
+              name: 'Pick your drink',
+              text: 'Select coffee, tea, energy drink, or pre-workout — each delivers a different caffeine dose.',
+            },
+            {
+              name: 'Set your sensitivity',
+              text: 'Tell us whether you\'re a slow or fast caffeine metabolizer to adjust the decay curve.',
+            },
+            {
+              name: 'See your cutoff time',
+              text: 'Stop consuming caffeine before the recommended time to keep deep sleep intact.',
+            },
+          ],
+        })}
       />
 
       <div className="relative">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { generateHowToSchema } from "@/utils/schema";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
@@ -68,6 +69,33 @@ export default function ChronotypeQuizPage() {
           description: metadata.description,
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         }}
+      />
+      <SchemaMarkup
+        type="HowTo"
+        data={generateHowToSchema({
+          name: "How to find your chronotype",
+          description:
+            "Take a 10-question quiz to learn whether you're a Lion, Bear, Wolf, or Dolphin and align your schedule with your biology.",
+          totalTime: "PT3M",
+          steps: [
+            {
+              name: "Answer 10 questions",
+              text: "Respond honestly about your natural energy, alertness, and sleep preferences.",
+            },
+            {
+              name: "Get your chronotype",
+              text: "Receive your result — Lion, Bear, Wolf, or Dolphin — with a detailed personality profile.",
+            },
+            {
+              name: "See your ideal schedule",
+              text: "Review the recommended bedtime, wake time, and peak productivity hours for your type.",
+            },
+            {
+              name: "Apply it to your day",
+              text: "Schedule deep work, meetings, and exercise around your natural energy peaks.",
+            },
+          ],
+        })}
       />
     <div className="max-w-3xl mx-auto px-6 md:px-8">
       <Breadcrumbs

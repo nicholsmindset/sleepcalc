@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
+import { generateHowToSchema } from '@/utils/schema';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FAQ } from '@/components/content/FAQ';
 import { RelatedTools } from '@/components/content/RelatedTools';
@@ -89,6 +90,33 @@ export default function ShiftWorkerPage() {
             priceCurrency: 'USD',
           },
         }}
+      />
+      <SchemaMarkup
+        type="HowTo"
+        data={generateHowToSchema({
+          name: 'How to plan sleep around a shift schedule',
+          description:
+            'Build a sleep plan that protects deep sleep across day, evening, night, and rotating shifts.',
+          totalTime: 'PT2M',
+          steps: [
+            {
+              name: 'Choose your shift type',
+              text: 'Select day, evening, night, or rotating to load the right sleep template.',
+            },
+            {
+              name: 'Enter your shift hours',
+              text: 'Set your shift start and end times so we can find your circadian sleep window.',
+            },
+            {
+              name: 'Review the suggested schedule',
+              text: 'See your recommended main sleep block plus an optional anchor or split-sleep nap.',
+            },
+            {
+              name: 'Apply the recovery tips',
+              text: 'Use the light, caffeine, and meal timing guidance to keep your circadian rhythm stable.',
+            },
+          ],
+        })}
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8">
