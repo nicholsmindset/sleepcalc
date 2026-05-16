@@ -155,6 +155,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: { canonical: `/city/${slug}` },
+    // Per-city sleep advice is largely generic; these pages are kept for
+    // visitors but excluded from the index until they carry city-specific
+    // depth, so they do not dilute site-wide quality signals.
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description,

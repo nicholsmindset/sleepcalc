@@ -7,6 +7,7 @@ import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedReading } from "@/components/content/RelatedReading";
+import { SourcesReferences } from "@/components/content/SourcesReferences";
 import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import {
@@ -396,6 +397,11 @@ export default async function SleepTimePage({
               )}
             </nav>
           )}
+
+          {/* Sources & References */}
+          <div className="max-w-3xl mx-auto">
+            <SourcesReferences />
+          </div>
 
           {/* Related Reading */}
           <RelatedReading

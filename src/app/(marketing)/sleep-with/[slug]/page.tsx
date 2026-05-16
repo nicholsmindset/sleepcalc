@@ -7,6 +7,7 @@ import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedReading } from "@/components/content/RelatedReading";
+import { SourcesReferences } from "@/components/content/SourcesReferences";
 import AffiliateCard from "@/components/content/AffiliateCard";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import conditionData from "@/content/data/conditions.json";
@@ -282,6 +283,9 @@ export default async function SleepWithPage({ params }: PageProps) {
 
       {/* Affiliate */}
       <AffiliateCard context="supplement" />
+
+      {/* Sources & References */}
+      <SourcesReferences />
 
       {/* Related Reading */}
       <RelatedReading
