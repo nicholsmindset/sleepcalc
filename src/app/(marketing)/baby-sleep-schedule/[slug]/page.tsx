@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { SourcesReferences } from "@/components/content/SourcesReferences";
 import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import {
@@ -404,6 +405,9 @@ export default async function BabySleepSchedulePage({ params }: PageProps) {
 
       {/* FAQ */}
       {faq.length > 0 && <FAQ items={faq} />}
+
+      {/* Sources & References */}
+      <SourcesReferences />
 
       {/* Related Tools */}
       <RelatedTools exclude={`/baby-sleep-schedule/${slug}`} />

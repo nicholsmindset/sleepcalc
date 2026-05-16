@@ -10,7 +10,6 @@ Sitemap: https://sleepstackapp.com/sitemaps/bedtime.xml
 Sitemap: https://sleepstackapp.com/sitemaps/age.xml
 Sitemap: https://sleepstackapp.com/sitemaps/profession.xml
 Sitemap: https://sleepstackapp.com/sitemaps/baby-sleep.xml
-Sitemap: https://sleepstackapp.com/sitemaps/cities.xml
 Sitemap: https://sleepstackapp.com/sitemaps/conditions.xml
 Sitemap: https://sleepstackapp.com/sitemaps/blog.xml
 

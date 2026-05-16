@@ -6,6 +6,8 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { RelatedReading } from "@/components/content/RelatedReading";
+import { SourcesReferences } from "@/components/content/SourcesReferences";
 import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import {
@@ -393,6 +395,21 @@ export default async function BedtimePage({
               )}
             </nav>
           )}
+
+          {/* Sources & References */}
+          <div className="max-w-3xl mx-auto">
+            <SourcesReferences />
+          </div>
+
+          {/* Related Reading */}
+          <RelatedReading
+            slugs={[
+              "how-to-fall-asleep-fast",
+              "how-to-fix-sleep-schedule",
+              "sleep-hygiene-tips",
+              "how-much-sleep-do-you-need",
+            ]}
+          />
 
           {/* Related Tools */}
           <RelatedTools exclude={`/bedtime/${slug}`} />

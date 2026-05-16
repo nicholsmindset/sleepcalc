@@ -21,12 +21,13 @@ export function MedicalDisclaimer() {
             read on this website.
           </p>
           <p className="text-xs text-on-surface-variant mt-2">
-            Reviewed by{" "}
-            <span className="font-medium text-on-surface">
-              Dr. Sarah Mitchell, PhD — Board-Certified Sleep Medicine
-            </span>
-            {" · "}Last reviewed{" "}
-            <time dateTime="2026-04-01">April 2026</time>
+            Researched and maintained by the{" "}
+            <Link
+              href="/editorial-policy"
+              className="font-medium text-primary hover:underline"
+            >
+              Sleep Stack Editorial Team
+            </Link>
             {" · "}
             <Link
               href="/medical-disclaimer"

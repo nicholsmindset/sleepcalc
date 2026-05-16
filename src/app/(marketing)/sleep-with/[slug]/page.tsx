@@ -6,8 +6,11 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { RelatedReading } from "@/components/content/RelatedReading";
+import { SourcesReferences } from "@/components/content/SourcesReferences";
 import AffiliateCard from "@/components/content/AffiliateCard";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { EDITORIAL_REVIEWER, DEFAULT_MODIFIED_DATE } from "@/utils/schema";
 import conditionData from "@/content/data/conditions.json";
 
 /* -------------------------------------------------------------------------- */
@@ -132,12 +135,8 @@ export default async function SleepWithPage({ params }: PageProps) {
           name: entry.title,
           url: `${siteUrl}/sleep-with/${slug}`,
           description: entry.metaDescription,
-          lastReviewed: "2026-04-01",
-          reviewedBy: {
-            "@type": "Person",
-            name: "Dr. Sarah Mitchell, PhD",
-            jobTitle: "Board-Certified Sleep Medicine Specialist",
-          },
+          lastReviewed: DEFAULT_MODIFIED_DATE,
+          reviewedBy: EDITORIAL_REVIEWER,
           medicalAudience: {
             "@type": "MedicalAudience",
             audienceType: "Patient",
@@ -281,6 +280,19 @@ export default async function SleepWithPage({ params }: PageProps) {
 
       {/* Affiliate */}
       <AffiliateCard context="supplement" />
+
+      {/* Sources & References */}
+      <SourcesReferences />
+
+      {/* Related Reading */}
+      <RelatedReading
+        slugs={[
+          "anxiety-and-sleep",
+          "how-to-fall-asleep-fast",
+          "sleep-hygiene-tips",
+          "melatonin-for-sleep",
+        ]}
+      />
 
       {/* Related Tools */}
       <RelatedTools exclude={`/sleep-with/${slug}`} />

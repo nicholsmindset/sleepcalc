@@ -6,6 +6,8 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { RelatedReading } from "@/components/content/RelatedReading";
+import { SourcesReferences } from "@/components/content/SourcesReferences";
 import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import {
@@ -449,6 +451,18 @@ export default async function AgePage({ params }: PageProps) {
           )}
         </nav>
       )}
+
+      {/* Sources & References */}
+      <SourcesReferences />
+
+      {/* Related Reading */}
+      <RelatedReading
+        slugs={[
+          "how-much-sleep-do-you-need",
+          "how-much-deep-sleep-do-you-need",
+          "how-much-rem-sleep-do-you-need",
+        ]}
+      />
 
       {/* Related Tools */}
       <RelatedTools exclude={`/age/${slug}`} />

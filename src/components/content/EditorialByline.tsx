@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Calendar, Check } from "lucide-react";
 
 interface EditorialBylineProps {
@@ -28,7 +29,12 @@ export function EditorialByline({
       <span className="inline-flex items-center gap-1.5">
         <Check className="w-3.5 h-3.5 text-[#46eae5]" aria-hidden />
         Reviewed by{" "}
-        <span className="font-semibold text-on-surface">{reviewer}</span>
+        <Link
+          href="/editorial-policy"
+          className="font-semibold text-on-surface hover:text-primary hover:underline"
+        >
+          {reviewer}
+        </Link>
       </span>
       <span aria-hidden className="text-outline-variant/50">
         •
