@@ -1,4 +1,4 @@
-# CLAUDE.md — SleepCycleCalc.com (Next.js + Supabase + Vercel)
+# CLAUDE.md — Sleep Stack / sleepstackapp.com (Next.js + Supabase + Vercel)
 
 ## Project Overview
 
@@ -540,7 +540,7 @@ RESEND_API_KEY=xxx
 ENCRYPTION_KEY=xxx    # For encrypting OAuth tokens in DB
 
 # Site
-NEXT_PUBLIC_SITE_URL=https://sleepcyclecalc.com
+NEXT_PUBLIC_SITE_URL=https://sleepstackapp.com
 ```
 
 ---

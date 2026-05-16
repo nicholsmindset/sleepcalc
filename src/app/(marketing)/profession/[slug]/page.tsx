@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { RelatedReading } from "@/components/content/RelatedReading";
 import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import {
@@ -301,6 +302,16 @@ export default async function ProfessionPage({ params }: PageProps) {
 
       {/* FAQ */}
       {faq.length > 0 && <FAQ items={faq} />}
+
+      {/* Related Reading */}
+      <RelatedReading
+        slugs={[
+          "shift-work-sleep-disorder",
+          "how-to-fix-sleep-schedule",
+          "sleep-deprivation-effects",
+          "why-do-i-wake-up-tired",
+        ]}
+      />
 
       {/* Related Tools */}
       <RelatedTools exclude={`/profession/${slug}`} />

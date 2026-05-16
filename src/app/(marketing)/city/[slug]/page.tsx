@@ -5,6 +5,7 @@ import { Globe, Sunrise, Sunset, Thermometer, Clock } from "lucide-react";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { FAQ } from "@/components/content/FAQ";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
+import { RelatedReading } from "@/components/content/RelatedReading";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import cityData from "@/content/data/cities-seo.json";
 
@@ -439,6 +440,14 @@ export default async function CityPage({ params }: PageProps) {
           </div>
         </section>
       )}
+
+      <RelatedReading
+        slugs={[
+          "sleep-hygiene-tips",
+          "how-to-fix-sleep-schedule",
+          "how-to-fall-asleep-fast",
+        ]}
+      />
 
       <MedicalDisclaimer />
     </article>
