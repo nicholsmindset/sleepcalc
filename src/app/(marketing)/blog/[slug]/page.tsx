@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getAllPosts, getPostBySlug } from '@/lib/blog';
 import { generateCanonical, generateOgImageUrl } from '@/utils/seo';
+import { generateArticleSchema } from '@/utils/schema';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { AuthorBox } from '@/components/content/AuthorBox';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
@@ -47,26 +48,19 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const articleSchema = generateArticleSchema({
+    title: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.updated ?? post.date,
+    author: post.author,
+    url: generateCanonical(`/blog/${slug}`),
+    image: generateOgImageUrl(post.title),
+  });
+
   return (
     <article className="max-w-3xl mx-auto px-4 pt-4 pb-16">
-      <SchemaMarkup
-        type="Article"
-        data={{
-          headline: post.title,
-          description: post.description,
-          datePublished: post.date,
-          dateModified: post.updated ?? post.date,
-          author: {
-            '@type': 'Person',
-            name: post.author,
-          },
-          publisher: {
-            '@type': 'Organization',
-            name: 'Sleep Stack',
-            url: 'https://sleepstackapp.com',
-          },
-        }}
-      />
+      <SchemaMarkup type="Article" data={articleSchema} />
 
       <Breadcrumbs
         items={[

@@ -31,6 +31,7 @@ export function GET() {
     { loc: `${BASE_URL}/privacy`,                             lastmod: now, changefreq: 'yearly',  priority: 0.2 },
     { loc: `${BASE_URL}/terms`,                               lastmod: now, changefreq: 'yearly',  priority: 0.2 },
     { loc: `${BASE_URL}/medical-disclaimer`,                  lastmod: now, changefreq: 'yearly',  priority: 0.2 },
+    { loc: `${BASE_URL}/editorial-policy`,                    lastmod: now, changefreq: 'yearly',  priority: 0.3 },
   ]);
 
   return xmlResponse(xml);

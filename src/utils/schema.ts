@@ -221,9 +221,11 @@ export function generateOrganizationSchema(): Record<string, unknown> {
 }
 
 /**
- * Default editorial attribution for programmatic pages.
+ * Editorial attribution for all site content.
  *
- * Branded persona pending assignment of a named credentialed reviewer.
+ * Content is attributed to the Sleep Stack editorial team as an
+ * Organization. Do not substitute a fabricated individual or invented
+ * credentials — see /editorial-policy for the site's attribution policy.
  */
 export const EDITORIAL_AUTHOR = {
   '@type': 'Organization',

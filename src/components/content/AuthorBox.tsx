@@ -1,17 +1,19 @@
 import Image from 'next/image';
-import { User } from 'lucide-react';
+import Link from 'next/link';
+import { Users } from 'lucide-react';
 
 interface AuthorBoxProps {
   name?: string;
+  /** Only set when a real, named contributor with verifiable credentials exists. */
   credentials?: string;
   bio?: string;
   imageUrl?: string;
 }
 
 export function AuthorBox({
-  name = 'Dr. Sarah Mitchell, PhD',
-  credentials = 'Board-Certified Sleep Medicine · MSc Sleep Science',
-  bio = 'Sleep researcher and certified sleep medicine specialist with over a decade of experience in clinical sleep studies and wearable health technology. Content is reviewed for scientific accuracy and updated regularly.',
+  name = 'Sleep Stack Editorial Team',
+  credentials,
+  bio = 'Researched, written, and maintained by the Sleep Stack editorial team. Our sleep guidance is grounded in published recommendations from public-health and sleep-medicine authorities, including the CDC, the National Institutes of Health, and the American Academy of Sleep Medicine. It is educational in nature and not a substitute for professional medical advice.',
   imageUrl,
 }: AuthorBoxProps) {
   return (
@@ -20,7 +22,7 @@ export function AuthorBox({
         {imageUrl ? (
           <Image src={imageUrl} alt={name} width={48} height={48} className="rounded-full object-cover" />
         ) : (
-          <User className="w-6 h-6 text-primary" />
+          <Users className="w-6 h-6 text-primary" />
         )}
       </div>
       <div>
@@ -29,6 +31,12 @@ export function AuthorBox({
           <p className="text-xs text-primary mt-0.5">{credentials}</p>
         )}
         <p className="text-xs text-on-surface-variant mt-1 leading-relaxed">{bio}</p>
+        <Link
+          href="/editorial-policy"
+          className="text-xs text-primary hover:underline mt-2 inline-block"
+        >
+          How we research and review content &rarr;
+        </Link>
       </div>
     </div>
   );

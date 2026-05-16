@@ -48,6 +48,7 @@ const legalLinks = [
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms of Service", href: "/terms" },
   { label: "Medical Disclaimer", href: "/medical-disclaimer" },
+  { label: "Editorial Policy", href: "/editorial-policy" },
 ];
 
 export function Footer() {
