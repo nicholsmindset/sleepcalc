@@ -23,7 +23,9 @@ function getSiteUrl(): string {
   const url =
     (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_SITE_URL) ||
     DEFAULT_SITE_URL;
-  return url.replace(/\/+$/, '');
+  // Normalize to the canonical non-www host and strip trailing slashes so
+  // canonicals never point at the www variant (which 308-redirects to non-www).
+  return url.replace(/\/+$/, '').replace(/^(https?:\/\/)www\./i, '$1');
 }
 
 /**

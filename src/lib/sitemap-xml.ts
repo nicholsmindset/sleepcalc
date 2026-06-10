@@ -3,9 +3,12 @@
  * Used by all named sitemap route handlers.
  */
 
-export const BASE_URL =
+// Normalized to the canonical non-www host so sitemap <loc>s match the
+// <link rel="canonical"> on every page (www 308-redirects to non-www).
+export const BASE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
-  'https://sleepstackapp.com';
+  'https://sleepstackapp.com'
+).replace(/^(https?:\/\/)www\./i, '$1');
 
 export function buildUrlset(
   urls: Array<{

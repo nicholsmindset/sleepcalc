@@ -13,12 +13,12 @@ import { SITE_NAME } from './seo';
 /** Fallback base URL if the environment variable is not set */
 const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
 
-/** Get the configured site URL */
+/** Get the configured site URL, normalized to the canonical non-www host */
 function getSiteUrl(): string {
   const url =
     (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_SITE_URL) ||
     DEFAULT_SITE_URL;
-  return url.replace(/\/+$/, '');
+  return url.replace(/\/+$/, '').replace(/^(https?:\/\/)www\./i, '$1');
 }
 
 /**

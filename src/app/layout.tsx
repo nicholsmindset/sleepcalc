@@ -32,8 +32,13 @@ export const metadata: Metadata = {
   },
   description:
     "Free sleep calculators to find your ideal bedtime, wake-up time, and sleep schedule. Science-backed tools including sleep cycle, nap, caffeine, and sleep debt calculators.",
+  // Resolves every page's relative canonical. Normalized to the canonical
+  // non-www host so canonicals never point at the www variant (which 308s away).
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"
+    (process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com").replace(
+      /^(https?:\/\/)www\./i,
+      "$1"
+    )
   ),
   openGraph: {
     type: "website",
