@@ -11,11 +11,18 @@ Sitemap: https://sleepstackapp.com/sitemaps/age.xml
 Sitemap: https://sleepstackapp.com/sitemaps/profession.xml
 Sitemap: https://sleepstackapp.com/sitemaps/baby-sleep.xml
 Sitemap: https://sleepstackapp.com/sitemaps/conditions.xml
+Sitemap: https://sleepstackapp.com/sitemaps/city.xml
 Sitemap: https://sleepstackapp.com/sitemaps/blog.xml
 
 # Block dashboard (authenticated content)
 Disallow: /dashboard
-Disallow: /api
+
+# Block sensitive API routes, but allow the OG image endpoint so crawlers
+# and social scrapers can fetch link-preview images.
+Allow: /api/og
+Disallow: /api/ai
+Disallow: /api/cron
+Disallow: /api/subscribe
 
 # Block auth pages
 Disallow: /login

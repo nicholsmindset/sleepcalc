@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { generateOgImageUrl } from "@/utils/seo";
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FAQ } from '@/components/content/FAQ';
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
       'Calculate the best sleep schedule for night shifts, rotating shifts, and split sleep strategies.',
     url: '/calculators/shift-worker',
     siteName: 'Sleep Stack',
+    images: [{ url: generateOgImageUrl("Shift Worker Sleep Calculator — Optimize Your Sleep Schedule"), width: 1200, height: 630 }],
   },
 };
 

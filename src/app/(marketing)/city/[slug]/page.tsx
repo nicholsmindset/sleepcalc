@@ -7,6 +7,7 @@ import { FAQ } from "@/components/content/FAQ";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedReading } from "@/components/content/RelatedReading";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { buildTwitterCard } from "@/utils/seo";
 import cityData from "@/content/data/cities-seo.json";
 
 /* -------------------------------------------------------------------------- */
@@ -155,16 +156,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title,
     description,
     alternates: { canonical: `/city/${slug}` },
-    // Per-city sleep advice is largely generic; these pages are kept for
-    // visitors but excluded from the index until they carry city-specific
-    // depth, so they do not dilute site-wide quality signals.
-    robots: { index: false, follow: true },
+    // Indexable: each city page renders substantial, city-specific content —
+    // timezone/solar-time analysis, seasonal sunrise/sunset shifts, climate-
+    // tailored sleep guidance, five localized FAQs, and lateral links to
+    // nearby cities. Inherits the site-wide index:true default.
     openGraph: {
       title,
       description,
       url: `/city/${slug}`,
       siteName: "Sleep Stack",
     },
+    twitter: buildTwitterCard(title, description),
   };
 }
 

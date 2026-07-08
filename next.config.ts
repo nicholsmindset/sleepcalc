@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Permissions-Policy',
-            value: 'geolocation=(self)',
+            value: 'camera=(), microphone=(), geolocation=(self)',
           },
           {
             key: 'X-Frame-Options',

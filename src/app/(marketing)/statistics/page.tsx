@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { LOGO_PATH, generateOgImageUrl } from "@/utils/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedTools } from "@/components/content/RelatedTools";
@@ -815,7 +816,7 @@ export default function StatisticsPage() {
             name: "Sleep Stack",
             logo: {
               "@type": "ImageObject",
-              url: `${siteUrl}/icons/logo.png`,
+              url: `${siteUrl}${LOGO_PATH}`,
             },
           },
           datePublished: "2026-01-15",
@@ -824,7 +825,7 @@ export default function StatisticsPage() {
             "@type": "WebPage",
             "@id": `${siteUrl}/statistics`,
           },
-          image: `${siteUrl}/og/statistics.png`,
+          image: generateOgImageUrl("100+ Sleep Statistics for 2026"),
         }}
       />
 

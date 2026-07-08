@@ -1,10 +1,13 @@
 import { BASE_URL, buildUrlset, xmlResponse } from '@/lib/sitemap-xml';
+import { DEFAULT_MODIFIED_DATE } from "@/utils/schema";
 
 export const dynamic = 'force-static';
 export const revalidate = 86400;
 
 export function GET() {
-  const now = new Date().toISOString();
+  // Stable lastmod aligned with the pages own JSON-LD dateModified — avoids
+  // the false "modified on every build" signal that new Date() produced.
+  const now = DEFAULT_MODIFIED_DATE;
 
   const xml = buildUrlset([
     { loc: BASE_URL,                                          lastmod: now, changefreq: 'daily',   priority: 1.0 },

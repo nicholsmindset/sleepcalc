@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { generateOgImageUrl } from "@/utils/seo";
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { FAQ } from '@/components/content/FAQ';
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
       'Calculate the ideal nap duration and timing. Choose between power naps, recovery naps, and full-cycle naps.',
     url: '/calculators/nap-calculator',
     siteName: 'Sleep Stack',
+    images: [{ url: generateOgImageUrl("Nap Calculator — Find Your Perfect Nap Time"), width: 1200, height: 630 }],
   },
 };
 

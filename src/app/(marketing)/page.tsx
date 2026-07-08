@@ -20,6 +20,7 @@ import {
   WebSiteSchema,
   WebApplicationSchema,
   OrganizationSchema,
+  SoftwareApplicationSchema,
 } from "@/components/seo/SchemaMarkup";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedTools } from "@/components/content/RelatedTools";
@@ -108,6 +109,7 @@ export default function HomePage() {
       <WebSiteSchema />
       <WebApplicationSchema />
       <OrganizationSchema />
+      <SoftwareApplicationSchema />
 
       {/* Star field */}
       <div className="star-field fixed inset-0 pointer-events-none" />

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateOgImageUrl } from "@/utils/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import { FAQ } from "@/components/content/FAQ";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
       "Age-based sleep recommendations for babies, toddlers, and children. Recommended hours, nap schedules, and wake windows.",
     url: "/calculators/baby-sleep",
     siteName: "Sleep Stack",
+    images: [{ url: generateOgImageUrl("Baby Sleep Calculator — How Much Sleep Does Your Child Need?"), width: 1200, height: 630 }],
   },
 };
 
