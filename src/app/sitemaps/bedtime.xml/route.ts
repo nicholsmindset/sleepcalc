@@ -1,11 +1,14 @@
 import { BASE_URL, buildUrlset, xmlResponse } from '@/lib/sitemap-xml';
+import { DEFAULT_MODIFIED_DATE } from "@/utils/schema";
 import sleepTimes from '@/content/data/sleep-times.json';
 
 export const dynamic = 'force-static';
 export const revalidate = 2592000;
 
 export function GET() {
-  const now = new Date().toISOString();
+  // Stable lastmod aligned with the pages own JSON-LD dateModified — avoids
+  // the false "modified on every build" signal that new Date() produced.
+  const now = DEFAULT_MODIFIED_DATE;
 
   const urls = (sleepTimes as Array<{ slug: string; type: string }>)
     .filter((t) => t.type === 'bedtime')

@@ -12,6 +12,15 @@
 /** Site name used in title tags and schema markup */
 export const SITE_NAME = 'Sleep Stack';
 
+/**
+ * Path to the canonical publisher logo used in JSON-LD structured data.
+ *
+ * Points at a real, shipped square PNG (512×512, satisfies Google's ≥112px
+ * logo requirement). Kept as a single constant so every schema generator and
+ * component references the same asset and cannot drift onto a missing file.
+ */
+export const LOGO_PATH = '/icons/icon-512.png';
+
 /** Fallback base URL if the environment variable is not set */
 const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
 
@@ -109,6 +118,34 @@ export function generateCanonical(path: string): string {
 
   if (!cleanPath) return siteUrl;
   return `${siteUrl}/${cleanPath}`;
+}
+
+/**
+ * Build a Twitter/X card metadata block for a page.
+ *
+ * The root layout sets a bare `summary_large_image` card with no title/image;
+ * this fills in the page-level title, description, and (large) image so shared
+ * links render a rich card instead of falling back to bare OpenGraph tags.
+ *
+ * @param title - Page title (also used to render the OG image)
+ * @param description - Page description
+ * @returns A `twitter` object suitable for spreading into a `Metadata` export
+ */
+export function buildTwitterCard(
+  title: string,
+  description: string
+): {
+  card: 'summary_large_image';
+  title: string;
+  description: string;
+  images: string[];
+} {
+  return {
+    card: 'summary_large_image',
+    title,
+    description,
+    images: [generateOgImageUrl(title)],
+  };
 }
 
 /**

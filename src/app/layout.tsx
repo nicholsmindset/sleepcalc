@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { generateOgImageUrl } from "@/utils/seo";
 import "./globals.css";
+
+/** Default social-share image used when a page does not set its own. */
+const DEFAULT_OG_IMAGE = generateOgImageUrl(
+  "Sleep Stack — Free Sleep Calculators & Tools"
+);
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -39,10 +45,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Sleep Stack",
-    url: "https://sleepstackapp.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
+    title: "Sleep Stack — Free Sleep Calculators & Tools",
+    description:
+      "Free sleep calculators to find your ideal bedtime, wake-up time, and sleep schedule.",
+    images: [DEFAULT_OG_IMAGE],
   },
   robots: {
     index: true,
@@ -64,7 +75,7 @@ export default function RootLayout({
       className={`dark ${plusJakarta.variable} ${inter.variable} ${jetbrainsMono.variable}`}
     >
       <head>
-        <meta name="google-site-verification" content="QpylYLOm8El8MURIHk_O_YQb5wdHMmmniPWBXB0zGh0" />
+        {/* Google Search Console verification is emitted via metadata.verification above. */}
         <meta name="google-adsense-account" content="ca-pub-5441531660664467" />
         {/* Plain script tag — Next.js Script adds data-nscript which AdSense rejects */}
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}

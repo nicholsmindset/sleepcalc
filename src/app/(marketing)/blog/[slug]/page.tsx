@@ -2,12 +2,14 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getAllPosts, getPostBySlug } from '@/lib/blog';
-import { generateCanonical, generateOgImageUrl } from '@/utils/seo';
+import { generateCanonical, generateOgImageUrl, buildTwitterCard } from '@/utils/seo';
 import { generateArticleSchema } from '@/utils/schema';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { AuthorBox } from '@/components/content/AuthorBox';
 import { MedicalDisclaimer } from '@/components/content/MedicalDisclaimer';
 import { RelatedTools } from '@/components/content/RelatedTools';
+import { RelatedGuides } from '@/components/content/RelatedGuides';
+import { BLOG_RELATED_GUIDES } from '@/lib/blog-guides';
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { Calendar, Clock } from 'lucide-react';
 
@@ -37,6 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
       images: [{ url: generateOgImageUrl(post.title), width: 1200, height: 630 }],
     },
+    twitter: buildTwitterCard(post.title, post.description),
     alternates: {
       canonical: generateCanonical(`/blog/${slug}`),
     },
@@ -98,6 +101,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <MDXRemote source={post.content} />
       </div>
 
+      <RelatedGuides guides={BLOG_RELATED_GUIDES[slug] ?? []} />
       <AuthorBox name={post.author} />
       <MedicalDisclaimer />
       <RelatedTools />

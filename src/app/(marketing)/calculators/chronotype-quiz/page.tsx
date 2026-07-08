@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { generateOgImageUrl } from "@/utils/seo";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import { FAQ } from "@/components/content/FAQ";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
       "Discover your sleep personality with this 10-question chronotype quiz. Find your ideal bedtime and peak productivity hours.",
     url: "/calculators/chronotype-quiz",
     siteName: "Sleep Stack",
+    images: [{ url: generateOgImageUrl("Chronotype Quiz — Are You a Lion, Bear, Wolf, or Dolphin?"), width: 1200, height: 630 }],
   },
 };
 

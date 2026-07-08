@@ -1,3 +1,10 @@
+import {
+  generateWebSiteSchema,
+  generateOrganizationSchema,
+  generateWebApplicationSchema,
+  generateSoftwareAppSchema,
+} from "@/utils/schema";
+
 interface SchemaMarkupProps {
   type:
     | "WebSite"
@@ -12,6 +19,13 @@ interface SchemaMarkupProps {
   data: Record<string, unknown>;
 }
 
+/**
+ * Render a JSON-LD object as a <script> tag.
+ *
+ * If `data` already carries `@context`/`@type` (as the generators in
+ * `@/utils/schema` do), those win over the wrapper defaults, so a generator's
+ * output can be passed straight through without duplication artifacts.
+ */
 export function SchemaMarkup({ type, data }: SchemaMarkupProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -27,64 +41,35 @@ export function SchemaMarkup({ type, data }: SchemaMarkupProps) {
   );
 }
 
+/**
+ * Standalone site-level schema components.
+ *
+ * These delegate to the canonical generators in `@/utils/schema` so there is a
+ * single source of truth for the WebSite / Organization / WebApplication /
+ * SoftwareApplication entities. Do NOT re-inline the schema here — divergent
+ * copies (different descriptions, stale SearchAction targets) were the original
+ * bug this indirection fixes.
+ */
 export function WebSiteSchema() {
   return (
-    <SchemaMarkup
-      type="WebSite"
-      data={{
-        name: "Sleep Stack",
-        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
-        description:
-          "Science-backed sleep calculator with real wearable device integration and AI-powered sleep coaching.",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"}/blog?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
-      }}
-    />
+    <SchemaMarkup type="WebSite" data={generateWebSiteSchema()} />
   );
 }
 
 export function OrganizationSchema() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
   return (
-    <SchemaMarkup
-      type="Organization"
-      data={{
-        name: "Sleep Stack",
-        url: siteUrl,
-        logo: `${siteUrl}/icons/logo.png`,
-        description:
-          "Free sleep calculators and tools to optimize your bedtime, wake-up time, and sleep schedule.",
-        contactPoint: {
-          "@type": "ContactPoint",
-          contactType: "customer support",
-          url: `${siteUrl}/about`,
-        },
-        sameAs: [`${siteUrl}/about`],
-      }}
-    />
+    <SchemaMarkup type="Organization" data={generateOrganizationSchema()} />
   );
 }
 
 export function WebApplicationSchema() {
   return (
-    <SchemaMarkup
-      type="WebApplication"
-      data={{
-        name: "Sleep Stack Calculator",
-        applicationCategory: "HealthApplication",
-        operatingSystem: "Web",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-      }}
-    />
+    <SchemaMarkup type="WebApplication" data={generateWebApplicationSchema()} />
+  );
+}
+
+export function SoftwareApplicationSchema() {
+  return (
+    <SchemaMarkup type="SoftwareApplication" data={generateSoftwareAppSchema()} />
   );
 }

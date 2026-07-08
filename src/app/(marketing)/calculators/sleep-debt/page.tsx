@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { generateOgImageUrl } from "@/utils/seo";
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import SleepDebtCalculator from '@/components/calculators/SleepDebtCalculator';
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
       'Calculate your accumulated sleep debt and get a personalized recovery plan to pay back your sleep deficit.',
     url: '/calculators/sleep-debt',
     siteName: 'Sleep Stack',
+    images: [{ url: generateOgImageUrl("Sleep Debt Calculator — How Much Sleep Do You Owe?"), width: 1200, height: 630 }],
   },
 };
 

@@ -8,7 +8,7 @@
  * All functions are pure — no side effects, no React imports.
  */
 
-import { SITE_NAME } from './seo';
+import { SITE_NAME, LOGO_PATH, generateOgImageUrl } from './seo';
 
 /** Fallback base URL if the environment variable is not set */
 const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
@@ -24,8 +24,9 @@ function getSiteUrl(): string {
 /**
  * Generate a WebSite schema for the site root.
  *
- * Includes the site name, URL, and a SearchAction for sitelinks search box
- * eligibility in Google SERPs.
+ * No SearchAction is emitted: the site has no on-site search endpoint, and an
+ * unresolvable SearchAction target produces a Rich Results error rather than
+ * sitelinks-search eligibility.
  *
  * @returns JSON-LD WebSite object
  */
@@ -39,14 +40,6 @@ export function generateWebSiteSchema(): Record<string, unknown> {
     url: siteUrl,
     description:
       'Free sleep calculators and science-backed tools to optimize your bedtime, wake-up time, and sleep schedule.',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${siteUrl}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
@@ -130,7 +123,7 @@ export function generateArticleSchema(article: {
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteUrl}/icons/logo.png`,
+        url: `${siteUrl}${LOGO_PATH}`,
       },
     },
     mainEntityOfPage: {
@@ -208,7 +201,7 @@ export function generateOrganizationSchema(): Record<string, unknown> {
     '@type': 'Organization',
     name: SITE_NAME,
     url: siteUrl,
-    logo: `${siteUrl}/icons/logo.png`,
+    logo: `${siteUrl}${LOGO_PATH}`,
     description:
       'Free sleep calculators and tools to optimize your bedtime, wake-up time, and sleep schedule. Science-backed and easy to use.',
     contactPoint: {
@@ -292,7 +285,7 @@ export function generateMedicalWebPageSchema(opts: {
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteUrl}/icons/logo.png`,
+        url: `${siteUrl}${LOGO_PATH}`,
       },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': opts.url },
@@ -351,6 +344,6 @@ export function generateSoftwareAppSchema(): Record<string, unknown> {
       priceCurrency: 'USD',
       description: 'All sleep calculators are completely free to use.',
     },
-    screenshot: `${siteUrl}/og/homepage.png`,
+    screenshot: generateOgImageUrl(`${SITE_NAME} — Free Sleep Calculators`),
   };
 }

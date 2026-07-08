@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { generateOgImageUrl } from "@/utils/seo";
 import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SchemaMarkup } from '@/components/seo/SchemaMarkup';
 import { FAQ } from '@/components/content/FAQ';
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
       'Find out exactly when to stop drinking coffee, tea, and energy drinks based on your bedtime.',
     url: '/calculators/caffeine-cutoff',
     siteName: 'Sleep Stack',
+    images: [{ url: generateOgImageUrl("Caffeine Sleep Calculator — When to Stop Drinking Coffee"), width: 1200, height: 630 }],
   },
 };
 

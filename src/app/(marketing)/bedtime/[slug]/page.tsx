@@ -217,6 +217,21 @@ export default async function BedtimePage({
             </p>
           </section>
 
+          {/* Complementary cluster cross-link */}
+          <section className="max-w-3xl mx-auto mb-8">
+            <div className="glass-card rounded-2xl p-4 text-sm text-on-surface-variant flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <span>
+                Working backward from a fixed wake-up time instead?
+              </span>
+              <Link
+                href="/sleep-time"
+                className="text-primary hover:text-primary-light font-medium whitespace-nowrap"
+              >
+                Find your bedtime by wake-up time →
+              </Link>
+            </div>
+          </section>
+
           {/* Quick Results Table */}
           <section className="max-w-3xl mx-auto mb-10">
             <div className="glass-card rounded-2xl p-6 md:p-8">

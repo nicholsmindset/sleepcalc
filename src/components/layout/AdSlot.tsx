@@ -20,13 +20,15 @@ interface AdSlotProps {
 
 type AdsbyGoogleWindow = Window & { adsbygoogle?: unknown[] };
 
+/** A real AdSense slot id is a numeric string; anything else is an unset placeholder. */
+function isConfiguredSlot(slot: string): boolean {
+  return /^\d+$/.test(slot);
+}
+
 export function AdSlot({ slot, format, className }: AdSlotProps) {
   const { profile } = useUser();
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-
-  // Pro users never see ads
-  if (profile?.subscription_tier === "pro") return null;
 
   useEffect(() => {
     if (!ref.current) return;
@@ -53,6 +55,13 @@ export function AdSlot({ slot, format, className }: AdSlotProps) {
       w.adsbygoogle.push({});
     } catch (_) {}
   }, [isVisible]);
+
+  // Hooks above run unconditionally (React rules-of-hooks). Bail out only after
+  // them: Pro users never see ads, and an unconfigured placeholder slot would
+  // otherwise render a permanently empty ad container on every page.
+  if (profile?.subscription_tier === "pro" || !isConfiguredSlot(slot)) {
+    return null;
+  }
 
   const { width, height } = AD_DIMENSIONS[format];
 

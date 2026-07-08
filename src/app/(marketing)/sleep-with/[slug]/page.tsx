@@ -10,6 +10,7 @@ import { RelatedReading } from "@/components/content/RelatedReading";
 import { SourcesReferences } from "@/components/content/SourcesReferences";
 import AffiliateCard from "@/components/content/AffiliateCard";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
+import { buildTwitterCard } from "@/utils/seo";
 import { EDITORIAL_REVIEWER, DEFAULT_MODIFIED_DATE } from "@/utils/schema";
 import conditionData from "@/content/data/conditions.json";
 
@@ -79,6 +80,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `/sleep-with/${slug}`,
       siteName: "Sleep Stack",
     },
+    twitter: buildTwitterCard(entry.title, entry.metaDescription),
   };
 }
 
