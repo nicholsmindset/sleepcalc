@@ -24,8 +24,7 @@ function getSiteUrl(): string {
 /**
  * Generate a WebSite schema for the site root.
  *
- * Includes the site name, URL, and a SearchAction for sitelinks search box
- * eligibility in Google SERPs.
+ * Includes the site name and URL.
  *
  * @returns JSON-LD WebSite object
  */
@@ -39,14 +38,6 @@ export function generateWebSiteSchema(): Record<string, unknown> {
     url: siteUrl,
     description:
       'Free sleep calculators and science-backed tools to optimize your bedtime, wake-up time, and sleep schedule.',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${siteUrl}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
@@ -100,8 +91,8 @@ export function generateWebApplicationSchema(): Record<string, unknown> {
 export function generateArticleSchema(article: {
   title: string;
   description: string;
-  datePublished: string;
-  dateModified: string;
+  datePublished?: string;
+  dateModified?: string;
   /**
    * Author name. Set to 'Sleep Stack Editorial Team' (or omit) to attribute
    * to the Organization persona; any other string is attributed to a Person.
@@ -119,8 +110,8 @@ export function generateArticleSchema(article: {
     '@type': 'Article',
     headline: article.title,
     description: article.description,
-    datePublished: article.datePublished,
-    dateModified: article.dateModified,
+    ...(article.datePublished ? { datePublished: article.datePublished } : {}),
+    ...(article.dateModified ? { dateModified: article.dateModified } : {}),
     author: isEditorialTeam
       ? EDITORIAL_AUTHOR
       : { '@type': 'Person', name: authorName },
@@ -130,7 +121,7 @@ export function generateArticleSchema(article: {
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteUrl}/icons/logo.png`,
+        url: `${siteUrl}/icons/icon-512.png`,
       },
     },
     mainEntityOfPage: {
@@ -208,7 +199,7 @@ export function generateOrganizationSchema(): Record<string, unknown> {
     '@type': 'Organization',
     name: SITE_NAME,
     url: siteUrl,
-    logo: `${siteUrl}/icons/logo.png`,
+    logo: `${siteUrl}/icons/icon-512.png`,
     description:
       'Free sleep calculators and tools to optimize your bedtime, wake-up time, and sleep schedule. Science-backed and easy to use.',
     contactPoint: {
@@ -234,36 +225,16 @@ export const EDITORIAL_AUTHOR = {
 } as const;
 
 /**
- * Default review attribution — same entity for Tier 1 rollout.
- */
-export const EDITORIAL_REVIEWER = EDITORIAL_AUTHOR;
-
-/**
- * Site-wide fallback for datePublished when a JSON entry omits the field.
- *
- * Matches the sitemap lastmod baseline so Google observes a consistent
- * publish/review timeline across programmatic pages.
- */
-export const DEFAULT_PUBLISHED_DATE = '2026-03-25';
-
-/**
- * Site-wide fallback for dateModified when a JSON entry omits the field.
- */
-export const DEFAULT_MODIFIED_DATE = '2026-04-22';
-
-/**
  * Generate a MedicalWebPage schema for YMYL health-topic pages (baby sleep, age-based sleep).
  *
- * Unlike generic Article schema, MedicalWebPage signals to Google that the
- * content is health-related and expects a reviewer attestation. This helps
- * E-E-A-T scoring on pages Google classifies as "Your Money or Your Life."
+ * Describes health-topic content without claiming a clinical review.
  */
 export function generateMedicalWebPageSchema(opts: {
   title: string;
   description: string;
   url: string;
-  datePublished: string;
-  dateModified: string;
+  datePublished?: string;
+  dateModified?: string;
   image?: string;
 }): Record<string, unknown> {
   const siteUrl = getSiteUrl();
@@ -275,8 +246,8 @@ export function generateMedicalWebPageSchema(opts: {
     name: opts.title,
     description: opts.description,
     url: opts.url,
-    datePublished: opts.datePublished,
-    dateModified: opts.dateModified,
+    ...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
+    ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
     inLanguage: 'en-US',
     isFamilyFriendly: true,
     medicalAudience: [
@@ -284,15 +255,13 @@ export function generateMedicalWebPageSchema(opts: {
       { '@type': 'MedicalAudience', audienceType: 'Caregiver' },
     ],
     author: EDITORIAL_AUTHOR,
-    reviewedBy: EDITORIAL_REVIEWER,
-    lastReviewed: opts.dateModified,
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteUrl}/icons/logo.png`,
+        url: `${siteUrl}/icons/icon-512.png`,
       },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': opts.url },
@@ -351,6 +320,5 @@ export function generateSoftwareAppSchema(): Record<string, unknown> {
       priceCurrency: 'USD',
       description: 'All sleep calculators are completely free to use.',
     },
-    screenshot: `${siteUrl}/og/homepage.png`,
   };
 }

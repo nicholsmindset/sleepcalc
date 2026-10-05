@@ -9,7 +9,6 @@ import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedReading } from "@/components/content/RelatedReading";
 import { SourcesReferences } from "@/components/content/SourcesReferences";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
-import { EDITORIAL_REVIEWER, DEFAULT_MODIFIED_DATE } from "@/utils/schema";
 import conditionData from "@/content/data/conditions.json";
 
 /* -------------------------------------------------------------------------- */
@@ -72,6 +71,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: entry.title,
     description: entry.metaDescription,
     alternates: { canonical: `/sleep-with/${slug}` },
+    robots: { index: false, follow: true },
     openGraph: {
       title: entry.title,
       description: entry.metaDescription,
@@ -134,8 +134,6 @@ export default async function SleepWithPage({ params }: PageProps) {
           name: entry.title,
           url: `${siteUrl}/sleep-with/${slug}`,
           description: entry.metaDescription,
-          lastReviewed: DEFAULT_MODIFIED_DATE,
-          reviewedBy: EDITORIAL_REVIEWER,
           medicalAudience: {
             "@type": "MedicalAudience",
             audienceType: "Patient",

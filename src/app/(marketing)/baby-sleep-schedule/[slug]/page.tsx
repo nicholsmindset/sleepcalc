@@ -10,8 +10,6 @@ import { EditorialByline } from "@/components/content/EditorialByline";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import {
   generateMedicalWebPageSchema,
-  DEFAULT_PUBLISHED_DATE,
-  DEFAULT_MODIFIED_DATE,
 } from "@/utils/schema";
 import { generateOgImageUrl } from "@/utils/seo";
 import scheduleData from "@/content/data/baby-sleep-schedules.json";
@@ -99,8 +97,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: `/baby-sleep-schedule/${slug}`,
       siteName: "Sleep Stack",
       type: "article",
-      publishedTime: entry.datePublished ?? DEFAULT_PUBLISHED_DATE,
-      modifiedTime: entry.dateModified ?? DEFAULT_MODIFIED_DATE,
+      ...(entry.datePublished ? { publishedTime: entry.datePublished } : {}),
+      ...(entry.dateModified ? { modifiedTime: entry.dateModified } : {}),
       images: [{ url: ogImage, width: 1200, height: 630 }],
     },
     twitter: {
@@ -215,8 +213,8 @@ export default async function BabySleepSchedulePage({ params }: PageProps) {
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
   const pageUrl = `${siteUrl}/baby-sleep-schedule/${slug}`;
-  const datePublished = entry.datePublished ?? DEFAULT_PUBLISHED_DATE;
-  const dateModified = entry.dateModified ?? DEFAULT_MODIFIED_DATE;
+  const datePublished = entry.datePublished;
+  const dateModified = entry.dateModified;
 
   const medicalWebPageSchema = generateMedicalWebPageSchema({
     title: entry.title,

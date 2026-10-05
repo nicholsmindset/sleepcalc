@@ -7,9 +7,7 @@ export interface Reference {
 }
 
 /**
- * Core authoritative sleep-science references. URLs verified May 2026.
- * Citing public-health and sleep-medicine authorities is an E-E-A-T
- * signal expected on health (YMYL) content.
+ * General public-health sleep resources. Page-specific claims need their own sources.
  */
 export const CORE_SLEEP_REFERENCES: Reference[] = [
   {
@@ -51,12 +49,11 @@ export function SourcesReferences({
           id="sources-heading"
           className="font-headline text-2xl font-bold text-on-surface"
         >
-          Sources &amp; References
+          Further reading
         </h2>
       </div>
       <p className="text-xs text-on-surface-variant mb-5 max-w-2xl">
-        Sleep guidance on this page is grounded in recommendations from the
-        following public-health and sleep-medicine authorities.
+        These general sleep resources provide background reading. They do not review or endorse this page.
       </p>
       <ul className="space-y-2">
         {references.map((ref) => (
