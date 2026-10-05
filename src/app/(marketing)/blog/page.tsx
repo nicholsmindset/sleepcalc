@@ -32,7 +32,7 @@ export default function BlogPage() {
           itemListElement: posts.map((post, i) => ({
             '@type': 'ListItem',
             position: i + 1,
-            url: `https://sleepstackapp.com/blog/${post.slug}`,
+            url: `https://www.sleepstackapp.com/blog/${post.slug}`,
             name: post.title,
           })),
         }}

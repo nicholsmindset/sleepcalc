@@ -119,9 +119,9 @@ function QualityBadge({ quality }: { quality: string }) {
   let colorClasses = "bg-on-surface-variant/10 text-on-surface-variant";
   if (lower === "optimal" || lower === "best") {
     colorClasses = "bg-[#46eae5]/15 text-[#46eae5]";
-  } else if (lower === "good" || lower === "recommended") {
+  } else if (lower === "short" || lower === "recommended") {
     colorClasses = "bg-[#6c5ce7]/15 text-[#c6bfff]";
-  } else if (lower === "fair" || lower === "minimum") {
+  } else if (lower === "fair" || lower === "very_short") {
     colorClasses = "bg-[#fdcb6e]/10 text-[#fdcb6e]";
   }
 
@@ -129,7 +129,7 @@ function QualityBadge({ quality }: { quality: string }) {
     <span
       className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${colorClasses}`}
     >
-      {quality}
+      {lower === "short" ? "Below 7h" : lower === "very_short" ? "Very short" : quality}
     </span>
   );
 }
@@ -166,7 +166,7 @@ export default async function BedtimePage({
   const nextEntry = currentIdx < bedtimeEntries.length - 1 ? bedtimeEntries[currentIdx + 1] : null;
 
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
   const pageUrl = `${siteUrl}/bedtime/${slug}`;
   const datePublished = entry.datePublished ?? DEFAULT_PUBLISHED_DATE;
   const dateModified = entry.dateModified ?? DEFAULT_MODIFIED_DATE;

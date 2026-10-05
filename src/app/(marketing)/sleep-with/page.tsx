@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function SleepWithLandingPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
 
   const itemList = generateItemListSchema(
     entries.map((e) => ({

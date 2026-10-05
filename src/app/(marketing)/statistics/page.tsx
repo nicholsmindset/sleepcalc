@@ -785,7 +785,7 @@ function StatSection({
 
 export default function StatisticsPage() {
   const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
 
   /* Calculate running stat index for numbered display */
   let runningIndex = 1;

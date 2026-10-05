@@ -11,7 +11,7 @@
 import { SITE_NAME } from './seo';
 
 /** Fallback base URL if the environment variable is not set */
-const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
+const DEFAULT_SITE_URL = 'https://www.sleepstackapp.com';
 
 /** Get the configured site URL */
 function getSiteUrl(): string {
@@ -230,7 +230,7 @@ export function generateOrganizationSchema(): Record<string, unknown> {
 export const EDITORIAL_AUTHOR = {
   '@type': 'Organization',
   name: 'Sleep Stack Editorial Team',
-  url: 'https://sleepstackapp.com/about',
+  url: 'https://www.sleepstackapp.com/about',
 } as const;
 
 /**

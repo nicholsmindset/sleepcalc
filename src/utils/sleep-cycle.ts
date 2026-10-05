@@ -12,7 +12,7 @@ export const DEFAULT_CYCLE_DURATION = 90;
 /** Average time to fall asleep in minutes */
 export const DEFAULT_SLEEP_LATENCY = 15;
 
-/** Minimum cycles for a recommendation set (3 = ~4.5 hours) */
+/** Short-night estimates start at three cycles; five or six cycles meet the usual adult duration target. */
 const MIN_CYCLES = 3;
 
 /** Maximum cycles for a recommendation set (6 = ~9 hours) */
@@ -25,8 +25,8 @@ export interface SleepRecommendation {
   cycles: number;
   /** Total minutes of actual sleep (excluding latency) */
   totalSleepMinutes: number;
-  /** Quality rating based on cycle count */
-  quality: 'optimal' | 'good' | 'minimum';
+  /** Duration category; cycle timing does not measure sleep quality. */
+  quality: 'optimal' | 'short' | 'very_short';
 }
 
 export interface SleepPhase {
@@ -39,19 +39,19 @@ export interface SleepPhase {
 }
 
 /**
- * Map a cycle count to a quality rating.
- * 5-6 cycles (7.5-9h) = optimal, 4 cycles (6h) = good, 3 cycles (4.5h) = minimum.
+ * Categorize estimated duration, not sleep quality.
+ * Five to six 90-minute cycles allow 7.5-9 hours; shorter options are below the usual adult target.
  */
 function qualityForCycles(cycles: number): SleepRecommendation['quality'] {
   if (cycles >= 5) return 'optimal';
-  if (cycles === 4) return 'good';
-  return 'minimum';
+  if (cycles === 4) return 'short';
+  return 'very_short';
 }
 
 /**
  * Calculate optimal bedtimes for a given wake-up time.
  *
- * Returns recommendations for 3-6 complete sleep cycles (4.5h to 9h of sleep),
+ * Returns planning estimates for 3-6 assumed 90-minute cycles (4.5h to 9h of sleep),
  * ordered from most sleep to least. Each recommendation accounts for sleep
  * latency — the time it takes to fall asleep after getting into bed.
  *

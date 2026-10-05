@@ -89,7 +89,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
         'HTTP-Referer':
-          process.env.NEXT_PUBLIC_SITE_URL ?? 'https://sleepstackapp.com',
+          process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.sleepstackapp.com',
         'X-Title': 'Sleep Stack',
       },
       body: JSON.stringify({

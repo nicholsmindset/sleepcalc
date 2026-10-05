@@ -8,7 +8,6 @@ import { RelatedTools } from "@/components/content/RelatedTools";
 import { MedicalDisclaimer } from "@/components/content/MedicalDisclaimer";
 import { RelatedReading } from "@/components/content/RelatedReading";
 import { SourcesReferences } from "@/components/content/SourcesReferences";
-import AffiliateCard from "@/components/content/AffiliateCard";
 import { SchemaMarkup } from "@/components/seo/SchemaMarkup";
 import { EDITORIAL_REVIEWER, DEFAULT_MODIFIED_DATE } from "@/utils/schema";
 import conditionData from "@/content/data/conditions.json";
@@ -124,7 +123,7 @@ export default async function SleepWithPage({ params }: PageProps) {
     .map((s) => entries.find((e) => e.slug === s))
     .filter(Boolean) as ConditionEntry[];
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
 
   return (
     <article className="mx-auto max-w-4xl px-4 pb-20 pt-4">
@@ -277,9 +276,6 @@ export default async function SleepWithPage({ params }: PageProps) {
 
       {/* FAQ */}
       {faq.length > 0 && <FAQ items={faq} />}
-
-      {/* Affiliate */}
-      <AffiliateCard context="supplement" />
 
       {/* Sources & References */}
       <SourcesReferences />

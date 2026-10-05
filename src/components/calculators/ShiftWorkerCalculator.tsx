@@ -161,7 +161,7 @@ function fitCyclesToWindow(
       time: wakeTime,
       cycles: c,
       totalSleepMinutes: totalSleepMin,
-      quality: c >= 5 ? 'optimal' : c === 4 ? 'good' : 'minimum',
+      quality: c >= 5 ? 'optimal' : c === 4 ? 'short' : 'very_short',
     });
   }
   return recs;

@@ -13,7 +13,7 @@
 export const SITE_NAME = 'Sleep Stack';
 
 /** Fallback base URL if the environment variable is not set */
-const DEFAULT_SITE_URL = 'https://sleepstackapp.com';
+const DEFAULT_SITE_URL = 'https://www.sleepstackapp.com';
 
 /**
  * Get the configured site URL from environment or fallback.
@@ -98,10 +98,10 @@ export function generateDescription(page: string, context?: string): string {
  *
  * @example
  * generateCanonical("/calculators/sleep-debt")
- * // "https://sleepstackapp.com/calculators/sleep-debt"
+ * // "https://www.sleepstackapp.com/calculators/sleep-debt"
  *
  * generateCanonical("/")
- * // "https://sleepstackapp.com"
+ * // "https://www.sleepstackapp.com"
  */
 export function generateCanonical(path: string): string {
   const siteUrl = getSiteUrl();
@@ -122,7 +122,7 @@ export function generateCanonical(path: string): string {
  *
  * @example
  * generateOgImageUrl("Sleep Calculator")
- * // "https://sleepstackapp.com/api/og?title=Sleep%20Calculator"
+ * // "https://www.sleepstackapp.com/api/og?title=Sleep%20Calculator"
  */
 export function generateOgImageUrl(title: string): string {
   const siteUrl = getSiteUrl();

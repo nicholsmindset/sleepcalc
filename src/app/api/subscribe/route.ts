@@ -64,13 +64,13 @@ export async function POST(req: NextRequest) {
                 `).join('')}
               </table>
 
-              <a href="https://sleepstackapp.com" style="display:inline-block;background:#6c5ce7;color:#fff;font-size:15px;font-weight:700;padding:14px 28px;border-radius:12px;text-decoration:none;margin-bottom:32px;">
+              <a href="https://www.sleepstackapp.com" style="display:inline-block;background:#6c5ce7;color:#fff;font-size:15px;font-weight:700;padding:14px 28px;border-radius:12px;text-decoration:none;margin-bottom:32px;">
                 Open Sleep Calculator →
               </a>
 
               <p style="font-size:13px;color:#4a4a6a;line-height:1.6;">
                 You're receiving this because you signed up for the 7-Day Sleep Challenge at sleepstackapp.com.<br>
-                <a href="https://sleepstackapp.com" style="color:#6c5ce7;">Unsubscribe</a>
+                <a href="https://www.sleepstackapp.com" style="color:#6c5ce7;">Unsubscribe</a>
               </p>
             </td></tr>
           </table>

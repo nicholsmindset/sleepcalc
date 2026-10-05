@@ -48,12 +48,12 @@ const faqItems = [
   {
     question: "How does the sleep calculator work?",
     answer:
-      "The calculator uses sleep cycle science to find optimal bedtimes and wake times. Each sleep cycle lasts about 90 minutes, and waking at the end of a complete cycle helps you feel alert. We count backwards from your wake time (or forwards from your bedtime) in 90-minute intervals, adding time for falling asleep.",
+      "The calculator uses a 90-minute average to estimate bedtime and wake-up options, including your chosen time to fall asleep. Actual sleep cycles vary, so these are planning estimates rather than predicted wake-up stages. Prioritize enough total sleep.",
   },
   {
     question: "How many hours of sleep do I need?",
     answer:
-      "Most adults need 7 to 9 hours of sleep per night, which translates to 5 or 6 complete sleep cycles. Teenagers need 8 to 10 hours, while older adults may function well on 7 to 8 hours. The ideal amount varies by individual — your sleep tracker data can reveal what works best for you.",
+      "Adults generally need at least 7 hours of sleep on a regular basis; many aim for 7 to 9 hours. Children and teenagers need more. A cycle estimate should not be used to justify regularly sleeping less than you need.",
   },
   {
     question: "What is a sleep cycle?",
@@ -63,12 +63,12 @@ const faqItems = [
   {
     question: "Why do I wake up tired even after 8 hours?",
     answer:
-      "Waking during deep sleep or mid-cycle causes sleep inertia — that groggy, disoriented feeling. Even 8 hours of sleep can leave you tired if your alarm pulls you out of a deep sleep phase. Timing your wake-up to align with the end of a cycle makes a significant difference in morning alertness.",
+      "Sleep inertia can make you feel groggy after waking, but tiredness can also reflect insufficient sleep, an irregular schedule, or a health condition. A fixed 90-minute timer cannot tell which sleep stage you will wake from.",
   },
   {
     question: "What time should I go to bed if I wake up at 6 AM?",
     answer:
-      "For a 6:00 AM wake-up, the best bedtimes are 8:45 PM (6 cycles, 9 hours), 10:15 PM (5 cycles, 7.5 hours), or 11:45 PM (4 cycles, 6 hours). These times include 15 minutes to fall asleep. The 5-cycle option at 10:15 PM is recommended for most adults.",
+      "For a 6:00 AM wake-up, 8:45 PM allows about 9 hours of sleep and 10:15 PM allows about 7.5 hours, assuming 15 minutes to fall asleep. The calculator also shows shorter estimates, but regularly getting only 6 hours falls below the usual adult recommendation.",
   },
   {
     question: "Does the calculator account for time to fall asleep?",
@@ -78,22 +78,22 @@ const faqItems = [
   {
     question: "How accurate is the 90-minute cycle estimate?",
     answer:
-      "The 90-minute average is well-supported by sleep research and works well for most people. Individual cycle lengths typically range from 80 to 110 minutes. If you find that the recommended wake times don't feel right for you, try adjusting by 10 to 15 minutes in either direction to find your personal sweet spot.",
+      "Ninety minutes is a rough planning average, not a measurement of your own cycles. Cycle lengths and sleep onset vary within and between nights. Use the suggested times to plan enough sleep, not to predict the exact moment you will leave REM or deep sleep.",
   },
   {
     question: "What happens if I wake up in the middle of a sleep cycle?",
     answer:
-      "Waking mid-cycle, especially during deep sleep, triggers sleep inertia that can last 15 to 30 minutes. You may feel confused, sluggish, and less alert. By timing your alarm to the end of a light sleep or REM phase, you wake more naturally and feel refreshed immediately.",
+      "Waking from deeper sleep can contribute to temporary grogginess. This calculator cannot measure your sleep stages or guarantee a lighter-stage wake-up, so focus first on getting enough sleep and keeping a consistent schedule.",
   },
   {
     question: "Is this a REM sleep calculator?",
     answer:
-      "Yes — our sleep calculator factors in REM sleep timing. REM phases get longer as the night progresses, with most REM sleep occurring in your final two cycles. By aligning your wake time to the end of a full cycle, you naturally wake after a REM phase when your brain is closest to wakefulness, leading to a more alert morning.",
+      "No. The tool uses average cycle timing; it does not detect or predict your REM sleep. REM periods often lengthen later in the night, but their timing varies by person and night.",
   },
   {
     question: "How does the 90-minute sleep cycle work?",
     answer:
-      "The average sleep cycle lasts about 90 minutes and progresses through four stages: light sleep (N1 and N2), deep sleep (N3), and REM sleep. Our calculator uses this 90-minute rhythm to find bedtimes and wake times that align with complete cycles. Some people have cycles as short as 80 minutes or as long as 120 minutes — if the standard times don't feel right, try adjusting your wake-up time in small increments.",
+      "Sleep moves through non-REM and REM stages several times each night, but cycles are not identical 90-minute blocks. The calculator uses 90 minutes to offer simple schedule estimates and cannot verify whether an alarm will land at a stage boundary.",
   },
   {
     question: "Can I calculate sleep needs by age?",
@@ -123,12 +123,11 @@ export default function HomePage() {
             Sleep Smarter.<br />Wake Refreshed.
           </h1>
           <p className="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Calculate your ideal bedtime using sleep cycle science. Wake up
-            refreshed by timing your sleep to complete{" "}
+            Plan a bedtime that gives you enough time to sleep. The calculator uses{" "}
             <span className="text-[#46eae5] font-semibold">
-              full 90-minute cycles
-            </span>
-            .
+              approximate 90-minute cycles
+            </span>{" "}
+            as a guide, not a prediction of your sleep stages.
           </p>
           <BedtimeCalculator />
         </div>
@@ -337,10 +336,10 @@ export default function HomePage() {
               movement) sleep, where most dreaming occurs.
             </p>
             <p>
-              Waking up at the end of a complete cycle — rather than in the
-              middle of deep sleep — is the key to feeling alert and refreshed.
-              Our calculator times your bedtime so you complete full cycles
-              before your alarm goes off.
+              Sleep stages and cycle lengths vary throughout the night. This
+              calculator estimates schedule options from a 90-minute average;
+              it cannot tell when you will enter or leave a particular stage.
+              Most adults should first allow at least seven hours of sleep.
             </p>
             <p>
               Most adults complete 4 to 6 sleep cycles per night. The early
@@ -349,10 +348,9 @@ export default function HomePage() {
               consolidation and emotional regulation).
             </p>
             <p>
-              The standard 90-minute cycle is an average. Your personal cycle
-              length may be anywhere from 80 to 110 minutes, which is why
-              aligning your wake time to the end of a cycle makes such a
-              noticeable difference in how you feel each morning.
+              The 90-minute cycle is an average. Use these times as a starting
+              point for a consistent routine, then adjust based on how much
+              sleep you get and how you feel during the day.
             </p>
           </div>
         </div>

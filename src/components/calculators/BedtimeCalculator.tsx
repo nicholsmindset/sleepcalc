@@ -248,6 +248,10 @@ export default function BedtimeCalculator() {
             ))}
           </div>
 
+          <p className="text-xs text-on-surface-variant leading-relaxed">
+            Most adults should plan for at least 7 hours of sleep. Shorter options are shown only as planning estimates. Sleep cycles vary, so a 90-minute calculation cannot predict your actual sleep stages or guarantee how you will feel on waking.
+          </p>
+
           {/* Visualization: Chart + Wheel */}
           {selected && (
             <div className="mt-8 space-y-8">
@@ -255,8 +259,9 @@ export default function BedtimeCalculator() {
                 {/* Sleep Cycle Chart */}
                 <div className="min-w-0">
                   <p className="text-label-sm font-label tracking-[0.05em] uppercase text-on-surface-variant mb-3">
-                    Sleep stages &mdash; {selected.cycles} cycles
+                    Illustrative sleep stages &mdash; {selected.cycles} cycles
                   </p>
+                  <p className="text-xs text-on-surface-variant mb-3">This diagram is illustrative; the tool does not measure sleep stages.</p>
                   <SleepCycleChart
                     phases={phases}
                     startTime={chartStartTime}

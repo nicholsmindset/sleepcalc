@@ -11,8 +11,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "6:45 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "8:15 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "9:45 PM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "11:15 PM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "9:45 PM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "11:15 PM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "Waking up at 4:00 AM puts you in the company of some of the world's most disciplined professionals — military service members, bakers, farmers, early-shift nurses, and executives who use the pre-dawn hours for focused work. This ultra-early wake time demands an equally early bedtime, which is where most people struggle. To get a full 6 sleep cycles (9 hours of sleep), you would need to be in bed by 6:45 PM — impractical for most lifestyles. The sweet spot for most 4 AM risers is 5 cycles (7.5 hours), which means a bedtime of 8:15 PM. This may feel early, but it aligns with your body's natural inclination toward an advanced sleep phase, and many people who commit to this schedule report feeling more energized and productive than they ever did staying up late.",
@@ -40,8 +40,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "7:15 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "8:45 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "10:15 PM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "11:45 PM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "10:15 PM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "11:45 PM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 4:30 AM wake-up is common among people who exercise before work, commute long distances, or start shifts in healthcare, manufacturing, or food service. This schedule gives you a quiet 2-2.5 hour window before the standard workday begins — enough time for a full workout, a calm breakfast, and mental preparation for the day ahead. To complete 5 sleep cycles (the recommended minimum for optimal performance), you need to be asleep by 8:45 PM. Adding 15 minutes of sleep latency means getting into bed by 8:30 PM. While this is earlier than most adults are accustomed to, thousands of people maintain this schedule successfully by adjusting their evening routines and communicating clearly with their households about their sleep needs.",
@@ -69,8 +69,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "7:45 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "9:15 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "10:45 PM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "12:15 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "10:45 PM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "12:15 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "The 5:00 AM wake-up has become synonymous with productivity culture, popularized by Robin Sharma's 5 AM Club and adopted by countless high performers. But the real benefit is not the time itself — it is the dedicated morning window it creates. Waking at 5:00 AM gives you 2-3 hours before the typical workday for exercise, deep work, reading, or personal projects. The optimal bedtime for 5 full cycles is 9:15 PM — an achievable target for most people who commit to an intentional evening routine. With 4 cycles (bedtime 10:45 PM), you get 6 hours of sleep, which is the minimum recommended for adults and should only be used occasionally. For sustainable health and performance, target the 5-cycle bedtime of 9:15 PM or the 6-cycle option of 7:45 PM.",
@@ -98,8 +98,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "8:15 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "9:45 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "11:15 PM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "12:45 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "11:15 PM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "12:45 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 5:30 AM wake-up is the most common early-riser schedule in America, driven by 7:00-8:00 AM school start times for parents, 6:00 AM gym classes, and 8:00-8:30 AM office start times with commutes factored in. It offers a practical balance: early enough to fit in exercise or personal time, but not so early that the required bedtime feels extreme. For 5 complete sleep cycles, aim to be asleep by 9:45 PM (in bed by 9:30 PM). This gives you 7 hours and 30 minutes of sleep — within the recommended 7-9 hour range and sufficient for most adults to function well. The 4-cycle option at 11:15 PM provides only 6 hours and should be reserved for occasional nights, not your standard schedule.",
@@ -127,8 +127,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "8:45 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "10:15 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "11:45 PM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "1:15 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "11:45 PM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "1:15 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "Six o'clock in the morning is the single most common wake-up time in the United States, set by an estimated 40 million alarm clocks every weekday. It is the default wake-up for the standard American workday: enough time for a shower, breakfast, and a commute to arrive at 8:00-9:00 AM. For 5 complete sleep cycles and 7.5 hours of sleep, your optimal bedtime is 10:15 PM. This is a realistic, maintainable target for most adults and aligns well with natural melatonin production peaks. If you need more sleep, 6 cycles puts bedtime at 8:45 PM. If evenings run late occasionally, 4 cycles at 11:45 PM gives you a minimum-viable 6 hours — but this should be the exception, not the rule.",
@@ -156,8 +156,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "9:15 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "10:45 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "12:15 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "1:45 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "12:15 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "1:45 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 6:30 AM wake-up is one of the most common alarm settings, particularly for people who work 8:30-9:00 AM jobs with a moderate commute, or parents whose children's school bus arrives around 7:30 AM. For optimal sleep with 5 complete cycles, aim to be in bed by 10:30 PM and asleep by 10:45 PM. This provides 7 hours and 30 minutes of sleep — right in the sweet spot of the recommended range. The 6:30 AM schedule is manageable for most chronotypes, making it one of the most sustainable early-ish wake times for long-term adherence. Unlike the extreme discipline required for 4:00 or 5:00 AM wake-ups, a 10:30-10:45 PM bedtime fits comfortably into most adult evening routines.",
@@ -185,8 +185,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "9:45 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "11:15 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "12:45 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "2:15 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "12:45 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "2:15 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 7:00 AM wake-up is the natural choice for the standard 9-to-5 workday, remote professionals starting at 9 AM, and anyone who prefers a moderate morning pace. For 5 complete sleep cycles, your target bedtime is 11:15 PM — a time that feels natural for most adults and aligns with the typical evening routine of dinner, relaxation, and preparation for bed. This schedule is perhaps the easiest to maintain because it does not require unusual early bedtimes or the social sacrifices associated with ultra-early wake-ups. With a 7 AM alarm, you have 2 hours to get ready and commute, or for remote workers, time for exercise and a leisurely breakfast before logging on at 9 AM.",
@@ -214,8 +214,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "10:15 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "11:45 PM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "1:15 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "2:45 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "1:15 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "2:45 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 7:30 AM wake-up suits people with flexible start times — remote workers, freelancers, later-shift professionals, and students. Your optimal bedtime for 5 cycles is 11:45 PM, which allows for a full evening of relaxation, socializing, or personal projects without sacrificing sleep. This schedule is particularly common among remote workers whose morning commute has been replaced by walking to their home office, and among people whose workdays start at 9:30 or 10:00 AM. The 7:30 AM alarm provides enough morning time for a workout, a proper breakfast, and a calm start to the day without the extreme discipline of a pre-dawn routine.",
@@ -243,8 +243,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "10:45 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "12:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "1:45 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "3:15 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "1:45 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "3:15 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "An 8:00 AM wake-up used to be considered sleeping in, but in the era of remote work, later start times, and flexible schedules, it has become a standard wake time for millions of professionals. For 5 complete sleep cycles, aim for a 12:15 AM bedtime. This midnight-ish bedtime is natural for many adults and allows for a full evening without guilt. If you can manage 6 cycles with a 10:45 PM bedtime, you will get a luxurious 9 hours of sleep that many people can only dream of. The 8:00 AM wake-up is ideal for people whose work starts at 9:30-10:00 AM, freelancers who set their own hours, and anyone whose natural chronotype leans toward the evening.",
@@ -272,8 +272,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "11:15 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "12:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "2:15 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "3:45 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "2:15 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "3:45 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "An 8:30 AM wake-up is the reality for many freelancers, creative professionals, entrepreneurs, and remote workers whose schedules do not require the traditional early morning start. For 5 full sleep cycles, your optimal bedtime is 12:45 AM. This post-midnight bedtime will raise eyebrows among early-bird culture advocates, but for evening chronotypes, it represents a biologically natural and healthy sleep window that produces better sleep quality than an artificially early schedule. The key to making this work is consistency: going to bed at 12:45 AM and waking at 8:30 AM seven days a week is far healthier than varying between midnight and 3 AM depending on the day.",
@@ -301,8 +301,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "11:45 PM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "1:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "2:45 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "4:15 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "2:45 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "4:15 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 9:00 AM wake-up is the working schedule for many creatives, freelancers, night-shift workers on recovery days, and people in industries with later operating hours such as entertainment, hospitality, and tech startups. For 5 complete sleep cycles, your bedtime target is 1:15 AM. This schedule is entirely healthy when maintained consistently with 7-8 hours of sleep, though it requires intentional effort to ensure you are getting adequate morning light exposure and not allowing the bedtime to drift progressively later. The 9 AM wake-up gives you a leisurely morning for exercise, breakfast, and personal time before a 10:00 or 10:30 AM work start.",
@@ -330,8 +330,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "12:15 AM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "1:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "3:15 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "4:45 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "3:15 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "4:45 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 9:30 AM wake-up is the domain of strong evening chronotypes, creative professionals, people recovering from night-shift rotations, and workers in industries that operate on later schedules. For 5 complete sleep cycles, your target bedtime is 1:45 AM. While this schedule is far from conventional, it can be perfectly healthy when maintained consistently with adequate sleep duration. The critical success factor is not the time itself but the consistency — a regular 1:45 AM to 9:30 AM schedule is far healthier than bouncing between midnight and 4 AM depending on the day. If your work and social life allow this timing, there is no medical reason to force an earlier schedule.",
@@ -359,8 +359,8 @@
     "preCalculated": [
       { "cycles": 6, "bedtime": "12:45 AM", "totalSleep": "9h 0m", "quality": "optimal" },
       { "cycles": 5, "bedtime": "2:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
-      { "cycles": 4, "bedtime": "3:45 AM", "totalSleep": "6h 0m", "quality": "good" },
-      { "cycles": 3, "bedtime": "5:15 AM", "totalSleep": "4h 30m", "quality": "minimum" }
+      { "cycles": 4, "bedtime": "3:45 AM", "totalSleep": "6h 0m", "quality": "short" },
+      { "cycles": 3, "bedtime": "5:15 AM", "totalSleep": "4h 30m", "quality": "very_short" }
     ],
     "content": {
       "intro": "A 10:00 AM wake-up represents the far end of the evening chronotype spectrum, and it is the daily reality for night-shift workers on their off days, musicians and entertainers who work until midnight or later, international remote workers aligned with distant time zones, and the roughly 5-10% of the population with a genuinely extreme evening chronotype. For 5 full cycles, the target bedtime is 2:15 AM. This schedule requires deliberate management to remain stable and healthy, but when maintained with consistency and adequate sleep duration, it is a legitimate and healthy sleep pattern. The key challenge is ensuring adequate daylight exposure and maintaining social connections within a schedule that is dramatically offset from the majority.",
@@ -386,8 +386,8 @@
     "h1": "Wake-Up Time Calculator for an 8:00 PM Bedtime",
     "metaDescription": "Calculate optimal wake-up times for an 8 PM bedtime. Ideal for early risers, children's bedtimes, and anyone who wants maximum sleep before a pre-dawn alarm.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "12:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "2:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "12:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "2:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "3:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "5:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -415,8 +415,8 @@
     "h1": "Wake-Up Time Calculator for an 8:30 PM Bedtime",
     "metaDescription": "Find optimal wake-up times for an 8:30 PM bedtime. Perfect for early-shift workers, construction crews, and anyone who needs full sleep cycles before a 4-5 AM alarm.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "1:15 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "2:45 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "1:15 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "2:45 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "4:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "5:45 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -444,8 +444,8 @@
     "h1": "Wake-Up Time Calculator for a 9:00 PM Bedtime",
     "metaDescription": "Calculate optimal wake-up times for a 9 PM bedtime. Popular with 5 AM Club members, parents of young children, and anyone prioritizing early-to-bed sleep hygiene.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "1:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "3:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "1:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "3:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "4:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "6:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -473,8 +473,8 @@
     "h1": "Wake-Up Time Calculator for a 9:30 PM Bedtime",
     "metaDescription": "Find optimal wake times for a 9:30 PM bedtime. Perfect for early-morning exercisers, teachers, and health-conscious adults targeting 5-6 complete sleep cycles.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "2:15 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "3:45 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "2:15 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "3:45 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "5:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "6:45 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -502,8 +502,8 @@
     "h1": "Wake-Up Time Calculator for a 10:00 PM Bedtime",
     "metaDescription": "Calculate the best wake-up times for a 10 PM bedtime. The most popular adult bedtime — get cycle-optimized alarm times for 5:45 AM, 7:15 AM, or any wake-up goal.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "2:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "4:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "2:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "4:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "5:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "7:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -531,8 +531,8 @@
     "h1": "Wake-Up Time Calculator for a 10:30 PM Bedtime",
     "metaDescription": "Calculate wake-up times for a 10:30 PM bedtime. Get cycle-aligned alarm times for 6:15 AM or 7:45 AM — ideal for the standard workday with optimal sleep quality.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "3:15 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "4:45 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "3:15 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "4:45 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "6:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "7:45 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -560,8 +560,8 @@
     "h1": "Wake-Up Time Calculator for an 11:00 PM Bedtime",
     "metaDescription": "Find the best wake-up times for an 11 PM bedtime. Get cycle-calculated alarm times for 6:45 AM or 8:15 AM — optimized for night owls and late-evening professionals.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "3:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "5:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "3:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "5:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "6:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "8:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -589,8 +589,8 @@
     "h1": "Wake-Up Time Calculator for an 11:30 PM Bedtime",
     "metaDescription": "Get optimal wake-up times for an 11:30 PM bedtime. Cycle-aligned alarm times for 7:15 AM or 8:45 AM — perfect for night owls and flexible-schedule professionals.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "4:15 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "5:45 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "4:15 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "5:45 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "7:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "8:45 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -618,8 +618,8 @@
     "h1": "Wake-Up Time Calculator for a Midnight Bedtime",
     "metaDescription": "Calculate optimal wake-up times for a midnight bedtime. Get cycle-aligned alarm times for night owls, creative professionals, and evening-shift workers on recovery days.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "4:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "6:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "4:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "6:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "7:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "9:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -647,8 +647,8 @@
     "h1": "Wake-Up Time Calculator for a 12:30 AM Bedtime",
     "metaDescription": "Find the best wake-up times for a 12:30 AM bedtime. Cycle-optimized alarm times for evening chronotypes, late-shift workers, and creative professionals.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "5:15 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "6:45 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "5:15 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "6:45 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "8:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "9:45 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -676,8 +676,8 @@
     "h1": "Wake-Up Time Calculator for a 1:00 AM Bedtime",
     "metaDescription": "Calculate optimal wake-up times for a 1 AM bedtime. Essential for strong evening chronotypes, creative night workers, and international remote professionals.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "5:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "7:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "5:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "7:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "8:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "10:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -705,8 +705,8 @@
     "h1": "Wake-Up Time Calculator for a 1:30 AM Bedtime",
     "metaDescription": "Find the optimal wake-up times for a 1:30 AM bedtime. Designed for extreme night owls, late-shift recovery, and professionals whose schedules run into the early hours.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "6:15 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "7:45 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "6:15 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "7:45 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "9:15 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "10:45 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
@@ -734,8 +734,8 @@
     "h1": "Wake-Up Time Calculator for a 2:00 AM Bedtime",
     "metaDescription": "Calculate the best wake-up times for a 2 AM bedtime. Essential for extreme night owls, late-night professionals, and shift workers who need cycle-optimized wake-up times.",
     "preCalculated": [
-      { "cycles": 3, "wakeTime": "6:45 AM", "totalSleep": "4h 30m", "quality": "minimum" },
-      { "cycles": 4, "wakeTime": "8:15 AM", "totalSleep": "6h 0m", "quality": "good" },
+      { "cycles": 3, "wakeTime": "6:45 AM", "totalSleep": "4h 30m", "quality": "very_short" },
+      { "cycles": 4, "wakeTime": "8:15 AM", "totalSleep": "6h 0m", "quality": "short" },
       { "cycles": 5, "wakeTime": "9:45 AM", "totalSleep": "7h 30m", "quality": "optimal" },
       { "cycles": 6, "wakeTime": "11:15 AM", "totalSleep": "9h 0m", "quality": "optimal" }
     ],
