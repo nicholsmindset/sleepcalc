@@ -10,7 +10,6 @@ Sitemap: https://www.sleepstackapp.com/sitemaps/bedtime.xml
 Sitemap: https://www.sleepstackapp.com/sitemaps/age.xml
 Sitemap: https://www.sleepstackapp.com/sitemaps/profession.xml
 Sitemap: https://www.sleepstackapp.com/sitemaps/baby-sleep.xml
-Sitemap: https://www.sleepstackapp.com/sitemaps/conditions.xml
 Sitemap: https://www.sleepstackapp.com/sitemaps/blog.xml
 
 # Block dashboard (authenticated content)

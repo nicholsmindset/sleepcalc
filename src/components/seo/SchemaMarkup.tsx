@@ -35,15 +35,7 @@ export function WebSiteSchema() {
         name: "Sleep Stack",
         url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com",
         description:
-          "Science-backed sleep calculator with real wearable device integration and AI-powered sleep coaching.",
-        potentialAction: {
-          "@type": "SearchAction",
-          target: {
-            "@type": "EntryPoint",
-            urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com"}/blog?q={search_term_string}`,
-          },
-          "query-input": "required name=search_term_string",
-        },
+          "Free sleep calculators and tools for planning bedtime and wake-up times.",
       }}
     />
   );
@@ -57,7 +49,7 @@ export function OrganizationSchema() {
       data={{
         name: "Sleep Stack",
         url: siteUrl,
-        logo: `${siteUrl}/icons/logo.png`,
+        logo: `${siteUrl}/icons/icon-512.png`,
         description:
           "Free sleep calculators and tools to optimize your bedtime, wake-up time, and sleep schedule.",
         contactPoint: {

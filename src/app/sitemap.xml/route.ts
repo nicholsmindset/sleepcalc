@@ -11,17 +11,13 @@ const SEGMENTS = [
   { name: 'age',             label: 'Age-based sleep pages' },
   { name: 'profession',      label: 'Profession sleep pages' },
   { name: 'baby-sleep',      label: 'Baby sleep schedule pages' },
-  { name: 'conditions',      label: 'Sleep condition pages' },
   { name: 'blog',            label: 'Blog posts' },
 ];
 
 export function GET() {
-  const now = new Date().toISOString();
-
   const xml = buildSitemapIndex(
     SEGMENTS.map(({ name }) => ({
       loc: `${BASE_URL}/sitemaps/${name}.xml`,
-      lastmod: now,
     }))
   );
 

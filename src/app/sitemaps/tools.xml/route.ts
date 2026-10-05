@@ -15,12 +15,10 @@ const TOOL_PATHS = [
 ];
 
 export function GET() {
-  const now = new Date().toISOString();
-
   const xml = buildUrlset(
     TOOL_PATHS.map((path) => ({
       loc: `${BASE_URL}${path}`,
-      lastmod: now,
+      
       changefreq: 'monthly',
       priority: 0.8,
     }))

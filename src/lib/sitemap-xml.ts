@@ -35,10 +35,9 @@ ${entries}
 export function buildSitemapIndex(
   sitemaps: Array<{ loc: string; lastmod?: string }>
 ): string {
-  const now = new Date().toISOString();
   const entries = sitemaps
     .map(({ loc, lastmod }) =>
-      `  <sitemap>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod ?? now}</lastmod>\n  </sitemap>`
+      `  <sitemap>\n    <loc>${loc}</loc>${lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''}\n  </sitemap>`
     )
     .join('\n');
 

@@ -5,13 +5,11 @@ export const dynamic = 'force-static';
 export const revalidate = 2592000;
 
 export function GET() {
-  const now = new Date().toISOString();
-
   const urls = (sleepTimes as Array<{ slug: string; type: string }>)
     .filter((t) => t.type === 'bedtime')
     .map((t) => ({
       loc: `${BASE_URL}/bedtime/${t.slug}`,
-      lastmod: now,
+      
       changefreq: 'monthly',
       priority: 0.7,
     }));

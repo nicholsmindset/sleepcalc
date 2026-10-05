@@ -28,6 +28,7 @@ export interface BlogPostMeta {
   title: string;
   description: string;
   date: string;
+  updated?: string;
   author: string;
   category: string;
   tags: string[];
@@ -50,12 +51,14 @@ export function getAllPosts(): BlogPostMeta[] {
     const filePath = path.join(BLOG_DIR, filename);
     const fileContents = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(fileContents);
+    if (!data.date) throw new Error(`Missing publication date: ${filename}`);
 
     return {
       slug,
       title: data.title ?? slug,
       description: data.description ?? '',
-      date: data.date ?? new Date().toISOString(),
+      date: data.date,
+      updated: data.updated,
       author: data.author ?? 'Sleep Stack Team',
       category: data.category ?? 'Sleep Science',
       tags: data.tags ?? [],
@@ -73,12 +76,13 @@ export function getPostBySlug(slug: string): BlogPost | null {
 
   const fileContents = fs.readFileSync(filePath, 'utf-8');
   const { data, content } = matter(fileContents);
+  if (!data.date) throw new Error(`Missing publication date: ${slug}.mdx`);
 
   return {
     slug,
     title: data.title ?? slug,
     description: data.description ?? '',
-    date: data.date ?? new Date().toISOString(),
+    date: data.date,
     updated: data.updated,
     author: data.author ?? 'Sleep Stack Team',
     category: data.category ?? 'Sleep Science',
