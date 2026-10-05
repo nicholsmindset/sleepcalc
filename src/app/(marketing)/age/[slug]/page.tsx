@@ -271,7 +271,7 @@ export default async function AgePage({ params }: PageProps) {
   const prevEntry = currentIdx > 0 ? navPool[currentIdx - 1] : null;
   const nextEntry = currentIdx < navPool.length - 1 ? navPool[currentIdx + 1] : null;
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
   const pageUrl = `${siteUrl}/age/${slug}`;
   const datePublished = entry.datePublished ?? DEFAULT_PUBLISHED_DATE;
   const dateModified = entry.dateModified ?? DEFAULT_MODIFIED_DATE;

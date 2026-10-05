@@ -33,14 +33,14 @@ export function WebSiteSchema() {
       type="WebSite"
       data={{
         name: "Sleep Stack",
-        url: process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com",
+        url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com",
         description:
           "Science-backed sleep calculator with real wearable device integration and AI-powered sleep coaching.",
         potentialAction: {
           "@type": "SearchAction",
           target: {
             "@type": "EntryPoint",
-            urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"}/blog?q={search_term_string}`,
+            urlTemplate: `${process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com"}/blog?q={search_term_string}`,
           },
           "query-input": "required name=search_term_string",
         },
@@ -50,7 +50,7 @@ export function WebSiteSchema() {
 }
 
 export function OrganizationSchema() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
   return (
     <SchemaMarkup
       type="Organization"

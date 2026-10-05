@@ -21,22 +21,22 @@ const qualityConfig = {
     label: 'Optimal',
     icon: Check,
   },
-  good: {
+  short: {
     border: 'border-primary-container/20',
     bg: 'bg-surface-container-highest/50',
     hoverBg: 'hover:bg-surface-container-highest/70',
     badge: 'bg-primary-container/15 text-ds-primary',
     accentDot: 'bg-primary-container',
-    label: 'Good',
+    label: 'Below 7h',
     icon: Moon,
   },
-  minimum: {
+  very_short: {
     border: 'border-outline-variant/5',
     bg: 'bg-surface-container-low',
     hoverBg: 'hover:bg-surface-container/80',
     badge: 'bg-surface-container-high/50 text-on-surface-variant',
     accentDot: 'bg-on-surface-variant',
-    label: 'Minimum',
+    label: 'Very short',
     icon: Clock,
   },
 } as const;
@@ -111,7 +111,7 @@ export default function ResultCard({
               'flex items-center justify-center w-9 h-9 rounded-lg transition-colors',
               quality === 'optimal'
                 ? 'bg-ds-secondary/10 text-ds-secondary'
-                : quality === 'good'
+                : quality === 'short'
                   ? 'bg-primary-container/10 text-ds-primary'
                   : 'bg-surface-container-high/50 text-on-surface-variant',
             )}

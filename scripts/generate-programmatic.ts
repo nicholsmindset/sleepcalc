@@ -24,10 +24,10 @@ const MAX_CYCLES = 6;
 // Helpers
 // ---------------------------------------------------------------------------
 
-function qualityForCycles(cycles: number): 'optimal' | 'good' | 'minimum' {
+function qualityForCycles(cycles: number): 'optimal' | 'short' | 'very_short' {
   if (cycles >= 5) return 'optimal';
-  if (cycles === 4) return 'good';
-  return 'minimum';
+  if (cycles === 4) return 'short';
+  return 'very_short';
 }
 
 /** Format minutes-since-midnight to "h:mm AM/PM" */
@@ -65,7 +65,7 @@ interface PreCalc {
   bedtime?: string;
   wakeTime?: string;
   totalSleep: string;
-  quality: 'optimal' | 'good' | 'minimum';
+  quality: 'optimal' | 'short' | 'very_short';
 }
 
 interface SleepTimeEntry {

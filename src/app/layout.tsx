@@ -33,13 +33,13 @@ export const metadata: Metadata = {
   description:
     "Free sleep calculators to find your ideal bedtime, wake-up time, and sleep schedule. Science-backed tools including sleep cycle, nap, caffeine, and sleep debt calculators.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com"
   ),
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Sleep Stack",
-    url: "https://sleepstackapp.com",
+    url: "https://www.sleepstackapp.com",
   },
   twitter: {
     card: "summary_large_image",

@@ -5,7 +5,7 @@
 
 export const BASE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
-  'https://sleepstackapp.com';
+  'https://www.sleepstackapp.com';
 
 export function buildUrlset(
   urls: Array<{

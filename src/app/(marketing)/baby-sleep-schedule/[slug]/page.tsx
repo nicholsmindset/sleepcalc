@@ -213,7 +213,7 @@ export default async function BabySleepSchedulePage({ params }: PageProps) {
     .map((s) => entries.find((e) => e.slug === s))
     .filter(Boolean) as BabyScheduleEntry[];
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
   const pageUrl = `${siteUrl}/baby-sleep-schedule/${slug}`;
   const datePublished = entry.datePublished ?? DEFAULT_PUBLISHED_DATE;
   const dateModified = entry.dateModified ?? DEFAULT_MODIFIED_DATE;

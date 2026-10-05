@@ -93,7 +93,7 @@ export default function CalculatorsPage() {
             "@type": "ListItem",
             position: i + 1,
             name: calc.name,
-            url: `https://sleepstackapp.com${calc.href}`,
+            url: `https://www.sleepstackapp.com${calc.href}`,
           })),
         }}
       />

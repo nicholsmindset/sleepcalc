@@ -98,16 +98,15 @@ function getClimateTips(climate: string, cityName: string, avgTempC: number): st
 }
 
 function buildFAQ(entry: CityEntry) {
-  const { cityName, timezone, utcOffset, avgSunrise, avgSunset, avgTempC } = entry;
-  const utcStr = formatUtcOffset(utcOffset);
+  const { cityName, timezone, avgSunrise, avgSunset, avgTempC } = entry;
   return [
     {
       question: `What is the best bedtime for someone living in ${cityName}?`,
-      answer: `For most adults in ${cityName} (${utcStr}), a 10:00–11:00 PM bedtime supports 7–9 hours of sleep before a 6–7 AM start. Use the sleep calculator above with your actual wake time to find the bedtime that lands on a complete sleep cycle — waking mid-cycle causes grogginess regardless of total hours.`,
+      answer: `For most adults, plan for at least 7 hours of sleep and allow time to fall asleep. Enter your own wake time in the calculator to compare possible bedtimes. Sleep cycles vary, so treat the results as estimates.`,
     },
     {
       question: `How does ${cityName}'s timezone affect sleep?`,
-      answer: `${cityName} runs on ${timezone} (${utcStr}). Your circadian clock follows solar time, which can diverge from clock time depending on your position within the timezone. The further west you are within a timezone, the later solar noon falls relative to the clock — subtly pushing night owls even later. Awareness of this effect helps explain why some residents feel perpetually "off" on standard schedules.`,
+      answer: `${cityName} uses the ${timezone} timezone. Its UTC offset can change during daylight saving time. Your circadian clock responds to light and daily routines, which can diverge from clock time depending on your position within the timezone. The further west you are within a timezone, the later solar noon falls relative to the clock — subtly pushing night owls even later. Awareness of this effect helps explain why some residents feel perpetually "off" on standard schedules.`,
     },
     {
       question: `When does the sun set in ${cityName} and how does that affect sleep?`,
@@ -147,9 +146,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const entry = entries.find((e) => e.slug === slug);
   if (!entry) return {};
 
-  const utcStr = formatUtcOffset(entry.utcOffset);
-  const title = `Sleep Schedule for ${entry.cityName} — Best Bedtime in ${utcStr}`;
-  const description = `Calculate your optimal bedtime for ${entry.cityName}, ${entry.country}. Timezone ${entry.timezone} (${utcStr}). Avg sunrise ${entry.avgSunrise}, sunset ${entry.avgSunset}. Science-backed sleep schedule + climate tips.`;
+  const title = `Sleep Schedule for ${entry.cityName} | Sleep Stack`;
+  const description = `Plan a bedtime for ${entry.cityName}, ${entry.country}. Timezone ${entry.timezone}; average sunrise ${entry.avgSunrise} and sunset ${entry.avgSunset}. See sleep and climate tips.`;
 
   return {
     title,
@@ -203,7 +201,7 @@ export default async function CityPage({ params }: PageProps) {
     )
     .slice(0, 6);
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
 
   return (
     <article className="mx-auto max-w-4xl px-4 pb-20 pt-4">
@@ -215,7 +213,7 @@ export default async function CityPage({ params }: PageProps) {
           applicationCategory: "HealthApplication",
           operatingSystem: "Web",
           url: `${siteUrl}/city/${slug}`,
-          description: `Optimal sleep schedule for ${cityName}, ${country} (${utcStr})`,
+          description: `Sleep schedule planning for ${cityName}, ${country} in ${timezone}`,
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         }}
       />
@@ -246,7 +244,7 @@ export default async function CityPage({ params }: PageProps) {
         <div className="relative grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div>
             <div className="flex items-center gap-1.5 text-on-surface-variant text-xs uppercase tracking-widest mb-1">
-              <Globe className="w-3.5 h-3.5" /> Timezone
+              <Globe className="w-3.5 h-3.5" /> Standard UTC offset
             </div>
             <p className="font-headline text-xl font-bold text-on-surface">{utcStr}</p>
             <p className="text-xs text-on-surface-variant mt-0.5">
@@ -318,7 +316,7 @@ export default async function CityPage({ params }: PageProps) {
         <div className="text-on-surface-variant text-sm leading-relaxed space-y-4">
           <p>
             {cityName} sits in the <strong className="text-on-surface">{timezone}</strong> timezone
-            ({utcStr}). Your body&rsquo;s master circadian clock — located in the suprachiasmatic
+            (standard offset {utcStr}; daylight saving time may change the local offset). Your body&rsquo;s master circadian clock — located in the suprachiasmatic
             nucleus of the hypothalamus — runs on solar time, not clock time. When the two diverge,
             as they do at the edges of any timezone, chronic sleep timing misalignment is the
             invisible result.
@@ -378,29 +376,19 @@ export default async function CityPage({ params }: PageProps) {
             </h2>
             <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
               {cityName} is a major international gateway. Travelers arriving from different timezones
-              need approximately 1 day of recovery per hour of timezone difference eastward, and slightly
-              less when traveling west. Expose yourself to bright outdoor light at {cityName}&rsquo;s local
-              morning — even on overcast days — within 30 minutes of waking to accelerate your body&rsquo;s
-              resynchronization.
+              may need several days to adjust to a new local schedule. Morning daylight and a consistent
+              wake time can help. Check the current local time before travel because daylight saving
+              time can change the offset.
             </p>
             <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-3">
               Common Arrival Routes
             </p>
             <div className="flex flex-wrap gap-2 mb-6">
-              {popularOrigins.map((origin) => {
-                const originCity = entries.find((e) => e.cityName === origin);
-                const diff = originCity ? Math.abs(originCity.utcOffset - utcOffset) : null;
-                return (
-                  <div key={origin} className="glass-card rounded-2xl px-4 py-2">
-                    <span className="text-on-surface text-sm font-medium">{origin}</span>
-                    {diff !== null && (
-                      <span className="text-on-surface-variant text-xs ml-2">
-                        {diff}h shift
-                      </span>
-                    )}
-                  </div>
-                );
-              })}
+              {popularOrigins.map((origin) => (
+                <div key={origin} className="glass-card rounded-2xl px-4 py-2">
+                  <span className="text-on-surface text-sm font-medium">{origin}</span>
+                </div>
+              ))}
             </div>
             <Link
               href="/calculators"
@@ -437,7 +425,7 @@ export default async function CityPage({ params }: PageProps) {
                   {city.cityName}
                 </p>
                 <p className="text-xs text-on-surface-variant mt-0.5">
-                  {city.country} · {formatUtcOffset(city.utcOffset)}
+                  {city.country} · {city.timezone}
                 </p>
               </Link>
             ))}

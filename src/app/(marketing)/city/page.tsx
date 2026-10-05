@@ -22,16 +22,6 @@ interface CityEntry {
 
 const entries = cityData as CityEntry[];
 
-function formatUtcOffset(offset: number): string {
-  const sign = offset >= 0 ? "+" : "−";
-  const abs = Math.abs(offset);
-  const hours = Math.floor(abs);
-  const mins = Math.round((abs - hours) * 60);
-  return mins > 0
-    ? `UTC${sign}${hours}:${mins.toString().padStart(2, "0")}`
-    : `UTC${sign}${hours}`;
-}
-
 export const metadata: Metadata = {
   title: "Sleep by City — Bedtime & Sleep Schedules for 50+ Cities Worldwide",
   description:
@@ -48,7 +38,7 @@ export const metadata: Metadata = {
 };
 
 export default function CityLandingPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sleepstackapp.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sleepstackapp.com";
 
   const itemList = generateItemListSchema(
     entries.map((e) => ({
@@ -84,7 +74,7 @@ export default function CityLandingPage() {
       <p className="text-on-surface-variant text-base md:text-lg leading-relaxed mb-10 max-w-3xl">
         Your city&apos;s timezone, climate, and daylight pattern shape your sleep
         more than most people realize. Pick a city below for its average sunrise
-        and sunset, climate-specific sleep tips, and a calculator tuned to its
+        and sunset, climate-specific sleep tips, and a calculator for your
         local schedule.
       </p>
 
@@ -107,7 +97,7 @@ export default function CityLandingPage() {
                   </p>
                 </div>
                 <p className="text-xs text-on-surface-variant mb-2">
-                  {entry.country} · {formatUtcOffset(entry.utcOffset)}
+                  {entry.country} · {entry.timezone}
                 </p>
                 <p className="text-sm text-on-surface-variant">
                   Sunrise {entry.avgSunrise} · Sunset {entry.avgSunset}
